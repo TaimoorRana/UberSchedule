@@ -161,12 +161,12 @@
       <th></th>
       <th></th>
     </tr>
-    <% @courses.each do |course| %>
+   <%  @courses.each do |course| %>
         <tr class="schedulet">
-          <td><%= course.course_code %></td>
-          <td><%= course.name %></td>
-          <td><%= link_to('Add',{:controller => 'Courses', :action => 'index'}) %></td>
-          <td><%= link_to('Details',{:controller => 'Courses', :action => 'show'}) %></td>
+          <td><% course.course_code %></td>
+          <td><% course.name %></td>
+          <td><% link_to('Add',{:controller => 'Courses', :action => 'index'}) %></td>
+          <td><% link_to('Details',{:controller => 'Courses', :action => 'show'}) %></td>
         </tr>
     <%end%>
   </table>
