@@ -1,5 +1,5 @@
 class CoursesController < ApplicationController
-  layout false
+
   def index
     @courses = Course.all
   end
