@@ -1,2 +1,36 @@
 <h1>Courses#show</h1>
 <p>Find me in app/views/courses/show.html.erb</p>
+
+<!--top div-->
+<div class="topmain">
+  <hr class="blackline">
+  <img class="center" src="/assets/logogrey2.png" alt="logo">
+  <hr class="blackline">
+  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;">LINKS&nbsp; &nbsp; &nbsp;LINKS&nbsp; &nbsp; &nbsp;LINKS&nbsp; &nbsp; &nbsp;LINKS</p>
+  <hr class="blackline">
+</div>
+
+<!--<%= link_to('index',{:controller => 'login', :action => 'index'}) %>-->
+
+<!--header div : Schedule-->
+<div class="header">
+  Available Courses
+</div>
+<!--main content div : result of schedule-->
+<div class="greybody">
+  <table class="schedulet">
+    <tr class="schedulet">
+      <th>Course Code</th>
+      <th>Course Name</th>
+      <th></th>
+      <th></th>
+    </tr>
+        <tr>
+          <td><%= @course.course_code %></td>
+          <td><%= @course.name %></td>
+        </tr>
+        <tr class="schedulet">
+          <td colspan="4" ><%= @course.description %></td>
+        </tr>
+  </table>
+</div>
