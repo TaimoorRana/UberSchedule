@@ -1,0 +1,131 @@
+body{
+      background-color: #FFFFFF;
+  }
+
+  h1{
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size:24px;
+      color:#ffffff;
+      letter-spacing:5px;
+  }
+
+  hr{
+      height:1px;
+      border-width:0px;
+      color:#ffffff;
+      background-color:#ffffff;
+      width:200px;
+  }
+
+  .whiteline{
+      height:1px;
+      border-width:0px;
+      color:#ffffff;
+      background-color:#ffffff;
+      width:200px;
+  }
+
+  .blackline{
+      height:1px;
+      border-width:0px;
+      color:#000000;
+      background-color:#000000;
+      width:100%;
+  }
+
+  .topbar {
+      /* Reference image: http://4.bp.blogspot.com/-pvgJr3PYmPw/UHMIWFTH11I/AAAAAAAACtk/ah-VHvcAms4/s1600/book-table-close-up.jpg */
+      background: #CEC4C2 url("assets/images/bkgd.jpg") no-repeat center top;
+      width: 100%;
+      height: 500px;
+      text-align:center;
+      margin:0px;
+      padding-top:20px;
+  }
+
+  .topmain{
+      width: 100%;
+      text-align:center;
+  }
+
+  .login{
+      width:300px;
+      border: 1px dashed white;
+      margin-top:30px;
+      margin-left: auto;
+      margin-right: auto;
+      padding:5px;
+  }
+
+  .header{
+      background-color:#A5D1D7;
+      color:#FFFFFF;
+      border: 0px;
+      border-radius: 10px;
+      padding-left:5px;
+      padding-bottom:0px;
+      padding-top:50px;
+      margin-bottom:5px;
+      font-size:42px;
+      font-weight: bold;
+      font-family: helvetica, sans-serif;
+  }
+
+  .greybody{
+      background-color:#C8C8C8;
+      color:#FFFFFF;
+      border-radius: 10px;
+      padding-bottom:20px;
+      padding-top:20px;
+      padding-left:5px;
+      padding-right:5px;
+      font-size:14px;
+      font-family: helvetica, sans-serif;
+  }
+
+  .schedulet{
+      border:2px solid #FFFFFF;
+      border-collapse: collapse;
+      width:100%;
+      text-align:left;
+  }
+
+  .center{
+      vertical-align:middle;
+      text-align:center;
+  }
+
+  input{
+      background-color: rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255, 255, 255, 1);
+      color:#ffffff;
+      height: 20px;
+  }
+
+  fieldset{
+      border:0px;
+  }
+
+  p{
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size:16px;
+      color:#ffffff;
+  }
+
+  .whitexpand{
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size:14px;
+      color:#ffffff;
+      font-weight:bolder;
+      letter-spacing:3px;
+      display:inline;
+  }
+
+  .blackexpand{
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size:14px;
+      color:#000000;
+      font-weight:bolder;
+      letter-spacing:3px;
+      display:inline;
+  }
