@@ -19,11 +19,25 @@ class LoginController < ApplicationController
         redirect_to action: 'index'
       end
     end
+  end
 
-    #@user = User.where(:first_name => params[:username])
-   # @password = @user.password
-   # if @user.password == params[:password]
-    #  redirect_to :controller => 'Schedule', :action => 'schedule'
-    #end
+  def registration
+
+  end
+
+  def registration_user
+    new_user = params[:username]
+    user_password = params[:password]
+    confirmed_password = params[:confirm_password]
+
+    if  user_password.to_s == confirmed_password.to_s
+      user_created = User.new(:first_name => new_user)
+      user_created.password = user_password.to_s
+      user_created.save
+      redirect_to action: 'index'
+    else
+      redirect_to action: 'registration'
+    end
+
   end
 end
