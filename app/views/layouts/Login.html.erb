@@ -9,6 +9,9 @@
 
 </head>
 <body>
+<% if !flash[:notice].blank? %>
+    <%= flash.notice %>
+<% end %>
 
 <%= yield %>
 
