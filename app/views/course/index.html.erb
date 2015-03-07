@@ -1,0 +1,35 @@
+
+<!--top div-->
+<div class="topmain" style="background-color: #ffffff">
+  <hr class="blackline">
+  <img class="center" src="/assets/logogrey2.png" alt="logo">
+  <hr class="blackline">
+  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;">LINKS&nbsp; &nbsp; &nbsp;LINKS&nbsp; &nbsp; &nbsp;LINKS&nbsp; &nbsp; &nbsp;LINKS</p>
+  <hr class="blackline">
+</div>
+
+<!--<%= link_to('index',{:controller => 'login', :action => 'index'}) %>-->
+
+<!--header div : Schedule-->
+<div class="header">
+  Available Courses
+</div>
+<!--main content div : result of schedule-->
+<div class="greybody">
+  <table class="schedulet">
+    <tr class="schedulet">
+      <th>Course Code</th>
+      <th>Course Name</th>
+      <th></th>
+      <th></th>
+    </tr>
+   <%  @courses.each do |course| %>
+        <tr class="schedulet">
+          <td><%= course.course_code %></td>
+          <td><%= course.name %></td>
+          <td><%= link_to('Add',{:controller => 'Course', :action => 'index', :id => course.id}) %></td>
+          <td><%= link_to('Details',{:controller => 'Course', :action => 'show' , :id => course.id}) %></td>
+        </tr>
+    <%end%>
+  </table>
+</div>

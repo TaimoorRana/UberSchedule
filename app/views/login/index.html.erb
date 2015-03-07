@@ -1,103 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>UberSchedule - Login</title>
-	<meta charset="UTF-8">
-	<!--link rel="stylesheet" type="text/css" href="index.css"-->
-</head>
-<body>
-<style>
-body{ 
-background-color: #FFFFFF;
-}
 
-h1{
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-font-size:24px;
-color:#ffffff;
-letter-spacing:5px;
-}
-
-hr{
-height:1px;
-border-width:0px;
-color:#ffffff;
-background-color:#ffffff;
-width:200px;
-}
-
-.topbar {
-/* Reference image: http://4.bp.blogspot.com/-pvgJr3PYmPw/UHMIWFTH11I/AAAAAAAACtk/ah-VHvcAms4/s1600/book-table-close-up.jpg */
-background: #CEC4C2 url("/assets/bkgd.jpg") no-repeat center top;
-width: 100%;
-height: 500px;
-text-align:center;
-margin:0px;
-padding-top:20px;
-}
-
-.login{
-width:300px; 
-border: 1px dashed white; 
-margin-top:30px; 
-margin-left: auto; 
-margin-right: auto; 
-padding:5px;
-}
-
-.center{
-vertical-align:middle;
-text-align:center;
-}
-
-input{
-background-color: rgba(255, 255, 255, 0);
-border: 1px solid rgba(255, 255, 255, 1);
-color:#ffffff;
-height: 20px;
-}
-
-fieldset{
-border:0px;
-}
-
-p{
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-font-size:16px;
-color:#ffffff;
-}
-
-.whitexpand{
-font-family: "Trebuchet MS", Helvetica, sans-serif;
-font-size:14px;
-color:#ffffff;
-font-weight:bolder;
-letter-spacing:3px;
-display:inline;
-}
-</style>
 <!--top div-->
 <div class="topbar">
 <p class="whitexpand">&nbsp; &nbsp; &nbsp;UBER</p><img class="center" src="/assets/logo.png" alt="logo"><p class="whitexpand">PLANNER</p><br><span style="font-family: Trebuchet, Helvetica, sans-serif; font-size:12px; color:#ffffff; font-weight:bold;">BY UBERTEAM</span>
 <div class="login">
 <br><hr><h1>LOGIN</h1><hr>
-<fieldset>
+
+
+
 <p>
 <label>NETNAME:</label><br>
-<input type="text" size="24" name="netName" /><br><br>
+  <table>
+  <%= form_tag( :action => 'login') do %>
+
+   <tr>
+     <%= label_tag(:username) %>
+     <%= text_field_tag(:username)  %> </br></br>
+   </tr>
+   <tr>
+    <%= label_tag(:password)%>
+    <%= password_field_tag(:password) %> </br> </br>
+   </tr>
+        <%= submit_tag('Login') %>
+
+  <% end %>
+  </table>
+<!--<input type="text" size="24" name="netName" /><br><br>
 <label>PASSWORD:</label><br>
 <input type="password" size="24" name="pw" /><br><br>
-<!--<input style="width:80px; height:25px; background-color:orange; border:0px;" type="submit" value="Go" name="submit" />-->
-  <%=button_to( "Login", :action => "schedule", :controller => "schedule")%>
+<!--<input style="width:80px; height:25px; background-color:orange; border:0px;" type="submit" value="Go" name="submit" />
+  #button_to( "Login", :action => "schedule", :controller => "schedule")-->
 </p>
-</fieldset>
+
 </div>
 </div>
 <!--bottom div : links-->
 <div class="center">
-<p style="color:#F36E21; font-size:13px;"> 
-link 1: Get NetName &nbsp; &nbsp; &nbsp; link 2 : Forgot Password?
+<p style="color:#F36E21; font-size:13px;">
+  <%= link_to 'Register' , action: 'registration' %> &nbsp; &nbsp; &nbsp; <%= link_to 'Forgot Password?' %>
+
 </p>
 </div>
-</body>
-</html>
