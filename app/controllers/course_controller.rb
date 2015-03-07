@@ -1,4 +1,5 @@
 class CourseController < ApplicationController
+  layout 'general_schedule'
  before_action :confirm_logged_in
   
   def index
