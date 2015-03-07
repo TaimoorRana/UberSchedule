@@ -121,53 +121,11 @@ body{
       display:inline;
   }
 
-  .blackexpand{
+  .blackexpand {
       font-family: "Trebuchet MS", Helvetica, sans-serif;
-      font-size:14px;
-      color:#000000;
-      font-weight:bolder;
-      letter-spacing:3px;
-      display:inline;
-<<<<<<< HEAD:app/views/courses/index.html.erb
-  }</style>
-</head>
-<body>
-<!--top div-->
-<div class="topmain">
-  <hr class="blackline">
-  <img class="center" src="/assets/logogrey2.png" alt="logo">
-  <hr class="blackline">
-  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;">LINKS&nbsp; &nbsp; &nbsp;LINKS&nbsp; &nbsp; &nbsp;LINKS&nbsp; &nbsp; &nbsp;LINKS</p>
-  <hr class="blackline">
-</div>
-
-<!--<%= link_to('index',{:controller => 'login', :action => 'index'}) %>-->
-
-<!--header div : Schedule-->
-<div class="header">
-  Available Courses
-</div>
-<!--main content div : result of schedule-->
-<div class="greybody">
-  <table class="schedulet">
-    <tr class="schedulet">
-      <th>Course Code</th>
-      <th>Course Name</th>
-      <th></th>
-      <th></th>
-    </tr>
-   <%  @courses.each do |course| %>
-        <tr class="schedulet">
-          <td><% course.course_code %></td>
-          <td><% course.name %></td>
-          <td><% link_to('Add',{:controller => 'Courses', :action => 'index'}) %></td>
-          <td><% link_to('Details',{:controller => 'Courses', :action => 'show'}) %></td>
-        </tr>
-    <%end%>
-  </table>
-</div>
-</body>
-</html>
-=======
+      font-size: 14px;
+      color: #000000;
+      font-weight: bolder;
+      letter-spacing: 3px;
+      display: inline;
   }
->>>>>>> 64e96eb229f90590f38241240d43a6b7801dc2dc:app/assets/stylesheets/general.css
