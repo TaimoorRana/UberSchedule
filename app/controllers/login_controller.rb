@@ -4,6 +4,7 @@ class LoginController < ApplicationController
     
   end
 
+
   def login
     # Verify if the the username and password was entered
     if params[:username].present? && params[:password].present?
@@ -15,9 +16,10 @@ class LoginController < ApplicationController
       end
       #if users is authenticated, send them to their schedule
       if authorized_user
-        flash[:notice] = 'you are logged in'
+
         session[:user_id] = authorized_user.id
         session[:username] = authorized_user.username
+        flash[:notice] = "you are logged in"
         redirect_to :controller => 'schedule', action: 'schedule'
       #else send them back to the login page
       else
@@ -27,15 +29,24 @@ class LoginController < ApplicationController
     end
   end
 
+
+
+
   def logout
+    #Erase user's stamp
     session[:user_id] = nil
     session[:username] = nil
+    flash[:notice] = "you are logged Out"
     redirect_to action: index
   end
+
+
 
   def registration
 
   end
+
+
 
   def registration_user
     # grab all the values for the new user
@@ -43,6 +54,7 @@ class LoginController < ApplicationController
     user_password = params[:password]
     confirmed_password = params[:confirm_password]
 
+    # if user doesn't exit and the passwords matches, add the user to the database
     if  user_password.to_s == confirmed_password.to_s && User.where(username: params[:username]).present? == false
       user_created = User.new(username: new_user)
       user_created.password = user_password.to_s
