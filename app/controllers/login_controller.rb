@@ -16,6 +16,8 @@ class LoginController < ApplicationController
       #if users is authenticated, send them to their schedule
       if authorized_user
         flash[:notice] = 'you are logged in'
+        session[:user_id] = authorized_user.id
+        session[:username] = authorized_user.username
         redirect_to :controller => 'schedule', action: 'schedule'
       #else send them back to the login page
       else
@@ -23,6 +25,12 @@ class LoginController < ApplicationController
         redirect_to action: 'index'
       end
     end
+  end
+
+  def logout
+    session[:user_id] = nil
+    session[:username] = nil
+    redirect_to action: index
   end
 
   def registration
@@ -45,4 +53,7 @@ class LoginController < ApplicationController
     end
 
   end
+
+
+
 end
