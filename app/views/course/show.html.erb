@@ -20,5 +20,5 @@
           <td colspan="4" ><%= @course.description %></td>
         </tr>
   </table>
-  <%= link_to('Add This Course',{:controller => 'Course', :action => 'index', :id => @course.id}) %>
+  <%= link_to('Add This Course',{:controller => 'user', :action => 'add_course', :id => @course.id}) %>
 </div>
