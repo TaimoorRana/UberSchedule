@@ -1,7 +1,7 @@
 
 <!--header div : Schedule-->
 <div class="header">
-  Available Courses
+  Course Information
 </div>
 <!--main content div : result of schedule-->
 <div class="greybody">
@@ -20,4 +20,5 @@
           <td colspan="4" ><%= @course.description %></td>
         </tr>
   </table>
+  <%= link_to('Add This Course',{:controller => 'Course', :action => 'index', :id => @course.id}) %>
 </div>
