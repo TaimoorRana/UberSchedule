@@ -12,13 +12,13 @@ class LoginController < ApplicationController
       found_user = User.where(username: params[:username]).first
       # if user is found, check if password matches
       if found_user
-        authorized_user = found_user.authenticate(params[:password])
+        $authorized_user = found_user.authenticate(params[:password])
       end
       #if users is authenticated, send them to their schedule
-      if authorized_user
+      if $authorized_user
 
-        session[:user_id] = authorized_user.id
-        session[:username] = authorized_user.username
+        session[:user_id] = $authorized_user.id
+        session[:username] = $authorized_user.username
         flash[:notice] = "you are logged in"
         redirect_to :controller => 'schedule', action: 'schedule'
       #else send them back to the login page
