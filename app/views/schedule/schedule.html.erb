@@ -14,12 +14,12 @@ Schedule
     <th>Course Credits</th>
     <th>Course Description</th>
   </tr>
-  <% @courses .each do |course| %>
+  <% @courses.each do |course| %>
   <tr class="schedulet">
-    <td><% course.course_code %></td>
-    <td><% course.name %></td>
-    <td><% course.credits %></td>
-    <td><% course.description %></td>
+    <td><%= course.course_code %></td>
+    <td><%= course.name %></td>
+    <td><%= course.credits %></td>
+    <td><%= course.description %></td>
   </tr>
   <%end%>
 </table>
