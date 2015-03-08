@@ -13,6 +13,7 @@ Schedule
     <th>Course Name</th>
     <th>Course Credits</th>
     <th>Course Description</th>
+    <th></th>
   </tr>
   <% @courses.each do |course| %>
   <tr class="schedulet">
@@ -20,6 +21,7 @@ Schedule
     <td><%= course.name %></td>
     <td><%= course.credits %></td>
     <td><%= course.description %></td>
+    <td><%= link_to("delete", {controller: 'user', action: 'remove_course', id: course.id}) %></td>
   </tr>
   <%end%>
 </table>
