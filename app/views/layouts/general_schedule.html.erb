@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UberScheduleApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag('application') %>
+
+</head>
+<body>
+<div class="topmain">
+  <hr class="blackline">
+  <img class="center" src="/assets/logogrey2.png" alt="logo">
+  <hr class="blackline">
+  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"><%= link_to('View Schedule',{:controller => 'schedule', :action => 'schedule'}) %>&nbsp; &nbsp; &nbsp;<%= link_to('Courses',{:controller => 'course', :action => 'index'}) %>&nbsp; &nbsp; &nbsp;<%= link_to('Logout',{controller:'login' , action:'logout'}) %></p>
+  <hr class="blackline">
+</div>
+
+<% if !flash[:notice].blank? %>
+    <%= flash.notice %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
