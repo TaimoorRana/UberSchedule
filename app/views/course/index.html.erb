@@ -16,7 +16,7 @@
         <tr class="schedulet">
           <td><%= course.course_code %></td>
           <td><%= course.name %></td>
-          <td><%= link_to('Add',{:controller => 'Course', :action => 'index', :id => course.id}) %></td>
+          <td><%= link_to('Add',{:controller => 'User', :action => 'add_course', :id => course.id}) %></td>
           <td><%= link_to('Details',{:controller => 'Course', :action => 'show' , :id => course.id}) %></td>
         </tr>
     <%end%>
