@@ -11,5 +11,9 @@ class CourseController < ApplicationController
 
   end
 
+  def find_courses
+
+  end
+
 
 end

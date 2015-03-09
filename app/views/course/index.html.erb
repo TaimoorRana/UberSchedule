@@ -3,6 +3,20 @@
 <div class="header">
   Available Courses
 </div>
+
+<%= form_tag( :action => 'login') do %>
+
+    <tr>
+      <label style="color: ghostwhite;">NETNAME:</label>
+      <%= text_field_tag(:username)  %> </br></br>
+    </tr>
+    <tr>
+      <label style="color: ghostwhite">PASSWORD:</label>
+      <%= password_field_tag(:password) %> </br> </br>
+    </tr>
+    <%= submit_tag('Login') %>
+
+<% end %>
 <!--main content div : result of schedule-->
 <div class="greybody">
   <table class="schedulet">

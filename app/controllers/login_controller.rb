@@ -26,6 +26,9 @@ class LoginController < ApplicationController
         flash[:notice] = 'Invalid User'
         redirect_to action: 'index'
       end
+    else
+      flash[:notice] = "Username and/or password field empty"
+      redirect_to action: 'index'
     end
   end
 
@@ -55,12 +58,20 @@ class LoginController < ApplicationController
     confirmed_password = params[:confirm_password]
 
     # if user doesn't exit and the passwords matches, add the user to the database
-    if  user_password.to_s == confirmed_password.to_s && User.where(username: params[:username]).present? == false
+    if  user_password.to_s == confirmed_password.to_s && !new_user.blank?
+      if User.where(username: params[:username]).present? == false
       user_created = User.new(username: new_user)
       user_created.password = user_password.to_s
       user_created.save
+      flash[:notice] = "You are now registerd to UberSchedule"
       redirect_to action: 'index'
+      else
+        flash[:notice] = "Username already Exits, Please enter another username"
+        redirect_to action: 'registration'
+      end
+
     else
+      flash[:notice] = "Password does not match"
       redirect_to action: 'registration'
     end
 
