@@ -8,7 +8,7 @@ class LoginController < ApplicationController
   def login
     # Verify if the the username and password was entered
     if params[:username].present? && params[:password].present?
-      # find the user
+      # find the user in the database
       found_user = User.where(username: params[:username]).first
       # if user is found, check if password matches
       if found_user
@@ -16,7 +16,7 @@ class LoginController < ApplicationController
       end
       #if users is authenticated, send them to their schedule
       if $authorized_user
-
+        #create a session for this user
         session[:user_id] = $authorized_user.id
         session[:username] = $authorized_user.username
         flash[:notice] = "you are logged in"
@@ -26,6 +26,7 @@ class LoginController < ApplicationController
         flash[:notice] = 'Invalid User'
         redirect_to action: 'index'
       end
+    #else username or password field was empty
     else
       flash[:notice] = "Username and/or password field empty"
       redirect_to action: 'index'
@@ -57,7 +58,7 @@ class LoginController < ApplicationController
     user_password = params[:password]
     confirmed_password = params[:confirm_password]
 
-    # if user doesn't exit and the passwords matches, add the user to the database
+    # if username doesn't exit and the passwords matches, add the user to the database
     if  user_password.to_s == confirmed_password.to_s && !new_user.blank?
       if User.where(username: params[:username]).present? == false
       user_created = User.new(username: new_user)
@@ -65,11 +66,12 @@ class LoginController < ApplicationController
       user_created.save
       flash[:notice] = "You are now registerd to UberSchedule"
       redirect_to action: 'index'
+        # username is already taken
       else
-        flash[:notice] = "Username already Exits, Please enter another username"
+        flash[:notice] = "Username already Exists, Please enter another username"
         redirect_to action: 'registration'
       end
-
+    # password did not match
     else
       flash[:notice] = "Password does not match"
       redirect_to action: 'registration'
