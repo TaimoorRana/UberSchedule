@@ -1,9 +1,14 @@
 class LoginController < ApplicationController
+
   layout 'Login'
+
   def index
     
   end
 
+  def registration
+
+  end
 
   def login
     # Verify if the the username and password was entered
@@ -34,8 +39,6 @@ class LoginController < ApplicationController
   end
 
 
-
-
   def logout
     #Erase user's stamp
     session[:user_id] = nil
@@ -43,13 +46,6 @@ class LoginController < ApplicationController
     flash[:notice] = "you are logged Out"
     redirect_to action: index
   end
-
-
-
-  def registration
-
-  end
-
 
 
   def registration_user
@@ -78,7 +74,5 @@ class LoginController < ApplicationController
     end
 
   end
-
-
 
 end
