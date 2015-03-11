@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   # User is a global variable
   $authorized_user = nil
-
+  $authorized_student = nil
   # return true if the session is valid
   def confirm_logged_in
     if session[:user_id]

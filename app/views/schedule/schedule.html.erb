@@ -6,22 +6,15 @@ Schedule
 </div>
 <!--main content div : result of schedule-->
 <div class="greybody">
-
-<table class="schedulet">
-  <tr class="schedulet">
+<table >
+  <tr >
     <th>Course Code</th>
     <th>Course Name</th>
     <th>Course Credits</th>
     <th></th>
   </tr>
-  <% @courses.each do |course| %>
-  <tr class="schedulet">
-    <td><%= course.course_code %></td>
-    <td><%= course.name %></td>
-    <td><%= course.credits %></td>
-    <td><%= link_to("delete", {controller: 'user', action: 'remove_course', id: course.id}) %></td>
+  <tr >
   </tr>
-  <%end%>
 </table>
 
 </div>

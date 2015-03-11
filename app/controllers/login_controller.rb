@@ -14,17 +14,25 @@ class LoginController < ApplicationController
     # Verify if the the username and password was entered
     if params[:username].present? && params[:password].present?
       # find the user in the database
-      found_user = User.where(username: params[:username]).first
+      found_user = User.where(user_name: params[:username]).first
       # if user is found, check if password matches
       if found_user
-        $authorized_user = found_user.authenticate(params[:password])
+        #$authorized_user = found_user.authenticate(params[:password])
+        $authorized_user = found_user
       end
       #if users is authenticated, send them to their schedule
       if $authorized_user
         #create a session for this user
-        session[:user_id] = $authorized_user.id
-        session[:username] = $authorized_user.username
-        flash[:notice] = "you are logged in"
+        session[:user_id] = $authorized_user.user_id
+        session[:username] = $authorized_user.user_name
+        $authorized_student = Student.where(user_id: $authorized_user.user_id )
+
+        fuckthis = $authorized_student.student_firstname
+
+
+        flash[:notice] = "you are logged in #{fuckthis}"
+       # put $authorized_user.user_id
+       # $authorized_student = Student.where(user_id: $authorized_user.user_id )
         redirect_to :controller => 'schedule', action: 'schedule'
       #else send them back to the login page
       else
