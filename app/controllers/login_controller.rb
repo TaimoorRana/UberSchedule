@@ -25,7 +25,7 @@ class LoginController < ApplicationController
         #create a session for this user
         session[:user_id] = $authorized_user.user_id
         session[:username] = $authorized_user.user_name
-        $authorized_student = Student.where(user_id: $authorized_user.user_id )
+        $authorized_student = Student.where(user_id: $authorized_user.user_id).first
 
         fuckthis = $authorized_student.student_firstname
 

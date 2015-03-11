@@ -6,6 +6,11 @@ Schedule
 </div>
 <!--main content div : result of schedule-->
 <div class="greybody">
+  <% @allStudents.each do |student| %>
+      <%= student.student_firstname %>
+      <%= student.student_lastname %>
+  <% end %>
+
 <table >
   <tr >
     <th>Course Code</th>
