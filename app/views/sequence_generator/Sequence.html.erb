@@ -1,0 +1,26 @@
+<h1>My Sequence</h1>
+<table>
+  <tr></tr>
+  <thead>
+<tr>
+  <th>Course Type</th>
+  <th>Number</th>
+  <th>Credits</th>
+  <th>Course Name</th>
+  <th>Course Description</th>
+  <th>Course Category</th>
+</tr>
+  </thead>
+<tbody>
+<% @sequence.each do |course| %>
+<tr><td><%=course.course_type %></td>
+  <td><%=course.course_nb %></td>
+  <td><%= course.course_credit%></td>
+  <td><%=course.course_name %></td>
+  <td><%=course.course_description %></td>
+  <td><%=course.course_option %></td>
+</tr>
+
+<% end %>
+</tbody>
+</table>
