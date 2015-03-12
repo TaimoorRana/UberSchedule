@@ -11,17 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150311190704) do
+ActiveRecord::Schema.define(version: 20150311231147) do
 
   create_table "students", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "option",     limit: 255
   end
 
   create_table "tbl_course", primary_key: "course_id", force: :cascade do |t|
     t.string  "course_type",        limit: 4,          null: false
     t.integer "course_nb",          limit: 4,          null: false
-    t.integer "course_credit",      limit: 4,          null: false
+    t.float   "course_credit",      limit: 53,         null: false
     t.string  "course_name",        limit: 128,        null: false
     t.text    "course_description", limit: 4294967295
   end
@@ -79,10 +80,11 @@ ActiveRecord::Schema.define(version: 20150311190704) do
   end
 
   create_table "tbl_student", primary_key: "student_id", force: :cascade do |t|
-    t.string  "student_firstname", limit: 64, null: false
-    t.string  "student_lastname",  limit: 64, null: false
+    t.string  "student_firstname", limit: 64,  null: false
+    t.string  "student_lastname",  limit: 64,  null: false
     t.integer "user_id",           limit: 4
     t.integer "sequence_id",       limit: 4
+    t.string  "option",            limit: 255
   end
 
   add_index "tbl_student", ["sequence_id"], name: "sequence_id", using: :btree
