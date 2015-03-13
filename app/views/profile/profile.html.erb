@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UberScheduleApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag('application') %>
+
+</head>
+<body>
+<div class="topmain">
+  <hr class="blackline">
+  <img class="center" src="/assets/logogrey2.png" alt="logo">
+  <hr class="blackline">
+  <hr class="blackline">
+</div>
+<div>
+  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"> Edit your profile</p>
+</div>
+<div class="form">
+  <%= form_tag do %>
+  Choose your major option:
+    <%= collection_select(:student, :majorOption, MajorOption.all, :id, :option) %><br><br>
+    Select the periods you DO NOT want:
+    <table border="1">
+      <tr>
+        <th>Day</th>
+        <th>Morning</th>
+        <th>Afternoon</th>
+        <th>Evening</th>
+      </tr>
+      <% @days.each do |d| %>
+          <tr>
+        <td><%= d.Day %></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+          </tr>
+      <% end %>
+    </table><br>
+    Select your student status:
+    <select name="status">
+      <option selected>Full-Time</option>
+      <option>Part-Time</option>
+    </select><br>
+    Allow classes at the Loyola campus? :
+    <select name="loyola">
+      <option selected>Yes</option>
+      <option>No</option>
+    </select><br>
+    Allow split classes?:
+    <select name="split">
+      <option selected>Yes</option>
+      <option>No</option>
+    </select><br><br><br>
+    <%= submit_tag("Edit Profile",  class: 'submitButton') %>
+  <% end %> <!-- end of the form -->
+</div>
+
+<% if !flash[:notice].blank? %>
+    <%= flash.notice %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
