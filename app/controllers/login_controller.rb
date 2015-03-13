@@ -27,10 +27,10 @@ class LoginController < ApplicationController
         session[:username] = $authorized_user.user_name
         $authorized_student = Student.where(user_id: $authorized_user.user_id).first
 
-        student_firstname = $authorized_student.student_firstname
+        studentFirstname = $authorized_student.student_firstname
 
 
-        flash[:notice] = "you are logged in #{student_firstname}"
+        flash[:notice] = "you are logged in #{studentFirstname}"
        # put $authorized_user.user_id
        # $authorized_student = Student.where(user_id: $authorized_user.user_id )
         redirect_to :controller => 'schedule', action: 'schedule'
@@ -64,9 +64,9 @@ class LoginController < ApplicationController
 
     # if username doesn't exit and the passwords matches, add the student to the database
     if  user_password.to_s == confirmed_password.to_s && !new_user.blank?
-      if User.where(username: params[:username]).present? == false
-      user_created = User.new(username: new_user)
-      user_created.password = user_password.to_s
+      if User.where(user_name: params[:username]).present? == false
+      user_created = User.new(user_name: new_user)
+      user_created.user_pass = user_password.to_s
       user_created.save
       flash[:notice] = "You are now registerd to UberSchedule"
       redirect_to action: 'index'
