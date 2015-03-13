@@ -13,24 +13,24 @@ class LoginController < ApplicationController
   def login
     # Verify if the the username and password was entered
     if params[:username].present? && params[:password].present?
-      # find the user in the database
+      # find the student in the database
       found_user = User.where(user_name: params[:username]).first
-      # if user is found, check if password matches
+      # if student is found, check if password matches
       if found_user
         #$authorized_user = found_user.authenticate(params[:password])
         $authorized_user = found_user
       end
       #if users is authenticated, send them to their schedule
       if $authorized_user
-        #create a session for this user
+        #create a session for this student
         session[:user_id] = $authorized_user.user_id
         session[:username] = $authorized_user.user_name
         $authorized_student = Student.where(user_id: $authorized_user.user_id).first
 
-        fuckthis = $authorized_student.student_firstname
+        student_firstname = $authorized_student.student_firstname
 
 
-        flash[:notice] = "you are logged in #{fuckthis}"
+        flash[:notice] = "you are logged in #{student_firstname}"
        # put $authorized_user.user_id
        # $authorized_student = Student.where(user_id: $authorized_user.user_id )
         redirect_to :controller => 'schedule', action: 'schedule'
@@ -48,7 +48,7 @@ class LoginController < ApplicationController
 
 
   def logout
-    #Erase user's stamp
+    #Erase student's stamp
     session[:user_id] = nil
     session[:username] = nil
     flash[:notice] = "you are logged Out"
@@ -57,12 +57,12 @@ class LoginController < ApplicationController
 
 
   def registration_user
-    # grab all the values for the new user
+    # grab all the values for the new student
     new_user = params[:username]
     user_password = params[:password]
     confirmed_password = params[:confirm_password]
 
-    # if username doesn't exit and the passwords matches, add the user to the database
+    # if username doesn't exit and the passwords matches, add the student to the database
     if  user_password.to_s == confirmed_password.to_s && !new_user.blank?
       if User.where(username: params[:username]).present? == false
       user_created = User.new(username: new_user)

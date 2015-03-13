@@ -31,7 +31,7 @@
           <td><%= course.course_type %></td>
           <td><%= course.course_nb %></td>
           <td><%= course.course_name %></td>
-          <td><%= link_to('Add',{:controller => 'User', :action => 'add_course', :id => course.id}) %></td>
+          <td><%= link_to('Add',{:controller => 'student', :action => 'add_course', :id => course.id}) %></td>
           <td><%= link_to('Details',{:controller => 'Course', :action => 'show' , :id => course.id}) %></td>
         </tr>
     <%end%>
