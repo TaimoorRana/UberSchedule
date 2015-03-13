@@ -7,6 +7,10 @@ Rails.application.routes.draw do
 
   get 'schedule/schedule'
 
+  get 'sequence' =>'sequence_generator#Sequence'
+
+  get 'generate'
+
   root 'login#index'
   match ':controller(/:action(/:id))', :via => [:get, :post]
 
