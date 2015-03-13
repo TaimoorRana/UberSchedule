@@ -102,8 +102,11 @@ body{
       height: 20px;
   }
 
-  #submitButton {
+  .submitButton {
       color: black;
+      background-color: lightgray;
+      border: 1px solid black;
+
   }
 
   fieldset{
