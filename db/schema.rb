@@ -13,12 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150311231147) do
 
-  create_table "students", force: :cascade do |t|
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.string   "option",     limit: 255
-  end
-
   create_table "tbl_course", primary_key: "course_id", force: :cascade do |t|
     t.string  "course_type",        limit: 4,          null: false
     t.integer "course_nb",          limit: 4,          null: false
