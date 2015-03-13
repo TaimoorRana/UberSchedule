@@ -29,8 +29,8 @@ class LoginController < ApplicationController
 
         studentFirstname = $authorized_student.student_firstname
 
-
         flash[:notice] = "you are logged in #{studentFirstname}"
+
        # put $authorized_user.user_id
        # $authorized_student = Student.where(user_id: $authorized_user.user_id )
         redirect_to :controller => 'schedule', action: 'schedule'
