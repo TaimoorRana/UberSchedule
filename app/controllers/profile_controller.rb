@@ -5,6 +5,11 @@ class ProfileController < ApplicationController
   end
 
   def updateProfile
+    loyola = params[:loyola]
+    split = params[:split]
+    major = params[:major]
+    status = params[:status]
 
+    flash[:notice] = "loyola = #{loyola}, split = #{split}, major = #{major}, status = #{status}"
   end
 end

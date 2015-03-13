@@ -9,19 +9,14 @@
 
 </head>
 <body>
-<div class="topmain">
-  <hr class="blackline">
-  <img class="center" src="/assets/logogrey2.png" alt="logo">
-  <hr class="blackline">
-  <hr class="blackline">
-</div>
 <div>
   <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"> Edit your profile</p>
 </div>
 <div class="form">
-  <%= form_tag do %>
+  <%= form_tag(:action => 'updateProfile') do %>
   Choose your major option:
-    <%= collection_select(:student, :majorOption, MajorOption.all, :id, :option) %><br><br>
+      <!-- collection_select(name of param, name of variable, model, value returned, value displayed in box) -->
+    <%= collection_select(:major, :majorVariable, MajorOption.all, :option, :option) %><br><br>
     Select the periods you DO NOT want:
     <table border="1">
       <tr>
@@ -30,9 +25,13 @@
         <th>Afternoon</th>
         <th>Evening</th>
       </tr>
-      <% @days.each do |d| %>
+      <% checkboxid = 0 %>
+      <% @days.each do |d,e,f| %>
+          <% checkboxid = checkboxid + 1 %>
+          <% checkboxid2 = checkboxid + 1 %>
+          <% checkboxid3 = checkboxid2 + 1 %>
           <tr>
-        <td><%= d.Day %></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td>
+        <td><%= d.Day %></td><td><%= check_box_tag(checkboxid.to_s) %></td><td><%= check_box_tag(:checkboxid2) %></td><td><%= check_box_tag(:checkboxid3) %></td>
           </tr>
       <% end %>
     </table><br>
