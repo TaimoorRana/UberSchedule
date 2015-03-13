@@ -1,4 +1,4 @@
 class Preference < ActiveRecord::Base
-  belongs_to :tbl_student
+  belongs_to :students
   has_many :periods
 end

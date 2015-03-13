@@ -4,4 +4,7 @@ class ProfileController < ApplicationController
     @days = DaysOfWeek.all
   end
 
+  def updateProfile
+
+  end
 end
