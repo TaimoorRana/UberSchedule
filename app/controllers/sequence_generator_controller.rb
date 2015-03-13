@@ -1,21 +1,20 @@
 class SequenceGeneratorController < ApplicationController
-before_action :generateSequence, only: [:Sequence]
+before_action :generateSequence,:checkUserOption, only: [:Sequence]
   def Sequence
 
   end
 
   private
   def generateSequence
-    specializationOption = $authorized_student.option
     @sequence = []
     @sequenceCourses = []
-    if specializationOption == 'webServices'
+    if @option == 'webServices'
       @sequence.append(Sequence.where(sequence_name: 'webServices'))
       @sequence.append(Sequence.where(sequence_name: 'core'))
-    elsif specializationOption == 'computerGames'
+    elsif @option == 'computerGames'
       @sequence.append(Sequence.where(sequence_name: 'computerGames'))
       @sequence.append(Sequence.where(sequence_name: 'core'))
-    elsif specializationOption == 'embeddedSystems'
+    elsif @option == 'embeddedSystems'
       @sequence.append(Sequence.where(sequence_name: 'embeddedSystems'))
       @sequence.append(Sequence.where(sequence_name: 'core'))
     else
@@ -24,8 +23,13 @@ before_action :generateSequence, only: [:Sequence]
     end
     @sequence.each do |sequence|
       #some sort of SQL command to find the courses associated with the sequence block
-      @sequenceCourses.append(sequence.course.all)
-    end
 
+
+    end
+  def checkUserOption
+    user_id = session[:user_id]
+    authorized_student = Student.where(user_id: user_id )
+    @option = authorized_student.option
+  end
   end
 end

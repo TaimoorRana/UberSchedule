@@ -12,15 +12,16 @@
 </tr>
   </thead>
 <tbody>
-<% @sequenceCourses.each do |course| %>
-<tr><td><%=course.course_type %></td>
-  <td><%=course.course_nb %></td>
-  <td><%= course.course_credit%></td>
-  <td><%=course.course_name %></td>
-  <td><%=course.course_description %></td>
-  <td><%=course.course_option %></td>
+<% #@sequenceCourses.each do |course| %>
+<tr><td><%=#course.course_type %></td>
+  <td><%=#course.course_nb %></td>
+  <td><%=# course.course_credit%></td>
+  <td><%=#course.course_name %></td>
+  <td><%=#course.course_description %></td>
+  <td><%=#course.course_option %></td>
 </tr>
 
-<% end %>
+<%# end %>
+
 </tbody>
 </table>
