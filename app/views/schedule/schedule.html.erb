@@ -2,24 +2,26 @@
 
 <!--header div : Schedule-->
 <div class="header">
-Schedule
+Courses registered
 </div>
 <!--main content div : result of schedule-->
 <div class="greybody">
 <table>
   <tr>
-    <th>Course Dept</th>
-    <th>Course Name</th>
-    <th>Course Credits</th>
+    <th>Number</th>
+    <th>Name</th>
+    <th>Credits</th>
   </tr>
-
+    <% s=0%> <!-- counter to add the credits taken-->
     <% $authorized_student.courses.each do |course| %>
       <tr>
-        <td><%= course.dept %></td>
+        <td><%= "#{course.dept}#{course.number}"%></td>
         <td><%= course.name %></td>
         <td><%= course.credit %></td>
+        <% s+=course.credit %> <!-- add to the credits counter-->
       </tr>
     <% end %>
+  <tr><td></td><td>Total credits:</td><td><%= s%></td> </tr>
 
 </table>
 
