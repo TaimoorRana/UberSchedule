@@ -1,5 +1,5 @@
 class SequenceGeneratorController < ApplicationController
-before_action :checkUserOption,:generateSequence, only: [:Sequence]
+before_action :confirm_logged_in,:checkUserOption,:generateSequence, only: [:Sequence]
   def Sequence
 
   end

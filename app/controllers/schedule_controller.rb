@@ -1,6 +1,6 @@
 class ScheduleController < ApplicationController
   layout 'general_schedule'
-#  before_action :confirm_logged_in
+  before_action :confirm_logged_in
 
   def schedule
     #find courses the are linked to this student
