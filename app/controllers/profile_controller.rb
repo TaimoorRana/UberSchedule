@@ -10,9 +10,24 @@ class ProfileController < ApplicationController
     major = params[:major]
     status = params[:status]
 
+    mondayAM = params[:mondayAm]
+    mondayPM = params[:mondayPm]
+    tuedayAM = params[:tuesdayAm]
+    tuedayPM = params[:tuesdayPm]
+    wednesdayAM = params[:wednesdayAm]
+    wednesdayPM = params[:wednesdayPm]
+    thursdayAM = params[:thursdayAm]
+    thursdayPM = params[:thursdayPm]
+    fridayAM = params[:fridayAm]
+    fridayPM = params[:fridayPm]
+
     name = $authorized_student.firstname
     id = $authorized_student.id
 
-    flash[:notice] = "name = #{name}, id = #{id}, loyola = #{loyola}, split = #{split}, major = #{major}, status = #{status}"
+
+
+    flash[:notice] = "mondayAM = #{mondayAM}"
+
+
   end
 end

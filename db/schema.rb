@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150314140546) do
+ActiveRecord::Schema.define(version: 20150314195751) do
 
   create_table "courses", primary_key: "course_id", force: :cascade do |t|
     t.string  "dept",        limit: 4
@@ -46,12 +46,22 @@ ActiveRecord::Schema.define(version: 20150314140546) do
   end
 
   create_table "preferences", force: :cascade do |t|
-    t.boolean  "loyola",     limit: 1
-    t.boolean  "split",      limit: 1
-    t.string   "option",     limit: 255
-    t.string   "status",     limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.boolean  "loyola",       limit: 1,   default: false
+    t.boolean  "split",        limit: 1,   default: false
+    t.string   "status",       limit: 255, default: "Full-Time"
+    t.datetime "created_at",                                     null: false
+    t.datetime "updated_at",                                     null: false
+    t.integer  "student_id",   limit: 4
+    t.boolean  "monday_am",    limit: 1,   default: false
+    t.boolean  "monday_pm",    limit: 1,   default: false
+    t.boolean  "tuesday_am",   limit: 1,   default: false
+    t.boolean  "tuesday_pm",   limit: 1,   default: false
+    t.boolean  "wednesday_am", limit: 1,   default: false
+    t.boolean  "wednesday_pm", limit: 1,   default: false
+    t.boolean  "thursday_am",  limit: 1,   default: false
+    t.boolean  "thursday_pm",  limit: 1,   default: false
+    t.boolean  "friday_am",    limit: 1,   default: false
+    t.boolean  "friday_pm",    limit: 1,   default: false
   end
 
   create_table "prereq_types", primary_key: "prereq_type_id", force: :cascade do |t|
