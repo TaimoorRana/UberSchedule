@@ -14,7 +14,7 @@ class LoginController < ApplicationController
     # Verify if the the username and password was entered
     if params[:username].present? && params[:password].present?
       # find the student in the database
-      found_user = User.where(user_name: params[:username]).first
+      found_user = User.where(username: params[:username]).first
       # if student is found, check if password matches
       if found_user
         #$authorized_user = found_user.authenticate(params[:password])
@@ -24,10 +24,10 @@ class LoginController < ApplicationController
       if $authorized_user
         #create a session for this student
         session[:user_id] = $authorized_user.user_id
-        session[:username] = $authorized_user.user_name
+        session[:username] = $authorized_user.username
         $authorized_student = Student.where(user_id: $authorized_user.user_id).first
 
-        studentFirstname = $authorized_student.student_firstname
+        studentFirstname = $authorized_student.firstname
 
         flash[:notice] = "you are logged in #{studentFirstname}"
 

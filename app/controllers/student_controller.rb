@@ -3,7 +3,8 @@ class StudentController < ApplicationController
     #find the course in the database
     course = Course.find(params[:id])
     #append this course to the student's course list
-    $authorized_student << course
+    #student = Student.where(user_id: session[:user_id]).first
+    $authorized_student.courses << course
     flash[:notice] = "#{course.name} was added"
     redirect_to controller: 'course',action: 'index'
   end

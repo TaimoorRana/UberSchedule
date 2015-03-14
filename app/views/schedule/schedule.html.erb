@@ -6,20 +6,21 @@ Schedule
 </div>
 <!--main content div : result of schedule-->
 <div class="greybody">
-  <% @allStudents.each do |student| %>
-      <%= student.student_firstname %>
-      <%= student.student_lastname %>
-  <% end %>
-
-<table >
-  <tr >
-    <th>Course Code</th>
+<table>
+  <tr>
+    <th>Course Dept</th>
     <th>Course Name</th>
     <th>Course Credits</th>
-    <th></th>
   </tr>
-  <tr >
-  </tr>
+
+    <% $authorized_student.courses.each do |course| %>
+      <tr>
+        <td><%= course.dept %></td>
+        <td><%= course.name %></td>
+        <td><%= course.credit %></td>
+      </tr>
+    <% end %>
+
 </table>
 
 </div>
