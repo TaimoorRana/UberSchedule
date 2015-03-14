@@ -25,13 +25,33 @@
         <th>Afternoon</th>
         <th>Evening</th>
       </tr>
-      <% checkboxID = 0 %>
-      <% @days.each do |d| %>
+      <tr>
+        <td>Monday</td>
+        <td><%= check_box_tag(:mondayAm) %></td>
+        <td><%= check_box_tag(:mondayPm) %></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td><%= check_box_tag(:tuesdayAm) %></td>
+        <td><%= check_box_tag(:tuesdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td><%= check_box_tag(:wednesdayAm) %></td>
+        <td><%= check_box_tag(:wednesdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td><%= check_box_tag(:ThursdayAm) %></td>
+        <td><%= check_box_tag(:ThursdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td><%= check_box_tag(:fridayAm) %></td>
+        <td><%= check_box_tag(:fridayPm) %></td>
+      </tr>
 
-          <tr>
-        <td><%= d.Day %></td><td><%= check_box_tag(:am) %></td><td><%= check_box_tag(:pm) %><td><%= check_box_tag(:night) %></td>
-          </tr>
-      <% end %>
+
     </table><br>
     Select your student status:
     <select name="status">
