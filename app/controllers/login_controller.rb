@@ -27,9 +27,11 @@ class LoginController < ApplicationController
         session[:username] = $authorized_user.username
         $authorized_student = Student.where(user_id: $authorized_user.user_id).first
 
+
         studentFirstname = $authorized_student.firstname
 
         flash[:notice] = "you are logged in #{studentFirstname}"
+
 
        # put $authorized_user.user_id
        # $authorized_student = Student.where(user_id: $authorized_user.user_id )

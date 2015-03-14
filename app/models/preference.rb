@@ -1,4 +1,3 @@
 class Preference < ActiveRecord::Base
-  belongs_to :students
-  has_many :periods
+  belongs_to :student
 end

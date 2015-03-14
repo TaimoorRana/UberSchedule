@@ -9,32 +9,48 @@
 
 </head>
 <body>
-<div class="topmain">
-  <hr class="blackline">
-  <img class="center" src="/assets/logogrey2.png" alt="logo">
-  <hr class="blackline">
-  <hr class="blackline">
-</div>
 <div>
   <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"> Edit your profile</p>
 </div>
 <div class="form">
-  <%= form_tag do %>
+  <%= form_tag(:action => 'updateProfile') do %>
   Choose your major option:
-    <%= collection_select(:student, :majorOption, MajorOption.all, :id, :option) %><br><br>
+      <!-- collection_select(name of param, name of variable, model, value returned, value displayed in box) -->
+    <%= collection_select(:major, :majorVariable, MajorOption.all, :option, :option) %><br><br>
     Select the periods you DO NOT want:
     <table border="1">
       <tr>
         <th>Day</th>
-        <th>Morning</th>
-        <th>Afternoon</th>
-        <th>Evening</th>
+        <th>AM</th>
+        <th>PM</th>
       </tr>
-      <% @days.each do |d| %>
-          <tr>
-        <td><%= d.Day %></td><td><input type="checkbox"></td><td><input type="checkbox"></td><td><input type="checkbox"></td>
-          </tr>
-      <% end %>
+      <tr>
+        <td>Monday</td>
+        <td><%= check_box_tag(:mondayAm) %></td>
+        <td><%= check_box_tag(:mondayPm) %></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td><%= check_box_tag(:tuesdayAm) %></td>
+        <td><%= check_box_tag(:tuesdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td><%= check_box_tag(:wednesdayAm) %></td>
+        <td><%= check_box_tag(:wednesdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td><%= check_box_tag(:thursdayAm) %></td>
+        <td><%= check_box_tag(:thursdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td><%= check_box_tag(:fridayAm) %></td>
+        <td><%= check_box_tag(:fridayPm) %></td>
+      </tr>
+
+
     </table><br>
     Select your student status:
     <select name="status">
