@@ -27,9 +27,10 @@ class LoginController < ApplicationController
         session[:username] = $authorized_user.user_name
         $authorized_student = Student.where(user_id: $authorized_user.user_id ).first
 
-        rich = $authorized_student.student_firstname
+        name = $authorized_student.student_firstname
+        id = $authorized_student.student_id
 
-        flash[:notice] = "please notice me!!! #{rich}"
+        flash[:notice] = "please notice me!!! #{name} and id is #{id}"
 
         #fuckthis = $authorized_student.student_firstname
 
