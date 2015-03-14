@@ -148,7 +148,7 @@ ActiveRecord::Schema.define(version: 20150314140546) do
   add_index "tbl_preference", ["preference_id"], name: "preference_id", unique: true, using: :btree
 
   create_table "users", primary_key: "user_id", force: :cascade do |t|
-    t.string   "user_name",     limit: 64,  null: false
+    t.string   "username",      limit: 64,  null: false
     t.string   "password",      limit: 64,  null: false
     t.string   "email",         limit: 128
     t.datetime "user_reg_date",             null: false
