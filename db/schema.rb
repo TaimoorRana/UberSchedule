@@ -11,14 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150313194413) do
+ActiveRecord::Schema.define(version: 20150314140546) do
 
   create_table "courses", primary_key: "course_id", force: :cascade do |t|
-    t.string  "course_type",        limit: 4,          null: false
-    t.integer "course_nb",          limit: 4,          null: false
-    t.float   "course_credit",      limit: 53,         null: false
-    t.string  "course_name",        limit: 128,        null: false
-    t.text    "course_description", limit: 4294967295
+    t.string  "dept",        limit: 4
+    t.integer "number",      limit: 4
+    t.float   "credit",      limit: 53
+    t.string  "name",        limit: 128
+    t.text    "description", limit: 4294967295
+  end
+
+  create_table "courses_students", id: false, force: :cascade do |t|
+    t.integer "course_id",  limit: 4
+    t.integer "student_id", limit: 4
   end
 
   create_table "days_of_weeks", force: :cascade do |t|
@@ -67,11 +72,10 @@ ActiveRecord::Schema.define(version: 20150313194413) do
   end
 
   create_table "students", primary_key: "student_id", force: :cascade do |t|
-    t.string  "student_firstname", limit: 64,  null: false
-    t.string  "student_lastname",  limit: 64,  null: false
-    t.integer "user_id",           limit: 4
-    t.integer "sequence_id",       limit: 4
-    t.string  "option",            limit: 255
+    t.string  "firstname",   limit: 64, null: false
+    t.string  "lastname",    limit: 64, null: false
+    t.integer "user_id",     limit: 4
+    t.integer "sequence_id", limit: 4
   end
 
   add_index "students", ["sequence_id"], name: "sequence_id", using: :btree
@@ -144,9 +148,9 @@ ActiveRecord::Schema.define(version: 20150313194413) do
   add_index "tbl_preference", ["preference_id"], name: "preference_id", unique: true, using: :btree
 
   create_table "users", primary_key: "user_id", force: :cascade do |t|
-    t.string   "user_name",     limit: 64,  null: false
-    t.string   "user_pass",     limit: 64,  null: false
-    t.string   "user_email",    limit: 128
+    t.string   "username",      limit: 64,  null: false
+    t.string   "password",      limit: 64,  null: false
+    t.string   "email",         limit: 128
     t.datetime "user_reg_date",             null: false
   end
 

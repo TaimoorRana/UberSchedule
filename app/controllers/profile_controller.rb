@@ -10,12 +10,9 @@ class ProfileController < ApplicationController
     major = params[:major]
     status = params[:status]
 
-    name = $authorized_student.student_firstname
-    id = $authorized_student.student_id
+    name = $authorized_student.firstname
+    id = $authorized_student.id
 
-    flash[:notice] = "please notice me!!! #{name} and id is #{id}"
-
-
-    flash[:notice] = "loyola = #{loyola}, split = #{split}, major = #{major}, status = #{status}"
+    flash[:notice] = "name = #{name}, id = #{id}, loyola = #{loyola}, split = #{split}, major = #{major}, status = #{status}"
   end
 end
