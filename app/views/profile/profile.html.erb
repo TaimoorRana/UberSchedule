@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UberScheduleApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag('application') %>
+
+</head>
+<body>
+<div>
+  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"> Edit your profile</p>
+</div>
+<div class="form">
+  <%= form_tag(:action => 'updateProfile') do %>
+  Choose your major option:
+      <!-- collection_select(name of param, name of variable, model, value returned, value displayed in box) -->
+    <%= collection_select(:major, :majorVariable, MajorOption.all, :option, :option) %><br><br>
+    Select the periods you DO NOT want:
+    <table border="1">
+      <tr>
+        <th>Day</th>
+        <th>AM</th>
+        <th>PM</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td><%= check_box_tag(:mondayAm) %></td>
+        <td><%= check_box_tag(:mondayPm) %></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td><%= check_box_tag(:tuesdayAm) %></td>
+        <td><%= check_box_tag(:tuesdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td><%= check_box_tag(:wednesdayAm) %></td>
+        <td><%= check_box_tag(:wednesdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td><%= check_box_tag(:thursdayAm) %></td>
+        <td><%= check_box_tag(:thursdayPm) %></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td><%= check_box_tag(:fridayAm) %></td>
+        <td><%= check_box_tag(:fridayPm) %></td>
+      </tr>
+
+
+    </table><br>
+    Select your student status:
+    <select name="status">
+      <option selected>Full-Time</option>
+      <option>Part-Time</option>
+    </select><br>
+    Allow classes at the Loyola campus? :
+    <select name="loyola">
+      <option selected>Yes</option>
+      <option>No</option>
+    </select><br>
+    Allow split classes?:
+    <select name="split">
+      <option selected>Yes</option>
+      <option>No</option>
+    </select><br><br><br>
+    <%= submit_tag("Edit Profile",  class: 'submitButton') %>
+  <% end %> <!-- end of the form -->
+</div>
+
+<% if !flash[:notice].blank? %>
+    <%= flash.notice %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

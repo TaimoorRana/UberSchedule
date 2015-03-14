@@ -1,3 +1,4 @@
 class Student < ActiveRecord::Base
-  self.table_name = 'tbl_student'
+  has_one :preference
+  has_and_belongs_to_many :courses
 end
