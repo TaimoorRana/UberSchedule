@@ -9,5 +9,11 @@ class ScheduleController < ApplicationController
     #@allStudents = Student.all
     student = Student.where(firstname: 'taimoor');
     @courses = $authorized_student.courses
+    @totalCredits = 0
+
+    @courses.each do |course|
+      @totalCredits += course.credit
+    end
+
   end
 end
