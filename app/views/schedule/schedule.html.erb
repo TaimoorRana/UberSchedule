@@ -12,16 +12,14 @@ Courses registered
     <th>Name</th>
     <th>Credits</th>
   </tr>
-    <% s=0%> <!-- counter to add the credits taken-->
     <% $authorized_student.courses.each do |course| %>
       <tr>
         <td><%= "#{course.dept}#{course.number}"%></td>
         <td><%= course.name %></td>
         <td><%= course.credit %></td>
-        <% s+=course.credit %> <!-- add to the credits counter-->
       </tr>
     <% end %>
-  <tr><td></td><td>Total credits:</td><td><%= s%></td> </tr>
+  <tr><td></td><td>Total credits:</td><td><%= @totalCredits %></td> </tr>
 
 </table>
 
