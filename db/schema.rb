@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150314195751) do
+ActiveRecord::Schema.define(version: 20150315050122) do
 
   create_table "courses", primary_key: "course_id", force: :cascade do |t|
     t.string  "dept",        limit: 4
@@ -19,7 +19,18 @@ ActiveRecord::Schema.define(version: 20150314195751) do
     t.float   "credit",      limit: 53
     t.string  "name",        limit: 128
     t.text    "description", limit: 4294967295
+    t.integer "sequence_id", limit: 4
   end
+
+  add_index "courses", ["sequence_id"], name: "index_courses_on_sequence_id", using: :btree
+
+  create_table "courses_sequences", id: false, force: :cascade do |t|
+    t.integer "course_id",   limit: 4
+    t.integer "sequence_id", limit: 4
+  end
+
+  add_index "courses_sequences", ["course_id"], name: "index_courses_sequences_on_course_id", using: :btree
+  add_index "courses_sequences", ["sequence_id"], name: "index_courses_sequences_on_sequence_id", using: :btree
 
   create_table "courses_students", id: false, force: :cascade do |t|
     t.integer "course_id",  limit: 4
@@ -82,10 +93,11 @@ ActiveRecord::Schema.define(version: 20150314195751) do
   end
 
   create_table "students", primary_key: "student_id", force: :cascade do |t|
-    t.string  "firstname",   limit: 64, null: false
-    t.string  "lastname",    limit: 64, null: false
+    t.string  "firstname",   limit: 64,  null: false
+    t.string  "lastname",    limit: 64,  null: false
     t.integer "user_id",     limit: 4
     t.integer "sequence_id", limit: 4
+    t.string  "option",      limit: 255
   end
 
   add_index "students", ["sequence_id"], name: "sequence_id", using: :btree
