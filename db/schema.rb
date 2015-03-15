@@ -19,10 +19,7 @@ ActiveRecord::Schema.define(version: 20150315050122) do
     t.float   "credit",      limit: 53
     t.string  "name",        limit: 128
     t.text    "description", limit: 4294967295
-    t.integer "sequence_id", limit: 4
   end
-
-  add_index "courses", ["sequence_id"], name: "index_courses_on_sequence_id", using: :btree
 
   create_table "courses_sequences", id: false, force: :cascade do |t|
     t.integer "course_id",   limit: 4
