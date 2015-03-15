@@ -8,18 +8,24 @@ Courses registered
 <div class="greybody">
 <table>
   <tr>
+    <th>Dept</th>
     <th>Number</th>
     <th>Name</th>
     <th>Credits</th>
   </tr>
     <% $authorized_student.courses.each do |course| %>
       <tr>
-        <td><%= "#{course.dept}#{course.number}"%></td>
+        <td><%= course.dept %></td>
+        <td><%= course.number %></td>
         <td><%= course.name %></td>
         <td><%= course.credit %></td>
       </tr>
     <% end %>
-  <tr><td></td><td>Total credits:</td><td><%= @totalCredits %></td> </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td style="color: #666666">Total credits:</td>
+    <td style="color: #666666"><%= @totalCredits %></td> </tr>
 
 </table>
 
