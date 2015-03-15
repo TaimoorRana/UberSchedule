@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150315021223) do
+ActiveRecord::Schema.define(version: 20150315050122) do
 
   create_table "courses", primary_key: "course_id", force: :cascade do |t|
     t.string  "dept",        limit: 4
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(version: 20150315021223) do
   end
 
   add_index "courses", ["sequence_id"], name: "index_courses_on_sequence_id", using: :btree
+
+  create_table "courses_sequences", id: false, force: :cascade do |t|
+    t.integer "course_id",   limit: 4
+    t.integer "sequence_id", limit: 4
+  end
+
+  add_index "courses_sequences", ["course_id"], name: "index_courses_sequences_on_course_id", using: :btree
+  add_index "courses_sequences", ["sequence_id"], name: "index_courses_sequences_on_sequence_id", using: :btree
 
   create_table "courses_students", id: false, force: :cascade do |t|
     t.integer "course_id",  limit: 4

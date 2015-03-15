@@ -1,4 +1,4 @@
 class Course < ActiveRecord::Base
  has_and_belongs_to_many :students
-  belongs_to :sequence
+  has_and_belongs_to_many :sequences
 end
