@@ -43,5 +43,8 @@ group :development, :test do
   gem 'spring'
   
   gem 'tzinfo-data'
+
+  # Paginate the courses page
+  gem 'kaminari'
 end
 

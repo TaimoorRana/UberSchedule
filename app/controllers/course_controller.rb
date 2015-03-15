@@ -3,7 +3,11 @@ class CourseController < ApplicationController
 # before_action :confirm_logged_in
   
   def index
-    @courses = Course.all
+    @courses = Course.page(1)
+    unless params[:page].nil?
+      number = params[:page].to_i
+      @courses = Course.page(number)
+    end
   end
 
   def show
