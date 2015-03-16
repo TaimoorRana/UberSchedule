@@ -1,4 +1,5 @@
 class StudentController < ApplicationController
+  has_one :user
   def add_course
     #find the course in the database
     course = Course.find(params[:id])

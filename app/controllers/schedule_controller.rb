@@ -1,6 +1,6 @@
 class ScheduleController < ApplicationController
   layout 'general_schedule'
-  before_action :confirm_logged_in
+  before_action :authenticate_user!
 
   def schedule
       @mondayCourses = [2,5,7,9]
