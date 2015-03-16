@@ -49,5 +49,8 @@ group :development, :test do
 
   #Better errors
   gem 'better_errors'
+
+  #For Authentication
+  gem 'devise'
 end
 

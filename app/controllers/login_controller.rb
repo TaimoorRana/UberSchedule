@@ -1,6 +1,6 @@
 class LoginController < ApplicationController
-
-  layout 'Login'
+before_action :authenticate_user!, only: [:index,:login]
+  layout 'general_schedule'
 
   def index
     
