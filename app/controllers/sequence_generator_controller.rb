@@ -1,15 +1,15 @@
 class SequenceGeneratorController < ApplicationController
   layout 'general_schedule'
-before_action :confirm_logged_in,:generateSequence, only: [:Sequence]
+before_action :authenticate_user!,:generateSequence, only: [:Sequence]
   def Sequence
 
   end
 
   private
   def generateSequence
-    user_id = session[:user_id]
-    authorized_student = Student.where(user_id: user_id ).first
-    option = authorized_student.option
+    user_id = current_user.user_id
+    option = Student.where(user_id: user_id ).first.option
+
 
     @sequence = []
     @sequenceCourses = []

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150315050122) do
+ActiveRecord::Schema.define(version: 20150316003520) do
 
   create_table "courses", primary_key: "course_id", force: :cascade do |t|
     t.string  "dept",        limit: 4
@@ -19,7 +19,10 @@ ActiveRecord::Schema.define(version: 20150315050122) do
     t.float   "credit",      limit: 53
     t.string  "name",        limit: 128
     t.text    "description", limit: 4294967295
+    t.integer "sequence_id", limit: 4
   end
+
+  add_index "courses", ["sequence_id"], name: "index_courses_on_sequence_id", using: :btree
 
   create_table "courses_sequences", id: false, force: :cascade do |t|
     t.integer "course_id",   limit: 4
@@ -167,11 +170,23 @@ ActiveRecord::Schema.define(version: 20150315050122) do
   add_index "tbl_preference", ["preference_id"], name: "preference_id", unique: true, using: :btree
 
   create_table "users", primary_key: "user_id", force: :cascade do |t|
-    t.string   "username",      limit: 64,  null: false
-    t.string   "password",      limit: 64,  null: false
-    t.string   "email",         limit: 128
-    t.datetime "user_reg_date",             null: false
+    t.string   "username",               limit: 64,               null: false
+    t.string   "email",                  limit: 128
+    t.datetime "user_reg_date",                                   null: false
+    t.string   "password_digest",        limit: 255
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
+    t.string   "reset_password_token",   limit: 255
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          limit: 4,   default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
   end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   add_foreign_key "students", "sequences", primary_key: "sequence_id", name: "students_ibfk_2"
   add_foreign_key "students", "users", primary_key: "user_id", name: "students_ibfk_1"

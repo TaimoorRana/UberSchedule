@@ -1,34 +1,9 @@
 
 <!--top div-->
 <div style="background-color:#A5D1D7 ;" class="login">
-<br><hr><h1>LOGIN</h1><hr>
 
-
-<p>
-<br>
-  <table>
-  <%= form_tag( :action => 'login') do %>
-
-   <tr>
-     <label style="color: ghostwhite;">USERNAME:</label>
-     <%= text_field_tag(:username)  %> </br></br>
-   </tr>
-   <tr>
-     <label style="color: ghostwhite">PASSWORD:</label>
-    <%= password_field_tag(:password) %> </br> </br>
-   </tr>
-        <%= submit_tag('Login') %>
-
-  <% end %>
-  </table>
-</p>
+  <h1>Welcome to UberScheduler</h1>
 
 </div>
-</div>
-<!--bottom div : links-->
-<div class="center">
-<p style="color:#F36E21; font-size:13px;">
-  <%= link_to 'Register' , action: 'registration' %> &nbsp; &nbsp; &nbsp; <%= link_to 'Forgot Password?' %>
 
-</p>
-</div>
+

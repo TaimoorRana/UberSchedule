@@ -1,6 +1,6 @@
 class CourseController < ApplicationController
   layout 'general_schedule'
-# before_action :confirm_logged_in
+ before_action :authenticate_user!
   
   def index
     @courses = Course.page(1)
