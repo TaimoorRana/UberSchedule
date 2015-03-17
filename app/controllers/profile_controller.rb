@@ -2,7 +2,6 @@ class ProfileController < ApplicationController
   layout 'general_schedule'
   before_action :authenticate_user!
   def profile
-    @days = DaysOfWeek.all
   end
 
   def updateProfile
