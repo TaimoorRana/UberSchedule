@@ -5,14 +5,14 @@ class StudentController < ApplicationController
     course = Course.find(params[:id])
     #append this course to the student's course list
     #student = Student.where(user_id: session[:user_id]).first
-    current_user.student.courses << course
+    current_user.student.courses_registereds << course
     flash[:notice] = "#{course.name} was added"
     redirect_to controller: 'course',action: 'index'
   end
 
   def remove_course
     #find this course in the student's course list
-    course = current_user.student.courses.find(params[:id])
+    course = current_user.student.courses_registereds.find(course_id: params[:id])
     #delete this course
     current_user.student.courses.delete(course)
     redirect_to controller: 'schedule', action: 'schedule'
