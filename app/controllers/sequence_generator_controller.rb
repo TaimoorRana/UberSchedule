@@ -6,26 +6,26 @@ before_action :authenticate_user!,:generateSequence, only: [:Sequence]
   end
 
   private
-  def generateSequence
+  def generateSequence ## Private Method to generate an option for specific sequences
     user_id = current_user.user_id
     option = Student.where(user_id: user_id ).first.option
 
 
-    @sequence = []
-    @sequenceCourses = []
+    @sequence = {} # Store each sequence group in a hashmap.
+    @sequence[:core] = Sequence.where(sequence_name: 'Software Engineering Core').first
     if option == 'Web Services and Applications'
-      @sequence.append(Sequence.where(sequence_name: 'Web Services and Applications').first)
-      @sequence.append(Sequence.where(sequence_name: 'Software Engineering Core').first)
+      @sequence[:required] = Sequence.where(sequence_name: 'Required Web Services and Applications').first
+      @sequence[:one_of] =  Sequence.where(sequence_name: 'OneOf Web Services and Applications').first
     elsif option == 'Computer Games'
-      @sequence.append(Sequence.where(sequence_name: 'Computer Games').first)
-      @sequence.append(Sequence.where(sequence_name: 'Software Engineering Core').first)
+      @sequence[:required] = Sequence.where(sequence_name: 'Required Computer Games').first
+      @sequence[:one_of] =  Sequence.where(sequence_name: 'OneOf Computer Games').first
     elsif option == 'RealTime Embedded and Avionics Software'
-      @sequence.append(Sequence.where(sequence_name: 'RealTime Embedded and Avionics Software').first)
-      @sequence.append(Sequence.where(sequence_name: 'Software Engineering Core').first)
+      @sequence[:required] = Sequence.where(sequence_name: 'Required RealTime Embedded and Avionics Software').first
+      @sequence[:one_of] =  Sequence.where(sequence_name: 'OneOf RealTime Embedded and Avionics Software').first
     else
-      @sequence.append(Sequence.where(sequence_name: 'general').first)
-      @sequence.append(Sequence.where(sequence_name: 'Software Engineering Core').first)
+      @sequence[:general] = Sequence.where(sequence_name: 'general').first
     end
+    @sequenceCourses = []
     @sequence.each do |sequence|
       sequence.courses.each do |course|
         @sequenceCourses.append(course)
