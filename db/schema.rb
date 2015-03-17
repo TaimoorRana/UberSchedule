@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150316003520) do
+ActiveRecord::Schema.define(version: 20150316142510) do
 
   create_table "courses", primary_key: "course_id", force: :cascade do |t|
     t.string  "dept",        limit: 4
@@ -173,7 +173,6 @@ ActiveRecord::Schema.define(version: 20150316003520) do
     t.string   "username",               limit: 64
     t.string   "email",                  limit: 128
     t.datetime "user_reg_date",                                   null: false
-    t.string   "password_digest",        limit: 255
     t.string   "encrypted_password",     limit: 255, default: "", null: false
     t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
@@ -183,6 +182,7 @@ ActiveRecord::Schema.define(version: 20150316003520) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
+    t.integer  "student_id",             limit: 4
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
