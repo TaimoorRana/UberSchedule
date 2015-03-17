@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150317060448) do
+ActiveRecord::Schema.define(version: 20150317182451) do
 
   create_table "completed_courses_students", id: false, force: :cascade do |t|
     t.integer "course_id",  limit: 4
@@ -111,8 +111,8 @@ ActiveRecord::Schema.define(version: 20150317060448) do
   end
 
   create_table "students", primary_key: "student_id", force: :cascade do |t|
-    t.string  "firstname",   limit: 64,  null: false
-    t.string  "lastname",    limit: 64,  null: false
+    t.string  "first_name",  limit: 64,  null: false
+    t.string  "last_name",   limit: 64,  null: false
     t.integer "user_id",     limit: 4
     t.integer "sequence_id", limit: 4
     t.string  "option",      limit: 255
@@ -151,6 +151,8 @@ ActiveRecord::Schema.define(version: 20150317060448) do
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
     t.integer  "student_id",             limit: 4
+    t.string   "first_name",             limit: 255
+    t.string   "last_name",              limit: 255
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
