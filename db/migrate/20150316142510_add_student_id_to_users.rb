@@ -1,5 +1,8 @@
 class AddStudentIdToUsers < ActiveRecord::Migration
-  def change
-    add_column :users , 'student_id', :integer
+  def up
+    add_column :users , 'student_id', :integer, unique:true
+  end
+  def down
+    remove_column :users, 'student_id'
   end
 end

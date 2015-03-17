@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MajorOptionTest < ActiveSupport::TestCase
+class CoursesPrereqTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
