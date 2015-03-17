@@ -46,5 +46,11 @@ group :development, :test do
 
   # Paginate the courses page
   gem 'kaminari'
+
+  #Better errors
+  gem 'better_errors'
+
+  #For Authentication
+  gem 'devise'
 end
 

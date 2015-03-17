@@ -1,33 +1,34 @@
 class SequenceGeneratorController < ApplicationController
-before_action :confirm_logged_in,:checkUserOption,:generateSequence, only: [:Sequence]
+  layout 'general_schedule'
+before_action :authenticate_user!,:generateSequence, only: [:Sequence]
   def Sequence
 
   end
 
   private
   def generateSequence
-    user_id = session[:user_id]
-    authorized_student = Student.where(user_id: user_id )
-    option = authorized_student.option
+    user_id = current_user.user_id
+    option = Student.where(user_id: user_id ).first.option
+
 
     @sequence = []
     @sequenceCourses = []
-    if option == 'webServices'
-      @sequence.append(Sequence.where(sequence_name: 'webServices'))
-      @sequence.append(Sequence.where(sequence_name: 'core'))
-    elsif option == 'computerGames'
-      @sequence.append(Sequence.where(sequence_name: 'computerGames'))
-      @sequence.append(Sequence.where(sequence_name: 'core'))
-    elsif option == 'embeddedSystems'
-      @sequence.append(Sequence.where(sequence_name: 'embeddedSystems'))
-      @sequence.append(Sequence.where(sequence_name: 'core'))
+    if option == 'Web Services and Applications'
+      @sequence.append(Sequence.where(sequence_name: 'Web Services and Applications').first)
+      @sequence.append(Sequence.where(sequence_name: 'Software Engineering Core').first)
+    elsif option == 'Computer Games'
+      @sequence.append(Sequence.where(sequence_name: 'Computer Games').first)
+      @sequence.append(Sequence.where(sequence_name: 'Software Engineering Core').first)
+    elsif option == 'RealTime Embedded and Avionics Software'
+      @sequence.append(Sequence.where(sequence_name: 'RealTime Embedded and Avionics Software').first)
+      @sequence.append(Sequence.where(sequence_name: 'Software Engineering Core').first)
     else
-      @sequence.append(Sequence.where(sequence_name: 'general'))
-      @sequence.append(Sequence.where(sequence_name: 'core'))
+      @sequence.append(Sequence.where(sequence_name: 'general').first)
+      @sequence.append(Sequence.where(sequence_name: 'Software Engineering Core').first)
     end
     @sequence.each do |sequence|
       sequence.courses.each do |course|
-        @sequence.append(course)
+        @sequenceCourses.append(course)
       end
     end
 

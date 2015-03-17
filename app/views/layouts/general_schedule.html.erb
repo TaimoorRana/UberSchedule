@@ -13,7 +13,10 @@
   <hr class="blackline">
   <img class="center" src="/assets/logogrey2.png" alt="logo">
   <hr class="blackline">
-  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"><%= link_to('Edit Profile',{:controller => 'profile', :action => 'profile'}) %>&nbsp; &nbsp; &nbsp;<%= link_to('View Schedule',{:controller => 'schedule', :action => 'schedule'}) %>&nbsp; &nbsp; &nbsp;<%= link_to('Courses',{:controller => 'course', :action => 'index'}) %>&nbsp; &nbsp; &nbsp;<%= link_to('Logout',{controller:'login' , action:'logout'}) %></p>
+  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"><%= link_to('Edit Profile',{:controller => 'profile', :action => 'profile'}) %>&nbsp; &nbsp; &nbsp;<%= link_to 'View Your Sequence', sequence_path %> &nbsp; &nbsp; &nbsp;<%= link_to('View Schedule',{:controller => 'schedule', :action => 'schedule'}) %>&nbsp; &nbsp; &nbsp;<%= link_to('Courses',{:controller => 'course', :action => 'index'}) %>&nbsp;
+    &nbsp; &nbsp;<% if user_signed_in? %>
+        <%=link_to('Logout', destroy_user_session_path, method: 'delete' ) %>
+        <% end %></p>
   <hr class="blackline">
 </div>
 

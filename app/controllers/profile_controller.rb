@@ -1,5 +1,6 @@
 class ProfileController < ApplicationController
   layout 'general_schedule'
+  before_action :authenticate_user!
   def profile
     @days = DaysOfWeek.all
   end
@@ -22,9 +23,8 @@ class ProfileController < ApplicationController
     (params[:fridayAm] == nil) ? fridayAM = 0 : fridayAM = 1
     (params[:fridayPm] == nil) ? fridayPM = 0 : fridayPM = 1
 
-
-    id = $authorized_student.id
-    student = Student.find(id)
+    user_id = current_user.user_id
+    student = Student.find_by user_id: user_id
     preference = student.preference
 
     preference.update_attribute(:loyola, loyola)
