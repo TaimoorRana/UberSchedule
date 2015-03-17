@@ -64,22 +64,7 @@ ActiveRecord::Schema.define(version: 20150317182451) do
   end
 
   create_table "preferences", force: :cascade do |t|
-    t.boolean  "loyola",       limit: 1,   default: false
-    t.boolean  "split",        limit: 1,   default: false
-    t.string   "status",       limit: 255, default: "Full-Time"
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
-    t.integer  "student_id",   limit: 4
-    t.boolean  "monday_am",    limit: 1,   default: false
-    t.boolean  "monday_pm",    limit: 1,   default: false
-    t.boolean  "tuesday_am",   limit: 1,   default: false
-    t.boolean  "tuesday_pm",   limit: 1,   default: false
-    t.boolean  "wednesday_am", limit: 1,   default: false
-    t.boolean  "wednesday_pm", limit: 1,   default: false
-    t.boolean  "thursday_am",  limit: 1,   default: false
-    t.boolean  "thursday_pm",  limit: 1,   default: false
-    t.boolean  "friday_am",    limit: 1,   default: false
-    t.boolean  "friday_pm",    limit: 1,   default: false
+    t.string "preference", limit: 255
   end
 
   create_table "preferences_students", id: false, force: :cascade do |t|

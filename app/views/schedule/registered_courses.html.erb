@@ -11,7 +11,7 @@
       <th>Name</th>
       <th>Credits</th>
     </tr>
-    <% $authorized_student.courses.each do |course| %>
+    <% @courses.each do |course| %>
         <tr>
           <td><%= course.dept %></td>
           <td><%= course.number %></td>
