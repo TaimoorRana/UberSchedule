@@ -1,6 +1,6 @@
 class SequenceGeneratorController < ApplicationController
   layout 'general_schedule'
-before_action :authenticate_user!,:generateSequence, only: [:Sequence]
+before_action :authenticate_user!,:optionSelected,:generateSequence, only: [:Sequence]
   def Sequence
 
   end
@@ -30,4 +30,13 @@ before_action :authenticate_user!,:generateSequence, only: [:Sequence]
     end
 
   end
+  def optionSelected
+    user_id = current_user.user_id
+    option = Student.where(user_id: user_id ).first.option
+    if option.nil?
+      flash[:notice] = 'Please select your desired option.'
+      redirect_to profile_path
+    end
+  end
+
 end
