@@ -1,27 +1,75 @@
 <h1>My Sequence</h1>
+<h2> Obligatory Software Engineering Core Courses</h2>
 <table>
   <tr></tr>
   <thead>
-<tr>
-  <th>Course Type</th>
-  <th>Number</th>
-  <th>Credits</th>
-  <th>Course Name</th>
-  <th>Course Description</th>
-  <th>Course Category</th>
-</tr>
+  <tr>
+    <th>Course Dept</th>
+    <th>Number</th>
+    <th>Credits</th>
+    <th>Course Name</th>
+  </tr>
   </thead>
-<tbody>
-<% #@sequenceCourses.each do |course| %>
-<tr><td><%=#course.course_type %></td>
-  <td><%=#course.course_nb %></td>
-  <td><%=# course.course_credit%></td>
-  <td><%=#course.course_name %></td>
-  <td><%=#course.course_description %></td>
-  <td><%=#course.course_option %></td>
-</tr>
+  <tbody>
+  <% @sequence[:core].courses.each do |course| %>
+      <tr>
+        <td><%= course.dept %></td>
+        <td><%= course.number %></td>
+        <td><%= course.credit %></td>
+        <td><%= course.name %></td>
+      </tr>
 
-<%# end %>
+  <% end %>
 
-</tbody>
+  </tbody>
+</table>
+<h2> Required <%= @option %> courses</h2>
+<table>
+  <tr></tr>
+  <thead>
+  <tr>
+    <th>Course Dept</th>
+    <th>Number</th>
+    <th>Credits</th>
+    <th>Course Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @sequence[:required].courses.each do |course| %>
+      <tr>
+        <td><%= course.dept %></td>
+        <td><%= course.number %></td>
+        <td><%= course.credit %></td>
+        <td><%= course.name %></td>
+      </tr>
+
+  <% end %>
+
+  </tbody>
+
+</table>
+<h2> Must take one of the following <%= @option %> courses</h2>
+<table>
+  <tr></tr>
+  <thead>
+  <tr>
+    <th>Course Dept</th>
+    <th>Number</th>
+    <th>Credits</th>
+    <th>Course Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @sequence[:one_of].courses.each do |course| %>
+      <tr>
+        <td><%= course.dept %></td>
+        <td><%= course.number %></td>
+        <td><%= course.credit %></td>
+        <td><%= course.name %></td>
+      </tr>
+
+  <% end %>
+
+  </tbody>
+
 </table>

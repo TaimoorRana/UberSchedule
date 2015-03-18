@@ -17,7 +17,7 @@
   Choose your major option:
       <!-- collection_select(name of param, name of variable, model, value returned, value displayed in box) -->
     <%= collection_select(:major, :majorVariable, MajorOption.all, :option, :option) %><br><br>
-    Select the periods you DO NOT want:
+    <p>Select the periods you DO NOT want:</p>
     <table border="1">
       <tr>
         <th>Day</th>

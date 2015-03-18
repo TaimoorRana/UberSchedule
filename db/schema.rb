@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150315050122) do
+ActiveRecord::Schema.define(version: 20150317182451) do
+
+  create_table "completed_courses_students", id: false, force: :cascade do |t|
+    t.integer "course_id",  limit: 4
+    t.integer "student_id", limit: 4
+  end
 
   create_table "courses", primary_key: "course_id", force: :cascade do |t|
     t.string  "dept",        limit: 4
@@ -24,6 +29,22 @@ ActiveRecord::Schema.define(version: 20150315050122) do
 
   add_index "courses", ["sequence_id"], name: "index_courses_on_sequence_id", using: :btree
 
+  create_table "courses_prereqs", force: :cascade do |t|
+    t.integer  "course_id",        limit: 4
+    t.integer  "prereq_type_id",   limit: 4
+    t.integer  "course_id_prereq", limit: 4
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  create_table "courses_registereds", force: :cascade do |t|
+    t.integer  "student_id", limit: 4
+    t.integer  "courses_id", limit: 4
+    t.integer  "term_id",    limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
   create_table "courses_sequences", id: false, force: :cascade do |t|
     t.integer "course_id",   limit: 4
     t.integer "sequence_id", limit: 4
@@ -32,69 +53,51 @@ ActiveRecord::Schema.define(version: 20150315050122) do
   add_index "courses_sequences", ["course_id"], name: "index_courses_sequences_on_course_id", using: :btree
   add_index "courses_sequences", ["sequence_id"], name: "index_courses_sequences_on_sequence_id", using: :btree
 
-  create_table "courses_students", id: false, force: :cascade do |t|
-    t.integer "course_id",  limit: 4
-    t.integer "student_id", limit: 4
-  end
-
-  create_table "days_of_weeks", force: :cascade do |t|
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-    t.string   "Day",        limit: 255
-  end
-
-  create_table "major_options", force: :cascade do |t|
-    t.string   "option",     limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
-  create_table "periods", force: :cascade do |t|
-    t.string   "day",        limit: 255
-    t.string   "timeSlot",   limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+  create_table "laboratories", force: :cascade do |t|
+    t.integer  "tutorial_id", limit: 4
+    t.string   "name",        limit: 255
+    t.string   "time_start",  limit: 255
+    t.string   "time_end",    limit: 255
+    t.string   "day",         limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "preferences", force: :cascade do |t|
-    t.boolean  "loyola",       limit: 1,   default: false
-    t.boolean  "split",        limit: 1,   default: false
-    t.string   "status",       limit: 255, default: "Full-Time"
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
-    t.integer  "student_id",   limit: 4
-    t.boolean  "monday_am",    limit: 1,   default: false
-    t.boolean  "monday_pm",    limit: 1,   default: false
-    t.boolean  "tuesday_am",   limit: 1,   default: false
-    t.boolean  "tuesday_pm",   limit: 1,   default: false
-    t.boolean  "wednesday_am", limit: 1,   default: false
-    t.boolean  "wednesday_pm", limit: 1,   default: false
-    t.boolean  "thursday_am",  limit: 1,   default: false
-    t.boolean  "thursday_pm",  limit: 1,   default: false
-    t.boolean  "friday_am",    limit: 1,   default: false
-    t.boolean  "friday_pm",    limit: 1,   default: false
+    t.string "preference", limit: 255
   end
 
-  create_table "prereq_types", primary_key: "prereq_type_id", force: :cascade do |t|
-    t.string "prereq_type_lib", limit: 128, null: false
+  create_table "preferences_students", id: false, force: :cascade do |t|
+    t.integer "student_id",    limit: 4
+    t.integer "preference_id", limit: 4
   end
 
-  create_table "schedules", primary_key: "schedule_id", force: :cascade do |t|
-    t.string "schedule_lib", limit: 128
+  create_table "prereq_types", force: :cascade do |t|
+    t.string   "prereq_type", limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "sections", force: :cascade do |t|
+    t.integer  "course_id",   limit: 4
+    t.string   "name",        limit: 255
+    t.string   "number",      limit: 255
+    t.string   "time_start",  limit: 255
+    t.string   "time_end",    limit: 255
+    t.string   "instructor",  limit: 255
+    t.string   "day_of_week", limit: 255
+    t.string   "term",        limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "sequences", primary_key: "sequence_id", force: :cascade do |t|
     t.string "sequence_name", limit: 128, null: false
   end
 
-  create_table "student_statuses", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "students", primary_key: "student_id", force: :cascade do |t|
-    t.string  "firstname",   limit: 64,  null: false
-    t.string  "lastname",    limit: 64,  null: false
+    t.string  "first_name",  limit: 64,  null: false
+    t.string  "last_name",   limit: 64,  null: false
     t.integer "user_id",     limit: 4
     t.integer "sequence_id", limit: 4
     t.string  "option",      limit: 255
@@ -103,92 +106,43 @@ ActiveRecord::Schema.define(version: 20150315050122) do
   add_index "students", ["sequence_id"], name: "sequence_id", using: :btree
   add_index "students", ["user_id"], name: "user_id", unique: true, using: :btree
 
-  create_table "tbl_course_lab", primary_key: "course_lab_id", force: :cascade do |t|
-    t.string  "course_lab_name",    limit: 2
-    t.string  "course_lab_date_",   limit: 128
-    t.integer "course_tutorial_id", limit: 4
+  create_table "terms", force: :cascade do |t|
+    t.string   "term",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
-  add_index "tbl_course_lab", ["course_tutorial_id"], name: "course_tutorial_id", using: :btree
-
-  create_table "tbl_course_section", primary_key: "course_section_id", force: :cascade do |t|
-    t.string  "course_section_name",  limit: 2
-    t.string  "course_section_date_", limit: 128
-    t.integer "course_id",            limit: 4
+  create_table "tutorials", force: :cascade do |t|
+    t.integer  "section_id", limit: 4
+    t.string   "name",       limit: 255
+    t.string   "time_start", limit: 255
+    t.string   "time_end",   limit: 255
+    t.string   "day",        limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
-
-  add_index "tbl_course_section", ["course_id"], name: "course_id", using: :btree
-
-  create_table "tbl_course_tutorial", primary_key: "course_tutorial_id", force: :cascade do |t|
-    t.string  "course_tutorial_name",  limit: 2
-    t.string  "course_tutorial_date_", limit: 128
-    t.integer "course_section_id",     limit: 4
-  end
-
-  add_index "tbl_course_tutorial", ["course_section_id"], name: "course_section_id", using: :btree
-
-  create_table "tbl_lookup_course_completed", id: false, force: :cascade do |t|
-    t.integer "student_id", limit: 4, null: false
-    t.integer "course_id",  limit: 4, null: false
-  end
-
-  add_index "tbl_lookup_course_completed", ["course_id"], name: "tbl_lookup_course_completed_ibfk_2", using: :btree
-  add_index "tbl_lookup_course_completed", ["student_id"], name: "tbl_lookup_course_completed_ibfk_1", using: :btree
-
-  create_table "tbl_lookup_course_prerequisites", id: false, force: :cascade do |t|
-    t.integer "course_id",        limit: 4, null: false
-    t.integer "course_id_prereq", limit: 4, null: false
-    t.integer "prereq_type_id",   limit: 4, null: false
-  end
-
-  add_index "tbl_lookup_course_prerequisites", ["course_id"], name: "tbl_lookup_course_prerequisites_ibfk_1", using: :btree
-  add_index "tbl_lookup_course_prerequisites", ["course_id_prereq"], name: "tbl_lookup_course_prerequisites_ibfk_2", using: :btree
-  add_index "tbl_lookup_course_prerequisites", ["prereq_type_id"], name: "tbl_lookup_course_prerequisites_ibfk_3_idx", using: :btree
-
-  create_table "tbl_lookup_course_registered", id: false, force: :cascade do |t|
-    t.integer "course_id",   limit: 4, null: false
-    t.integer "schedule_id", limit: 4, null: false
-    t.integer "student_id",  limit: 4, null: false
-  end
-
-  add_index "tbl_lookup_course_registered", ["course_id"], name: "course_id", using: :btree
-  add_index "tbl_lookup_course_registered", ["schedule_id"], name: "schedule_id", using: :btree
-  add_index "tbl_lookup_course_registered", ["student_id"], name: "student_id", using: :btree
-
-  create_table "tbl_lookup_sequence_course", id: false, force: :cascade do |t|
-    t.integer "sequence_id", limit: 4
-    t.integer "course_id",   limit: 4
-  end
-
-  add_index "tbl_lookup_sequence_course", ["course_id"], name: "course_id", using: :btree
-  add_index "tbl_lookup_sequence_course", ["sequence_id"], name: "sequence_id", using: :btree
-
-  create_table "tbl_preference", primary_key: "preference_id", force: :cascade do |t|
-    t.string "preference_lib", limit: 128
-  end
-
-  add_index "tbl_preference", ["preference_id"], name: "preference_id", unique: true, using: :btree
 
   create_table "users", primary_key: "user_id", force: :cascade do |t|
-    t.string   "username",      limit: 64,  null: false
-    t.string   "password",      limit: 64,  null: false
-    t.string   "email",         limit: 128
-    t.datetime "user_reg_date",             null: false
+    t.string   "username",               limit: 64
+    t.string   "email",                  limit: 128
+    t.datetime "user_reg_date",                                   null: false
+    t.string   "encrypted_password",     limit: 255, default: "", null: false
+    t.string   "reset_password_token",   limit: 255
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          limit: 4,   default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip",     limit: 255
+    t.string   "last_sign_in_ip",        limit: 255
+    t.integer  "student_id",             limit: 4
+    t.string   "first_name",             limit: 255
+    t.string   "last_name",              limit: 255
   end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
   add_foreign_key "students", "sequences", primary_key: "sequence_id", name: "students_ibfk_2"
   add_foreign_key "students", "users", primary_key: "user_id", name: "students_ibfk_1"
-  add_foreign_key "tbl_course_lab", "tbl_course_tutorial", column: "course_tutorial_id", primary_key: "course_tutorial_id", name: "tbl_course_lab_ibfk_1"
-  add_foreign_key "tbl_course_section", "courses", primary_key: "course_id", name: "tbl_course_section_ibfk_1"
-  add_foreign_key "tbl_course_tutorial", "tbl_course_section", column: "course_section_id", primary_key: "course_section_id", name: "tbl_course_tutorial_ibfk_1"
-  add_foreign_key "tbl_lookup_course_completed", "courses", primary_key: "course_id", name: "tbl_lookup_course_completed_ibfk_2"
-  add_foreign_key "tbl_lookup_course_completed", "students", primary_key: "student_id", name: "tbl_lookup_course_completed_ibfk_1"
-  add_foreign_key "tbl_lookup_course_prerequisites", "courses", column: "course_id_prereq", primary_key: "course_id", name: "tbl_lookup_course_prerequisites_ibfk_2"
-  add_foreign_key "tbl_lookup_course_prerequisites", "courses", primary_key: "course_id", name: "tbl_lookup_course_prerequisites_ibfk_1"
-  add_foreign_key "tbl_lookup_course_prerequisites", "prereq_types", primary_key: "prereq_type_id", name: "tbl_lookup_course_prerequisites_ibfk_3"
-  add_foreign_key "tbl_lookup_course_registered", "courses", primary_key: "course_id", name: "tbl_lookup_course_registered_ibfk_1"
-  add_foreign_key "tbl_lookup_course_registered", "schedules", primary_key: "schedule_id", name: "tbl_lookup_course_registered_ibfk_2"
-  add_foreign_key "tbl_lookup_course_registered", "students", primary_key: "student_id", name: "tbl_lookup_course_registered_ibfk_3"
-  add_foreign_key "tbl_lookup_sequence_course", "courses", primary_key: "course_id", name: "tbl_lookup_sequence_course_ibfk_2"
-  add_foreign_key "tbl_lookup_sequence_course", "sequences", primary_key: "sequence_id", name: "tbl_lookup_sequence_course_ibfk_1"
 end

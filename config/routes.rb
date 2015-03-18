@@ -1,14 +1,16 @@
 Rails.application.routes.draw do
+  devise_for :users, :controllers => { registrations: 'registrations' }
+  #devise_for :users
   get 'sessions/new'
 
   get 'course/index'
 
   get 'course/show'
-
+  get 'profile' => 'profile#profile', :as => 'profile'
   get 'schedule/schedule'
 
-  get 'sequence' => 'sequence_generator#Sequence'
-
+  get 'sequence' => 'sequence_generator#Sequence', :as => 'sequence'
+  get 'sequence/:option' => 'sequence_generator#Sequence'
   root 'login#index'
   match ':controller(/:action(/:id))', :via => [:get, :post]
 

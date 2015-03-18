@@ -1,28 +1,29 @@
-
-
-<!--header div : Schedule-->
-<div class="header">
-Courses registered
-</div>
-<!--main content div : result of schedule-->
-<div class="greybody">
 <table>
   <tr>
-    <th>Number</th>
-    <th>Name</th>
-    <th>Credits</th>
+    <th>Time</th> <th>Monday</th> <th>Tuesday</th> <th>Wednesday</th> <th>Thursday</th> <th>Friday</th>
   </tr>
-    <% s=0%> <!-- counter to add the credits taken-->
-    <% $authorized_student.courses.each do |course| %>
-      <tr>
-        <td><%= "#{course.dept}#{course.number}"%></td>
-        <td><%= course.name %></td>
-        <td><%= course.credit %></td>
-        <% s+=course.credit %> <!-- add to the credits counter-->
-      </tr>
-    <% end %>
-  <tr><td></td><td>Total credits:</td><td><%= s%></td> </tr>
+  <% x = Time.local(2015,'jan',15,8,0,0) %>
+  <% (0..64).each do |i|%>
+  <tr>
+    <th><%= "#{(x += 900).hour}:#{x.min}" %></th>
+    <td><% if @mondayCourses.include?(i) %> <%= 'X' %> <% end  %> </td>
+    <td><% if @tuesdayCourses.include?(i) %> <%= 'X' %> <% end  %>  </td>
+    <td> <% if @wednesdayCourses.include?(i) %> <%= 'X' %> <% end  %>  </td>
+    <td> <% if @thursdayCourses.include?(i) %> <%= 'X' %> <% end  %> </td>
+    <td> <% if @fridayCourses.include?(i) %> <%= 'X' %> <% end  %> </td>
+  </tr>
+  <% end %>
+
+
 
 </table>
 
-</div>
+
+
+
+
+
+
+<%= link_to('Registered Courses',{action: 'registered_courses'}) %>
+
+
