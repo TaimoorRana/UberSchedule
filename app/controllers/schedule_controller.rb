@@ -15,7 +15,7 @@ class ScheduleController < ApplicationController
    # @courses = Course.where(user_id: $authorized_user.user_id)
     #@student = $authorized_student
     #@allStudents = Student.all
-    @courses = $authorized_student.courses
+    @courses = current_user.student.courses
     @totalCredits = 0
 
     @courses.each do |course|
