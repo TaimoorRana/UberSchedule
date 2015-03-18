@@ -66,10 +66,11 @@ before_action :authenticate_user!, only: [:index,:login]
 
     # if username doesn't exit and the passwords matches, add the student to the database
     if  user_password.to_s == confirmed_password.to_s && !new_user.blank?
-      if User.where(user_name: params[:username]).present? == false
-      user_created = User.new(user_name: new_user)
-      user_created.user_pass = user_password.to_s
+      if User.where(username: params[:username]).present? == false
+      user_created = User.new(username: new_user)
+      user_created.password = user_password.to_s
       user_created.save
+      student_created = Student.new
       flash[:notice] = "You are now registerd to UberSchedule"
       redirect_to action: 'index'
         # username is already taken

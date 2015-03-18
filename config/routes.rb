@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'course/index'
 
   get 'course/show'
-
+  get 'profile' => 'profile#profile', :as => 'profile'
   get 'schedule/schedule'
 
   get 'sequence' => 'sequence_generator#Sequence', :as => 'sequence'
