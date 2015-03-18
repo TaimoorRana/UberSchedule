@@ -2,9 +2,13 @@ class ProfileController < ApplicationController
   layout 'general_schedule'
   before_action :authenticate_user!
   def profile
-    @user_id = current_user.user_id
-    @user_first_name = current_user.first_name
-    @user_last_name = current_user.last_name
+    user_id = current_user.user_id
+    student = Student.where(user_id: user_id).first
+    @student_first_name = student.first_name
+    @student_last_name = student.last_name
+    @previous_preferences = student.preferences
+    @previous_preferences.exists?(11) ? @noSplitClasses = 'No' : @noSplitClasses = 'Yes'
+    @previous_preferences.exists?(12) ? @noLoyolaCampus = 'No' : @noLoyolaCampus = 'Yes'
   end
 
   def updateProfile
