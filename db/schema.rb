@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150317182451) do
+ActiveRecord::Schema.define(version: 20150318012516) do
 
   create_table "completed_courses_students", id: false, force: :cascade do |t|
     t.integer "course_id",  limit: 4
