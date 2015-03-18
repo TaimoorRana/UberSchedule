@@ -10,13 +10,11 @@
 </head>
 <body>
 <div>
-  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"> Edit your profile</p>
+  <p style="font-family:helvetica; font-size:20px; color:#000000; letter-spacing:3px; font-weight:bold;"><%= @user_first_name %> <%= @user_last_name %>'s Profile </p>
 </div>
 <div class="form">
   <%= form_tag(:action => 'updateProfile') do %>
-  <!--Choose your major option:-->
-      <!-- collection_select(name of param, name of variable, model, value returned, value displayed in box) -->
-      <!-- <%#= collection_select(:major, :majorVariable, MajorOption.all, :option, :option) %><br><br> -->
+
     Select the periods you DO NOT want:
     <table border="1">
       <tr>
@@ -26,28 +24,28 @@
       </tr>
       <tr>
         <td>Monday</td>
-        <td><%= check_box_tag(:mondayAm) %></td>
-        <td><%= check_box_tag(:mondayPm) %></td>
+        <td><%= check_box_tag(:noMondayAm) %></td>
+        <td><%= check_box_tag(:noMondayPm) %></td>
       </tr>
       <tr>
         <td>Tuesday</td>
-        <td><%= check_box_tag(:tuesdayAm) %></td>
-        <td><%= check_box_tag(:tuesdayPm) %></td>
+        <td><%= check_box_tag(:noTuesdayAm) %></td>
+        <td><%= check_box_tag(:noTuesdayPm) %></td>
       </tr>
       <tr>
         <td>Wednesday</td>
-        <td><%= check_box_tag(:wednesdayAm) %></td>
-        <td><%= check_box_tag(:wednesdayPm) %></td>
+        <td><%= check_box_tag(:noWednesdayAm) %></td>
+        <td><%= check_box_tag(:noWednesdayPm) %></td>
       </tr>
       <tr>
         <td>Thursday</td>
-        <td><%= check_box_tag(:thursdayAm) %></td>
-        <td><%= check_box_tag(:thursdayPm) %></td>
+        <td><%= check_box_tag(:noThursdayAm) %></td>
+        <td><%= check_box_tag(:noThursdayPm) %></td>
       </tr>
       <tr>
         <td>Friday</td>
-        <td><%= check_box_tag(:fridayAm) %></td>
-        <td><%= check_box_tag(:fridayPm) %></td>
+        <td><%= check_box_tag(:noFridayAm) %></td>
+        <td><%= check_box_tag(:noFridayPm) %></td>
       </tr>
 
 
@@ -58,12 +56,12 @@
       <option>Part-Time</option>
     </select><br>
     Allow classes at the Loyola campus? :
-    <select name="loyola">
+    <select name="noLoyolaCampus">
       <option selected>Yes</option>
       <option>No</option>
     </select><br>
     Allow split classes?:
-    <select name="split">
+    <select name="noSplitClasses">
       <option selected>Yes</option>
       <option>No</option>
     </select><br><br><br>
@@ -71,9 +69,6 @@
   <% end %> <!-- end of the form -->
 </div>
 
-<% if !flash[:notice].blank? %>
-    <%= flash.notice %>
-<% end %>
 
 <%= yield %>
 
