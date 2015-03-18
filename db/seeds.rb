@@ -72,10 +72,9 @@ puts a
 a = Course.find_by dept: 'COMP', number: 352
 s.courses.append(a)
 puts a
-#### COURSE NOT YET IN DB ###########
-# a = Course.find_by dept:'ELEC', number:275
-# s.courses.append(a)
-# puts a.name + a.number
+a = Course.find_by dept:'ELEC', number:275
+s.courses.append(a)
+puts a.name + a.number.to_s
 a = Course.find_by dept:'ENCS', number:282
 s.courses.append(a)
 puts a.name + a.number.to_s
@@ -144,9 +143,8 @@ puts a.dept + a.number.to_s
 a = Course.find_by dept: 'AERO', number: 482
 s.courses.append(a)
 puts a.dept + a.number.to_s
-### COEN 320 NOT ADDED YET ############################################
-# a = Course.find_by dept: 'COEN', number: 320
-# s.courses.append(a)
+a = Course.find_by dept: 'COEN', number: 320
+s.courses.append(a)
 a = Course.find_by dept: 'COMP', number: 345
 s.courses.append(a)
 puts a.dept + a.number.to_s
@@ -169,10 +167,9 @@ puts a.dept + a.number.to_s
 a = Course.find_by dept: 'AERO', number: 482
 s.courses.append(a)
 puts a.dept + a.number.to_s
-##COURSE NOT YET ENTERED #########################################
-# a = Course.find_by dept: 'COEN', number: 320
-# s.courses.append(a)
-# puts a.dept + a.number.to_s
+a = Course.find_by dept: 'COEN', number: 320
+s.courses.append(a)
+puts a.dept + a.number.to_s
 a = Course.find_by dept: 'COMP', number: 345
 s.courses.append(a)
 puts a.dept + a.number.to_s
@@ -187,14 +184,13 @@ s.courses.append(a)
 puts a.dept + a.number.to_s
 a = Course.find_by dept: 'COMP', number: 426
 s.courses.append(a)
-## COURSES  NOT YET ENTERED ################################
-# puts a.dept + a.number.to_s
-# a = Course.find_by dept: 'COMP', number: 428
-# s.courses.append(a)
-# puts a.dept + a.number.to_s
-# a = Course.find_by dept: 'COMP', number: 442
-# nas.courses.append(a)
-# puts a.dept + a.number.to_s
+puts a.dept + a.number.to_s
+a = Course.find_by dept: 'COMP', number: 428
+s.courses.append(a)
+puts a.dept + a.number.to_s
+a = Course.find_by dept: 'COMP', number: 442
+s.courses.append(a)
+puts a.dept + a.number.to_s
 a = Course.find_by dept: 'COMP', number: 444
 s.courses.append(a)
 puts a.dept + a.number.to_s
@@ -253,3 +249,59 @@ puts a.dept + a.number.to_s
 a = Course.find_by dept: 'SOEN', number: 491
 s.courses.append(a)
 puts a.dept + a.number.to_s
+
+
+# Required Web Services
+a = Course.find_by dept:'COMP', number: 353
+s = Sequence.find_by sequence_name: 'Required Web Services and Applications'
+s.courses.append(a)
+puts a.dept + a.number.to_s
+a = Course.find_by dept:'SOEN', number: 387
+s.courses.append(a)
+puts a.dept + a.number.to_s
+
+#OneOf Web Services
+a = Course.find_by dept:'COMP', number: 479
+s = Sequence.find_by sequence_name: 'OneOf Web Services and Applications'
+s.courses.append(a)
+puts a.dept + a.number.to_s
+a = Course.find_by dept:'SOEN', number: 487
+s.courses.append(a)
+puts a.dept + a.number.to_s
+
+# Required Computer games
+a = Course.find_by dept:'COMP', number: 371
+s = Sequence.find_by sequence_name: 'Required Computer Games'
+s.courses.append(a)
+puts a.dept + a.number.to_s
+a = Course.find_by dept:'COMP', number: 376
+s.courses.append(a)
+puts a.dept + a.number.to_s
+
+# OneOf Computer Games
+a = Course.find_by dept:'COMP', number: 476
+s = Sequence.find_by sequence_name: 'OneOf Computer Games'
+s.courses.append(a)
+puts a.dept + a.number.to_s
+a = Course.find_by dept:'COMP', number: 477
+s.courses.append(a)
+puts a.dept + a.number.to_s
+
+# Required RealTime
+a = Course.find_by dept:'SOEN', number: 422
+s = Sequence.find_by sequence_name: 'Required RealTime Embedded and Avionics Software'
+s.courses.append(a)
+puts a.dept + a.number.to_s
+a = Course.find_by dept:'SOEN', number: 423
+s.courses.append(a)
+puts a.dept + a.number.to_s
+
+# One of Realtime
+a = Course.find_by dept:'AERO', number: 480
+s = Sequence.find_by sequence_name: 'OneOf RealTime Embedded and Avionics Software'
+s.courses.append(a)
+puts a.dept + a.number.to_s
+a = Course.find_by dept:'AERO', number: 482
+s.courses.append(a)
+puts a.dept + a.number.to_s
+
