@@ -9,6 +9,11 @@ class ProfileController < ApplicationController
     @previous_preferences = student.preferences
     @previous_preferences.exists?(11) ? @noSplitClasses = 'No' : @noSplitClasses = 'Yes'
     @previous_preferences.exists?(12) ? @noLoyolaCampus = 'No' : @noLoyolaCampus = 'Yes'
+    @opt_none = Sequence.find(9).sequence_name
+    @opt_gaming = Sequence.find(6).sequence_name
+    @opt_web = Sequence.find(7).sequence_name
+    @opt_avionics = Sequence.find(8).sequence_name
+    @current_opt = student.option
   end
 
   def updateProfile
@@ -20,6 +25,13 @@ class ProfileController < ApplicationController
     prev_pref = Array.new
     @previous_preferences.each do |pref|
       prev_pref.push(pref)
+    end
+
+    @modified = Array.new
+
+    @previous_minor = student.option
+    if @previous_minor != params[:option]
+      student.update_attribute(:option, params[:option])
     end
 
     params[:noMondayAm] == "1" ? noMondayAm = 1 : noMondayAm = 0
@@ -35,21 +47,27 @@ class ProfileController < ApplicationController
 
     if noMondayAm == 1 and !@previous_preferences.exists?(1)
       student.preferences << Preference.where(preference: "noMondayAm").first
+      @modified.push("No Monday AM")
     end
     if noMondayPm == 1 and !@previous_preferences.exists?(2)
       student.preferences << Preference.where(preference: "noMondayPm").first
+      @modified.push("No Monday PM")
     end
     if noTuesdayAm == 1 and !@previous_preferences.exists?(3)
       student.preferences << Preference.where(preference: "noTuesdayAm").first
+      @modified.push("No Tuesday AM")
     end
     if noTuesdayPm == 1 and !@previous_preferences.exists?(4)
       student.preferences << Preference.where(preference: "noTuesdayPm").first
+      @modified.push("No Tuesday PM")
     end
     if noWednesdayAm == 1 and !@previous_preferences.exists?(5)
       student.preferences << Preference.where(preference: "noWednesdayAm").first
+      @modified.push("No Wednesday AM")
     end
     if noWednesdayPm == 1 and !@previous_preferences.exists?(6)
       student.preferences << Preference.where(preference: "noWednesdayPm").first
+      @modified.push("No Wednesday PM")
     end
     if noThursdayAm == 1 and !@previous_preferences.exists?(7)
       student.preferences << Preference.where(preference: "noThursdayAm").first
