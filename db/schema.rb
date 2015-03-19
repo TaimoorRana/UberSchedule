@@ -79,16 +79,13 @@ ActiveRecord::Schema.define(version: 20150318012516) do
   end
 
   create_table "sections", force: :cascade do |t|
-    t.integer  "course_id",   limit: 4
-    t.string   "name",        limit: 255
-    t.string   "number",      limit: 255
-    t.string   "time_start",  limit: 255
-    t.string   "time_end",    limit: 255
-    t.string   "instructor",  limit: 255
-    t.string   "day_of_week", limit: 255
-    t.string   "term",        limit: 255
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.integer "course_id",   limit: 4
+    t.string  "name",        limit: 255
+    t.string  "time_start",  limit: 255
+    t.string  "time_end",    limit: 255
+    t.string  "instructor",  limit: 255
+    t.string  "day_of_week", limit: 255
+    t.string  "term",        limit: 255
   end
 
   create_table "sequences", primary_key: "sequence_id", force: :cascade do |t|
