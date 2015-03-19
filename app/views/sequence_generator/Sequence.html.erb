@@ -23,6 +23,8 @@
 
   </tbody>
 </table>
+
+<% if @sequence[:general].nil? %>
 <h2> Required <%= @option %> courses</h2>
 <table>
   <tr></tr>
@@ -73,3 +75,31 @@
   </tbody>
 
 </table>
+
+<% else %>
+    <h2> Must take rest of courses from the following:</h2>
+    <table>
+      <tr></tr>
+      <thead>
+      <tr>
+        <th>Course Dept</th>
+        <th>Number</th>
+        <th>Credits</th>
+        <th>Course Name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @sequence[:general].courses.each do |course| %>
+          <tr>
+            <td><%= course.dept %></td>
+            <td><%= course.number %></td>
+            <td><%= course.credit %></td>
+            <td><%= course.name %></td>
+          </tr>
+
+      <% end %>
+
+      </tbody>
+
+    </table>
+<%end %>
