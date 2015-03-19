@@ -3,6 +3,7 @@ class ScheduleController < ApplicationController
   before_action :authenticate_user!
 
   def schedule
+    # is used for testing and not mess up the Database
     comp352 = Course.new(dept:"ENGR",number:"352",credit:1.5,name:"Data Structures and Algorithms")
     comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
     comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
