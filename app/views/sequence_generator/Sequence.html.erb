@@ -13,6 +13,7 @@
   <tbody>
   <% @sequence[:core].courses.each do |course| %>
       <tr>
+        <td><p>Completed?</p></td>
         <td><%= course.dept %></td>
         <td><%= course.number %></td>
         <td><%= course.credit %></td>
@@ -30,6 +31,7 @@
   <tr></tr>
   <thead>
   <tr>
+    <td><p>Completed?</p></td>
     <th>Course Dept</th>
     <th>Number</th>
     <th>Credits</th>
@@ -55,6 +57,7 @@
   <tr></tr>
   <thead>
   <tr>
+    <td><p>Completed?</p></td>
     <th>Course Dept</th>
     <th>Number</th>
     <th>Credits</th>
@@ -75,13 +78,39 @@
   </tbody>
 
 </table>
+    <h2> Electives Available</h2>
+    <table>
+      <tr></tr>
+      <thead>
+      <tr>
+        <td><p>Completed?</p></td>
+        <th>Course Dept</th>
+        <th>Number</th>
+        <th>Credits</th>
+        <th>Course Name</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @electiveCourses.each do |course| %>
+          <tr>
+            <td><%= course.dept %></td>
+            <td><%= course.number %></td>
+            <td><%= course.credit %></td>
+            <td><%= course.name %></td>
+          </tr>
 
+      <% end %>
+
+      </tbody>
+
+    </table>
 <% else %>
     <h2> Must take rest of courses from the following:</h2>
     <table>
       <tr></tr>
       <thead>
       <tr>
+        <td><p>Completed?</p></td>
         <th>Course Dept</th>
         <th>Number</th>
         <th>Credits</th>
