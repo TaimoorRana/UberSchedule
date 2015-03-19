@@ -7,11 +7,11 @@ class ScheduleController < ApplicationController
     comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
     comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
 
-      @mondaySections = comp352.sections
-      @tuesdayCourses = [1,7]
-      @wednesdayCourses = []
-      @thursdayCourses = [1,3,8]
-      @fridayCourses = [6]
+      @mondaySections = Course.find(3).sections
+      @tuesdaySections = Course.find(5).sections
+      @wednesdaySections = Course.find(7).sections
+      @thursdaySections = Course.find(1).sections
+      @fridaySections = comp352.sections
   end
 
   def registered_courses

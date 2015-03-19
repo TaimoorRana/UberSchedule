@@ -1,14 +1,13 @@
-<table border="2px">
+<table border="0px">
   <tr>
     <th>Time</th> <th>Monday</th> <th>Tuesday</th> <th>Wednesday</th> <th>Thursday</th> <th>Friday</th>
   </tr>
   <% x = Time.local(2015,'jan',15,8,0,0) %>
-
   <% (0..64).each do |i|%>
       <% if (x.min == 0) then minutes = '00' else minutes = "#{x.min}" end %>
       <% time= "#{(x += 900).hour}:#{minutes}" %>
   <tr>
-    <th> <%= time %> </th>
+    <td> <%= time %> </td>
 
       <% @mondaySections.each  do |section| %>
         <% if section.time_start == time %>
@@ -17,21 +16,71 @@
       <% end %>
 
         <% if @section_found != nil %>
-        <td rowspan="3" style=" background-color: crimson"><%= @section_found.name %></td>
+        <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @section_found.name %></td>
         <% @section_found = nil %>
         <% else %>
         <td></td>
         <% end %>
 
-    <td>  </td>
-    <td> </td>
-    <td>  </td>
-    <td> </td>
+    <% @tuesdaySections.each  do |section| %>
+        <% if section.time_start == time %>
+            <% @section_found = section %>
+        <% end %>
+    <% end %>
+
+    <% if @section_found != nil %>
+        <td rowspan="3" style="background-color: burlywood; border-bottom: none" ><%= @section_found.name %></td>
+        <% @section_found = nil %>
+    <% else %>
+        <td></td>
+    <% end %>
+
+
+    <% @wednesdaySections.each  do |section| %>
+        <% if section.time_start == time %>
+            <% @section_found = section %>
+        <% end %>
+    <% end %>
+
+    <% if @section_found != nil %>
+        <td rowspan="3" style=" background-color: aqua; border-bottom: none" ><%= @section_found.name %></td>
+        <% @section_found = nil %>
+    <% else %>
+        <td></td>
+    <% end %>
+
+
+
+    <% @thursdaySections.each  do |section| %>
+        <% if section.time_start == time %>
+            <% @section_found = section %>
+        <% end %>
+    <% end %>
+
+    <% if @section_found != nil %>
+        <td rowspan="3" style="background-color: chartreuse; border-bottom: none" ><%= @section_found.name %></td>
+        <% @section_found = nil %>
+    <% else %>
+        <td></td>
+    <% end %>
+
+
+
+
+    <% @fridaySections.each  do |section| %>
+        <% if section.time_start == time %>
+            <% @section_found = section %>
+        <% end %>
+    <% end %>
+
+    <% if @section_found != nil %>
+        <td rowspan="3" style="background-color: darkmagenta; border-bottom: none" ><%= @section_found.name %></td>
+        <% @section_found = nil %>
+    <% else %>
+        <td></td>
+    <% end %>
   </tr>
   <% end %>
-
-
-
 </table>
 
 
