@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'profile' => 'profile#profile', :as => 'profile'
   get 'schedule/schedule'
 
-  post 'updatedSequence' => 'sequence_generator#updateDoneCourses', :as => 'update_sequence_path'
+  post 'updatedSequence' => 'sequence_generator#updateDoneCourses', :as => 'update_sequence'
   get 'sequence' => 'sequence_generator#Sequence', :as => 'sequence'
   get 'sequence/:option' => 'sequence_generator#Sequence'
   root 'login#index'
