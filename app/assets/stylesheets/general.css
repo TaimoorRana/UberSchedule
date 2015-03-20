@@ -137,3 +137,14 @@ body{
       display: inline;
   }
 
+  .rich {
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size:14px;
+      color: #000000;
+  }
+
+#rich {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:14px;
+    color: #000000;
+}
