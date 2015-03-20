@@ -19,7 +19,7 @@
       <p class="rich">Step 2: Select a semester. <b><i><%= @schedule_term %> <%= @schedule_year %> selected.</i></b></p>
       <p class="rich">Step 3: Select your classes.</p>
 
-      <%= (1..5).each do |x| %>
+      <% (1..5).each do |x| %>
         <%= select_tag "course#{x}", options_for_select(Array[*@courses.collect {|v,i| [v,@courses.index(v)]}]) %>
       <% end %></br></br>
 
