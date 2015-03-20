@@ -1,0 +1,24 @@
+<h1>Courses Left to take:</h1>
+<table>
+  <tr></tr>
+  <thead>
+  <tr>
+    <th>Course Dept</th>
+    <th>Number</th>
+    <th>Credits</th>
+    <th>Course Name</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @listOfCourses.each do |course| %>
+      <tr>
+        <td><%= course.dept %></td>
+        <td><%= course.number %></td>
+        <td><%= course.credit %></td>
+        <td><%= course.name %></td>
+      </tr>
+
+  <% end %>
+
+  </tbody>
+</table>
