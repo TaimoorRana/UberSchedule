@@ -8,11 +8,11 @@ class ScheduleController < ApplicationController
     comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
     comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
 
-      @mondaySections = Course.find(3).sections
-      @tuesdaySections = Course.find(5).sections
+      @mondaySections = Array.new(2)[Course.find(3).sections.find(11),Course.find(1).sections.find(1)]
+      @tuesdaySections = Course.find(8).sections
       @wednesdaySections = Course.find(7).sections
       @thursdaySections = Course.find(1).sections
-      @fridaySections = comp352.sections
+      @fridaySections = Course.find(19).sections
   end
 
   def registered_courses

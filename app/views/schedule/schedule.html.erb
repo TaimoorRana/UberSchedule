@@ -1,4 +1,4 @@
-<table border="0px">
+<table border="2px">
   <tr>
     <th>Time</th> <th>Monday</th> <th>Tuesday</th> <th>Wednesday</th> <th>Thursday</th> <th>Friday</th>
   </tr>
@@ -6,95 +6,83 @@
   <!--This is used to calculate the time that will appear on the
   the left side of the schedule-->
   <% x = Time.local(2015,'jan',15,8,0,0) %>
+  <% @monday_section_duration = 0 %>
+  <% @tuesday_section_duration = 0 %>
+  <% @wednesday_section_duration = 0 %>
+  <% @thursday_section_duration = 0 %>
+  <% @friday_section_duration = 0 %>
   <% (0..64).each do |i|%>
       <% if (x.min == 0) then minutes = '00' else minutes = "#{x.min}" end %>
       <% time= "#{(x += 900).hour}:#{minutes}" %>
-  <tr>
-    <td> <%= time %> </td>
-
-    <!-- this will try to match the courses on the given day to the current time on the schedule,-->
-      <% @mondaySections.each  do |section| %>
-        <% if section.time_start == time %>
-           <% @section_found = section %>
-          <% end %>
-      <% end %>
-
-        <!--if a match is found, it will print the course-->
-        <% if @section_found != nil %>
-        <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @section_found.course.dept %> <%= @section_found.course.number %> <br/> <%= @section_found.name %> <br/> <%= @section_found.time_start %>
-          <br/> <%= @section_found.time_end %></td>
-        <% @section_found = nil %>
+      <tr>
+        <td> <%= time %> </td>
+        <!-- this will try to match the courses on the given day to the current time on the schedule,-->
+        <% if @mondaySections.any? && @mondaySections.first.time_start == time  %>
+            <% @monday_section_duration = 3 %>
+            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @mondaySections.first.course.dept %> <%= @mondaySections.first.course.number %> <br/> <%= @mondaySections.first.name %> <br/> <%= @mondaySections.first.time_start %>
+              <br/> <%= @mondaySections.first.time_end %></td>
+            <% @mondaySections.shift(1)%>
+        <% elsif @monday_section_duration > 1 %>
+            <% @monday_section_duration = @monday_section_duration - 1 %>
         <% else %>
-        <td></td>
+            <td> </td>
+
         <% end %>
 
-    <!-- this will try to match the courses on the given day to the current time on the schedule,-->
-    <% @tuesdaySections.each  do |section| %>
-        <% if section.time_start == time %>
-            <% @section_found = section %>
+
+        <% if @tuesdaySections.any? &&  @tuesdaySections.first.time_start == time  %>
+            <% @tuesday_section_duration = 3 %>
+            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @tuesdaySections.first.course.dept %> <%= @tuesdaySections.first.course.number %> <br/> <%= @tuesdaySections.first.name %> <br/> <%= @tuesdaySections.first.time_start %>
+              <br/> <%= @tuesdaySections.first.time_end %></td>
+            <% @tuesdaySections.shift(1) %>
+        <% elsif @tuesday_section_duration > 1 %>
+            <% @tuesday_section_duration = @tuesday_section_duration - 1 %>
+        <% else %>
+            <td> </td>
+
         <% end %>
-    <% end %>
 
-    <!--if a match is found, it will print the course-->
-    <% if @section_found != nil %>
-        <td rowspan="3" style="background-color: burlywood; border-bottom: none" ><%= @section_found.course.dept %> <%= @section_found.course.number %> <br/> <%= @section_found.name %> <br/> <%= @section_found.time_start %>
-          <br/> <%= @section_found.time_end %></td>
-        <% @section_found = nil %>
-    <% else %>
-        <td></td>
-    <% end %>
 
-    <!-- this will try to match the courses on the given day to the current time on the schedule,-->
-    <% @wednesdaySections.each  do |section| %>
-        <% if section.time_start == time %>
-            <% @section_found = section %>
+        <% if @wednesdaySections.any? && @wednesdaySections.first.time_start == time  %>
+            <% @wednesday_section_duration = 3 %>
+            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @wednesdaySections.first.course.dept %> <%= @wednesdaySections.first.course.number %> <br/> <%= @wednesdaySections.first.name %> <br/> <%= @wednesdaySections.first.time_start %>
+              <br/> <%= @wednesdaySections.first.time_end %></td>
+            <% @wednesdaySections.shift(1) %>
+        <% elsif @wednesday_section_duration > 1 %>
+            <% @wednesday_section_duration = @wednesday_section_duration - 1 %>
+        <% else %>
+            <td> </td>
+
         <% end %>
-    <% end %>
-
-    <!--if a match is found, it will print the course-->
-    <% if @section_found != nil %>
-        <td rowspan="3" style=" background-color: aqua; border-bottom: none" ><%= @section_found.course.dept %> <%= @section_found.course.number %> <br/> <%= @section_found.name %> <br/> <%= @section_found.time_start %>
-          <br/> <%= @section_found.time_end %></td>
-        <% @section_found = nil %>
-    <% else %>
-        <td></td>
-    <% end %>
 
 
-    <!-- this will try to match the courses on the given day to the current time on the schedule,-->
-    <% @thursdaySections.each  do |section| %>
-        <% if section.time_start == time %>
-            <% @section_found = section %>
+        <% if @thursdaySections.any? && @thursdaySections.first.time_start == time  %>
+            <% @thursday_section_duration = 3 %>
+            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @thursdaySections.first.course.dept %> <%= @thursdaySections.first.course.number %> <br/> <%= @thursdaySections.first.name %> <br/> <%= @thursdaySections.first.time_start %>
+              <br/> <%= @thursdaySections.first.time_end %></td>
+            <% @thursdaySections.shift(1) %>
+        <% elsif @thursday_section_duration > 1 %>
+            <% @thursday_section_duration = @thursday_section_duration - 1 %>
+        <% else %>
+            <td> </td>
+
         <% end %>
-    <% end %>
-
-    <!--if a match is found, it will print the course-->
-    <% if @section_found != nil %>
-        <td rowspan="3" style="background-color: chartreuse; border-bottom: none" ><%= @section_found.course.dept %> <%= @section_found.course.number %> <br/> <%= @section_found.name %> <br/> <%= @section_found.time_start %>
-          <br/> <%= @section_found.time_end %></td>
-        <% @section_found = nil %>
-    <% else %>
-        <td></td>
-    <% end %>
 
 
+        <% if @fridaySections.any? && @fridaySections.first.time_start == time  %>
+            <% @friday_section_duration = 3 %>
+            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @fridaySections.first.course.dept %> <%= @fridaySections.first.course.number %> <br/> <%= @fridaySections.first.name %> <br/> <%= @fridaySections.first.time_start %>
+              <br/> <%= @thursdaySections.first.time_end %></td>
+            <% @fridaySections.shift(1) %>
+        <% elsif @friday_section_duration > 1 %>
+            <% @friday_section_duration = @friday_section_duration - 1 %>
+        <% else %>
+            <td> </td>
 
-    <!-- this will try to match the courses on the given day to the current time on the schedule,-->
-    <% @fridaySections.each  do |section| %>
-        <% if section.time_start == time %>
-            <% @section_found = section %>
         <% end %>
-    <% end %>
 
-    <!--if a match is found, it will print the course-->
-    <% if @section_found != nil %>
-        <td rowspan="3" style="background-color: darkmagenta; border-bottom: none" ><%= @section_found.course.dept %> <%= @section_found.course.number %> <br/> <%= @section_found.name %> <br/> <%= @section_found.time_start %>
-          <br/> <%= @section_found.time_end %></td>
-        <% @section_found = nil %>
-    <% else %>
-        <td></td>
-    <% end %>
-  </tr>
+
+      </tr>
   <% end %>
 </table>
 
