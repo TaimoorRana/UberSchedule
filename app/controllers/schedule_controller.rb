@@ -3,11 +3,16 @@ class ScheduleController < ApplicationController
   before_action :authenticate_user!
 
   def schedule
-      @mondayCourses = [2,5,7,9]
-      @tuesdayCourses = [1,7]
-      @wednesdayCourses = []
-      @thursdayCourses = [1,3,8]
-      @fridayCourses = [6]
+    # is used for testing and not mess up the Database
+    comp352 = Course.new(dept:"ENGR",number:"352",credit:1.5,name:"Data Structures and Algorithms")
+    comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
+    comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
+
+      @mondaySections = Course.find(3).sections
+      @tuesdaySections = Course.find(5).sections
+      @wednesdaySections = Course.find(7).sections
+      @thursdaySections = Course.find(1).sections
+      @fridaySections = comp352.sections
   end
 
   def registered_courses
