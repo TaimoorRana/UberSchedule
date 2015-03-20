@@ -14,8 +14,7 @@ class SequenceBuilderController < ApplicationController
     semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"}
     fall_sections = Section.where(term: "Fall").all
     winter_sections = Section.where(term: "Winter").all
-    #summer_sections = Section.where(term: "Summer").all
-    summer_sections = ""
+    summer_sections = Section.where(term: "Summer").all
     semester_section = {"Fall" => fall_sections, "Winter" => winter_sections, "Summer" => summer_sections}
     list_of_prereqs = CoursesPrereq.all
     completed_courses = student.courses.all
