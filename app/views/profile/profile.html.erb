@@ -15,11 +15,13 @@
 <div class="form" style="font-family:helvetica; font-size:13px; color:#000000;">
   <%= form_tag(:action => 'updateProfile') do %>
 
-      Change your minor :
+    <p class="rich"> Change your minor :
       <%= select_tag(:option, options_for_select(["General", "Computer Games",
-                         "RealTime Embedded and Avionics Software", "Web Services and Applications"], selected: @current_opt))%></br>
-
-    Select the periods you DO NOT want :</br>
+                         "RealTime Embedded and Avionics Software", "Web Services and Applications"], selected: @current_opt))%></p>
+    <p class="rich">Select your entry semester :
+        <%= select_tag(:entry, options_for_select(["Fall Entry", "Winter Entry"], selected: @entry)) %></p>
+    <p class="rich">COOP program :<%= select_tag(:coop, options_for_select(["Yes", "No"], selected: @coop)) %></p>
+    <p class='rich'> Select the periods you DO NOT want :</p>
 
     <table border="1">
       <tr style="font-family:helvetica; font-size:13px; color:#000000; font-weight:bold;">
@@ -55,15 +57,15 @@
 
 
     </table><br>
-    Allow classes at the Loyola campus? :
-      <%= select_tag(:noLoyolaCampus, options_for_select(['Yes', 'No'], selected: @noLoyolaCampus))%></br>
-    Allow split classes? :
-      <%= select_tag(:noSplitClasses, options_for_select(['Yes', 'No'], selected: @noSplitClasses))%>
-      <br><br><br>
+      <p class='rich'>Allow classes at the Loyola campus? :
+      <%= select_tag(:noLoyolaCampus, options_for_select(['Yes', 'No'], selected: @noLoyolaCampus))%></p>
+      <p class='rich'>Allow split classes? :
+      <%= select_tag(:noSplitClasses, options_for_select(['Yes', 'No'], selected: @noSplitClasses))%></p>
+      <p class="rich">Allow summer classes? :
+      <%= select_tag(:allowSummerSemester, options_for_select(['Yes', 'No'], selected: @allowSummerSemester))%></p>
     <%= submit_tag("Edit Profile",  class: 'submitButton') %>
   <% end %> <!-- end of the form -->
 </div>
-
 
 <%= yield %>
 

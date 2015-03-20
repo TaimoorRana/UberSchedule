@@ -19,6 +19,7 @@
     <%= link_to('View Schedule',{:controller => 'schedule', :action => 'schedule'}) %>&nbsp; &nbsp; &nbsp;
     <%= link_to('Courses',{:controller => 'course', :action => 'index'}) %>&nbsp;&nbsp; &nbsp;
     <%= link_to('Generate Schedule',{:controller => 'schedule_generator', :action => 'schedule_generator'}) %>&nbsp;&nbsp; &nbsp;
+    <%= link_to('Sequence Builder',{:controller => 'sequence_builder', :action => 'sequence_builder'}) %>&nbsp;&nbsp; &nbsp;
     <% if user_signed_in? %>
         <%=link_to('Logout', destroy_user_session_path, method: 'delete' ) %>
         <% end %></p>
