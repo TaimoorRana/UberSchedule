@@ -9,8 +9,11 @@ Rails.application.routes.draw do
   get 'profile' => 'profile#profile', :as => 'profile'
   get 'schedule/schedule'
 
+  post 'updatedSequence' => 'sequence_generator#updateDoneCourses', :as => 'update_sequence'
   get 'sequence' => 'sequence_generator#Sequence', :as => 'sequence'
   get 'sequence/:option' => 'sequence_generator#Sequence'
+  post 'mysequence' => 'sequence_generator#personalizedSequence', :as => 'personalized_sequence'
+
   root 'login#index'
   match ':controller(/:action(/:id))', :via => [:get, :post]
 
