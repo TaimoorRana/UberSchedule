@@ -1,7 +1,7 @@
 <h2>My Updated Sequence</h2>
-<h3> Select the options that you wish to take</h3>
+<h3> Select the courses from these options that you wish to take:</h3>
 <h2> Obligatory Software Engineering Core Courses</h2>
-<%= form_tag(:action => 'personalizedSequence') do %>
+<%= form_tag(personalized_sequence_path) do %>
     <table>
       <tr></tr>
       <thead>
@@ -16,7 +16,7 @@
       <tbody>
       <% @sequence[:core].courses.sort.each do |course| %>
           <tr>
-            <td> </td>
+            <td><%= hidden_field_tag(course.id.to_s, '1')%>  </td>
             <td><%= course.dept %></td>
             <td><%= course.number %></td>
             <td><%= course.credit %></td>
@@ -44,7 +44,7 @@
           <tbody>
           <% @sequence[:required].courses.each do |course| %>
               <tr>
-                <td> </td>
+                <td><%= hidden_field_tag(course.id.to_s, '1')%>  </td>
                 <td><%= course.dept %></td>
                 <td><%= course.number %></td>
                 <td><%= course.credit %></td>
@@ -71,7 +71,7 @@
           <tbody>
           <% @sequence[:one_of].courses.each do |course| %>
               <tr>
-                <td><%= hidden_field_tag(course.id.to_s, '0')%> <%= check_box_tag(course.id.to_s)%></td>
+                <td><%= check_box_tag(course.id.to_s)%></td>
                 <td><%= course.dept %></td>
                 <td><%= course.number %></td>
                 <td><%= course.credit %></td>
@@ -98,7 +98,7 @@
           <tbody>
           <% @sequence[:electives].courses.each do |course| %>
               <tr>
-                <td><%= hidden_field_tag(course.id.to_s, '0')%> <%= check_box_tag(course.id.to_s)%></td>
+                <td> <%= check_box_tag(course.id.to_s)%></td>
                 <td><%= course.dept %></td>
                 <td><%= course.number %></td>
                 <td><%= course.credit %></td>
@@ -126,7 +126,7 @@
           <tbody>
           <% @sequence[:general].courses.each do |course| %>
               <tr>
-                <td><%= hidden_field_tag(course.id.to_s, '0')%> <%= check_box_tag(course.id.to_s)%></td>
+                <td><%= check_box_tag(course.id.to_s)%></td>
                 <td><%= course.dept %></td>
                 <td><%= course.number %></td>
                 <td><%= course.credit %></td>
