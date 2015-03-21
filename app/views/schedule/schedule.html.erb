@@ -72,7 +72,7 @@
         <% if @fridaySections.any? && @fridaySections.first.time_start == time  %>
             <% @friday_section_duration = 3 %>
             <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @fridaySections.first.course.dept %> <%= @fridaySections.first.course.number %> <br/> <%= @fridaySections.first.name %> <br/> <%= @fridaySections.first.time_start %>
-              <br/> <%= @thursdaySections.first.time_end %></td>
+              <br/> <%= @fridaySections.first.time_end %></td>
             <% @fridaySections.shift(1) %>
         <% elsif @friday_section_duration > 1 %>
             <% @friday_section_duration = @friday_section_duration - 1 %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sequence_maker/index'
+
   devise_for :users, :controllers => { registrations: 'registrations' }
   #devise_for :users
   get 'sessions/new'
