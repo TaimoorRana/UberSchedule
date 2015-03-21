@@ -9,12 +9,13 @@ class SequenceBuilderController < ApplicationController
     preferences.exists?(14) ? allowSummer = true : allowSummer = false
     preferences.exists?(15) ? coop = 1 : coop = 0
     year = 2015
-    accumulated_credits = 0
+    accumulated_credits = 0 #TODO
     max_credits = 120
     semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"}
-    fall_sections = Section.where(term: "Fall").all
-    winter_sections = Section.where(term: "Winter").all
-    summer_sections = Section.where(term: "Summer").all
+    all_sections = Section.all
+    fall_sections = all_sections.where(term: "Fall")
+    winter_sections = all_sections.where(term: "Winter")
+    summer_sections = all_sections.where(term: "Summer")
     semester_section = {"Fall" => fall_sections, "Winter" => winter_sections, "Summer" => summer_sections}
     list_of_prereqs = CoursesPrereq.all
     completed_courses = student.courses.all
@@ -25,7 +26,6 @@ class SequenceBuilderController < ApplicationController
     until accumulated_credits > max_credits do
      @current_semester = Array.new
      available_this_semester = Array.new
-
       classes_counter = 0 #courses counter for this semester: 5 max for winter/fall, 4 for summer
       #modulo = allowSummer ? 3 : 2 #select the proper modulo: 2 for summer, 3 otherwise
       current_semester = semester[(@semester_counter).modulo(2)] #select current_semester
@@ -37,20 +37,20 @@ class SequenceBuilderController < ApplicationController
         if(previous_course_id != course_id)
           course = Course.find(course_id)
           previous_course_id = course_id#TODO DB CALL TO BE REMOVED
-          if !completed_courses.include?(course)
+          if !completed_courses.include?(course) #if course not completed
           missing_prereq = 0
-          course_prereqs = list_of_prereqs.where(course_id: course_id)
-          if course_prereqs[0] !=nil #check if course has prereqs
-            course_prereqs.each do |prereq| #if yes, check if they have been completed
-              if !completed_courses.include?(prereq.course_id_prereq)
-                missing_prereq = 1
-                break
-              end #end of most nested id
-            end #end of prereqs loop
-          end #end of if has prereqs
-          if missing_prereq == 0
-            available_this_semester.push(course)
-          end
+          #course_prereqs = list_of_prereqs.where(course_id: course_id)
+          #if course_prereqs[0] !=nil #check if course has prereqs
+           # course_prereqs.each do |prereq| #if yes, check if they have been completed
+            #  if !completed_courses.include?(Course.find(prereq.course_id_prereq))
+             #   missing_prereq = 1
+              #  break
+             # end #end of most nested id
+           # end #end of prereqs loop
+         # end #end of if has prereqs
+            if missing_prereq == 0
+              available_this_semester.push(course)
+            end
           end #end of main if
           end
       end #end of do
