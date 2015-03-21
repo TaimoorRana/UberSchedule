@@ -2,8 +2,13 @@
 <p>Find me in app/views/sequence_maker/index.html.erb</p>
 
 
-<% @five_courses.each do |course| %>
-    <%= course.dept %> <%= course.number %>  <br/>
+<% @one_year.each do |semesterCourses| %>
+
+    <% semesterCourses.each do |course|  %>
+        <%= course.dept %> <%= course.number %>  <br/>
+    <% end %>
+    <br/>
+    <br/>
 <% end %>
 
 
