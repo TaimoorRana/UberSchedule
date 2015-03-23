@@ -32,6 +32,7 @@ class ProfileController < ApplicationController
     @previous_minor = student.option
     if @previous_minor != params[:option]
       student.update_attribute(:option, params[:option])
+      @modified.push("Changed minor to #{params[:option]}")
     end
 
     params[:noMondayAm] == "1" ? noMondayAm = 1 : noMondayAm = 0
@@ -47,84 +48,103 @@ class ProfileController < ApplicationController
 
     if noMondayAm == 1 and !@previous_preferences.exists?(1)
       student.preferences << Preference.where(preference: "noMondayAm").first
-      @modified.push("No Monday AM")
+      @modified.push("No Monday AM allowed")
     end
     if noMondayPm == 1 and !@previous_preferences.exists?(2)
       student.preferences << Preference.where(preference: "noMondayPm").first
-      @modified.push("No Monday PM")
+      @modified.push("No Monday PM allowed")
     end
     if noTuesdayAm == 1 and !@previous_preferences.exists?(3)
       student.preferences << Preference.where(preference: "noTuesdayAm").first
-      @modified.push("No Tuesday AM")
+      @modified.push("No Tuesday AM allowed")
     end
     if noTuesdayPm == 1 and !@previous_preferences.exists?(4)
       student.preferences << Preference.where(preference: "noTuesdayPm").first
-      @modified.push("No Tuesday PM")
+      @modified.push("No Tuesday PM allowed")
     end
     if noWednesdayAm == 1 and !@previous_preferences.exists?(5)
       student.preferences << Preference.where(preference: "noWednesdayAm").first
-      @modified.push("No Wednesday AM")
+      @modified.push("No Wednesday AM allowed")
     end
     if noWednesdayPm == 1 and !@previous_preferences.exists?(6)
       student.preferences << Preference.where(preference: "noWednesdayPm").first
-      @modified.push("No Wednesday PM")
+      @modified.push("No Wednesday PM allowed")
     end
     if noThursdayAm == 1 and !@previous_preferences.exists?(7)
       student.preferences << Preference.where(preference: "noThursdayAm").first
+      @modified.push("No Thursday AM allowed")
     end
     if noThursdayPm == 1 and !@previous_preferences.exists?(8)
       student.preferences << Preference.where(preference: "noThursdayPm").first
+      @modified.push("No Thursday PM allowed")
     end
     if noFridayAm == 1 and !@previous_preferences.exists?(9)
       student.preferences << Preference.where(preference: "noFridayAm").first
+      @modified.push("No Friday AM allowed")
     end
     if noFridayPm == 1 and !@previous_preferences.exists?(10)
       student.preferences << Preference.where(preference: "noFridayPm").first
+      @modified.push("No Friday AM allowed")
     end
-    if params[:noSplitClasses] == "Yes" and !@previous_preferences.exists?(11)
+    if params[:noSplitClasses] == "No" and !@previous_preferences.exists?(11)
       student.preferences << Preference.where(preference: "noSplitClasses").first
+      @modified.push("No split classes allowed")
     end
-    if params[:noLoyolaCampus] == "Yes" and !@previous_preferences.exists?(12)
+    if params[:noLoyolaCampus] == "No" and !@previous_preferences.exists?(12)
       student.preferences << Preference.where(preference: "noLoyolaCampus").first
+      @modified.push("No classes at the Loyola campus allowed")
     end
 
 
     if noMondayAm == 0 and @previous_preferences.exists?(1)
       student.preferences.destroy((Preference.where(preference: "noMondayAm").first).id)
+      @modified.push("Monday AM allowed")
     end
     if noMondayPm == 0 and @previous_preferences.exists?(2)
       student.preferences.destroy((Preference.where(preference: "noMondayPm").first).id)
+      @modified.push("Monday PM allowed")
     end
     if noTuesdayAm == 0 and @previous_preferences.exists?(3)
       student.preferences.destroy((Preference.where(preference: "noTuesdayAm").first).id)
+      @modified.push("Tuesday AM allowed")
     end
     if noTuesdayPm == 0 and @previous_preferences.exists?(4)
       student.preferences.destroy((Preference.where(preference: "noTuesdayPm").first).id)
+      @modified.push("Tuesday PM allowed")
     end
     if noWednesdayAm == 0 and @previous_preferences.exists?(5)
       student.preferences.destroy((Preference.where(preference: "noWednesdayAm").first).id)
+      @modified.push("Wednesday AM allowed")
     end
     if noWednesdayPm == 0 and @previous_preferences.exists?(6)
       student.preferences.destroy((Preference.where(preference: "noWednesdayPm").first).id)
+      @modified.push("Wednesday PM allowed")
     end
     if noThursdayAm == 0 and @previous_preferences.exists?(7)
       student.preferences.destroy((Preference.where(preference: "noThursdayAm").first).id)
+      @modified.push("Thursday AM allowed")
     end
     if noThursdayPm == 0 and @previous_preferences.exists?(8)
       student.preferences.destroy((Preference.where(preference: "noThursdayPm").first).id)
+      @modified.push("Thursday PM allowed")
     end
     if noFridayAm == 0 and @previous_preferences.exists?(9)
       student.preferences.destroy((Preference.where(preference: "noFridayAm").first).id)
+      @modified.push("Friday AM allowed")
     end
     if noFridayPm == 0 and @previous_preferences.exists?(10)
       student.preferences.destroy((Preference.where(preference: "noFridayPm").first).id)
+      @modified.push("Friday PM allowed")
     end
-    if params[:noSplitClasses] == "No" and @previous_preferences.exists?(11)
+    if params[:noSplitClasses] == "Yes" and @previous_preferences.exists?(11)
       student.preferences.destroy((Preference.where(preference: "noSplitClasses").first).id)
+      @modified.push("Split classes allowed")
     end
-    if params[:noLoyolaCampus] == "No" and @previous_preferences.exists?(12)
+    if params[:noLoyolaCampus] == "Yes" and @previous_preferences.exists?(12)
       student.preferences.destroy((Preference.where(preference: "noLoyolaCampus").first).id)
+      @modified.push("Classes at the Loyola campus allowed.")
     end
+    
 
   end
 

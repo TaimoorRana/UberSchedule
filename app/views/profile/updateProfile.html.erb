@@ -7,6 +7,10 @@
 </head>
 <body>
     <div>
-    <p style="color: black">Your profile has been updated</p>
+    <p style="color: black">Your profile has been updated. The following changes have been made: </p>
+      <% @modified.each do |x| %>
+      <p style="color: black">  <%= x %> </p>
+          <% end %>
     </div>
 </body>
+</html>
