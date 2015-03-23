@@ -93,8 +93,8 @@ ActiveRecord::Schema.define(version: 20150318012516) do
   end
 
   create_table "students", primary_key: "student_id", force: :cascade do |t|
-    t.string  "first_name",  limit: 64,  null: false
-    t.string  "last_name",   limit: 64,  null: false
+    t.string  "first_name",  limit: 64,  default: "NoName"
+    t.string  "last_name",   limit: 64,  default: "NoName"
     t.integer "user_id",     limit: 4
     t.integer "sequence_id", limit: 4
     t.string  "option",      limit: 255
