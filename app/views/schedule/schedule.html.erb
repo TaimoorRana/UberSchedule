@@ -11,6 +11,9 @@
   <% @wednesday_section_duration = 0 %>
   <% @thursday_section_duration = 0 %>
   <% @friday_section_duration = 0 %>
+  <% @conflicts.each do |conflict|%>
+    <%= conflict.id %><br/>
+  <% end %>
   <% (0..64).each do |i|%>
       <% if (x.min == 0) then minutes = '00' else minutes = "#{x.min}" end %>
       <% time= "#{(x += 900).hour}:#{minutes}" %>
