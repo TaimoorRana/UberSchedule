@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<head>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag('application') %>
-</head>
-<body>
-    <div>
+
+    <div class="greybody">
     <p style="color: black">Your profile has been updated. The following changes have been made: </p>
       <% @modified.each do |x| %>
       <p style="color: black">  <%= x %> </p>
           <% end %>
     </div>
-</body>
-</html>

@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>UberScheduleApp - Edit Your Profile</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag('application') %>
 
-</head>
-<head>
-  <title>UberScheduleApp - Schedule Generator</title>
-</head>
-<body>
-<p style="font-family:helvetica; font-size:20px; color:#000000; letter-spacing:2px; font-weight:bold;">Create your schedule, <%= @student_first_name %> <%= @student_last_name %></p>
-<div>
+<p class="header">Create your schedule, <%= @student_first_name %> <%= @student_last_name %></p>
+<div class="greybody">
   <%= form_tag(:action => 'step_three') do %>
       <p class="rich">Step 1: Review your preferences from the profile page</p>
       <p class="rich">Step 2: Select a semester. <b><i><%= @schedule_term %> <%= @schedule_year %> selected.</i></b></p>
@@ -21,7 +8,7 @@
 
       <% (1..5).each do |x| %>
         <%= select_tag "course#{x}", options_for_select(Array[*@courses.collect {|v,i| [v,@courses.index(v)]}]) %>
-      <% end %></br></br>
+      <% end %><br><br>
 
       <%= submit_tag("Proceed to Step 4",  class: 'submitButton') %>
   <% end %> <!-- end of the form -->
