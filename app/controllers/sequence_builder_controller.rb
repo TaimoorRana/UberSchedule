@@ -39,15 +39,15 @@ class SequenceBuilderController < ApplicationController
           previous_course_id = course_id#TODO DB CALL TO BE REMOVED
           if !completed_courses.include?(course) #if course not completed
           missing_prereq = 0
-          #course_prereqs = list_of_prereqs.where(course_id: course_id)
-          #if course_prereqs[0] !=nil #check if course has prereqs
-           # course_prereqs.each do |prereq| #if yes, check if they have been completed
-            #  if !completed_courses.include?(Course.find(prereq.course_id_prereq))
-             #   missing_prereq = 1
-              #  break
-             # end #end of most nested id
-           # end #end of prereqs loop
-         # end #end of if has prereqs
+          course_prereqs = list_of_prereqs.where(course_id: course_id)
+          if course_prereqs[0] !=nil #check if course has prereqs
+            course_prereqs.each do |prereq| #if yes, check if they have been completed
+              if !completed_courses.include?(Course.find(prereq.course_id_prereq))
+                missing_prereq = 1
+                break
+              end #end of most nested id
+            end #end of prereqs loop
+          end #end of if has prereqs
             if missing_prereq == 0
               available_this_semester.push(course)
             end
@@ -77,6 +77,7 @@ class SequenceBuilderController < ApplicationController
       completed_courses.each do |x|
       student.courses << x
       end
+
     end
 
 
