@@ -15,14 +15,30 @@ class SequenceGeneratorController < ApplicationController
   end
 
   def updateDoneCourses #Removes courses from the list of courses that were initially shown, which are part of general curriculum for specialization.
+
+    error = []
     updatedSequence = createDeepCopyOfSequence(@sequence)
     params.each do |course_id|
-      if course_id[1] == "1"
+      if course_id[1] == "1" #Check if its a course param
         updatedSequence.each do |sequence|
           sequence[1].courses.each do |course|
-            if course.id == course_id[0].to_i
-              updatedSequence[sequence[0]].courses.delete(course)
-              @student.courses.append(course)
+            if course.id == course_id[0].to_i #Check if course is contained within sequence block
+              if prereqsAreMet(course.id) #check if prereqs met
+                updatedSequence[sequence[0]].courses.delete(course)
+                @student.courses.append(course)
+              else
+                params.keys # prereq not met. Check if prereq is selected
+                prereq_ids = []
+                course.courses_prereqs.each do |prereq|
+                  prereq_ids.append(prereq.course_id_prereq)
+                end
+                if (prereq_ids - params.keys).empty?
+                  updatedSequence[sequence[0]].courses.delete(course)
+                  @student.courses.append(course)
+                else # prereq not selected. ERROR
+                  error.append(" #{course.dept} #{course.number}")
+                end
+              end
 
             end
           end
@@ -32,7 +48,15 @@ class SequenceGeneratorController < ApplicationController
 
     end
     @sequence = updatedSequence
-    flash[:notice] = "Courses Updated Successfully"
+    flash[:notice] = "Courses Updated Successfully."
+    unless error.size == 0 # Print out an error message depending on whether or not prereqs are met
+      errorMessage = "The following course(s)'s prerequisites have not been met: "
+      error.each do |course|
+        errorMessage += course
+      end
+      flash[:notice] = errorMessage
+      redirect_to(:action => 'Sequence')
+    end
   end
 
   def personalizedSequence # Will take as input a list of course IDs and create an array of these. Is used to give personalized sequence filled with classes that are desired to be taken.
@@ -41,9 +65,11 @@ class SequenceGeneratorController < ApplicationController
       if course_id[1] == "1"
         course = Course.find(course_id[0].to_i)
         @listOfCourses.append(course)
+
       end
     end
     @listOfCourses.sort
+
   end
 
   private
@@ -72,8 +98,8 @@ class SequenceGeneratorController < ApplicationController
     getElectiveCourses
   end
 
-  def getElectiveCourses
-    if @sequence[:general].nil? ## Get a list of Electives that you can choose from. Add courses to :elective key in sequence variable
+  def getElectiveCourses ## Get a list of Electives that you can choose from. Add courses to :elective key in sequence variable
+    if @sequence[:general].nil?
       electiveSequence = Sequence.new
       generalSequence = Sequence.where(sequence_name: 'general').first
 
@@ -91,7 +117,7 @@ class SequenceGeneratorController < ApplicationController
     end
   end
 
-  def optionSelected # Verifies whether or not option has been selected by the user. Redirects to profile page if it has not been selected
+  def optionSelected # Verifies whether or not option has been selected by the user. Redirects to profile page if it has not been selected. Also assigns Global student variable
     user_id = current_user.user_id
     @student = Student.where(user_id: user_id).first
     option = @student.option
@@ -112,4 +138,26 @@ class SequenceGeneratorController < ApplicationController
     return updatedSequence
   end
 
+  def prereqsAreMet(id) # takes as input a course id and returns whether or not a student has taken the prereqs for that specific course
+    prereq_relations = Course.find(id).courses_prereqs
+    prereq_ids = []
+    completedCourseIds = []
+    prereq_relations.each do |prereq_relation|
+      prereq_ids.append(prereq_relation.course_id_prereq)
+    end
+    studentCompletedCourses = @student.courses
+    studentCompletedCourses.each do |course|
+      completedCourseIds.append(course.course_id)
+    end
+    if prereq_relations.nil?
+      return true
+    else
+      prereq_ids.each do |id|
+        unless completedCourseIds.include?(id)
+          return false
+        end
+      end
+    end
+    return true
+  end
 end

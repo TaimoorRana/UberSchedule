@@ -6,8 +6,8 @@
 
 <!--main content div : result of schedule-->
 <div class="greybody">
-  <table class="schedulet">
-    <tr class="schedulet">
+  <table class="table">
+    <tr class="">
       <th>Course Code</th>
       <th>Course Name</th>
       <th></th>
@@ -15,7 +15,7 @@
     </tr>
     <%= paginate @courses %>
    <%  @courses.each do |course| %>
-        <tr class="schedulet">
+        <tr class="">
           <td><%= course.dept %></td>
           <td><%= course.number %></td>
           <td><%= course.name %></td>

@@ -10,27 +10,39 @@
 
 </head>
 <body>
+<div class="container-fluid">
 <div class="topmain">
-  <hr class="blackline">
-  <img class="center" src="/assets/logogrey2.png" alt="logo">
-  <hr class="blackline">
-  <p style="font-family:helvetica; font-size:11px; color:#000000; letter-spacing:3px; font-weight:bold;"><%= link_to('Edit Profile',{:controller => 'profile', :action => 'profile'}) %>&nbsp; &nbsp; &nbsp;
-    <%= link_to 'View Your Sequence', sequence_path %> &nbsp; &nbsp; &nbsp;
-    <%= link_to('View Schedule',{:controller => 'schedule', :action => 'schedule'}) %>&nbsp; &nbsp; &nbsp;
-    <%= link_to('Courses',{:controller => 'course', :action => 'index'}) %>&nbsp;&nbsp; &nbsp;
-    <%= link_to('Generate Schedule',{:controller => 'schedule_generator', :action => 'schedule_generator'}) %>&nbsp;&nbsp; &nbsp;
-    <%= link_to('Sequence Builder',{:controller => 'sequence_builder', :action => 'sequence_builder'}) %>&nbsp;&nbsp; &nbsp;
-    <% if user_signed_in? %>
-        <%=link_to('Logout', destroy_user_session_path, method: 'delete' ) %>
-        <% end %></p>
+
+  <div class="masthead">
+    <h3 class="text-muted">Uber Planner</h3>
+    <img class="center" src="/assets/logogrey2.png" alt="logo">  <hr class="blackline">
+
+      <ul class="nav nav-justified">
+        <li class="btn-group btn-group-lg">        <%= link_to 'View Sequence', sequence_path %>
+        </li>
+        <li class="btn-group btn-group-lg">        <%= link_to('Edit Profile',{:controller => 'profile', :action => 'profile'}) %>
+        </li>
+        <li class="btn-group btn-group-lg">        <%= link_to('View Schedule',{:controller => 'schedule', :action => 'schedule'}) %>
+        </li>
+        <li class="btn-group btn-group-lg">        <%= link_to('Courses',{:controller => 'course', :action => 'index'}) %>
+        </li>
+        <li class="btn-group btn-group-lg">        <%= link_to('Generate Schedule',{:controller => 'schedule_generator', :action => 'schedule_generator'}) %>
+        </li>
+        <li class="btn-group btn-group-lg">        <% if user_signed_in? %>
+              <%=link_to('Logout', destroy_user_session_path, method: 'delete' ) %>
+          <% end %>
+        </li>
+      </ul>
+  </div>
+
   <hr class="blackline">
 </div>
 
 <% if !flash[:notice].blank? %>
-    <%= flash.notice %>
+    <div class="alert alert-warning"><%= flash.notice %></div>
 <% end %>
 
 <%= yield %>
-
+</div>
 </body>
 </html>
