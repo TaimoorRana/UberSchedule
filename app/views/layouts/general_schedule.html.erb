@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>UberScheduleApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag('application') %>
@@ -11,38 +11,42 @@
 </head>
 <body>
 <div class="container-fluid">
-<div class="topmain">
+  <div class="topmain">
 
-  <div class="masthead">
-    <h3 class="text-muted">Uber Planner</h3>
-    <img class="center" src="/assets/logogrey2.png" alt="logo">  <hr class="blackline">
+    <div class="masthead">
+      <h3 class="text-muted">Uber Planner</h3>
+      <div class="col-sm-12">
+        <img class="center" src="/assets/logogrey2.png" alt="logo">
+    </div>
+      <div class="col-sm-12"><hr class="blackline"></div>
+
 
       <ul class="nav nav-justified">
-        <li class="btn-group btn-group-lg">        <%= link_to 'View Sequence', sequence_path %>
+        <li class="btn btn-group btn-group-lg">        <%= link_to 'View Sequence', sequence_path %>
         </li>
-        <li class="btn-group btn-group-lg">        <%= link_to('Edit Profile',{:controller => 'profile', :action => 'profile'}) %>
+        <li class="btn btn-group btn-group-lg">        <%= link_to('Edit Profile', {:controller => 'profile', :action => 'profile'}) %>
         </li>
-        <li class="btn-group btn-group-lg">        <%= link_to('View Schedule',{:controller => 'schedule', :action => 'schedule'}) %>
+        <li class="btn btn-group btn-group-lg">        <%= link_to('View Schedule', {:controller => 'schedule', :action => 'schedule'}) %>
         </li>
-        <li class="btn-group btn-group-lg">        <%= link_to('Courses',{:controller => 'course', :action => 'index'}) %>
+        <li class="btn btn-group btn-group-lg">        <%= link_to('Courses', {:controller => 'course', :action => 'index'}) %>
         </li>
-        <li class="btn-group btn-group-lg">        <%= link_to('Generate Schedule',{:controller => 'schedule_generator', :action => 'schedule_generator'}) %>
+        <li class="btn btn-group btn-group-lg">        <%= link_to('Generate Schedule', {:controller => 'schedule_generator', :action => 'schedule_generator'}) %>
         </li>
-        <li class="btn-group btn-group-lg">        <% if user_signed_in? %>
-              <%=link_to('Logout', destroy_user_session_path, method: 'delete' ) %>
+        <li class="btn btn-group btn-group-lg">
+          <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, method: 'delete') %>
           <% end %>
         </li>
       </ul>
+    </div>
+
   </div>
 
-  <hr class="blackline">
-</div>
+  <% if !flash[:notice].blank? %>
+      <div class="alert alert-warning"><%= flash.notice %></div>
+  <% end %>
 
-<% if !flash[:notice].blank? %>
-    <div class="alert alert-warning"><%= flash.notice %></div>
-<% end %>
-
-<%= yield %>
+  <%= yield %>
 </div>
 </body>
 </html>

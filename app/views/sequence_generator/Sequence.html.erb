@@ -1,35 +1,35 @@
-<div class="header"> <h1>My Specialization's Sequence</h1>
-<h2> Select courses that have been completed:</h2></div>
+<div class="header"><h1>My Specialization's Sequence</h1>
+
+  <h2> Select courses that have been completed:</h2></div>
 <div class="greybody">
   <h3> Obligatory Software Engineering Core Courses</h3>
-<%= form_tag(update_sequence_path) do %>
+  <%= form_tag(update_sequence_path) do %>
 
 
+      <table class="table">
+        <tr></tr>
+        <thead>
+        <tr>
+          <th>Completed?</th>
+          <th>Course Dept</th>
+          <th>Number</th>
+          <th>Credits</th>
+          <th>Course Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @sequence[:core].courses.sort.each do |course| %>
+            <tr>
+              <td><%= check_box_tag(course.id.to_s) %></td>
+              <td><%= course.dept %></td>
+              <td><%= course.number %></td>
+              <td><%= course.credit %></td>
+              <td><%= course.name %></td>
+            </tr>
 
-<table class="table">
-  <tr></tr>
-  <thead>
-  <tr>
-    <th>Completed?</th>
-    <th>Course Dept</th>
-    <th>Number</th>
-    <th>Credits</th>
-    <th>Course Name</th>
-  </tr>
-  </thead>
-  <tbody>
-      <% @sequence[:core].courses.sort.each do |course| %>
-          <tr>
-            <td><%= check_box_tag(course.id.to_s)%></td>
-            <td><%= course.dept %></td>
-            <td><%= course.number %></td>
-            <td><%= course.credit %></td>
-            <td><%= course.name %></td>
-          </tr>
+        <% end %>
 
-      <% end %>
-
-      </tbody>
+        </tbody>
       </table>
 
       <% if @sequence[:general].nil? %>
@@ -48,7 +48,7 @@
             <tbody>
             <% @sequence[:required].courses.each do |course| %>
                 <tr>
-                  <td><%= check_box_tag(course.id.to_s)%></td>
+                  <td><%= check_box_tag(course.id.to_s) %></td>
                   <td><%= course.dept %></td>
                   <td><%= course.number %></td>
                   <td><%= course.credit %></td>
@@ -75,7 +75,7 @@
             <tbody>
             <% @sequence[:one_of].courses.each do |course| %>
                 <tr>
-                  <td><%= check_box_tag(course.id.to_s)%></td>
+                  <td><%= check_box_tag(course.id.to_s) %></td>
                   <td><%= course.dept %></td>
                   <td><%= course.number %></td>
                   <td><%= course.credit %></td>
@@ -102,7 +102,7 @@
             <tbody>
             <% @sequence[:electives].courses.each do |course| %>
                 <tr>
-                  <td><%= check_box_tag(course.id.to_s)%></td>
+                  <td><%= check_box_tag(course.id.to_s) %></td>
                   <td><%= course.dept %></td>
                   <td><%= course.number %></td>
                   <td><%= course.credit %></td>
@@ -130,7 +130,7 @@
             <tbody>
             <% @sequence[:general].courses.each do |course| %>
                 <tr>
-                  <td><%= check_box_tag(course.id.to_s)%></td>
+                  <td><%= check_box_tag(course.id.to_s) %></td>
                   <td><%= course.dept %></td>
                   <td><%= course.number %></td>
                   <td><%= course.credit %></td>
@@ -143,6 +143,6 @@
 
           </table>
       <% end %>
-    <%= submit_tag('Save Completed Courses',class:"btn btn-default btn-lg") %>
-<% end %>
+      <%= submit_tag('Save Completed Courses', class: "btn btn-default btn-lg") %>
+  <% end %>
 </div>

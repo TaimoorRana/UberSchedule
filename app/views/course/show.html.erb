@@ -1,4 +1,3 @@
-
 <!--header div : Schedule-->
 <div class="header">
   Course Information
@@ -11,12 +10,17 @@
       <th>Course Name</th>
       <th>Teacher</th>
     </tr>
-        <tr>
-          <td><%= "#{@course.dept}#{@course.number}" %></td>
-          <td><%= @course.name %></td>
-          <td>Aiman Hanna</td>
-        </tr>
+    <tr>
+      <td><%= "#{@course.dept}#{@course.number}" %></td>
+      <td><%= @course.name %></td>
+      <td>Aiman Hanna</td>
+    </tr>
   </table>
-  <p>This course has two components: a theory component to teach you the concepts and principles that underlie modern operating systems, and a practice component to relate theoretical principles with operating system implementation. In the theory component, you will learn about processes and processor management, concurrency and synchronization, memory management schemes, file system and secondary storage management, security and protection, etc. The practice component will complement the theory component through programming assignments illustrating the use and implementation of these concepts.</p>
-  <%= link_to('Add This Course',{:controller => 'student', :action => 'add_course', :id => @course.id}) %>
+  <p>This course has two components: a theory component to teach you the concepts and principles that underlie modern
+    operating systems, and a practice component to relate theoretical principles with operating system implementation.
+    In the theory component, you will learn about processes and processor management, concurrency and synchronization,
+    memory management schemes, file system and secondary storage management, security and protection, etc. The practice
+    component will complement the theory component through programming assignments illustrating the use and
+    implementation of these concepts.</p>
+  <%= link_to('Add This Course', {:controller => 'student', :action => 'add_course', :id => @course.id}) %>
 </div>
