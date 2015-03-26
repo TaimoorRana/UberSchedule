@@ -16,12 +16,15 @@ class ScheduleController < ApplicationController
     #   @thursdaySections = [Course.find(9).sections.find(58),Course.find(9).sections.find(66)]
     #   @fridaySections = [Course.find(8).sections.find(53),Course.find(9).sections.find(62)]
 
-    @sections = []
-    add_sections(Section.find(1))
-    add_sections(Section.find(14))
-    add_sections(Section.find(42))
-    add_sections(Section.find(30))
-    add_sections(Section.find(41))
+    @all_courses_sections = []
+
+    @courses = [Course.find(23),Course.find(1)]
+    find_all_schedule
+    # add_sections(Section.find(1))
+    # add_sections(Section.find(14))
+    # add_sections(Section.find(42))
+    # add_sections(Section.find(30))
+    # add_sections(Section.find(41))
     @conflicts = find_conflicts
     week = separate_sections_according_to_days
     @mondaySections = week[0]
@@ -31,8 +34,17 @@ class ScheduleController < ApplicationController
     @fridaySections = week[4]
 
 
-
   end
+
+  def find_all_schedule
+    @courses.each do |course|
+      @all_courses_sections.push(course.sections)
+    end
+    @possible_schedule = @all_courses_sections.inject(&:product).map(&:flatten)
+
+    @sections = @possible_schedule[0]
+  end
+
 
   def registered_courses
 
