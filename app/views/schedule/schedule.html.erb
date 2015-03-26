@@ -1,7 +1,14 @@
-<table border="2px">
-  <tr>
-    <th>Time</th> <th>Monday</th> <th>Tuesday</th> <th>Wednesday</th> <th>Thursday</th> <th>Friday</th>
-  </tr>
+<div class="header"></div>
+<div class="greybody">
+  <table border="0px">
+    <tr>
+      <th>Time</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+    </tr>
 
   <!--This is used to calculate the time that will appear on the
   the left side of the schedule-->
@@ -35,7 +42,7 @@
 
         <% if @tuesdaySections.any? &&  @tuesdaySections.first.time_start == time  %>
             <% @tuesday_section_duration = 3 %>
-            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @tuesdaySections.first.course.dept %> <%= @tuesdaySections.first.course.number %> <br/> <%= @tuesdaySections.first.name %> <br/> <%= @tuesdaySections.first.time_start %>
+            <td rowspan="3" style="background-color: burlywood; border-bottom: none" ><%= @tuesdaySections.first.course.dept %> <%= @tuesdaySections.first.course.number %> <br/> <%= @tuesdaySections.first.name %> <br/> <%= @tuesdaySections.first.time_start %>
               <br/> <%= @tuesdaySections.first.time_end %></td>
             <% @tuesdaySections.shift(1) %>
         <% elsif @tuesday_section_duration > 1 %>
@@ -48,7 +55,7 @@
 
         <% if @wednesdaySections.any? && @wednesdaySections.first.time_start == time  %>
             <% @wednesday_section_duration = 3 %>
-            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @wednesdaySections.first.course.dept %> <%= @wednesdaySections.first.course.number %> <br/> <%= @wednesdaySections.first.name %> <br/> <%= @wednesdaySections.first.time_start %>
+            <td rowspan="3" style="background-color: aqua; border-bottom: none" ><%= @wednesdaySections.first.course.dept %> <%= @wednesdaySections.first.course.number %> <br/> <%= @wednesdaySections.first.name %> <br/> <%= @wednesdaySections.first.time_start %>
               <br/> <%= @wednesdaySections.first.time_end %></td>
             <% @wednesdaySections.shift(1) %>
         <% elsif @wednesday_section_duration > 1 %>
@@ -61,7 +68,7 @@
 
         <% if @thursdaySections.any? && @thursdaySections.first.time_start == time  %>
             <% @thursday_section_duration = 3 %>
-            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @thursdaySections.first.course.dept %> <%= @thursdaySections.first.course.number %> <br/> <%= @thursdaySections.first.name %> <br/> <%= @thursdaySections.first.time_start %>
+            <td rowspan="3" style="background-color: chartreuse; border-bottom: none" ><%= @thursdaySections.first.course.dept %> <%= @thursdaySections.first.course.number %> <br/> <%= @thursdaySections.first.name %> <br/> <%= @thursdaySections.first.time_start %>
               <br/> <%= @thursdaySections.first.time_end %></td>
             <% @thursdaySections.shift(1) %>
         <% elsif @thursday_section_duration > 1 %>
@@ -74,7 +81,7 @@
 
         <% if @fridaySections.any? && @fridaySections.first.time_start == time  %>
             <% @friday_section_duration = 3 %>
-            <td rowspan="3" style="background-color: crimson; border-bottom: none" ><%= @fridaySections.first.course.dept %> <%= @fridaySections.first.course.number %> <br/> <%= @fridaySections.first.name %> <br/> <%= @fridaySections.first.time_start %>
+            <td rowspan="3" style="background-color: darkmagenta; border-bottom: none" ><%= @fridaySections.first.course.dept %> <%= @fridaySections.first.course.number %> <br/> <%= @fridaySections.first.name %> <br/> <%= @fridaySections.first.time_start %>
               <br/> <%= @fridaySections.first.time_end %></td>
             <% @fridaySections.shift(1) %>
         <% elsif @friday_section_duration > 1 %>
@@ -88,13 +95,6 @@
       </tr>
   <% end %>
 </table>
-
-
-
-
-
-
-
-<%= link_to('Registered Courses',{action: 'registered_courses'}) %>
-
+  <button class="btn btn-default btn-lg"> <%= link_to('Registered Courses', {action: 'registered_courses'}) %></button>
+  </div>
 

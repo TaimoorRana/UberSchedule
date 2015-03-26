@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>UberScheduleApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag('application') %>
@@ -10,9 +10,13 @@
 </head>
 <body>
 <div class="topbar">
-  <p class="whitexpand">&nbsp; &nbsp; &nbsp;UBER</p><img class="center" src="/assets/logo.png" alt="logo"><p class="whitexpand">PLANNER</p><br><span style="font-family: Trebuchet, Helvetica, sans-serif; font-size:12px; color:#ffffff; font-weight:bold;">BY UBERTEAM</span>
+  <p class="whitexpand">&nbsp; &nbsp; &nbsp;UBER</p><img class="center" src="/assets/logo.png" alt="logo">
+
+  <p class="whitexpand">PLANNER</p>
+  <br><span style="font-family: Trebuchet, Helvetica, sans-serif; font-size:12px; color:#ffffff; font-weight:bold;">BY UBERTEAM</span>
+
   <p class="notice"><%= notice %></p>
-<%= yield %>
+  <%= yield %>
 </div>
 </body>
 </html>

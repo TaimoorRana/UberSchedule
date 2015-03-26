@@ -1,26 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>UberScheduleApp - Edit Your Profile</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag('application') %>
+<p class="header">Create your schedule, <%= @student_first_name %> <%= @student_last_name %></p>
+<div class="greybody">
+  <%= form_tag(:action => 'step_two') do %>
+      <p class="rich">Step 1: Review your preferences from the <i>Edit Profile</i> page.</p>
 
-</head>
-<head>
-  <title>UberScheduleApp - Schedule Generator</title>
-</head>
-<body>
-    <p style="font-family:helvetica; font-size:20px; color:#000000; letter-spacing:2px; font-weight:bold;">Create your schedule, <%= @student_first_name %> <%= @student_last_name %></p>
-    <div>
-      <%= form_tag(:action => 'step_two') do %>
-        <p class="rich">Step 1: Review your preferences from the <i>Edit Profile</i> page.</p>
-        <p class="rich">Step 2: Select a semester and a year.</p>
-          <%= select_tag(:schedule_term, options_for_select(["Fall", "Winter", "Summer", "Summer1", "Summer2"])) %>
-          <%= select_tag(:schedule_year, options_for_select(["2015", "2016", "2017", "2018", "2019"])) %></br></br>
-          <%= submit_tag("Proceed to Step 3",  class: 'submitButton') %>
-      <% end %> <!-- end of the form -->
-    </div>
-</body>
-</html>
+      <p class="rich">Step 2: Select a semester and a year.</p>
+      <%= select_tag(:schedule_term, options_for_select(["Fall", "Winter", "Summer", "Summer1", "Summer2"])) %>
+      <%= select_tag(:schedule_year, options_for_select(["2015", "2016", "2017", "2018", "2019"])) %></br></br>
+      <%= submit_tag("Proceed to Step 3", class: 'submitButton') %>
+  <% end %> <!-- end of the form -->
+</div>

@@ -1,143 +1,96 @@
-<h2>My Updated Sequence</h2>
-<h3> Select the courses from these options that you wish to take:</h3>
-<h2> Obligatory Software Engineering Core Courses</h2>
-<%= form_tag(personalized_sequence_path) do %>
-    <table>
-      <tr></tr>
-      <thead>
-      <tr>
-        <th> </th>
-        <th>Course Dept</th>
-        <th>Number</th>
-        <th>Credits</th>
-        <th>Course Name</th>
-      </tr>
-      </thead>
-      <tbody>
-      <% @sequence[:core].courses.sort.each do |course| %>
-          <tr>
-            <td><%= hidden_field_tag(course.id.to_s, '1')%>  </td>
-            <td><%= course.dept %></td>
-            <td><%= course.number %></td>
-            <td><%= course.credit %></td>
-            <td><%= course.name %></td>
-          </tr>
+<div class="header">
+  <h2> My Updated Sequence</h2>
 
+  <h3> Select the courses from this list that you wish to take:</h3>
+</div>
+<div class="greybody">
+  <%= form_tag(personalized_sequence_path) do %>
+
+      <% if @sequence[:general].nil? %>
+
+          <h2> Must take at least one of the following <%= @option %> courses</h2>
+          <table class="table">
+            <tr></tr>
+            <thead>
+            <tr>
+              <th>Indicate Course</th>
+              <th>Course Dept</th>
+              <th>Number</th>
+              <th>Credits</th>
+              <th>Course Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @sequence[:one_of].courses.each do |course| %>
+                <tr>
+                  <td><%= check_box_tag(course.id.to_s) %></td>
+                  <td><%= course.dept %></td>
+                  <td><%= course.number %></td>
+                  <td><%= course.credit %></td>
+                  <td><%= course.name %></td>
+                </tr>
+
+            <% end %>
+
+            </tbody>
+
+          </table>
+          <h2> Electives Available</h2>
+          <table class="table">
+            <tr></tr>
+            <thead>
+            <tr>
+              <th>Indicate Course</th>
+              <th>Course Dept</th>
+              <th>Number</th>
+              <th>Credits</th>
+              <th>Course Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @sequence[:electives].courses.each do |course| %>
+                <tr>
+                  <td> <%= check_box_tag(course.id.to_s) %></td>
+                  <td><%= course.dept %></td>
+                  <td><%= course.number %></td>
+                  <td><%= course.credit %></td>
+                  <td><%= course.name %></td>
+                </tr>
+
+            <% end %>
+
+            </tbody>
+
+          </table>
+      <% else %>
+          <h2> Select courses from the following:</h2>
+          <table class="table">
+            <tr></tr>
+            <thead>
+            <tr>
+              <th>Indicate Courses</th>
+              <th>Course Dept</th>
+              <th>Number</th>
+              <th>Credits</th>
+              <th>Course Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @sequence[:general].courses.each do |course| %>
+                <tr>
+                  <td><%= check_box_tag(course.id.to_s) %></td>
+                  <td><%= course.dept %></td>
+                  <td><%= course.number %></td>
+                  <td><%= course.credit %></td>
+                  <td><%= course.name %></td>
+                </tr>
+
+            <% end %>
+
+            </tbody>
+
+          </table>
       <% end %>
-
-      </tbody>
-    </table>
-
-    <% if @sequence[:general].nil? %>
-        <h2> Required <%= @option %> courses</h2>
-        <table>
-          <tr></tr>
-          <thead>
-          <tr>
-            <th></th>
-            <th>Course Dept</th>
-            <th>Number</th>
-            <th>Credits</th>
-            <th>Course Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          <% @sequence[:required].courses.each do |course| %>
-              <tr>
-                <td><%= hidden_field_tag(course.id.to_s, '1')%>  </td>
-                <td><%= course.dept %></td>
-                <td><%= course.number %></td>
-                <td><%= course.credit %></td>
-                <td><%= course.name %></td>
-              </tr>
-
-          <% end %>
-
-          </tbody>
-
-        </table>
-        <h2> Must take at least one of the following <%= @option %> courses</h2>
-        <table>
-          <tr></tr>
-          <thead>
-          <tr>
-            <th>Indicate Course</th>
-            <th>Course Dept</th>
-            <th>Number</th>
-            <th>Credits</th>
-            <th>Course Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          <% @sequence[:one_of].courses.each do |course| %>
-              <tr>
-                <td><%= check_box_tag(course.id.to_s)%></td>
-                <td><%= course.dept %></td>
-                <td><%= course.number %></td>
-                <td><%= course.credit %></td>
-                <td><%= course.name %></td>
-              </tr>
-
-          <% end %>
-
-          </tbody>
-
-        </table>
-        <h2> Electives Available</h2>
-        <table>
-          <tr></tr>
-          <thead>
-          <tr>
-            <th>Indicate Course</th>
-            <th>Course Dept</th>
-            <th>Number</th>
-            <th>Credits</th>
-            <th>Course Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          <% @sequence[:electives].courses.each do |course| %>
-              <tr>
-                <td> <%= check_box_tag(course.id.to_s)%></td>
-                <td><%= course.dept %></td>
-                <td><%= course.number %></td>
-                <td><%= course.credit %></td>
-                <td><%= course.name %></td>
-              </tr>
-
-          <% end %>
-
-          </tbody>
-
-        </table>
-    <% else %>
-        <h2> Must take rest of courses from the following:</h2>
-        <table>
-          <tr></tr>
-          <thead>
-          <tr>
-            <th>Indicate Courses</th>
-            <th>Course Dept</th>
-            <th>Number</th>
-            <th>Credits</th>
-            <th>Course Name</th>
-          </tr>
-          </thead>
-          <tbody>
-          <% @sequence[:general].courses.each do |course| %>
-              <tr>
-                <td><%= check_box_tag(course.id.to_s)%></td>
-                <td><%= course.dept %></td>
-                <td><%= course.number %></td>
-                <td><%= course.credit %></td>
-                <td><%= course.name %></td>
-              </tr>
-
-          <% end %>
-
-          </tbody>
-
-        </table>
-    <% end %>
-    <%= submit_tag('Save Completed Courses', {style: "background-color:black;"}) %>
-<% end %>
+      <%= submit_tag('Save Completed Courses', {style: "background-color:black;"}) %>
+  <% end %>
+</div>

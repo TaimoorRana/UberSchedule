@@ -1,4 +1,3 @@
-
 <!--header div : Schedule-->
 <div class="header">
   Available Courses
@@ -6,22 +5,22 @@
 
 <!--main content div : result of schedule-->
 <div class="greybody">
-  <table class="schedulet">
-    <tr class="schedulet">
+  <table class="table">
+    <tr class="">
       <th>Course Code</th>
       <th>Course Name</th>
       <th></th>
       <th></th>
     </tr>
     <%= paginate @courses %>
-   <%  @courses.each do |course| %>
-        <tr class="schedulet">
+    <% @courses.each do |course| %>
+        <tr class="">
           <td><%= course.dept %></td>
           <td><%= course.number %></td>
           <td><%= course.name %></td>
-          <td><%= link_to('Add',{:controller => 'student', :action => 'add_course', :id => course.id}) %></td>
-          <td><%= link_to('Details',{:controller => 'Course', :action => 'show' , :id => course.id}) %></td>
+          <td><%= link_to('Add', {:controller => 'student', :action => 'add_course', :id => course.id}) %></td>
+          <td><%= link_to('Details', {:controller => 'Course', :action => 'show', :id => course.id}) %></td>
         </tr>
-    <%end%>
+    <% end %>
   </table>
 </div>
