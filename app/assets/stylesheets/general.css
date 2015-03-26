@@ -3,6 +3,8 @@ body{
     text-align: center;
     background-image:url("bkgd.jpg");
     background-size: cover;
+    height: 100%;
+    width: 100%;
   }
 th{
     text-align: center;
@@ -158,4 +160,9 @@ li a{
 }
 select {
     color:#000000;
+}
+
+.masthead{
+    background-color: #FFC5A7;
+    border-radius: 10px;
 }
