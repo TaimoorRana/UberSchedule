@@ -122,7 +122,7 @@ ActiveRecord::Schema.define(version: 20150318012516) do
   create_table "users", primary_key: "user_id", force: :cascade do |t|
     t.string   "username",               limit: 64
     t.string   "email",                  limit: 128
-    t.datetime "user_reg_date",                                   null: false
+    t.datetime "user_reg_date",          default: '2008-10-03 22:59:52', null: false
     t.string   "encrypted_password",     limit: 255, default: "", null: false
     t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
