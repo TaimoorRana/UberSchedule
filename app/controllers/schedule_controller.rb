@@ -10,28 +10,31 @@ class ScheduleController < ApplicationController
     # comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
     # comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
     #
-    #   @mondaySections = [Course.find(2).sections.find(5),Course.find(1).sections.find(1)]
-    #   @tuesdaySections = [Course.find(3).sections.find(13),Course.find(3).sections.find(16)]
-    #   @wednesdaySections = [Course.find(4).sections.find(24),Course.find(7).sections.find(42)]
-    #   @thursdaySections = [Course.find(9).sections.find(58),Course.find(9).sections.find(66)]
-    #   @fridaySections = [Course.find(8).sections.find(53),Course.find(9).sections.find(62)]
+      @sections = [Course.find(2).sections.find(5),Course.find(45).sections.find(200)]
+      week = separate_sections_according_to_days
+      #@mondaySections = [Course.find(2).sections.find(5)]
+
+      @mondaySections = week[0]
+      @tuesdaySections = week[1]
+      @wednesdaySections = week[2]
+      @thursdaySections = week[3]
+      @fridaySections = week[4]
 
     @all_courses_sections = []
 
     @courses = [Course.find(23),Course.find(1)]
-    find_all_schedule
+
     # add_sections(Section.find(1))
     # add_sections(Section.find(14))
     # add_sections(Section.find(42))
     # add_sections(Section.find(30))
     # add_sections(Section.find(41))
-    @conflicts = find_conflicts
-    week = separate_sections_according_to_days
-    @mondaySections = week[0]
-    @tuesdaySections = week[1]
-    @wednesdaySections = week[2]
-    @thursdaySections = week[3]
-    @fridaySections = week[4]
+
+    # @mondaySections = week[0]
+    # @tuesdaySections = week[1]
+    # @wednesdaySections = week[2]
+    # @thursdaySections = week[3]
+    # @fridaySections = week[4]
 
 
   end
@@ -65,20 +68,22 @@ class ScheduleController < ApplicationController
     arr = [[],[],[],[],[]]
     @sections.each do |section|
       section.day_of_week.to_s.each_char do |day|
+        duration = (Time.parse(section.time_end) - Time.parse(section.time_start))
+        section_row_span = duration/60/15
         if day == 'M'
-          arr[0].push(section)
+          arr[0].push([section,section_row_span])
         end
         if day == 'T'
-          arr[1].push(section)
+          arr[1].push([section,section_row_span])
         end
         if day == 'W'
-          arr[2].push(section)
+          arr[2].push([section,section_row_span])
         end
         if day == 'J'
-          arr[3].push(section)
+          arr[3].push([section,section_row_span])
         end
         if day == 'F'
-          arr[4].push(section)
+          arr[4].push([section,section_row_span])
         end
       end
     end
