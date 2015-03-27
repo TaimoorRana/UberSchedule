@@ -93,8 +93,8 @@ ActiveRecord::Schema.define(version: 20150318012516) do
   end
 
   create_table "students", primary_key: "student_id", force: :cascade do |t|
-    t.string  "first_name",  limit: 64,  null: false
-    t.string  "last_name",   limit: 64,  null: false
+    t.string  "first_name",  limit: 64,  default: "NoName"
+    t.string  "last_name",   limit: 64,  default: "NoName"
     t.integer "user_id",     limit: 4
     t.integer "sequence_id", limit: 4
     t.string  "option",      limit: 255
@@ -122,7 +122,7 @@ ActiveRecord::Schema.define(version: 20150318012516) do
   create_table "users", primary_key: "user_id", force: :cascade do |t|
     t.string   "username",               limit: 64
     t.string   "email",                  limit: 128
-    t.datetime "user_reg_date",                                   null: false
+    t.datetime "user_reg_date",                                  null: false
     t.string   "encrypted_password",     limit: 255, default: "", null: false
     t.string   "reset_password_token",   limit: 255
     t.datetime "reset_password_sent_at"
