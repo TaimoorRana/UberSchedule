@@ -10,6 +10,10 @@
       <th>Friday</th>
     </tr>
 
+    <% @wednesdaySections.each do |section| %>
+        <%= section %>
+        <% end %>
+
   <!--This is used to calculate the time that will appear on the
   the left side of the schedule-->
   <% x = Time.local(2015,'jan',15,8,0,0) %>

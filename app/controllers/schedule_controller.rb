@@ -10,7 +10,7 @@ class ScheduleController < ApplicationController
     # comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
     # comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
     #
-      @sections = [Course.find(2).sections.find(5),Course.find(45).sections.find(200)]
+      @sections = [Course.find(45).sections.first,Course.find(2).sections.first]
       week = separate_sections_according_to_days
       #@mondaySections = [Course.find(2).sections.find(5)]
 
@@ -67,6 +67,7 @@ class ScheduleController < ApplicationController
   def separate_sections_according_to_days
     arr = [[],[],[],[],[]]
     @sections.each do |section|
+      wednesday_added = false
       section.day_of_week.to_s.each_char do |day|
         duration = (Time.parse(section.time_end) - Time.parse(section.time_start))
         section_row_span = duration/60/15
@@ -76,8 +77,9 @@ class ScheduleController < ApplicationController
         if day == 'T'
           arr[1].push([section,section_row_span])
         end
-        if day == 'W'
+        if day == 'W' && wednesday_added == false
           arr[2].push([section,section_row_span])
+          wednesday_added = true
         end
         if day == 'J'
           arr[3].push([section,section_row_span])
