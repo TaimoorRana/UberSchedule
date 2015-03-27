@@ -1,8 +1,12 @@
+.blacktext{
+    color: #000000;
+}
 body{
     background-color: #FFFFFF;
     text-align: center;
     background-image:url("bkgd.jpg");
     background-size: cover;
+    min-height:900px;
     height: 100%;
     width: 100%;
   }
