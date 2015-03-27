@@ -10,7 +10,7 @@ class ScheduleController < ApplicationController
     # comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
     # comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
     #
-      @sections = [Course.find(45).sections.first,Course.find(2).sections.first]
+      @sections = [Course.find(2).sections.first,Course.find(45).sections.first]
       week = separate_sections_according_to_days
       #@mondaySections = [Course.find(2).sections.find(5)]
 
@@ -90,7 +90,35 @@ class ScheduleController < ApplicationController
       end
     end
 
-    return arr
+    arr_sorted = [[],[],[],[],[]]
+
+    arr.each do |day|
+      day_counter = 0
+      earliest_section = nil
+      day.each do |section|
+        if earliest_section == nil || section[0].time_start < earliest_section[0].time_start
+          earliest_section = section
+        end
+      end
+      arr_sorted[day_counter].append(earliest_section)
+    end
+    return arr_sorted
+  end
+
+  def sort_each_day(arr)
+    arr_sorted = [[],[],[],[],[]]
+
+    arr.each do |day|
+      day_counter = 0
+      earliest_section = nil
+      day.each do |section|
+        if earliest_section == nil || section.time_start < earliest_section
+          earliest_section = section
+        end
+      end
+      arr_sorted[day_counter].append(earliest_section)
+    end
+    return arr_sorted
   end
 
   def find_conflicts
