@@ -12,13 +12,11 @@ class SequenceBuilderController < ApplicationController
     accumulated_credits = 0 #TODO
     max_credits = 120
     semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"}
-    all_sections = Section.all
-    fall_sections = all_sections.where(term: "Fall")
-    winter_sections = all_sections.where(term: "Winter")
-    summer_sections = all_sections.where(term: "Summer")
+    fall_sections = Section.where(term: "Fall")
+    winter_sections = Section.where(term: "Winter")
+    summer_sections = Section.where(term: "Summer")
     semester_section = {"Fall" => fall_sections, "Winter" => winter_sections, "Summer" => summer_sections}
-    list_of_prereqs = CoursesPrereq.all
-    completed_courses = student.courses.all
+    completed_courses = student.courses
     @complete_sequence = Array.new
 
     #Loop until acculmated credits reach 120
@@ -35,11 +33,11 @@ class SequenceBuilderController < ApplicationController
       semester_section[current_semester].each do |section| #loop through all courses given this semester
         course_id = section.course_id
         if(previous_course_id != course_id)
-          course = Course.find(course_id)
-          previous_course_id = course_id#TODO DB CALL TO BE REMOVED
+          course = Course.find(course_id) ###---deleted by Adrian
+          previous_course_id = Course.find(course_id)#TODO DB CALL TO BE REMOVED
           if !completed_courses.include?(course) #if course not completed
           missing_prereq = 0
-          course_prereqs = list_of_prereqs.where(course_id: course_id)
+          course_prereqs = CoursesPrereq.where(course_id: course_id)
           if course_prereqs[0] !=nil #check if course has prereqs
             course_prereqs.each do |prereq| #if yes, check if they have been completed
               if !completed_courses.include?(Course.find(prereq.course_id_prereq))
@@ -54,33 +52,31 @@ class SequenceBuilderController < ApplicationController
           end #end of main if
           end
       end #end of do
-        max_classes = (current_semester == "Summer") ? 4 : 5
+        semester_classes = (current_semester == "Summer") ? 4 : 5
         used_index = Array.new
         #Add classes from available classes until max_classes is reached
         #increment credits
         #add added course to db of completed courses
+        available_length = available_this_semester.length
+        max_classes = [semester_classes, available_length].min
+        if available_length != 0
         until classes_counter == max_classes do
-          available_length = available_this_semester.length
           random_index = rand(available_length)
           if !(used_index.include? random_index)
             used_index.push(random_index)
             added_course = available_this_semester[random_index]
             @current_semester.push(added_course)
             classes_counter =  classes_counter + 1
-            accumulated_credits = accumulated_credits + added_course.credit
+            accumulated_credits = accumulated_credits + 3
             completed_courses.push(added_course) #TODO Remember to push this to DB after job done
           end
         end #end of until classes_counter > max_classes
         @complete_sequence.push(@current_semester)
         @semester_counter = @semester_counter + 1
-    end
-      completed_courses.each do |x|
-      student.courses << x
       end
-
-    end
-
-
+      end
+      end
   end
+
 
 

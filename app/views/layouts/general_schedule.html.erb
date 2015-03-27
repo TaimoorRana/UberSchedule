@@ -32,6 +32,8 @@
         </li>
         <li class="btn btn-group btn-group-lg">        <%= link_to('Generate Schedule', {:controller => 'schedule_generator', :action => 'schedule_generator'}) %>
         </li>
+        <li class="btn btn-group btn-group-lg">        <%= link_to('Test Sequence', {:controller => 'sequence_builder', :action => 'sequence_builder'}) %>
+        </li>
         <li class="btn btn-group btn-group-lg">
           <% if user_signed_in? %>
               <%= link_to('Logout', destroy_user_session_path, method: 'delete') %>
