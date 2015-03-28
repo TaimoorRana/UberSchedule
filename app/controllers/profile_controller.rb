@@ -9,11 +9,16 @@ class ProfileController < ApplicationController
     @previous_preferences = student.preferences
     @previous_preferences.exists?(11) ? @noSplitClasses = 'No' : @noSplitClasses = 'Yes'
     @previous_preferences.exists?(12) ? @noLoyolaCampus = 'No' : @noLoyolaCampus = 'Yes'
+    @previous_preferences.exists?(16) ? @entry = 'Fall Entry' : @entry = 'Winter Entry'
+    @previous_preferences.exists?(15) ? @coop = 'Yes' : @noLoyolaCampus = 'No'
+    @previous_preferences.exists?(14) ? @allowSummerSemester = 'Yes' : @allowSummerSemester = 'No'
+
     @opt_none = Sequence.find(9).sequence_name
     @opt_gaming = Sequence.find(6).sequence_name
     @opt_web = Sequence.find(7).sequence_name
     @opt_avionics = Sequence.find(8).sequence_name
     @current_opt = student.option
+
   end
 
   def updateProfile
@@ -94,6 +99,19 @@ class ProfileController < ApplicationController
       student.preferences << Preference.where(preference: "noLoyolaCampus").first
       @modified.push("No classes at the Loyola campus allowed")
     end
+    if params[:coop] == "Yes" and !@previous_preferences.exists?(13)
+      student.preferences << Preference.where(preference: "coop").first
+      @modified.push("Part of the COOP program")
+    end
+    if params[:allowSummerSemester] == "Yes" and !@previous_preferences.exists?(14)
+      student.preferences << Preference.where(preference: "allowSummerSemester").first
+      @modified.push("Allow Summer classes")
+    end
+    if params[:entry] == "Fall Entry" and !@previous_preferences.exists?(15)
+      student.preferences << Preference.where(preference: "fallEntry").first
+      @modified.push("Fall Entry")
+    end
+
 
 
     if noMondayAm == 0 and @previous_preferences.exists?(1)
@@ -143,6 +161,18 @@ class ProfileController < ApplicationController
     if params[:noLoyolaCampus] == "Yes" and @previous_preferences.exists?(12)
       student.preferences.destroy((Preference.where(preference: "noLoyolaCampus").first).id)
       @modified.push("Classes at the Loyola campus allowed.")
+    end
+    if params[:coop] == "No" and @previous_preferences.exists?(13)
+      student.preferences.destroy((Preference.where(preference: "coop").first).id)
+      @modified.push("Not part of the COOP program")
+    end
+    if params[:allowSummerSemester] == "No" and @previous_preferences.exists?(14)
+      student.preferences.destroy((Preference.where(preference: "allowSummerSemester").first).id)
+      @modified.push("Do not allow Summer classes")
+    end
+    if params[:entry] == "Winter Entry" and @previous_preferences.exists?(15)
+      student.preferences.destroy((Preference.where(preference: "fallEntry").first).id)
+      @modified.push("Winter Entry")
     end
     
 

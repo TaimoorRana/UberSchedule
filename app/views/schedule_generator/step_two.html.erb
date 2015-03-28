@@ -1,18 +1,34 @@
-<p class="header">Create your schedule, <%= @student_first_name %> <%= @student_last_name %></p>
-<div class="greybody">
-  <%= form_tag(:action => 'step_three') do %>
-      <p class="rich">Step 1: Review your preferences from the profile page</p>
 
-      <p class="rich">Step 2: Select a semester. <b><i><%= @schedule_term %> <%= @schedule_year %> selected.</i></b></p>
-
-      <p class="rich">Step 3: Select your classes.</p>
-
-      <% (1..5).each do |x| %>
-          <%= select_tag "course#{x}", options_for_select(Array[*@courses.collect { |v, i| [v, @courses.index(v)] }]) %>
-      <% end %><br><br>
-
-      <%= submit_tag("Proceed to Step 4", class: 'submitButton') %>
-  <% end %> <!-- end of the form -->
+<!--title of the page & subtitle div-->
+<div class="titleCont">
+  <br/><br/>
+  <span class="whiteFONT titleFONT">>Create your schedule, <%= @student_first_name %> <%= @student_last_name %></span><br/>
+  <span class="whiteFONT subtitleFONT"></span>
 </div>
-</body>
-</html>
+</div>
+
+<!--main outer container div-->
+<div class="whiteBCKG extend">
+  <!-- inside container div-->
+  <div class="mainContent">
+
+    <div class="greybody">
+      <%= form_tag(:action => 'step_three') do %>
+          <p class="blacktext">Step 1: Review your preferences from the profile page</p>
+
+          <p class="blacktext">Step 2: Select a semester. <b><i><%= @schedule_term %> <%= @schedule_year %> selected.</i></b></p>
+
+          <p class="blacktext">Step 3: Select your classes.</p>
+
+          <% (1..5).each do |x| %>
+              <%= select_tag "course#{x}", options_for_select(Array[*@courses.collect { |v, i| [v, @courses.index(v)] }]) %>
+          <% end %><br><br>
+
+          <%= submit_tag("Proceed to Step 4", class: 'submitButton') %>
+
+      <% end %> <!-- end of the form -->
+    </div>
+
+
+  </div>
+</div>

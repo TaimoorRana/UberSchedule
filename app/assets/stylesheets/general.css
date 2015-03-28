@@ -1,173 +1,135 @@
-.blacktext{
-    color: #000000;
-}
 body{
-    background-color: #FFFFFF;
+    background-color: #FAF0E6;
+    overflow-x: hidden;
     text-align: center;
-    background-image:url("bkgd.jpg");
-    background-size: cover;
-    min-height:900px;
-    height: 100%;
-    width: 100%;
-  }
+}
+
+.topPara{
+    background: #FFFFFF url("bkgd.jpg") no-repeat center top;
+    text-align: center;
+    align:center;
+    padding-top:60px;
+    padding-bottom:8px;
+    margin-top:-50px;
+}
+
+.extend{
+    padding-left:1000px;
+    padding-right:1000px;
+    margin-left:-1000px;
+    margin-right:-1000px;
+}
+
+.whiteBCKG{
+    background-color:#FFFFFF;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
+.whiteFONT{
+    color: #ffffff
+}
+
+.titleFONT{
+    font-size:36px;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+}
+
+.subtitleFONT{
+    font-size:20px;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+}
+
+.titleCont{
+    text-align:center;
+    padding-left:15px;;
+
+}
+
+.mainContent{
+    width:85%;
+    padding:10px;
+    padding-top:20px;
+    padding-bottom:25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerPara{
+    padding-bottom:20px;
+    padding-top:20px;
+    color:#311800;
+    font-size:9px;
+    font-family: helvetica, sans-serif;
+    font-weight:bold;
+    text-align:center;
+    padding-top:20px;
+}
+
+.responseBox{
+    background-color:#B0E0E6;
+    border: 0px;
+    border-radius: 10px;
+    padding:10px;
+    margin-bottom:20px;
+    color:#262626;
+    font-size:13px;
+    font-family: helvetica, sans-serif;
+}
+
+
+p{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:16px;
+    color:#ffffff;
+}
+
+.whitexpand{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:14px;
+    color:#ffffff;
+    font-weight:bolder;
+    letter-spacing:3px;
+    display:inline;
+}
+
+.blackexpand{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:14px;
+    color:#000000;
+    font-weight:bolder;
+    letter-spacing:3px;
+    display:inline;
+}
+.blackline{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.menuFONT{
+    font-family:helvetica;
+    font-size:12px;
+    letter-spacing:3px;
+    font-weight:bold;
+}
+.table{
+    text-align: center;
+}
 th{
     text-align: center;
 }
-li a{
-    color:#ffffff;
-    font-weight: bold;
-}
-
-  h1{
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      color:#ffffff;
-      letter-spacing:5px;
-  }
-
-  hr{
-      height:1px;
-      border-width:0px;
-      color:#ffffff;
-      background-color:#ffffff;
-      width:200px;
-  }
- li{
-     padding: 3px;
- }
- a{
-     padding: 5px
- }
-  .whiteline{
-      height:1px;
-      border-width:0px;
-      color:#ffffff;
-      background-color:#ffffff;
-      width:200px;
-  }
-
-  .blackline{
-      height:1px;
-      border-width:0px;
-      color:#000000;
-      background-color:#000000;
-      width:100%;
-      margin: 2px;
-  }
-
-  .topbar {
-      /* Reference image: http://4.bp.blogspot.com/-pvgJr3PYmPw/UHMIWFTH11I/AAAAAAAACtk/ah-VHvcAms4/s1600/book-table-close-up.jpg */
-
-      width: 100%;
-      height: 500px;
-      text-align:center;
-      margin:0px;
-      padding-top:20px;
-  }
-
-  .topmain{
-      width: 100%;
-      text-align:center;
-  }
-
-  .login{
-      width:300px;
-      border: 1px dashed white;
-      margin-top:30px;
-      margin-left: auto;
-      margin-right: auto;
-      padding:5px;
-  }
-
-  .header{
-      background-color:#A5D1D7;
-      color:#FFFFFF;
-      border: 0px;
-      border-radius: 10px;
-      padding-left:5px;
-      padding-bottom:20px;
-      padding-top:50px;
-      margin-bottom:5px;
-      font-size:42px;
-      font-weight: bold;
-      font-family: helvetica, sans-serif;
-  }
-
-  .greybody{
-      background-color:#C8C8C8;
-      color:#FFFFFF;
-      border-radius: 10px;
-      padding-bottom:20px;
-      padding-top:20px;
-      padding-left:5px;
-      padding-right:5px;
-      font-size:14px;
-      font-family: helvetica, sans-serif;
-  }
-
-  .schedulet{
-      border:2px solid #FFFFFF;
-      border-collapse: collapse;
-      width:100%;
-      text-align:left;
-  }
-
-  .center{
-      vertical-align:middle;
-      text-align:center;
-  }
-
-
-  .submitButton {
-      color: black;
-      background-color: lightgray;
-      border: 1px solid black;
-
-  }
-
-  fieldset{
-      border:0px;
-  }
-
-  p{
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      font-size:16px;
-  }
-
-  .whitexpand{
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      font-size:14px;
-      color:#ffffff;
-      font-weight:bolder;
-      letter-spacing:3px;
-      display:inline;
-  }
-
-  .blackexpand {
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      font-size: 14px;
-      color: #000000;
-      font-weight: bolder;
-      letter-spacing: 3px;
-      display: inline;
-  }
-
-  .rich {
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-      font-size:14px;
-      color: #000000;
-  }
-
-#rich {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size:14px;
-    color: #000000;
-}
-select {
+.blacktext{
     color:#000000;
 }
 
-.masthead{
-    background-color: #FFC5A7;
-    border-radius: 10px;
-    margin-bottom: 5px;
-}
+a.menuLK:link {color:#000000; text-decoration:none;}
+a.menuLK:visited {color:#000000; text-decoration:none;}
+a.menuLK:hover {text-decoration: none; background-color:#B0E0E6; color:#FFFFFF;}
+a.menuLK:active {color:#FF8C00;}
+
+a.menuLG:link {color:#FFFFFF; text-decoration:none; background-color:#FF8C00;}
+a.menuLG:visited {color:#FFFFFF; text-decoration:none;}
+a.menuLG:hover {text-decoration: none; background-color:#000000; color:#ffffff;}
+a.menuLG:active {color:#20B2AA;}

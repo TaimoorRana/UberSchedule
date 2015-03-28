@@ -1,0 +1,24 @@
+    <!--title of the page & subtitle div-->
+    <div class="titleCont">
+      <br/><br/>
+      <span class="whiteFONT titleFONT"></span><br/>
+      <span class="whiteFONT subtitleFONT"></span>
+    </div>
+    </div>
+
+    <!--main outer container div-->
+    <div class="whiteBCKG extend">
+      <!-- inside container div-->
+      <div class="mainContent">
+
+        <% @complete_sequence.each do |semester|  %>
+            <p class="rich"> Semester--------</p>
+            <% semester.each do |course| %>
+                <p class="rich"><%= course.dept %> <%= course.number %></p>
+            <% end %>
+        <% end %>
+
+
+
+      </div>
+    </div>
