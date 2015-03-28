@@ -10,7 +10,7 @@ class ScheduleController < ApplicationController
     @sections = []
     @tutorials = []
     #@courses = [Course.find(4), Course.find(45)]
-    @courses = [Course.find(4), Course.find(45), Course.find(31), Course.find(18),Course.find(17)]
+    @courses = [Course.find(1), Course.find(15), Course.find(16),Course.find(3)]
     @mondaySections = []
     @tuesdaySections = []
     @wednesdaySections = []
@@ -20,12 +20,13 @@ class ScheduleController < ApplicationController
     if find_all_sections != nil
       find_all_tutorials
       week_tutorials = separate_sections_according_to_days(@tutorials)
+      #week_tutorials = [[],[],[],[],[]]
       week_sections = separate_sections_according_to_days(@sections)
-      @mondaySections = week_sections[0].append(week_tutorials[0].flatten)
-      @tuesdaySections = week_sections[1]
-      @wednesdaySections = week_sections[2].append(week_tutorials[2].flatten)
-      @thursdaySections = week_sections[3]
-      @fridaySections = week_sections[4].append(week_tutorials[4].flatten)
+      @mondaySections = if week_tutorials[0].flatten != [] then week_sections[0].append(week_tutorials[0].flatten) else week_sections[0] end
+      @tuesdaySections = if week_tutorials[1].flatten != [] then week_sections[1].append(week_tutorials[1].flatten)else week_sections[1] end
+      @wednesdaySections = if week_tutorials[2].flatten != [] then week_sections[2].append(week_tutorials[2].flatten)else week_sections[2] end
+      @thursdaySections = if week_tutorials[3].flatten != [] then week_sections[3].append(week_tutorials[3].flatten)else week_sections[3] end
+      @fridaySections = if week_tutorials[4].flatten != [] then week_sections[4].append(week_tutorials[4].flatten)else week_sections[4] end
     end
 
 
@@ -60,6 +61,7 @@ class ScheduleController < ApplicationController
 
   def find_all_tutorials
     @all_courses_tutorials = []
+    @conflicts_tutorials = []
     @sections.each do |section|
       @all_courses_tutorials.push(section.tutorials)
     end
