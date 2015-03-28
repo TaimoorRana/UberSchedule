@@ -9,15 +9,22 @@ class ScheduleController < ApplicationController
     #@sections = [Course.find(2).sections.first,Course.find(45).sections.first,Course.find(31).sections.first,Course.find(42).sections.find(194)]
     @sections = []
     #@courses = [Course.find(4), Course.find(45)]
-    @courses = [Course.find(4), Course.find(45), Course.find(31), Course.find(18),Course.find(17)]
-    find_all_schedule
-    week = separate_sections_according_to_days
-    @conflicts = find_conflicts
-    @mondaySections = week[0]
-    @tuesdaySections = week[1]
-    @wednesdaySections = week[2]
-    @thursdaySections = week[3]
-    @fridaySections = week[4]
+    @courses = [Course.find(4), Course.find(45), Course.find(31), Course.find(18),Course.find(17), Course.find(32)]
+    @mondaySections = []
+    @tuesdaySections = []
+    @wednesdaySections = []
+    @thursdaySections = []
+    @fridaySections = []
+
+    found = find_all_schedule
+    if found != nil
+      week = separate_sections_according_to_days
+      @mondaySections = week[0]
+      @tuesdaySections = week[1]
+      @wednesdaySections = week[2]
+      @thursdaySections = week[3]
+      @fridaySections = week[4]
+    end
 
 
 
@@ -33,9 +40,17 @@ class ScheduleController < ApplicationController
     @possible_schedule = @all_courses_sections.inject(&:product).map(&:flatten)
     i = 0
     @sections = @possible_schedule[i]
+
     while (find_conflicts != nil && i < @possible_schedule.size - 1 )
       i += 1
       @sections = @possible_schedule[i]
+    end
+    @conflicts = []
+    if find_conflicts != []
+      @conflicts = find_conflicts
+      return nil
+    else
+      return 1
     end
 
   end
