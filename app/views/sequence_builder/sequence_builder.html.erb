@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <% @complete_sequence.each do |semester|  %>
-    <p class="rich"> Semester--------</p>
-      <% semester.each do |course| %>
-        <p class="rich"><%= course.dept %> <%= course.number %></p>
+    <% @complete_sequence.each do |semester| %>
+        <% semester.each do |info| %>
+            <p><%= info %></p>
         <% end %>
     <% end %>
+
+
 </body>
 </html>
