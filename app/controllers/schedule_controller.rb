@@ -6,10 +6,13 @@ class ScheduleController < ApplicationController
 
   def schedule
 
-    @sections = [Course.find(2).sections.first,Course.find(45).sections.first,Course.find(31).sections.first,Course.find(42).sections.find(194)]
-    #@sections = []
+    #@sections = [Course.find(2).sections.first,Course.find(45).sections.first,Course.find(31).sections.first,Course.find(42).sections.find(194)]
+    @sections = []
+    #@courses = [Course.find(4), Course.find(45)]
+    @courses = [Course.find(4), Course.find(45), Course.find(31), Course.find(18),Course.find(17)]
+    find_all_schedule
     week = separate_sections_according_to_days
-
+    @conflicts = find_conflicts
     @mondaySections = week[0]
     @tuesdaySections = week[1]
     @wednesdaySections = week[2]
@@ -18,7 +21,7 @@ class ScheduleController < ApplicationController
 
 
 
-    @courses = [Course.find(23),Course.find(1)]
+
 
   end
 
@@ -30,7 +33,7 @@ class ScheduleController < ApplicationController
     @possible_schedule = @all_courses_sections.inject(&:product).map(&:flatten)
     i = 0
     @sections = @possible_schedule[i]
-    while (find_conflicts != [])
+    while (find_conflicts != nil && i < @possible_schedule.size - 1 )
       i += 1
       @sections = @possible_schedule[i]
     end
@@ -121,12 +124,12 @@ class ScheduleController < ApplicationController
 
       day.each do |section|
         #get the first section start and end time
-        time_start = Time.parse(section.time_start)
-        time_end = Time.parse(section.time_end)
+        time_start = Time.parse(section[0].time_start)
+        time_end = Time.parse(section[0].time_end)
         day.each do |another_section|
           #get the second section start and end time
-          other_time_start = Time.parse(another_section.time_start)
-          other_time_end = Time.parse(another_section.time_end)
+          other_time_start = Time.parse(another_section[0].time_start)
+          other_time_end = Time.parse(another_section[0].time_end)
 
           # Don't compare the same section
           if section != another_section
@@ -142,7 +145,7 @@ class ScheduleController < ApplicationController
       end
     end
 
-    return conflict_arr.to_set
+    return conflict_arr.uniq
   end
 
 
