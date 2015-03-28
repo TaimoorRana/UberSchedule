@@ -30,29 +30,15 @@
 </span>
     <hr class="blackline extend">
   </div>
-  <!--title of the page & subtitle div-->
-  <div class="titleCont">
-    <br/><br/>
-    <span class="whiteFONT titleFONT">Title of page</span><br/>
-    <span class="whiteFONT subtitleFONT">Sub-Title if any</span>
-  </div>
-</div>
 
-<!--main outer container div-->
-<div class="whiteBCKG extend">
-  <!-- inside container div-->
-  <div class="mainContent">
+  <!-- Response/result/confirmation div-->
+  <% unless flash[:notice].blank?%>
+      <div class="responseBox">
+        <%= flash[:notice] %>
+      </div>
+  <% end %>
+  <%= yield %>
 
-    <!-- Response/result/confirmation div-->
-    <% unless flash[:notice].nil?%>
-    <div class="responseBox">
-      <%= flash[:notice] %>
-    </div>
-        <% end %>
-
-    <%= yield %>
-  </div>
-</div>
 
 <!-- footer-->
 <div class="footerPara">

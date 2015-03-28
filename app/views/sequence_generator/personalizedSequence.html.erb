@@ -1,24 +1,39 @@
-<h2>Courses Left to take:</h2>
-<table class="table">
-  <tr></tr>
-  <thead>
-  <tr>
-    <th>Course Dept</th>
-    <th>Number</th>
-    <th>Credits</th>
-    <th>Course Name</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% @listOfCourses.each do |course| %>
+<!--title of the page & subtitle div-->
+<div class="titleCont">
+  <br/><br/>
+  <span class="whiteFONT titleFONT">Courses Left to take:</span><br/>
+  <span class="whiteFONT subtitleFONT"></span>
+</div>
+</div>
+
+<!--main outer container div-->
+<div class="whiteBCKG extend">
+  <!-- inside container div-->
+  <div class="mainContent">
+
+    <table class="table">
+      <tr></tr>
+      <thead>
       <tr>
-        <td><%= course.dept %></td>
-        <td><%= course.number %></td>
-        <td><%= course.credit %></td>
-        <td><%= course.name %></td>
+        <th>Course Dept</th>
+        <th>Number</th>
+        <th>Credits</th>
+        <th>Course Name</th>
       </tr>
+      </thead>
+      <tbody>
+      <% @listOfCourses.each do |course| %>
+          <tr>
+            <td><%= course.dept %></td>
+            <td><%= course.number %></td>
+            <td><%= course.credit %></td>
+            <td><%= course.name %></td>
+          </tr>
 
-  <% end %>
+      <% end %>
 
-  </tbody>
-</table>
+      </tbody>
+    </table>
+
+  </div>
+</div>
