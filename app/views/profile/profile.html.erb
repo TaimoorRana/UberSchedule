@@ -4,10 +4,12 @@
 <div class="greybody form-horizontal">
   <%= form_tag(:action => 'updateProfile') do %>
 
+
       <div class="form-group">
         <label for="option" class="col-sm-4">Change your minor :</label>
 
         <div class="col-sm-4">
+
 
           <%= select_tag(:option, options_for_select(["General", "Computer Games",
                                                       "RealTime Embedded and Avionics Software", "Web Services and Applications"], selected: @current_opt)) %></br></div>
@@ -66,9 +68,10 @@
         <div class="col-sm-4">
           <%= select_tag(:noSplitClasses, options_for_select(['Yes', 'No'], selected: @noSplitClasses)) %>
         </div>
-
       </div>
       <br><br>
       <%= submit_tag("Edit Profile", class: 'btn btn-default btn-lg') %>
   <% end %> <!-- end of the form -->
+
 </div>
+

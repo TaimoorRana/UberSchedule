@@ -8,10 +8,11 @@
       <p class="rich">Step 3: Select your classes.</p>
 
       <% (1..5).each do |x| %>
-          <%= select_tag "course#{x}", options_for_select(Array[*@courses.collect { |v, i| [v, @courses.index(v)] }]) %>
+<%= select_tag "course#{x}", options_for_select(Array[*@courses.collect { |v, i| [v, @courses.index(v)] }]) %>
       <% end %><br><br>
 
       <%= submit_tag("Proceed to Step 4", class: 'submitButton') %>
+
   <% end %> <!-- end of the form -->
 </div>
 </body>
