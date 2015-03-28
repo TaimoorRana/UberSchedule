@@ -7,6 +7,7 @@ class ScheduleController < ApplicationController
   def schedule
 
     @sections = [Course.find(2).sections.first,Course.find(45).sections.first,Course.find(31).sections.first,Course.find(42).sections.find(194)]
+    #@sections = []
     week = separate_sections_according_to_days
 
     @mondaySections = week[0]
@@ -15,13 +16,14 @@ class ScheduleController < ApplicationController
     @thursdaySections = week[3]
     @fridaySections = week[4]
 
-    @all_courses_sections = []
+
 
     @courses = [Course.find(23),Course.find(1)]
 
   end
 
   def find_all_schedule
+    @all_courses_sections = []
     @courses.each do |course|
       @all_courses_sections.push(course.sections)
     end
