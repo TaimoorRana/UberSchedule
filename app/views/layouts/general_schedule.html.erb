@@ -10,43 +10,53 @@
 
 </head>
 <body>
-<div class="container-fluid">
-  <div class="topmain">
-
-    <div class="masthead">
-      <h3 class="text-muted">Uber Planner</h3>
-      <div class="col-sm-12">
-        <img class="center" src="/assets/logogrey2.png" alt="logo">
-    </div>
-      <div class="col-sm-12"><hr class="blackline"></div>
-
-
-      <ul class="nav nav-justified">
-        <li class="btn btn-group btn-group-lg">        <%= link_to 'View Sequence', sequence_path %>
-        </li>
-        <li class="btn btn-group btn-group-lg">        <%= link_to('Edit Profile', {:controller => 'profile', :action => 'profile'}) %>
-        </li>
-        <li class="btn btn-group btn-group-lg">        <%= link_to('View Schedule', {:controller => 'schedule', :action => 'schedule'}) %>
-        </li>
-        <li class="btn btn-group btn-group-lg">        <%= link_to('Courses', {:controller => 'course', :action => 'index'}) %>
-        </li>
-        <li class="btn btn-group btn-group-lg">        <%= link_to('Generate Schedule', {:controller => 'schedule_generator', :action => 'schedule_generator'}) %>
-        </li>
-        <li class="btn btn-group btn-group-lg">
-          <% if user_signed_in? %>
-              <%= link_to('Logout', destroy_user_session_path, method: 'delete') %>
-          <% end %>
-        </li>
-      </ul>
-    </div>
-
+<div class="topPara extend">
+  <!--logo div-->
+  <div>
+    <span class="whitexpand">&nbsp; &nbsp; &nbsp;UBER</span><%= image_tag("logo.png") %><span class="whitexpand">PLANNER</span>
   </div>
+  <!-- Links div-->
+  <div class="whiteBCKG extend">
+    <hr class="blackline extend">
+<span class="menuFONT">
+&nbsp;<%= link_to 'View Sequence', sequence_path, class:"menuLK" %>&nbsp;&nbsp;&#183;
+  &nbsp;<%= link_to('Edit Profile', {:controller => 'profile', :action => 'profile'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+  &nbsp;<%= link_to('View Schedule', {:controller => 'schedule', :action => 'schedule'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+ &nbsp; <%= link_to('Courses', {:controller => 'course', :action => 'index'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+  &nbsp;<%= link_to('Generate Schedule', {:controller => 'schedule_generator', :action => 'schedule_generator'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+  <% if user_signed_in? %>
+             &nbsp; <%= link_to('Logout', destroy_user_session_path, method: 'delete',class:"menuLG") %>
+          <% end %>
+</span>
+    <hr class="blackline extend">
+  </div>
+  <!--title of the page & subtitle div-->
+  <div class="titleCont">
+    <br/><br/>
+    <span class="whiteFONT titleFONT">Title of page</span><br/>
+    <span class="whiteFONT subtitleFONT">Sub-Title if any</span>
+  </div>
+</div>
 
-  <% if !flash[:notice].blank? %>
-      <div class="alert alert-warning"><%= flash.notice %></div>
-  <% end %>
+<!--main outer container div-->
+<div class="whiteBCKG extend">
+  <!-- inside container div-->
+  <div class="mainContent">
 
-  <%= yield %>
+    <!-- Response/result/confirmation div-->
+    <% unless flash[:notice].nil?%>
+    <div class="responseBox">
+      <%= flash[:notice] %>
+    </div>
+        <% end %>
+
+    <%= yield %>
+  </div>
+</div>
+
+<!-- footer-->
+<div class="footerPara">
+  Copyright (C) 2015 UBERTEAM
 </div>
 </body>
 </html>
