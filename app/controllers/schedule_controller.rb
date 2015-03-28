@@ -10,10 +10,9 @@ class ScheduleController < ApplicationController
     # comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
     # comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
     #
-    @sections = [Course.find(45).sections.first,Course.find(2).sections.first]
+    @sections = [Course.find(2).sections.first,Course.find(45).sections.first,Course.find(31).sections.first,Course.find(36).sections.first]
     week = separate_sections_according_to_days
-    #@mondaySections = [Course.find(2).sections.find(5)]
-
+    
     @mondaySections = week[0]
     @tuesdaySections = week[1]
     @wednesdaySections = week[2]
@@ -65,32 +64,46 @@ class ScheduleController < ApplicationController
   end
 
   def separate_sections_according_to_days
-    arr = [[],[],[],[],[]]
+    week = [[],[],[],[],[]]
     @sections.each do |section|
       wednesday_added = false
       section.day_of_week.to_s.each_char do |day|
         duration = (Time.parse(section.time_end) - Time.parse(section.time_start))
         section_row_span = duration/60/15
         if day == 'M'
-          arr[0].push([section,section_row_span])
+          week[0].push([section,section_row_span])
         end
         if day == 'T'
-          arr[1].push([section,section_row_span])
+          week[1].push([section,section_row_span])
         end
         if day == 'W' && wednesday_added == false
-          arr[2].push([section,section_row_span])
+          week[2].push([section,section_row_span])
           wednesday_added = true
         end
         if day == 'J'
-          arr[3].push([section,section_row_span])
+          week[3].push([section,section_row_span])
         end
         if day == 'F'
-          arr[4].push([section,section_row_span])
+          week[4].push([section,section_row_span])
         end
       end
     end
 
-    return arr
+    week.each_with_index do |day,i|
+
+      day.each_with_index do |section1,j|
+        day.each_with_index do |section2,k|
+          if (Time.parse(section1[0].time_start) <=> Time.parse(section2[0].time_start)) == -1 && j > k
+            temp = section2
+            day[k] = section1
+            day[j] = temp
+          end
+        end
+      end
+    end
+
+
+    return week
   end
 
   def find_conflicts
