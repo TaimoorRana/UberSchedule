@@ -1,77 +1,102 @@
-<div>
-  <p class="header"> <%= @student_first_name %> <%= @student_last_name %>'s Profile </p>
+
+<!--title of the page & subtitle div-->
+<div class="titleCont">
+  <br/><br/>
+  <span class="whiteFONT titleFONT">
+     <%= @student_first_name %> <%= @student_last_name %>'s Profile
+
+</span><br/>
+  <span class="whiteFONT subtitleFONT"></span>
 </div>
-<div class="greybody form-horizontal">
-  <%= form_tag(:action => 'updateProfile') do %>
-
-
-      <div class="form-group">
-        <label for="option" class="col-sm-4">Change your minor :</label>
-
-        <div class="col-sm-4">
-
-
-          <%= select_tag(:option, options_for_select(["General", "Computer Games",
-                                                      "RealTime Embedded and Avionics Software", "Web Services and Applications"], selected: @current_opt)) %></br></div>
-      </div>
-      <div class="col-sm-12">
-        <div class="col-sm-8">
-          <p>Select the periods you DO NOT want :
-          </p>
-
-          <table class="table">
-            <tr>
-              <th>Day</th>
-              <th>AM</th>
-              <th>PM</th>
-            </tr>
-            <tr>
-              <td>Monday</td>
-              <td><%= check_box_tag 'noMondayAm', '1', @previous_preferences.exists?(1) %></td>
-              <td><%= check_box_tag 'noMondayPm', '1', @previous_preferences.exists?(2) %></td>
-            </tr>
-            <tr>
-              <td>Tuesday</td>
-              <td><%= check_box_tag(:noTuesdayAm, '1', @previous_preferences.exists?(3)) %></td>
-              <td><%= check_box_tag(:noTuesdayPm, '1', @previous_preferences.exists?(4)) %></td>
-            </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td><%= check_box_tag(:noWednesdayAm, '1', @previous_preferences.exists?(5)) %></td>
-              <td><%= check_box_tag(:noWednesdayPm, '1', @previous_preferences.exists?(6)) %></td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td><%= check_box_tag(:noThursdayAm, '1', @previous_preferences.exists?(7)) %></td>
-              <td><%= check_box_tag(:noThursdayPm, '1', @previous_preferences.exists?(8)) %></td>
-            </tr>
-            <tr>
-              <td>Friday</td>
-              <td><%= check_box_tag(:noFridayAm, '1', @previous_preferences.exists?(9)) %></td>
-              <td><%= check_box_tag(:noFridayPm, '1', @previous_preferences.exists?(10)) %></td>
-            </tr>
-
-
-          </table>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="noLoyolaCampus" class="sm-offset-4 col-sm-4">Allow classes at the Loyola campus? :</label>
-
-        <div class="col-sm-4">
-          <%= select_tag(:noLoyolaCampus, options_for_select(['Yes', 'No'], selected: @noLoyolaCampus)) %></br>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="noSplitClasses" class="col-sm-4">Allow split classes? :</label>
-
-        <div class="col-sm-4">
-          <%= select_tag(:noSplitClasses, options_for_select(['Yes', 'No'], selected: @noSplitClasses)) %>
-        </div>
-      </div>
-      <br><br>
-      <%= submit_tag("Edit Profile", class: 'btn btn-default btn-lg') %>
-  <% end %> <!-- end of the form -->
-
 </div>
+
+<!--main outer container div-->
+<div class="whiteBCKG extend">
+  <!-- inside container div-->
+  <div class="mainContent">
+
+    <div class="greybody form-horizontal">
+      <%= form_tag(:action => 'updateProfile') do %>
+
+
+          <div class="form-group">
+            <label for="option" class="col-sm-4">Change your minor :</label>
+
+            <div class="col-sm-4">
+
+
+              <%= select_tag(:option, options_for_select(["General", "Computer Games",
+                                                          "RealTime Embedded and Avionics Software", "Web Services and Applications"], selected: @current_opt)) %></br></div>
+          </div>
+          <div class="col-sm-12">
+            <div class="col-sm-8">
+              <p>Select the periods you DO NOT want :
+              </p>
+
+              <table class="table">
+                <tr>
+                  <th>Day</th>
+                  <th>AM</th>
+                  <th>PM</th>
+                </tr>
+                <tr>
+                  <td>Monday</td>
+                  <td><%= check_box_tag 'noMondayAm', '1', @previous_preferences.exists?(1) %></td>
+                  <td><%= check_box_tag 'noMondayPm', '1', @previous_preferences.exists?(2) %></td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td><%= check_box_tag(:noTuesdayAm, '1', @previous_preferences.exists?(3)) %></td>
+                  <td><%= check_box_tag(:noTuesdayPm, '1', @previous_preferences.exists?(4)) %></td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td><%= check_box_tag(:noWednesdayAm, '1', @previous_preferences.exists?(5)) %></td>
+                  <td><%= check_box_tag(:noWednesdayPm, '1', @previous_preferences.exists?(6)) %></td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td><%= check_box_tag(:noThursdayAm, '1', @previous_preferences.exists?(7)) %></td>
+                  <td><%= check_box_tag(:noThursdayPm, '1', @previous_preferences.exists?(8)) %></td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td><%= check_box_tag(:noFridayAm, '1', @previous_preferences.exists?(9)) %></td>
+                  <td><%= check_box_tag(:noFridayPm, '1', @previous_preferences.exists?(10)) %></td>
+                </tr>
+
+
+              </table>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="noLoyolaCampus" class="sm-offset-4 col-sm-4">Allow classes at the Loyola campus? :</label>
+
+            <div class="col-sm-4">
+              <%= select_tag(:noLoyolaCampus, options_for_select(['Yes', 'No'], selected: @noLoyolaCampus)) %></br>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="noSplitClasses" class="col-sm-4">Allow split classes? :</label>
+
+            <div class="col-sm-4">
+              <%= select_tag(:noSplitClasses, options_for_select(['Yes', 'No'], selected: @noSplitClasses)) %>
+            </div>
+          </div>
+          <br><br>
+          <%= submit_tag("Edit Profile", class: 'btn btn-default btn-lg') %>
+      <% end %> <!-- end of the form -->
+
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
 

@@ -1,19 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>UberScheduleApp - Edit Your Profile</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag('application') %>
-</head>
+    <!--title of the page & subtitle div-->
+    <div class="titleCont">
+      <br/><br/>
+      <span class="whiteFONT titleFONT"></span><br/>
+      <span class="whiteFONT subtitleFONT"></span>
+    </div>
+    </div>
 
-<body>
-    <% @complete_sequence.each do |semester|  %>
-    <p class="rich"> Semester--------</p>
-      <% semester.each do |course| %>
-        <p class="rich"><%= course.dept %> <%= course.number %></p>
+    <!--main outer container div-->
+    <div class="whiteBCKG extend">
+      <!-- inside container div-->
+      <div class="mainContent">
+
+        <% @complete_sequence.each do |semester|  %>
+            <p class="rich"> Semester--------</p>
+            <% semester.each do |course| %>
+                <p class="rich"><%= course.dept %> <%= course.number %></p>
+            <% end %>
         <% end %>
-    <% end %>
-</body>
-</html>
+
+
+
+      </div>
+    </div>
