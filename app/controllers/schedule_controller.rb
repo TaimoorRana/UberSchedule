@@ -5,14 +5,10 @@ class ScheduleController < ApplicationController
 
 
   def schedule
-    # is used for testing and not mess up the Database
-    # comp352 = Course.new(dept:"ENGR",number:"352",credit:1.5,name:"Data Structures and Algorithms")
-    # comp352.sections << Section.new(name:"AA",time_start:"16:00",time_end:"18:15")
-    # comp352.sections << Section.new(name:"AB",time_start:"10:00",time_end:"12:15")
-    #
-    @sections = [Course.find(2).sections.first,Course.find(45).sections.first,Course.find(31).sections.first,Course.find(36).sections.first]
+
+    @sections = [Course.find(2).sections.first,Course.find(45).sections.first,Course.find(31).sections.first,Course.find(42).sections.find(194)]
     week = separate_sections_according_to_days
-    
+
     @mondaySections = week[0]
     @tuesdaySections = week[1]
     @wednesdaySections = week[2]
@@ -23,19 +19,6 @@ class ScheduleController < ApplicationController
 
     @courses = [Course.find(23),Course.find(1)]
 
-    # add_sections(Section.find(1))
-    # add_sections(Section.find(14))
-    # add_sections(Section.find(42))
-    # add_sections(Section.find(30))
-    # add_sections(Section.find(41))
-
-    # @mondaySections = week[0]
-    # @tuesdaySections = week[1]
-    # @wednesdaySections = week[2]
-    # @thursdaySections = week[3]
-    # @fridaySections = week[4]
-
-
   end
 
   def find_all_schedule
@@ -43,8 +26,13 @@ class ScheduleController < ApplicationController
       @all_courses_sections.push(course.sections)
     end
     @possible_schedule = @all_courses_sections.inject(&:product).map(&:flatten)
+    i = 0
+    @sections = @possible_schedule[i]
+    while (find_conflicts != [])
+      i += 1
+      @sections = @possible_schedule[i]
+    end
 
-    @sections = @possible_schedule[0]
   end
 
 
@@ -64,12 +52,24 @@ class ScheduleController < ApplicationController
   end
 
   def separate_sections_according_to_days
+    #contains sections for every day
     week = [[],[],[],[],[]]
+
+    #Sort sections by the day they are given
     @sections.each do |section|
+
+      #this boolean is used to ignore multiple 'W' in day_of_each week - issue with seed.rb
       wednesday_added = false
+
       section.day_of_week.to_s.each_char do |day|
+
+        #duration of a section
         duration = (Time.parse(section.time_end) - Time.parse(section.time_start))
+
+        #duration is given is seconds so divide by 60 to get minutes and then divide by 15min because that time unit in schedule is every
+        # 15min. This allow to calculate how many rows a sections will span
         section_row_span = duration/60/15
+
         if day == 'M'
           week[0].push([section,section_row_span])
         end
@@ -89,6 +89,7 @@ class ScheduleController < ApplicationController
       end
     end
 
+    #this loop will sort section - section that start the earliest are put in front of the array
     week.each_with_index do |day,i|
 
       day.each_with_index do |section1,j|
@@ -102,30 +103,43 @@ class ScheduleController < ApplicationController
       end
     end
 
-
     return week
   end
 
+
+  #find conflit between sections, if conflict is found
   def find_conflicts
+
+    # get sections
     arr = separate_sections_according_to_days
     conflict_arr = []
+
+    #find conflicts
     arr.each do |day|
+
       day.each do |section|
+        #get the first section start and end time
         time_start = Time.parse(section.time_start)
         time_end = Time.parse(section.time_end)
         day.each do |another_section|
+          #get the second section start and end time
           other_time_start = Time.parse(another_section.time_start)
           other_time_end = Time.parse(another_section.time_end)
+
+          # Don't compare the same section
           if section != another_section
+
             if (time_start..time_end).cover? other_time_end
               conflict_arr.push(section,another_section)
             elsif (time_start..time_end).cover? other_time_start
               conflict_arr.push(section,another_section)
             end
+
           end
         end
       end
     end
+
     return conflict_arr.to_set
   end
 
