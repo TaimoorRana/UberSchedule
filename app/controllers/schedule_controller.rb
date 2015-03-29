@@ -19,14 +19,20 @@ class ScheduleController < ApplicationController
 
     if find_all_sections != nil
       find_all_tutorials
-      week_tutorials = separate_sections_according_to_days(@tutorials)
-      #week_tutorials = [[],[],[],[],[]]
+      #week_tutorials = separate_sections_according_to_days(@tutorials)
+      week_tutorials = [[],[],[],[],[]]
       week_sections = separate_sections_according_to_days(@sections)
       @mondaySections = if week_tutorials[0].flatten != [] then week_sections[0].append(week_tutorials[0].flatten) else week_sections[0] end
       @tuesdaySections = if week_tutorials[1].flatten != [] then week_sections[1].append(week_tutorials[1].flatten)else week_sections[1] end
       @wednesdaySections = if week_tutorials[2].flatten != [] then week_sections[2].append(week_tutorials[2].flatten)else week_sections[2] end
       @thursdaySections = if week_tutorials[3].flatten != [] then week_sections[3].append(week_tutorials[3].flatten)else week_sections[3] end
       @fridaySections = if week_tutorials[4].flatten != [] then week_sections[4].append(week_tutorials[4].flatten)else week_sections[4] end
+      # week = sort_all_sections_tutorials_labs([@mondaySections,@thursdaySections,@wednesdaySections,@thursdaySections,@fridaySections])
+      # @mondaySections = week[0]
+      # @tuesdaySections = week[1]
+      # @wednesdaySections = week[2]
+      # @thursdaySections = week[3]
+      # @fridaySections = week[4]
     end
 
 
@@ -138,7 +144,14 @@ class ScheduleController < ApplicationController
       end
     end
 
-    #this loop will sort section - section that start the earliest are put in front of the array
+
+    sort_all_sections_tutorials_labs(week)
+
+    return week
+  end
+
+  #this loop will sort section - section that start the earliest are put in front of the array
+  def sort_all_sections_tutorials_labs(week)
     week.each_with_index do |day,i|
 
       day.each_with_index do |section1,j|
@@ -151,9 +164,9 @@ class ScheduleController < ApplicationController
         end
       end
     end
-
     return week
   end
+
 
 
   #find conflit between sections, if conflict is found
