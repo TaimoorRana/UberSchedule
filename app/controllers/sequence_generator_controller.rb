@@ -93,7 +93,7 @@ class SequenceGeneratorController < ApplicationController
       @sequence[:required] = Sequence.where(sequence_name: 'Required RealTime Embedded and Avionics Software').first
       @sequence[:one_of] = Sequence.where(sequence_name: 'OneOf RealTime Embedded and Avionics Software').first
     else
-      @sequence[:general] = Sequence.where(sequence_name: 'general').first
+      @sequence[:general] = Sequence.where(sequence_name: 'General').first
     end
     getElectiveCourses
   end
@@ -101,7 +101,7 @@ class SequenceGeneratorController < ApplicationController
   def getElectiveCourses ## Get a list of Electives that you can choose from. Add courses to :elective key in sequence variable
     if @sequence[:general].nil?
       electiveSequence = Sequence.new
-      generalSequence = Sequence.where(sequence_name: 'general').first
+      generalSequence = Sequence.where(sequence_name: 'General').first
 
       generalSequence.courses.each do |course|
         electiveSequence.courses.append(course)
