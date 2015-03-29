@@ -1,11 +1,33 @@
-<p class="header">Create your schedule, <%= @student_first_name %> <%= @student_last_name %></p>
-<div class="greybody">
-  <%= form_tag(:action => 'step_two') do %>
-      <p class="rich">Step 1: Review your preferences from the <i>Edit Profile</i> page.</p>
 
-      <p class="rich">Step 2: Select a semester and a year.</p>
-      <%= select_tag(:schedule_term, options_for_select(["Fall", "Winter", "Summer", "Summer1", "Summer2"])) %>
-      <%= select_tag(:schedule_year, options_for_select(["2015", "2016", "2017", "2018", "2019"])) %></br></br>
-      <%= submit_tag("Proceed to Step 3", class: 'submitButton') %>
-  <% end %> <!-- end of the form -->
+
+
+
+<!--title of the page & subtitle div-->
+<div class="titleCont">
+  <br/><br/>
+  <span class="whiteFONT titleFONT">Create your schedule, <%= @student_first_name %> <%= @student_last_name %>
+</span><br/>
+  <span class="whiteFONT subtitleFONT"></span>
+</div>
+</div>
+
+<!--main outer container div-->
+<div class="whiteBCKG extend">
+  <!-- inside container div-->
+  <div class="mainContent">
+
+    <div class="greybody">
+      <%= form_tag(:action => 'step_two') do %>
+          <p class="blacktext">Step 1: Review your preferences from the <i>Edit Profile</i> page.</p>
+
+          <p class="blacktext">Step 2: Select a semester and a year.</p>
+          <%= select_tag(:schedule_term, options_for_select(["Fall", "Winter", "Summer", "Summer1", "Summer2"])) %>
+          <%= select_tag(:schedule_year, options_for_select(["2015", "2016", "2017", "2018", "2019"])) %></br></br>
+          <%= submit_tag("Proceed to Step 3", class: 'submitButton') %>
+      <% end %> <!-- end of the form -->
+    </div>
+
+
+
+  </div>
 </div>
