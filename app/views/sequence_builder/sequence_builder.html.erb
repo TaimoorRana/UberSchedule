@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <% @complete_sequence.each do |semester| %>
-        <% semester.each do |info| %>
-            <p><%= info %></p>
-        <% end %>
+    <p class="rich2"> @number_of_direct_dependets type:</p>
+    <p class="rich2"> <%= @number_of_direct_dependents.class %> </p>
+    <p class="rich2"> @number_of_direct_dependents info</p>
+    <% (1..67).each do |x|%>
+        <p class="rich"> <%= Course.find(x).dept %> <%= Course.find(x).number %> <%= @number_of_direct_dependents[x] %> </p>
     <% end %>
-
 
 </body>
 </html>

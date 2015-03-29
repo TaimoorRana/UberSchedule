@@ -1,0 +1,1117 @@
+I, [2015-03-29T15:03:05.305785 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.305785 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.305785 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.306785 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.306785 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.332849 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.332849 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.332849 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.332849 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.332849 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.344976 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.344976 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.344976 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.344976 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.345977 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.345977 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.345977 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.345977 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.345977 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.345977 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.345977 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.357075 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.357075 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.357075 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.357075 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.357075 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.357075 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.357075 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.357075 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.358122 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.358122 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.368225 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.368225 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.368225 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.368225 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.368225 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.368225 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.379324 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.380344 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.380344 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.380344 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.380344 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.391471 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.391471 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.391471 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.391471 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.391471 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.391471 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.391471 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.402532 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.402532 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.402532 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.402532 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.402532 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.402532 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.402532 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.403571 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.403571 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.413650 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.414672 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.415664 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.415664 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.415664 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.415664 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.415664 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.426745 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.426745 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.426745 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.426745 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.426745 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.426745 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.426745 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.427746 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.437830 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.437830 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.437830 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.438871 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.438871 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.438871 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.438871 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.438871 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.449952 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.450953 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.462048 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.463067 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.474199 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.474199 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.474199 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.474199 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.474199 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.474199 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.485283 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.485283 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.485283 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.485283 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.485283 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.496375 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.507425 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.507425 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.507425 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.507425 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.507425 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.516531 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.516531 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.516531 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.528599 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.529599 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.529635 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.529635 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.539642 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.539642 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.539642 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.539642 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.550650 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.550650 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.551651 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.551651 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.562659 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.573702 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.573702 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.573702 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.585823 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.586824 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.606985 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.622997 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.639313 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.653479 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.654480 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.670530 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.687907 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.687907 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.697959 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.713424 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.724532 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.731591 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.738630 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.746711 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.754766 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.754766 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.762850 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.763851 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.763851 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.763851 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.763851 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.771895 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.778901 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.789907 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.789907 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.799915 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.809991 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.823113 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.833187 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.844283 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.856457 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.866540 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.877667 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.886707 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.897823 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.908909 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.919982 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.931080 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.943211 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.954296 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.964391 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.975461 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.975461 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.975461 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:03:05.975461 #3868]  INFO -- : in da loop
+I, [2015-03-29T15:07:06.519262 #3868]  INFO -- : #<Section id: 1, course_id: 1, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "BASSEL ATALLAH", day_of_week: "M-WW-----", term: "Summer">
+I, [2015-03-29T15:07:06.519262 #3868]  INFO -- : #<Section id: 2, course_id: 1, name: "G", time_start: "16:15", time_end: "17:30", instructor: "REMI ALAURENT", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:07:06.519262 #3868]  INFO -- : #<Section id: 3, course_id: 1, name: "H", time_start: "16:15", time_end: "17:30", instructor: "REMI ALAURENT", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:07:06.520262 #3868]  INFO -- : #<Section id: 4, course_id: 1, name: "Q", time_start: "16:15", time_end: "17:30", instructor: "REMI ALAURENT", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:07:06.547329 #3868]  INFO -- : #<Section id: 5, course_id: 2, name: "AA", time_start: "11:45", time_end: "13:00", instructor: "JOHN HADJINICOLAOU", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.547329 #3868]  INFO -- : #<Section id: 6, course_id: 2, name: "G", time_start: "16:15", time_end: "17:30", instructor: "JOHN HADJINICOLAOU", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:07:06.547329 #3868]  INFO -- : #<Section id: 7, course_id: 2, name: "H", time_start: "16:15", time_end: "17:30", instructor: "JOHN HADJINICOLAOU", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:07:06.548330 #3868]  INFO -- : #<Section id: 8, course_id: 2, name: "R", time_start: "16:15", time_end: "17:30", instructor: "JOHN HADJINICOLAOU", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:07:06.548330 #3868]  INFO -- : #<Section id: 9, course_id: 2, name: "SS", time_start: "17:45", time_end: "19:00", instructor: "RAHIM TADAYON", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:07:06.560341 #3868]  INFO -- : #<Section id: 10, course_id: 3, name: "AA", time_start: "10:15", time_end: "12:45", instructor: "ALEXANDRE PARADIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.560341 #3868]  INFO -- : #<Section id: 11, course_id: 3, name: "P", time_start: "11:45", time_end: "13:00", instructor: "DIMITER DRYANOV", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.560341 #3868]  INFO -- : #<Section id: 12, course_id: 3, name: "R", time_start: "8:45", time_end: "10:00", instructor: "NATALIIA ROSSOKHATA", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.561360 #3868]  INFO -- : #<Section id: 13, course_id: 3, name: "T", time_start: "10:15", time_end: "11:30", instructor: "GEORGIOS VATISTAS", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.561360 #3868]  INFO -- : #<Section id: 14, course_id: 3, name: "U", time_start: "11:45", time_end: "13:00", instructor: "ALEXEY KOKOTOV", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.561360 #3868]  INFO -- : #<Section id: 15, course_id: 3, name: "V", time_start: "8:45", time_end: "10:00", instructor: "CIPRIAN ALECSANDRU", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.561360 #3868]  INFO -- : #<Section id: 16, course_id: 3, name: "X", time_start: "10:15", time_end: "11:30", instructor: "DMITRY KOROTKIN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.561360 #3868]  INFO -- : #<Section id: 17, course_id: 3, name: "XX", time_start: "17:45", time_end: "20:15", instructor: "DIMITER DRYANOV", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:07:06.561360 #3868]  INFO -- : #<Section id: 18, course_id: 3, name: "F", time_start: "14:45", time_end: "16:00", instructor: "NATALIIA ROSSOKHATA", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.561360 #3868]  INFO -- : #<Section id: 19, course_id: 3, name: "G", time_start: "14:45", time_end: "16:00", instructor: "M. OMAIR AHMAD", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.562362 #3868]  INFO -- : #<Section id: 20, course_id: 3, name: "J", time_start: "14:45", time_end: "16:00", instructor: "ALEXEY KOKOTOV", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.572347 #3868]  INFO -- : #<Section id: 21, course_id: 4, name: "CC", time_start: "10:45", time_end: "13:15", instructor: "DONALD DAVIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.573382 #3868]  INFO -- : #<Section id: 22, course_id: 4, name: "P", time_start: "13:15", time_end: "14:30", instructor: "RAMA BHAT", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.573382 #3868]  INFO -- : #<Section id: 23, course_id: 4, name: "Q", time_start: "13:15", time_end: "14:30", instructor: "DMITRY KOROTKIN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.573382 #3868]  INFO -- : #<Section id: 24, course_id: 4, name: "J", time_start: "16:15", time_end: "17:30", instructor: "DIMITER DRYANOV", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.573382 #3868]  INFO -- : #<Section id: 25, course_id: 4, name: "R", time_start: "11:45", time_end: "13:00", instructor: "ALEXANDER SHNIRELMAN", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.573382 #3868]  INFO -- : #<Section id: 26, course_id: 4, name: "S", time_start: "8:45", time_end: "10:00", instructor: "CHANTAL DAVID", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.573382 #3868]  INFO -- : #<Section id: 27, course_id: 4, name: "T", time_start: "10:15", time_end: "11:30", instructor: "IMAN GOHAR", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.574384 #3868]  INFO -- : #<Section id: 28, course_id: 4, name: "U", time_start: "8:45", time_end: "10:00", instructor: "ALEXANDER SHNIRELMAN", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.574384 #3868]  INFO -- : #<Section id: 29, course_id: 4, name: "V", time_start: "8:45", time_end: "10:00", instructor: "HASHEM AKBARI", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.574384 #3868]  INFO -- : #<Section id: 30, course_id: 4, name: "X", time_start: "10:15", time_end: "11:30", instructor: "CHANTAL DAVID", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.585462 #3868]  INFO -- : #<Section id: 31, course_id: 5, name: "T", time_start: "10:15", time_end: "11:30", instructor: "ALEXANDRE PARADIS", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.585462 #3868]  INFO -- : #<Section id: 32, course_id: 5, name: "V", time_start: "10:15", time_end: "11:30", instructor: "THEODORE STATHOPOULOS", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.586463 #3868]  INFO -- : #<Section id: 33, course_id: 5, name: "X", time_start: "10:15", time_end: "11:30", instructor: "JAVAD DARGAHI", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.586463 #3868]  INFO -- : #<Section id: 34, course_id: 5, name: "YY", time_start: "17:45", time_end: "20:15", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:07:06.586463 #3868]  INFO -- : #<Section id: 35, course_id: 5, name: "J", time_start: "11:45", time_end: "13:00", instructor: "THEODORE STATHOPOULOS", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.586463 #3868]  INFO -- : #<Section id: 36, course_id: 5, name: "L", time_start: "11:45", time_end: "13:00", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.586463 #3868]  INFO -- : #<Section id: 37, course_id: 6, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "ALEXANDRE PARADIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.586463 #3868]  INFO -- : #<Section id: 38, course_id: 6, name: "T", time_start: "11:45", time_end: "13:00", instructor: "RAMA BHAT", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.587468 #3868]  INFO -- : #<Section id: 39, course_id: 6, name: "V", time_start: "10:15", time_end: "11:30", instructor: "THEODORE STATHOPOULOS", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.587468 #3868]  INFO -- : #<Section id: 40, course_id: 6, name: "X", time_start: "11:45", time_end: "13:00", instructor: "ASHOK KAUSHAL", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.587468 #3868]  INFO -- : #<Section id: 41, course_id: 6, name: "TT", time_start: "17:45", time_end: "20:15", instructor: "ALEXANDRE PARADIS", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:07:06.599591 #3868]  INFO -- : #<Section id: 42, course_id: 7, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "RAJAMOHAN GANESAN", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.599591 #3868]  INFO -- : #<Section id: 43, course_id: 7, name: "AB", time_start: "18:30", time_end: "21:00", instructor: "WAIZUDDIN AHMED", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.599591 #3868]  INFO -- : #<Section id: 44, course_id: 7, name: "M", time_start: "13:15", time_end: "14:30", instructor: "SURAJ JOSHI", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.599591 #3868]  INFO -- : #<Section id: 45, course_id: 7, name: "T", time_start: "13:15", time_end: "14:30", instructor: "WAIZUDDIN AHMED", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.599591 #3868]  INFO -- : #<Section id: 46, course_id: 7, name: "V", time_start: "8:45", time_end: "10:00", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.599591 #3868]  INFO -- : #<Section id: 47, course_id: 7, name: "X", time_start: "13:15", time_end: "14:30", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.600592 #3868]  INFO -- : #<Section id: 48, course_id: 7, name: "LL", time_start: "17:45", time_end: "20:15", instructor: "MICHELLE NOKKEN", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:07:06.610685 #3868]  INFO -- : #<Section id: 49, course_id: 8, name: "V", time_start: "13:15", time_end: "14:30", instructor: "DACIAN EMILIAN ROMAN", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.611687 #3868]  INFO -- : #<Section id: 50, course_id: 8, name: "CV", time_start: "15:45", time_end: "18:15", instructor: "PIERRE GAUTHIER", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.611687 #3868]  INFO -- : #<Section id: 51, course_id: 8, name: "M", time_start: "16:15", time_end: "17:30", instructor: "HOI DICK NG", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.611687 #3868]  INFO -- : #<Section id: 52, course_id: 8, name: "T", time_start: "10:15", time_end: "11:30", instructor: "LYES KADEM", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.611687 #3868]  INFO -- : #<Section id: 53, course_id: 8, name: "T", time_start: "8:45", time_end: "10:00", instructor: "ALEXANDRE PARADIS", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.611687 #3868]  INFO -- : #<Section id: 54, course_id: 8, name: "V", time_start: "10:15", time_end: "11:30", instructor: "HASHEM AKBARI", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.611687 #3868]  INFO -- : #<Section id: 55, course_id: 8, name: "XX", time_start: "17:45", time_end: "20:15", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "----F--", term: "Winter">
+I, [2015-03-29T15:07:06.612687 #3868]  INFO -- : #<Section id: 56, course_id: 8, name: "F", time_start: "16:15", time_end: "17:30", instructor: "KRZYSZTOF SKONIECZNY", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.612687 #3868]  INFO -- : #<Section id: 57, course_id: 8, name: "U", time_start: "10:15", time_end: "11:30", instructor: "LUIS RODRIGUES", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.622775 #3868]  INFO -- : #<Section id: 58, course_id: 9, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "SHAHRAM SHARIFI", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.622775 #3868]  INFO -- : #<Section id: 59, course_id: 9, name: "AB", time_start: "18:30", time_end: "21:00", instructor: "SALEH AHMAD ABU DABOUS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.622775 #3868]  INFO -- : #<Section id: 60, course_id: 9, name: "G", time_start: "16:15", time_end: "17:30", instructor: "GERARD GOUW", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.622775 #3868]  INFO -- : #<Section id: 61, course_id: 9, name: "H", time_start: "16:15", time_end: "17:30", instructor: "FUZHAN NASIRI", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.622775 #3868]  INFO -- : #<Section id: 62, course_id: 9, name: "FF", time_start: "17:45", time_end: "20:15", instructor: "JIAN LI HAO", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:07:06.623779 #3868]  INFO -- : #<Section id: 63, course_id: 9, name: "II", time_start: "17:45", time_end: "20:15", instructor: "SHAHRAM SHARIFI", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:07:06.623779 #3868]  INFO -- : #<Section id: 64, course_id: 9, name: "R", time_start: "16:15", time_end: "17:30", instructor: "JIAN LI HAO", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.623779 #3868]  INFO -- : #<Section id: 65, course_id: 9, name: "SS", time_start: "17:45", time_end: "20:15", instructor: "GERARD GOUW", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:07:06.623779 #3868]  INFO -- : #<Section id: 66, course_id: 9, name: "AA", time_start: "11:45", time_end: "14:30", instructor: "DONALD DAVIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.623779 #3868]  INFO -- : #<Section id: 67, course_id: 9, name: "AB", time_start: "18:30", time_end: "21:00", instructor: "SURAJ JOSHI", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.623779 #3868]  INFO -- : #<Section id: 68, course_id: 9, name: "T", time_start: "16:15", time_end: "17:30", instructor: "NABIL ESMAIL", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.624779 #3868]  INFO -- : #<Section id: 69, course_id: 9, name: "X", time_start: "8:45", time_end: "10:00", instructor: "ZHI LI", day_of_week: "--W-F--", term: "Summer">
+I, [2015-03-29T15:07:06.624779 #3868]  INFO -- : #<Section id: 70, course_id: 9, name: "Y", time_start: "16:15", time_end: "17:30", instructor: "ALEXANDRE PARADIS", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.624779 #3868]  INFO -- : #<Section id: 71, course_id: 9, name: "AA", time_start: "14:45", time_end: "17:30", instructor: "MARIUS PARASCHIVOIU", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.624779 #3868]  INFO -- : #<Section id: 72, course_id: 9, name: "L", time_start: "8:45", time_end: "10:00", instructor: "CHARLES KIYANDA", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.625798 #3868]  INFO -- : #<Section id: 73, course_id: 9, name: "V", time_start: "11:45", time_end: "13:00", instructor: "LIANGZHU WANG", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.625798 #3868]  INFO -- : #<Section id: 74, course_id: 9, name: "X", time_start: "13:15", time_end: "14:30", instructor: "MARIUS PARASCHIVOIU", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.636787 #3868]  INFO -- : #<Section id: 75, course_id: 10, name: "CC", time_start: "18:30", time_end: "21:00", instructor: "DONALD DAVIS", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.637787 #3868]  INFO -- : #<Section id: 76, course_id: 10, name: "CD", time_start: "18:30", time_end: "21:00", instructor: "SHAHRAM SHARIFI", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.637787 #3868]  INFO -- : #<Section id: 77, course_id: 10, name: "R", time_start: "13:15", time_end: "14:30", instructor: "SURAJ JOSHI", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.637787 #3868]  INFO -- : #<Section id: 78, course_id: 10, name: "S", time_start: "13:15", time_end: "14:30", instructor: "KETRA SCHMITT", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.637787 #3868]  INFO -- : #<Section id: 79, course_id: 10, name: "FF", time_start: "17:45", time_end: "20:15", instructor: "WALAA HAMOUDA", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:07:06.637787 #3868]  INFO -- : #<Section id: 80, course_id: 10, name: "T", time_start: "14:45", time_end: "16:00", instructor: "JOHN XIUPU ZHANG", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.637787 #3868]  INFO -- : #<Section id: 81, course_id: 10, name: "W", time_start: "10:15", time_end: "11:30", instructor: "HASSAN RIVAZ", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.638786 #3868]  INFO -- : #<Section id: 82, course_id: 10, name: "UU", time_start: "17:45", time_end: "20:15", instructor: "IMAN GOHAR", day_of_week: "----F--", term: "Winter">
+I, [2015-03-29T15:07:06.649814 #3868]  INFO -- : #<Section id: 83, course_id: 11, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "CHANDRA ASTHANA", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.649814 #3868]  INFO -- : #<Section id: 84, course_id: 11, name: "CC", time_start: "18:30", time_end: "21:00", instructor: "PIERRE GAUTHIER", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.649814 #3868]  INFO -- : #<Section id: 85, course_id: 11, name: "F", time_start: "16:15", time_end: "17:30", instructor: "RAMA BHAT", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.649814 #3868]  INFO -- : #<Section id: 86, course_id: 11, name: "M", time_start: "8:45", time_end: "10:00", instructor: "ASHOK KAUSHAL", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.649814 #3868]  INFO -- : #<Section id: 87, course_id: 11, name: "S", time_start: "16:15", time_end: "17:30", instructor: "ASHOK KAUSHAL", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.649814 #3868]  INFO -- : #<Section id: 88, course_id: 11, name: "V", time_start: "13:15", time_end: "14:30", instructor: "LIANGZHU WANG", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.650795 #3868]  INFO -- : #<Section id: 89, course_id: 11, name: "X", time_start: "8:45", time_end: "10:00", instructor: "ASHOK KAUSHAL", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.650795 #3868]  INFO -- : #<Section id: 90, course_id: 11, name: "UU", time_start: "17:45", time_end: "20:15", instructor: "CHARLES KIYANDA", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:07:06.661895 #3868]  INFO -- : #<Section id: 91, course_id: 12, name: "AA", time_start: "8:45", time_end: "11:30", instructor: "PIERRE OUELLET", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.661895 #3868]  INFO -- : #<Section id: 92, course_id: 12, name: "AB", time_start: "11:45", time_end: "14:30", instructor: "DAVID SADOWAY", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.661895 #3868]  INFO -- : #<Section id: 93, course_id: 12, name: "CC", time_start: "8:45", time_end: "11:30", instructor: "BRUNO GRENIER", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.662895 #3868]  INFO -- : #<Section id: 94, course_id: 12, name: "D", time_start: "8:45", time_end: "11:30", instructor: "BRUNO GRENIER", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:07:06.662895 #3868]  INFO -- : #<Section id: 95, course_id: 12, name: "F", time_start: "16:15", time_end: "17:30", instructor: "BRANDIFF CARON", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.662895 #3868]  INFO -- : #<Section id: 96, course_id: 12, name: "EE", time_start: "17:45", time_end: "20:15", instructor: "BRUNO GRENIER", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:07:06.662895 #3868]  INFO -- : #<Section id: 97, course_id: 12, name: "P", time_start: "8:45", time_end: "11:30", instructor: "KERRY HOLDEN", day_of_week: "----F--", term: "Winter">
+I, [2015-03-29T15:07:06.662895 #3868]  INFO -- : #<Section id: 98, course_id: 12, name: "Q", time_start: "16:15", time_end: "17:30", instructor: "MATTHEW HARSH", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.662895 #3868]  INFO -- : #<Section id: 99, course_id: 12, name: "RR", time_start: "17:45", time_end: "20:15", instructor: "MATTHEW HARSH", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:07:06.662895 #3868]  INFO -- : #<Section id: 100, course_id: 12, name: "W", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Summer">
+I, [2015-03-29T15:07:06.663907 #3868]  INFO -- : #<Section id: 101, course_id: 12, name: "BB", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Summer">
+I, [2015-03-29T15:07:06.663929 #3868]  INFO -- : #<Section id: 102, course_id: 12, name: "F", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Fall">
+I, [2015-03-29T15:07:06.663929 #3868]  INFO -- : #<Section id: 103, course_id: 12, name: "W", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Winter">
+I, [2015-03-29T15:07:06.663929 #3868]  INFO -- : #<Section id: 104, course_id: 12, name: "X", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Winter">
+I, [2015-03-29T15:07:06.663929 #3868]  INFO -- : #<Section id: 105, course_id: 12, name: "BM", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Summer">
+I, [2015-03-29T15:07:06.663929 #3868]  INFO -- : #<Section id: 106, course_id: 12, name: "MI", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Winter">
+I, [2015-03-29T15:07:06.663929 #3868]  INFO -- : #<Section id: 107, course_id: 12, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "STANISLAS L KLASA", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:07:06.664946 #3868]  INFO -- : #<Section id: 108, course_id: 12, name: "QQ", time_start: "17:45", time_end: "20:15", instructor: "STANISLAS L KLASA", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:07:06.664946 #3868]  INFO -- : #<Section id: 109, course_id: 12, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "TADEUSZ OBUCHOWICZ", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.664946 #3868]  INFO -- : #<Section id: 110, course_id: 12, name: "U", time_start: "13:15", time_end: "14:30", instructor: "KERLY TITUS", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.664946 #3868]  INFO -- : #<Section id: 111, course_id: 12, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "DAVID PROBST", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:07:06.664946 #3868]  INFO -- : #<Section id: 112, course_id: 12, name: "PP", time_start: "17:45", time_end: "20:15", instructor: "DAVID PROBST", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:07:06.677017 #3868]  INFO -- : #<Section id: 113, course_id: 15, name: "AA", time_start: "10:45", time_end: "13:15", instructor: "VACLAV KRATOCHVIL", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.677017 #3868]  INFO -- : #<Section id: 114, course_id: 15, name: "Q", time_start: "13:15", time_end: "14:30", instructor: "GOSTA GRAHNE", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.677017 #3868]  INFO -- : #<Section id: 115, course_id: 15, name: "R", time_start: "13:15", time_end: "14:30", instructor: "LATA NARAYANAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.677017 #3868]  INFO -- : #<Section id: 116, course_id: 15, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "EUSEBIUS DOEDEL", day_of_week: "--W----", term: "Fall">
+I, [2015-03-29T15:07:06.678035 #3868]  INFO -- : #<Section id: 117, course_id: 15, name: "S", time_start: "13:15", time_end: "14:30", instructor: "SABINE BERGLER", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.678035 #3868]  INFO -- : #<Section id: 118, course_id: 15, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "GOSTA GRAHNE", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:07:06.678035 #3868]  INFO -- : #<Section id: 119, course_id: 15, name: "CC", time_start: "13:15", time_end: "16:00", instructor: "CARLOS-LUIS SANTANA", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.678035 #3868]  INFO -- : #<Section id: 120, course_id: 15, name: "Q", time_start: "13:15", time_end: "14:30", instructor: "SUDHIR MUDUR", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.678035 #3868]  INFO -- : #<Section id: 121, course_id: 15, name: "N", time_start: "13:15", time_end: "14:30", instructor: "EUSEBIUS DOEDEL", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.678035 #3868]  INFO -- : #<Section id: 122, course_id: 15, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "ADAM KRZYZAK", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:07:06.689140 #3868]  INFO -- : #<Section id: 123, course_id: 16, name: "AA", time_start: "13:30", time_end: "16:00", instructor: "LEILA KOSSEIM", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.690161 #3868]  INFO -- : #<Section id: 124, course_id: 16, name: "Q", time_start: "13:15", time_end: "14:30", instructor: "EMAD SHIHAB", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.690161 #3868]  INFO -- : #<Section id: 125, course_id: 16, name: "R", time_start: "8:45", time_end: "10:00", instructor: "NANCY ACEMIAN", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.690161 #3868]  INFO -- : #<Section id: 126, course_id: 16, name: "EE", time_start: "17:45", time_end: "20:15", instructor: "LEILA KOSSEIM", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:07:06.690161 #3868]  INFO -- : #<Section id: 127, course_id: 16, name: "U", time_start: "10:15", time_end: "11:30", instructor: "AIMAN HANNA", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.690161 #3868]  INFO -- : #<Section id: 128, course_id: 16, name: "W", time_start: "11:45", time_end: "13:00", instructor: "AIMAN HANNA", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.702228 #3868]  INFO -- : #<Section id: 129, course_id: 17, name: "CC", time_start: "15:30", time_end: "18:00", instructor: "NIKOLAOS TSANTALIS", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.702228 #3868]  INFO -- : #<Section id: 130, course_id: 17, name: "D", time_start: "14:45", time_end: "16:00", instructor: "NAGI BASHA", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.702228 #3868]  INFO -- : #<Section id: 131, course_id: 17, name: "S", time_start: "8:45", time_end: "10:00", instructor: "NANCY ACEMIAN", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.702228 #3868]  INFO -- : #<Section id: 132, course_id: 17, name: "U", time_start: "10:15", time_end: "11:30", instructor: "KERLY TITUS", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.702228 #3868]  INFO -- : #<Section id: 133, course_id: 17, name: "PP", time_start: "17:45", time_end: "20:15", instructor: "JEREMY CLARK", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:07:06.713287 #3868]  INFO -- : #<Section id: 134, course_id: 18, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "DAVID PROBST", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:07:06.725403 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.725403 #3868]  INFO -- : #<Section id: 135, course_id: 19, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "NEMATOLLAAH SHIRI-VARNAAMKHAASTI", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.725403 #3868]  INFO -- : #<Section id: 136, course_id: 19, name: "E", time_start: "10:15", time_end: "11:30", instructor: "LATA NARAYANAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.725403 #3868]  INFO -- : #<Section id: 137, course_id: 19, name: "G", time_start: "8:45", time_end: "10:00", instructor: "SEYED ALI JANNATPOUR", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.725403 #3868]  INFO -- : #<Section id: 138, course_id: 19, name: "N", time_start: "11:45", time_end: "13:00", instructor: "GOSTA GRAHNE", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.726401 #3868]  INFO -- : #<Section id: 139, course_id: 19, name: "F", time_start: "10:15", time_end: "11:30", instructor: "JEREMY MACDONALD", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.737485 #3868]  INFO -- : #<Section id: 140, course_id: 21, name: "D", time_start: "13:15", time_end: "14:30", instructor: "JOEY PAQUET", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.737485 #3868]  INFO -- : #<Section id: 141, course_id: 21, name: "N", time_start: "16:15", time_end: "17:30", instructor: "DANIEL SINNIG", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.737485 #3868]  INFO -- : #<Section id: 142, course_id: 21, name: "S", time_start: "14:45", time_end: "16:00", instructor: "SEYED ALI JANNATPOUR", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.737485 #3868]  INFO -- : #<Section id: 143, course_id: 22, name: "CC", time_start: "18:30", time_end: "21:00", instructor: "TODD EAVIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:06.737485 #3868]  INFO -- : #<Section id: 144, course_id: 22, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "DHRUBAJYOTI GOSWAMI", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:07:06.738482 #3868]  INFO -- : #<Section id: 145, course_id: 22, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "AIMAN HANNA", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:07:06.738482 #3868]  INFO -- : #<Section id: 146, course_id: 22, name: "WW", time_start: "17:45", time_end: "20:15", instructor: "AIMAN HANNA", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:07:06.749599 #3868]  INFO -- : #<Section id: 147, course_id: 23, name: "CC", time_start: "14:45", time_end: "17:15", instructor: "JAMAL BENTAHAR", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.749599 #3868]  INFO -- : #<Section id: 148, course_id: 23, name: "U", time_start: "8:45", time_end: "10:00", instructor: "MOHAMED TALEB", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.749599 #3868]  INFO -- : #<Section id: 149, course_id: 23, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "DAVID PROBST", day_of_week: "--W----", term: "Fall">
+I, [2015-03-29T15:07:06.749599 #3868]  INFO -- : #<Section id: 150, course_id: 23, name: "E", time_start: "14:45", time_end: "16:00", instructor: "DAVID PROBST", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.759659 #3868]  INFO -- : #<Section id: 151, course_id: 24, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "SUTHARSAN SIVAGNANAM", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.759659 #3868]  INFO -- : #<Section id: 152, course_id: 24, name: "G", time_start: "13:15", time_end: "14:30", instructor: "AIMAN HANNA", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.760662 #3868]  INFO -- : #<Section id: 153, course_id: 24, name: "H", time_start: "13:15", time_end: "14:30", instructor: "MOHAMED TALEB", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.760662 #3868]  INFO -- : #<Section id: 154, course_id: 24, name: "X", time_start: "13:15", time_end: "14:30", instructor: "NANCY ACEMIAN", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.771736 #3868]  INFO -- : #<Section id: 155, course_id: 25, name: "CC", time_start: "14:45", time_end: "17:15", instructor: "TODD EAVIS", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.771736 #3868]  INFO -- : #<Section id: 156, course_id: 25, name: "F", time_start: "13:15", time_end: "16:00", instructor: "BIPIN C. DESAI", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:07:06.771736 #3868]  INFO -- : #<Section id: 157, course_id: 25, name: "W", time_start: "13:15", time_end: "14:30", instructor: "NEMATOLLAAH SHIRI-VARNAAMKHAASTI", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.771736 #3868]  INFO -- : #<Section id: 158, course_id: 25, name: "BB", time_start: "18:30", time_end: "21:00", instructor: "DANIEL SINNIG", day_of_week: "--W----", term: "Summer">
+I, [2015-03-29T15:07:06.771736 #3868]  INFO -- : #<Section id: 159, course_id: 25, name: "E", time_start: "11:45", time_end: "13:00", instructor: "JUERGEN RILLING", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.771736 #3868]  INFO -- : #<Section id: 160, course_id: 25, name: "PP", time_start: "17:45", time_end: "20:15", instructor: "GREGORY BUTLER", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:07:06.772735 #3868]  INFO -- : #<Section id: 161, course_id: 25, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "ADAM KRZYZAK", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:07:06.772735 #3868]  INFO -- : #<Section id: 162, course_id: 25, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "EUSEBIUS DOEDEL", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:07:06.772735 #3868]  INFO -- : #<Section id: 163, course_id: 25, name: "A", time_start: "11:45", time_end: "13:00", instructor: "ARMEN ATOYAN", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.783812 #3868]  INFO -- : #<Section id: 164, course_id: 26, name: "CC", time_start: "18:30", time_end: "21:00", instructor: "NICOLAS BERGERON", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.783812 #3868]  INFO -- : #<Section id: 165, course_id: 26, name: "UU", time_start: "17:45", time_end: "20:15", instructor: "ADAM KRZYZAK", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:07:06.783812 #3868]  INFO -- : #<Section id: 166, course_id: 26, name: "WW", time_start: "17:45", time_end: "20:15", instructor: "NICOLAS BERGERON", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:07:06.794909 #3868]  INFO -- : #<Section id: 167, course_id: 27, name: "W", time_start: "13:15", time_end: "16:00", instructor: "THOMAS FEVENS", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:07:06.794909 #3868]  INFO -- : #<Section id: 168, course_id: 27, name: "X", time_start: "13:15", time_end: "16:00", instructor: "THOMAS FEVENS", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:07:06.805982 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.807001 #3868]  INFO -- : #<Section id: 169, course_id: 28, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "RAJAGOPALAN JAYAKUMAR", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:07:06.818049 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.818049 #3868]  INFO -- : #<Section id: 170, course_id: 64, name: "FF", time_start: "17:45", time_end: "20:15", instructor: "DHRUBAJYOTI GOSWAMI", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:07:06.829093 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.829093 #3868]  INFO -- : #<Section id: 171, course_id: 65, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "JOEY PAQUET", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:07:06.841265 #3868]  INFO -- : #<Section id: 172, course_id: 29, name: "D", time_start: "10:15", time_end: "11:30", instructor: "AIMAN HANNA", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.841265 #3868]  INFO -- : #<Section id: 173, course_id: 29, name: "W", time_start: "13:15", time_end: "14:30", instructor: "LATA NARAYANAN", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.841265 #3868]  INFO -- : #<Section id: 174, course_id: 31, name: "N", time_start: "16:15", time_end: "17:30", instructor: "HOVHANNES HARUTYUNYAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.853334 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.853334 #3868]  INFO -- : #<Section id: 175, course_id: 32, name: "F", time_start: "11:45", time_end: "13:00", instructor: "LEILA KOSSEIM", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.853334 #3868]  INFO -- : #<Section id: 176, course_id: 32, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "LEILA KOSSEIM", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:07:06.853334 #3868]  INFO -- : #<Section id: 177, course_id: 33, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "CHING YEE SUEN", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:07:06.864410 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.864410 #3868]  INFO -- : #<Section id: 178, course_id: 34, name: "UU", time_start: "17:45", time_end: "20:15", instructor: "NORA HOUARI", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:07:06.875543 #3868]  INFO -- : #<Section id: 179, course_id: 35, name: "N", time_start: "14:45", time_end: "16:00", instructor: "THOMAS FEVENS", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.885648 #3868]  INFO -- : #<Section id: 180, course_id: 36, name: "N", time_start: "13:15", time_end: "14:30", instructor: "TIBERIU POPA", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.896738 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.896738 #3868]  INFO -- : #<Section id: 181, course_id: 37, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "TIEN BUI", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:07:06.907806 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.908827 #3868]  INFO -- : #<Section id: 182, course_id: 38, name: "D", time_start: "13:15", time_end: "14:30", instructor: "SABINE BERGLER", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:06.919902 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.919902 #3868]  INFO -- : #<Section id: 191, course_id: 41, name: "H", time_start: "14:45", time_end: "16:00", instructor: "DONALD DAVIS", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:06.919902 #3868]  INFO -- : #<Section id: 192, course_id: 41, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "TADEUSZ OBUCHOWICZ", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:07:06.929998 #3868]  INFO -- : #<Section id: 193, course_id: 42, name: "CC", time_start: "10:45", time_end: "13:15", instructor: "DANIEL SINNIG", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:07:06.931064 #3868]  INFO -- : #<Section id: 194, course_id: 42, name: "Q", time_start: "8:45", time_end: "10:00", instructor: "NANCY ACEMIAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:06.931064 #3868]  INFO -- : #<Section id: 195, course_id: 42, name: "S", time_start: "8:45", time_end: "10:00", instructor: "NAGI BASHA", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.931064 #3868]  INFO -- : #<Section id: 196, course_id: 42, name: "U", time_start: "14:45", time_end: "16:00", instructor: "CHUN WANG", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.931064 #3868]  INFO -- : #<Section id: 197, course_id: 42, name: "W", time_start: "0:00", time_end: "0:00", instructor: "TERRILL FANCOTT", day_of_week: "-------", term: "Winter">
+I, [2015-03-29T15:07:06.942168 #3868]  INFO -- : #<Section id: 198, course_id: 43, name: "GG", time_start: "17:45", time_end: "20:15", instructor: "AMR YOUSSEF", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:07:06.952267 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.952267 #3868]  INFO -- : #<Section id: 199, course_id: 44, name: "U", time_start: "16:15", time_end: "17:30", instructor: "CONSTANTINOS CONSTANTINIDES", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.963344 #3868]  INFO -- : #<Section id: 200, course_id: 45, name: "H", time_start: "10:15", time_end: "11:30", instructor: "TERRILL FANCOTT", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.963344 #3868]  INFO -- : #<Section id: 201, course_id: 45, name: "S", time_start: "8:45", time_end: "10:00", instructor: "STUART THIEL", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:06.963344 #3868]  INFO -- : #<Section id: 202, course_id: 46, name: "H", time_start: "11:45", time_end: "13:00", instructor: "DANIEL SINNIG", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.974448 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.974448 #3868]  INFO -- : #<Section id: 203, course_id: 47, name: "H", time_start: "13:15", time_end: "14:30", instructor: "PETER RIGBY", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:06.985535 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:06.985535 #3868]  INFO -- : #<Section id: 204, course_id: 48, name: "S", time_start: "13:15", time_end: "14:30", instructor: "CONSTANTINOS CONSTANTINIDES", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:06.996662 #3868]  INFO -- : #<Section id: 205, course_id: 49, name: "S", time_start: "14:45", time_end: "16:00", instructor: "DANIEL SINNIG", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:07:07.008664 #3868]  INFO -- : #<Section id: 206, course_id: 50, name: "S", time_start: "10:15", time_end: "11:30", instructor: "RAJAGOPALAN JAYAKUMAR", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:07:07.019673 #3868]  INFO -- : #<Section id: 207, course_id: 51, name: "F", time_start: "10:15", time_end: "11:30", instructor: "OLGA ORMANDJIEVA", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:07.030758 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:07.030758 #3868]  INFO -- : #<Section id: 208, course_id: 52, name: "S", time_start: "11:45", time_end: "13:00", instructor: "TIEN BUI", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:07:07.041845 #3868]  INFO -- : #<Section id: 209, course_id: 53, name: "F", time_start: "11:45", time_end: "13:00", instructor: "STUART THIEL", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:07.052961 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:07.053983 #3868]  INFO -- : #<Section id: 210, course_id: 54, name: "S", time_start: "16:15", time_end: "17:55", instructor: "NIKOLAOS TSANTALIS", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:07:07.065054 #3868]  INFO -- : #<Section id: 211, course_id: 55, name: "MM", time_start: "17:45", time_end: "20:15", instructor: "TERRILL FANCOTT", day_of_week: "--W----", term: "Fall">
+I, [2015-03-29T15:07:07.074097 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:07.075101 #3868]  INFO -- : #<Section id: 212, course_id: 56, name: "H", time_start: "13:15", time_end: "14:30", instructor: "RAJAGOPALAN JAYAKUMAR", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:07.086173 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:07.087173 #3868]  INFO -- : #<Section id: 213, course_id: 59, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "SERGUEI MOKHOV", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:07:07.098246 #3868]  INFO -- : #<Section id: 214, course_id: 60, name: "SS", time_start: "18:25", time_end: "19:25", instructor: "PETER RIGBY", day_of_week: "----F--", term: "Summer">
+I, [2015-03-29T15:07:07.108318 #3868]  INFO -- : #<Section id: 215, course_id: 66, name: "S", time_start: "16:15", time_end: "17:30", instructor: "SAMAR ABDI", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:07:07.119392 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:07.119392 #3868]  INFO -- : #<Section id: 216, course_id: 62, name: "XX", time_start: "17:45", time_end: "20:15", instructor: "YOUMIN ZHANG", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:07:07.130469 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:07.130469 #3868]  INFO -- : #<Section id: 217, course_id: 63, name: "X", time_start: "14:45", time_end: "17:45", instructor: "NARENDRA KUMAR GOLLU", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:07:07.141510 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:07:07.142531 #3868]  INFO -- : #<Section id: 218, course_id: 67, name: "CC", time_start: "11:45", time_end: "14:15", instructor: "VENKATANARAYANA RAMACHANDRAN", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:07:07.142531 #3868]  INFO -- : #<Section id: 219, course_id: 67, name: "T", time_start: "11:45", time_end: "13:00", instructor: "VENKATANARAYANA RAMACHANDRAN", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:07:07.142531 #3868]  INFO -- : #<Section id: 220, course_id: 67, name: "V", time_start: "8:45", time_end: "10:00", instructor: "VENKATANARAYANA RAMACHANDRAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:07:07.142531 #3868]  INFO -- : #<Section id: 221, course_id: 67, name: "JJ", time_start: "17:45", time_end: "20:15", instructor: "VENKATANARAYANA RAMACHANDRAN", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:07:07.153628 #3868]  INFO -- : #<Section id: 222, course_id: 65, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "JOEY PAQUET", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:15:27.952637 #3868]  INFO -- : #<Section id: 1, course_id: 1, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "BASSEL ATALLAH", day_of_week: "M-WW-----", term: "Summer">
+I, [2015-03-29T15:15:27.952637 #3868]  INFO -- : #<Section id: 2, course_id: 1, name: "G", time_start: "16:15", time_end: "17:30", instructor: "REMI ALAURENT", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:15:27.953636 #3868]  INFO -- : #<Section id: 3, course_id: 1, name: "H", time_start: "16:15", time_end: "17:30", instructor: "REMI ALAURENT", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:15:27.953636 #3868]  INFO -- : #<Section id: 4, course_id: 1, name: "Q", time_start: "16:15", time_end: "17:30", instructor: "REMI ALAURENT", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:15:27.979876 #3868]  INFO -- : #<Section id: 5, course_id: 2, name: "AA", time_start: "11:45", time_end: "13:00", instructor: "JOHN HADJINICOLAOU", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:27.979876 #3868]  INFO -- : #<Section id: 6, course_id: 2, name: "G", time_start: "16:15", time_end: "17:30", instructor: "JOHN HADJINICOLAOU", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:15:27.979876 #3868]  INFO -- : #<Section id: 7, course_id: 2, name: "H", time_start: "16:15", time_end: "17:30", instructor: "JOHN HADJINICOLAOU", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:15:27.980876 #3868]  INFO -- : #<Section id: 8, course_id: 2, name: "R", time_start: "16:15", time_end: "17:30", instructor: "JOHN HADJINICOLAOU", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:15:27.980876 #3868]  INFO -- : #<Section id: 9, course_id: 2, name: "SS", time_start: "17:45", time_end: "19:00", instructor: "RAHIM TADAYON", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:15:27.991992 #3868]  INFO -- : #<Section id: 10, course_id: 3, name: "AA", time_start: "10:15", time_end: "12:45", instructor: "ALEXANDRE PARADIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:27.991992 #3868]  INFO -- : #<Section id: 11, course_id: 3, name: "P", time_start: "11:45", time_end: "13:00", instructor: "DIMITER DRYANOV", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:27.991992 #3868]  INFO -- : #<Section id: 12, course_id: 3, name: "R", time_start: "8:45", time_end: "10:00", instructor: "NATALIIA ROSSOKHATA", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:27.991992 #3868]  INFO -- : #<Section id: 13, course_id: 3, name: "T", time_start: "10:15", time_end: "11:30", instructor: "GEORGIOS VATISTAS", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:27.992994 #3868]  INFO -- : #<Section id: 14, course_id: 3, name: "U", time_start: "11:45", time_end: "13:00", instructor: "ALEXEY KOKOTOV", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:27.992994 #3868]  INFO -- : #<Section id: 15, course_id: 3, name: "V", time_start: "8:45", time_end: "10:00", instructor: "CIPRIAN ALECSANDRU", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:27.992994 #3868]  INFO -- : #<Section id: 16, course_id: 3, name: "X", time_start: "10:15", time_end: "11:30", instructor: "DMITRY KOROTKIN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:27.992994 #3868]  INFO -- : #<Section id: 17, course_id: 3, name: "XX", time_start: "17:45", time_end: "20:15", instructor: "DIMITER DRYANOV", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:15:27.992994 #3868]  INFO -- : #<Section id: 18, course_id: 3, name: "F", time_start: "14:45", time_end: "16:00", instructor: "NATALIIA ROSSOKHATA", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:27.992994 #3868]  INFO -- : #<Section id: 19, course_id: 3, name: "G", time_start: "14:45", time_end: "16:00", instructor: "M. OMAIR AHMAD", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:27.992994 #3868]  INFO -- : #<Section id: 20, course_id: 3, name: "J", time_start: "14:45", time_end: "16:00", instructor: "ALEXEY KOKOTOV", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.004063 #3868]  INFO -- : #<Section id: 21, course_id: 4, name: "CC", time_start: "10:45", time_end: "13:15", instructor: "DONALD DAVIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.004063 #3868]  INFO -- : #<Section id: 22, course_id: 4, name: "P", time_start: "13:15", time_end: "14:30", instructor: "RAMA BHAT", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.004063 #3868]  INFO -- : #<Section id: 23, course_id: 4, name: "Q", time_start: "13:15", time_end: "14:30", instructor: "DMITRY KOROTKIN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.004063 #3868]  INFO -- : #<Section id: 24, course_id: 4, name: "J", time_start: "16:15", time_end: "17:30", instructor: "DIMITER DRYANOV", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.005081 #3868]  INFO -- : #<Section id: 25, course_id: 4, name: "R", time_start: "11:45", time_end: "13:00", instructor: "ALEXANDER SHNIRELMAN", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.005081 #3868]  INFO -- : #<Section id: 26, course_id: 4, name: "S", time_start: "8:45", time_end: "10:00", instructor: "CHANTAL DAVID", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.005081 #3868]  INFO -- : #<Section id: 27, course_id: 4, name: "T", time_start: "10:15", time_end: "11:30", instructor: "IMAN GOHAR", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.005081 #3868]  INFO -- : #<Section id: 28, course_id: 4, name: "U", time_start: "8:45", time_end: "10:00", instructor: "ALEXANDER SHNIRELMAN", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.005081 #3868]  INFO -- : #<Section id: 29, course_id: 4, name: "V", time_start: "8:45", time_end: "10:00", instructor: "HASHEM AKBARI", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.005081 #3868]  INFO -- : #<Section id: 30, course_id: 4, name: "X", time_start: "10:15", time_end: "11:30", instructor: "CHANTAL DAVID", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.016148 #3868]  INFO -- : #<Section id: 31, course_id: 5, name: "T", time_start: "10:15", time_end: "11:30", instructor: "ALEXANDRE PARADIS", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.017187 #3868]  INFO -- : #<Section id: 32, course_id: 5, name: "V", time_start: "10:15", time_end: "11:30", instructor: "THEODORE STATHOPOULOS", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.017187 #3868]  INFO -- : #<Section id: 33, course_id: 5, name: "X", time_start: "10:15", time_end: "11:30", instructor: "JAVAD DARGAHI", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.017187 #3868]  INFO -- : #<Section id: 34, course_id: 5, name: "YY", time_start: "17:45", time_end: "20:15", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:15:28.017187 #3868]  INFO -- : #<Section id: 35, course_id: 5, name: "J", time_start: "11:45", time_end: "13:00", instructor: "THEODORE STATHOPOULOS", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.017187 #3868]  INFO -- : #<Section id: 36, course_id: 5, name: "L", time_start: "11:45", time_end: "13:00", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.017187 #3868]  INFO -- : #<Section id: 37, course_id: 6, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "ALEXANDRE PARADIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.017187 #3868]  INFO -- : #<Section id: 38, course_id: 6, name: "T", time_start: "11:45", time_end: "13:00", instructor: "RAMA BHAT", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.018190 #3868]  INFO -- : #<Section id: 39, course_id: 6, name: "V", time_start: "10:15", time_end: "11:30", instructor: "THEODORE STATHOPOULOS", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.018190 #3868]  INFO -- : #<Section id: 40, course_id: 6, name: "X", time_start: "11:45", time_end: "13:00", instructor: "ASHOK KAUSHAL", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.018190 #3868]  INFO -- : #<Section id: 41, course_id: 6, name: "TT", time_start: "17:45", time_end: "20:15", instructor: "ALEXANDRE PARADIS", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:15:28.029265 #3868]  INFO -- : #<Section id: 42, course_id: 7, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "RAJAMOHAN GANESAN", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.029265 #3868]  INFO -- : #<Section id: 43, course_id: 7, name: "AB", time_start: "18:30", time_end: "21:00", instructor: "WAIZUDDIN AHMED", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.029265 #3868]  INFO -- : #<Section id: 44, course_id: 7, name: "M", time_start: "13:15", time_end: "14:30", instructor: "SURAJ JOSHI", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.029265 #3868]  INFO -- : #<Section id: 45, course_id: 7, name: "T", time_start: "13:15", time_end: "14:30", instructor: "WAIZUDDIN AHMED", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.030284 #3868]  INFO -- : #<Section id: 46, course_id: 7, name: "V", time_start: "8:45", time_end: "10:00", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.030284 #3868]  INFO -- : #<Section id: 47, course_id: 7, name: "X", time_start: "13:15", time_end: "14:30", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.030284 #3868]  INFO -- : #<Section id: 48, course_id: 7, name: "LL", time_start: "17:45", time_end: "20:15", instructor: "MICHELLE NOKKEN", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:15:28.041340 #3868]  INFO -- : #<Section id: 49, course_id: 8, name: "V", time_start: "13:15", time_end: "14:30", instructor: "DACIAN EMILIAN ROMAN", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.041340 #3868]  INFO -- : #<Section id: 50, course_id: 8, name: "CV", time_start: "15:45", time_end: "18:15", instructor: "PIERRE GAUTHIER", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.041340 #3868]  INFO -- : #<Section id: 51, course_id: 8, name: "M", time_start: "16:15", time_end: "17:30", instructor: "HOI DICK NG", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.041340 #3868]  INFO -- : #<Section id: 52, course_id: 8, name: "T", time_start: "10:15", time_end: "11:30", instructor: "LYES KADEM", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.041340 #3868]  INFO -- : #<Section id: 53, course_id: 8, name: "T", time_start: "8:45", time_end: "10:00", instructor: "ALEXANDRE PARADIS", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.041340 #3868]  INFO -- : #<Section id: 54, course_id: 8, name: "V", time_start: "10:15", time_end: "11:30", instructor: "HASHEM AKBARI", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.042384 #3868]  INFO -- : #<Section id: 55, course_id: 8, name: "XX", time_start: "17:45", time_end: "20:15", instructor: "CHELLAIYAH RAJALINGHAM", day_of_week: "----F--", term: "Winter">
+I, [2015-03-29T15:15:28.042384 #3868]  INFO -- : #<Section id: 56, course_id: 8, name: "F", time_start: "16:15", time_end: "17:30", instructor: "KRZYSZTOF SKONIECZNY", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.042384 #3868]  INFO -- : #<Section id: 57, course_id: 8, name: "U", time_start: "10:15", time_end: "11:30", instructor: "LUIS RODRIGUES", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.053474 #3868]  INFO -- : #<Section id: 58, course_id: 9, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "SHAHRAM SHARIFI", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.053474 #3868]  INFO -- : #<Section id: 59, course_id: 9, name: "AB", time_start: "18:30", time_end: "21:00", instructor: "SALEH AHMAD ABU DABOUS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.053474 #3868]  INFO -- : #<Section id: 60, course_id: 9, name: "G", time_start: "16:15", time_end: "17:30", instructor: "GERARD GOUW", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.053474 #3868]  INFO -- : #<Section id: 61, course_id: 9, name: "H", time_start: "16:15", time_end: "17:30", instructor: "FUZHAN NASIRI", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.053474 #3868]  INFO -- : #<Section id: 62, course_id: 9, name: "FF", time_start: "17:45", time_end: "20:15", instructor: "JIAN LI HAO", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:15:28.053474 #3868]  INFO -- : #<Section id: 63, course_id: 9, name: "II", time_start: "17:45", time_end: "20:15", instructor: "SHAHRAM SHARIFI", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:15:28.054471 #3868]  INFO -- : #<Section id: 64, course_id: 9, name: "R", time_start: "16:15", time_end: "17:30", instructor: "JIAN LI HAO", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.054471 #3868]  INFO -- : #<Section id: 65, course_id: 9, name: "SS", time_start: "17:45", time_end: "20:15", instructor: "GERARD GOUW", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:15:28.054471 #3868]  INFO -- : #<Section id: 66, course_id: 9, name: "AA", time_start: "11:45", time_end: "14:30", instructor: "DONALD DAVIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.054471 #3868]  INFO -- : #<Section id: 67, course_id: 9, name: "AB", time_start: "18:30", time_end: "21:00", instructor: "SURAJ JOSHI", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.054471 #3868]  INFO -- : #<Section id: 68, course_id: 9, name: "T", time_start: "16:15", time_end: "17:30", instructor: "NABIL ESMAIL", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.054471 #3868]  INFO -- : #<Section id: 69, course_id: 9, name: "X", time_start: "8:45", time_end: "10:00", instructor: "ZHI LI", day_of_week: "--W-F--", term: "Summer">
+I, [2015-03-29T15:15:28.054471 #3868]  INFO -- : #<Section id: 70, course_id: 9, name: "Y", time_start: "16:15", time_end: "17:30", instructor: "ALEXANDRE PARADIS", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.055488 #3868]  INFO -- : #<Section id: 71, course_id: 9, name: "AA", time_start: "14:45", time_end: "17:30", instructor: "MARIUS PARASCHIVOIU", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.055488 #3868]  INFO -- : #<Section id: 72, course_id: 9, name: "L", time_start: "8:45", time_end: "10:00", instructor: "CHARLES KIYANDA", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.055488 #3868]  INFO -- : #<Section id: 73, course_id: 9, name: "V", time_start: "11:45", time_end: "13:00", instructor: "LIANGZHU WANG", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.055488 #3868]  INFO -- : #<Section id: 74, course_id: 9, name: "X", time_start: "13:15", time_end: "14:30", instructor: "MARIUS PARASCHIVOIU", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.066552 #3868]  INFO -- : #<Section id: 75, course_id: 10, name: "CC", time_start: "18:30", time_end: "21:00", instructor: "DONALD DAVIS", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.066552 #3868]  INFO -- : #<Section id: 76, course_id: 10, name: "CD", time_start: "18:30", time_end: "21:00", instructor: "SHAHRAM SHARIFI", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.066552 #3868]  INFO -- : #<Section id: 77, course_id: 10, name: "R", time_start: "13:15", time_end: "14:30", instructor: "SURAJ JOSHI", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.067587 #3868]  INFO -- : #<Section id: 78, course_id: 10, name: "S", time_start: "13:15", time_end: "14:30", instructor: "KETRA SCHMITT", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.067587 #3868]  INFO -- : #<Section id: 79, course_id: 10, name: "FF", time_start: "17:45", time_end: "20:15", instructor: "WALAA HAMOUDA", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:15:28.067587 #3868]  INFO -- : #<Section id: 80, course_id: 10, name: "T", time_start: "14:45", time_end: "16:00", instructor: "JOHN XIUPU ZHANG", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.067587 #3868]  INFO -- : #<Section id: 81, course_id: 10, name: "W", time_start: "10:15", time_end: "11:30", instructor: "HASSAN RIVAZ", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.067587 #3868]  INFO -- : #<Section id: 82, course_id: 10, name: "UU", time_start: "17:45", time_end: "20:15", instructor: "IMAN GOHAR", day_of_week: "----F--", term: "Winter">
+I, [2015-03-29T15:15:28.078663 #3868]  INFO -- : #<Section id: 83, course_id: 11, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "CHANDRA ASTHANA", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.079664 #3868]  INFO -- : #<Section id: 84, course_id: 11, name: "CC", time_start: "18:30", time_end: "21:00", instructor: "PIERRE GAUTHIER", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.079664 #3868]  INFO -- : #<Section id: 85, course_id: 11, name: "F", time_start: "16:15", time_end: "17:30", instructor: "RAMA BHAT", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.079664 #3868]  INFO -- : #<Section id: 86, course_id: 11, name: "M", time_start: "8:45", time_end: "10:00", instructor: "ASHOK KAUSHAL", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.079664 #3868]  INFO -- : #<Section id: 87, course_id: 11, name: "S", time_start: "16:15", time_end: "17:30", instructor: "ASHOK KAUSHAL", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.079664 #3868]  INFO -- : #<Section id: 88, course_id: 11, name: "V", time_start: "13:15", time_end: "14:30", instructor: "LIANGZHU WANG", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.079664 #3868]  INFO -- : #<Section id: 89, course_id: 11, name: "X", time_start: "8:45", time_end: "10:00", instructor: "ASHOK KAUSHAL", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.079664 #3868]  INFO -- : #<Section id: 90, course_id: 11, name: "UU", time_start: "17:45", time_end: "20:15", instructor: "CHARLES KIYANDA", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:15:28.089730 #3868]  INFO -- : #<Section id: 91, course_id: 12, name: "AA", time_start: "8:45", time_end: "11:30", instructor: "PIERRE OUELLET", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.089730 #3868]  INFO -- : #<Section id: 92, course_id: 12, name: "AB", time_start: "11:45", time_end: "14:30", instructor: "DAVID SADOWAY", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.090733 #3868]  INFO -- : #<Section id: 93, course_id: 12, name: "CC", time_start: "8:45", time_end: "11:30", instructor: "BRUNO GRENIER", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.090733 #3868]  INFO -- : #<Section id: 94, course_id: 12, name: "D", time_start: "8:45", time_end: "11:30", instructor: "BRUNO GRENIER", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:15:28.090733 #3868]  INFO -- : #<Section id: 95, course_id: 12, name: "F", time_start: "16:15", time_end: "17:30", instructor: "BRANDIFF CARON", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.090733 #3868]  INFO -- : #<Section id: 96, course_id: 12, name: "EE", time_start: "17:45", time_end: "20:15", instructor: "BRUNO GRENIER", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:15:28.090733 #3868]  INFO -- : #<Section id: 97, course_id: 12, name: "P", time_start: "8:45", time_end: "11:30", instructor: "KERRY HOLDEN", day_of_week: "----F--", term: "Winter">
+I, [2015-03-29T15:15:28.090733 #3868]  INFO -- : #<Section id: 98, course_id: 12, name: "Q", time_start: "16:15", time_end: "17:30", instructor: "MATTHEW HARSH", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.090733 #3868]  INFO -- : #<Section id: 99, course_id: 12, name: "RR", time_start: "17:45", time_end: "20:15", instructor: "MATTHEW HARSH", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:15:28.091752 #3868]  INFO -- : #<Section id: 100, course_id: 12, name: "W", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Summer">
+I, [2015-03-29T15:15:28.091752 #3868]  INFO -- : #<Section id: 101, course_id: 12, name: "BB", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Summer">
+I, [2015-03-29T15:15:28.091752 #3868]  INFO -- : #<Section id: 102, course_id: 12, name: "F", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Fall">
+I, [2015-03-29T15:15:28.091752 #3868]  INFO -- : #<Section id: 103, course_id: 12, name: "W", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Winter">
+I, [2015-03-29T15:15:28.091752 #3868]  INFO -- : #<Section id: 104, course_id: 12, name: "X", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Winter">
+I, [2015-03-29T15:15:28.091752 #3868]  INFO -- : #<Section id: 105, course_id: 12, name: "BM", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Summer">
+I, [2015-03-29T15:15:28.091752 #3868]  INFO -- : #<Section id: 106, course_id: 12, name: "MI", time_start: "0:00", time_end: "0:00", instructor: "DEBORAH DYSART-GALE", day_of_week: "-------", term: "Winter">
+I, [2015-03-29T15:15:28.091752 #3868]  INFO -- : #<Section id: 107, course_id: 12, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "STANISLAS L KLASA", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:15:28.092762 #3868]  INFO -- : #<Section id: 108, course_id: 12, name: "QQ", time_start: "17:45", time_end: "20:15", instructor: "STANISLAS L KLASA", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:15:28.092762 #3868]  INFO -- : #<Section id: 109, course_id: 12, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "TADEUSZ OBUCHOWICZ", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.092762 #3868]  INFO -- : #<Section id: 110, course_id: 12, name: "U", time_start: "13:15", time_end: "14:30", instructor: "KERLY TITUS", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.092762 #3868]  INFO -- : #<Section id: 111, course_id: 12, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "DAVID PROBST", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:15:28.092762 #3868]  INFO -- : #<Section id: 112, course_id: 12, name: "PP", time_start: "17:45", time_end: "20:15", instructor: "DAVID PROBST", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:15:28.101801 #3868]  INFO -- : #<Section id: 113, course_id: 15, name: "AA", time_start: "10:45", time_end: "13:15", instructor: "VACLAV KRATOCHVIL", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.101801 #3868]  INFO -- : #<Section id: 114, course_id: 15, name: "Q", time_start: "13:15", time_end: "14:30", instructor: "GOSTA GRAHNE", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.101801 #3868]  INFO -- : #<Section id: 115, course_id: 15, name: "R", time_start: "13:15", time_end: "14:30", instructor: "LATA NARAYANAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.102825 #3868]  INFO -- : #<Section id: 116, course_id: 15, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "EUSEBIUS DOEDEL", day_of_week: "--W----", term: "Fall">
+I, [2015-03-29T15:15:28.102825 #3868]  INFO -- : #<Section id: 117, course_id: 15, name: "S", time_start: "13:15", time_end: "14:30", instructor: "SABINE BERGLER", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.102825 #3868]  INFO -- : #<Section id: 118, course_id: 15, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "GOSTA GRAHNE", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:15:28.102825 #3868]  INFO -- : #<Section id: 119, course_id: 15, name: "CC", time_start: "13:15", time_end: "16:00", instructor: "CARLOS-LUIS SANTANA", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.103804 #3868]  INFO -- : #<Section id: 120, course_id: 15, name: "Q", time_start: "13:15", time_end: "14:30", instructor: "SUDHIR MUDUR", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.103804 #3868]  INFO -- : #<Section id: 121, course_id: 15, name: "N", time_start: "13:15", time_end: "14:30", instructor: "EUSEBIUS DOEDEL", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.103804 #3868]  INFO -- : #<Section id: 122, course_id: 15, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "ADAM KRZYZAK", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:15:28.115811 #3868]  INFO -- : #<Section id: 123, course_id: 16, name: "AA", time_start: "13:30", time_end: "16:00", instructor: "LEILA KOSSEIM", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.116811 #3868]  INFO -- : #<Section id: 124, course_id: 16, name: "Q", time_start: "13:15", time_end: "14:30", instructor: "EMAD SHIHAB", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.116811 #3868]  INFO -- : #<Section id: 125, course_id: 16, name: "R", time_start: "8:45", time_end: "10:00", instructor: "NANCY ACEMIAN", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.116811 #3868]  INFO -- : #<Section id: 126, course_id: 16, name: "EE", time_start: "17:45", time_end: "20:15", instructor: "LEILA KOSSEIM", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:15:28.116811 #3868]  INFO -- : #<Section id: 127, course_id: 16, name: "U", time_start: "10:15", time_end: "11:30", instructor: "AIMAN HANNA", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.116811 #3868]  INFO -- : #<Section id: 128, course_id: 16, name: "W", time_start: "11:45", time_end: "13:00", instructor: "AIMAN HANNA", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.128822 #3868]  INFO -- : #<Section id: 129, course_id: 17, name: "CC", time_start: "15:30", time_end: "18:00", instructor: "NIKOLAOS TSANTALIS", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.128822 #3868]  INFO -- : #<Section id: 130, course_id: 17, name: "D", time_start: "14:45", time_end: "16:00", instructor: "NAGI BASHA", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.128822 #3868]  INFO -- : #<Section id: 131, course_id: 17, name: "S", time_start: "8:45", time_end: "10:00", instructor: "NANCY ACEMIAN", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.128822 #3868]  INFO -- : #<Section id: 132, course_id: 17, name: "U", time_start: "10:15", time_end: "11:30", instructor: "KERLY TITUS", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.128822 #3868]  INFO -- : #<Section id: 133, course_id: 17, name: "PP", time_start: "17:45", time_end: "20:15", instructor: "JEREMY CLARK", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:15:28.140858 #3868]  INFO -- : #<Section id: 134, course_id: 18, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "DAVID PROBST", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:15:28.150928 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.150928 #3868]  INFO -- : #<Section id: 135, course_id: 19, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "NEMATOLLAAH SHIRI-VARNAAMKHAASTI", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.150928 #3868]  INFO -- : #<Section id: 136, course_id: 19, name: "E", time_start: "10:15", time_end: "11:30", instructor: "LATA NARAYANAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.150928 #3868]  INFO -- : #<Section id: 137, course_id: 19, name: "G", time_start: "8:45", time_end: "10:00", instructor: "SEYED ALI JANNATPOUR", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.151947 #3868]  INFO -- : #<Section id: 138, course_id: 19, name: "N", time_start: "11:45", time_end: "13:00", instructor: "GOSTA GRAHNE", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.151947 #3868]  INFO -- : #<Section id: 139, course_id: 19, name: "F", time_start: "10:15", time_end: "11:30", instructor: "JEREMY MACDONALD", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.162999 #3868]  INFO -- : #<Section id: 140, course_id: 21, name: "D", time_start: "13:15", time_end: "14:30", instructor: "JOEY PAQUET", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.162999 #3868]  INFO -- : #<Section id: 141, course_id: 21, name: "N", time_start: "16:15", time_end: "17:30", instructor: "DANIEL SINNIG", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.162999 #3868]  INFO -- : #<Section id: 142, course_id: 21, name: "S", time_start: "14:45", time_end: "16:00", instructor: "SEYED ALI JANNATPOUR", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.162999 #3868]  INFO -- : #<Section id: 143, course_id: 22, name: "CC", time_start: "18:30", time_end: "21:00", instructor: "TODD EAVIS", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.164026 #3868]  INFO -- : #<Section id: 144, course_id: 22, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "DHRUBAJYOTI GOSWAMI", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:15:28.164026 #3868]  INFO -- : #<Section id: 145, course_id: 22, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "AIMAN HANNA", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:15:28.164026 #3868]  INFO -- : #<Section id: 146, course_id: 22, name: "WW", time_start: "17:45", time_end: "20:15", instructor: "AIMAN HANNA", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:15:28.176112 #3868]  INFO -- : #<Section id: 147, course_id: 23, name: "CC", time_start: "14:45", time_end: "17:15", instructor: "JAMAL BENTAHAR", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.176112 #3868]  INFO -- : #<Section id: 148, course_id: 23, name: "U", time_start: "8:45", time_end: "10:00", instructor: "MOHAMED TALEB", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.176112 #3868]  INFO -- : #<Section id: 149, course_id: 23, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "DAVID PROBST", day_of_week: "--W----", term: "Fall">
+I, [2015-03-29T15:15:28.176112 #3868]  INFO -- : #<Section id: 150, course_id: 23, name: "E", time_start: "14:45", time_end: "16:00", instructor: "DAVID PROBST", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.187183 #3868]  INFO -- : #<Section id: 151, course_id: 24, name: "AA", time_start: "18:30", time_end: "21:00", instructor: "SUTHARSAN SIVAGNANAM", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.187183 #3868]  INFO -- : #<Section id: 152, course_id: 24, name: "G", time_start: "13:15", time_end: "14:30", instructor: "AIMAN HANNA", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.187183 #3868]  INFO -- : #<Section id: 153, course_id: 24, name: "H", time_start: "13:15", time_end: "14:30", instructor: "MOHAMED TALEB", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.188201 #3868]  INFO -- : #<Section id: 154, course_id: 24, name: "X", time_start: "13:15", time_end: "14:30", instructor: "NANCY ACEMIAN", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.198255 #3868]  INFO -- : #<Section id: 155, course_id: 25, name: "CC", time_start: "14:45", time_end: "17:15", instructor: "TODD EAVIS", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.198255 #3868]  INFO -- : #<Section id: 156, course_id: 25, name: "F", time_start: "13:15", time_end: "16:00", instructor: "BIPIN C. DESAI", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:15:28.198255 #3868]  INFO -- : #<Section id: 157, course_id: 25, name: "W", time_start: "13:15", time_end: "14:30", instructor: "NEMATOLLAAH SHIRI-VARNAAMKHAASTI", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.199254 #3868]  INFO -- : #<Section id: 158, course_id: 25, name: "BB", time_start: "18:30", time_end: "21:00", instructor: "DANIEL SINNIG", day_of_week: "--W----", term: "Summer">
+I, [2015-03-29T15:15:28.199254 #3868]  INFO -- : #<Section id: 159, course_id: 25, name: "E", time_start: "11:45", time_end: "13:00", instructor: "JUERGEN RILLING", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.199254 #3868]  INFO -- : #<Section id: 160, course_id: 25, name: "PP", time_start: "17:45", time_end: "20:15", instructor: "GREGORY BUTLER", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:15:28.199254 #3868]  INFO -- : #<Section id: 161, course_id: 25, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "ADAM KRZYZAK", day_of_week: "----F--", term: "Fall">
+I, [2015-03-29T15:15:28.199254 #3868]  INFO -- : #<Section id: 162, course_id: 25, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "EUSEBIUS DOEDEL", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:15:28.200254 #3868]  INFO -- : #<Section id: 163, course_id: 25, name: "A", time_start: "11:45", time_end: "13:00", instructor: "ARMEN ATOYAN", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.212263 #3868]  INFO -- : #<Section id: 164, course_id: 26, name: "CC", time_start: "18:30", time_end: "21:00", instructor: "NICOLAS BERGERON", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.212263 #3868]  INFO -- : #<Section id: 165, course_id: 26, name: "UU", time_start: "17:45", time_end: "20:15", instructor: "ADAM KRZYZAK", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:15:28.212263 #3868]  INFO -- : #<Section id: 166, course_id: 26, name: "WW", time_start: "17:45", time_end: "20:15", instructor: "NICOLAS BERGERON", day_of_week: "---J---", term: "Winter">
+I, [2015-03-29T15:15:28.224271 #3868]  INFO -- : #<Section id: 167, course_id: 27, name: "W", time_start: "13:15", time_end: "16:00", instructor: "THOMAS FEVENS", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:15:28.224271 #3868]  INFO -- : #<Section id: 168, course_id: 27, name: "X", time_start: "13:15", time_end: "16:00", instructor: "THOMAS FEVENS", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:15:28.234346 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.234346 #3868]  INFO -- : #<Section id: 169, course_id: 28, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "RAJAGOPALAN JAYAKUMAR", day_of_week: "-T-----", term: "Fall">
+I, [2015-03-29T15:15:28.245439 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.245439 #3868]  INFO -- : #<Section id: 170, course_id: 64, name: "FF", time_start: "17:45", time_end: "20:15", instructor: "DHRUBAJYOTI GOSWAMI", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:15:28.256515 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.256515 #3868]  INFO -- : #<Section id: 171, course_id: 65, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "JOEY PAQUET", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:15:28.268653 #3868]  INFO -- : #<Section id: 172, course_id: 29, name: "D", time_start: "10:15", time_end: "11:30", instructor: "AIMAN HANNA", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.268653 #3868]  INFO -- : #<Section id: 173, course_id: 29, name: "W", time_start: "13:15", time_end: "14:30", instructor: "LATA NARAYANAN", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.268653 #3868]  INFO -- : #<Section id: 174, course_id: 31, name: "N", time_start: "16:15", time_end: "17:30", instructor: "HOVHANNES HARUTYUNYAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.278746 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.278746 #3868]  INFO -- : #<Section id: 175, course_id: 32, name: "F", time_start: "11:45", time_end: "13:00", instructor: "LEILA KOSSEIM", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.279800 #3868]  INFO -- : #<Section id: 176, course_id: 32, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "LEILA KOSSEIM", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:15:28.279800 #3868]  INFO -- : #<Section id: 177, course_id: 33, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "CHING YEE SUEN", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:15:28.290868 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.290868 #3868]  INFO -- : #<Section id: 178, course_id: 34, name: "UU", time_start: "17:45", time_end: "20:15", instructor: "NORA HOUARI", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:15:28.301938 #3868]  INFO -- : #<Section id: 179, course_id: 35, name: "N", time_start: "14:45", time_end: "16:00", instructor: "THOMAS FEVENS", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.313000 #3868]  INFO -- : #<Section id: 180, course_id: 36, name: "N", time_start: "13:15", time_end: "14:30", instructor: "TIBERIU POPA", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.324073 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.324073 #3868]  INFO -- : #<Section id: 181, course_id: 37, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "TIEN BUI", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:15:28.335183 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.335183 #3868]  INFO -- : #<Section id: 182, course_id: 38, name: "D", time_start: "13:15", time_end: "14:30", instructor: "SABINE BERGLER", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.344225 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.345289 #3868]  INFO -- : #<Section id: 191, course_id: 41, name: "H", time_start: "14:45", time_end: "16:00", instructor: "DONALD DAVIS", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.345289 #3868]  INFO -- : #<Section id: 192, course_id: 41, name: "DD", time_start: "17:45", time_end: "20:15", instructor: "TADEUSZ OBUCHOWICZ", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:15:28.356368 #3868]  INFO -- : #<Section id: 193, course_id: 42, name: "CC", time_start: "10:45", time_end: "13:15", instructor: "DANIEL SINNIG", day_of_week: "M-WWW----", term: "Summer">
+I, [2015-03-29T15:15:28.356368 #3868]  INFO -- : #<Section id: 194, course_id: 42, name: "Q", time_start: "8:45", time_end: "10:00", instructor: "NANCY ACEMIAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.356368 #3868]  INFO -- : #<Section id: 195, course_id: 42, name: "S", time_start: "8:45", time_end: "10:00", instructor: "NAGI BASHA", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.356368 #3868]  INFO -- : #<Section id: 196, course_id: 42, name: "U", time_start: "14:45", time_end: "16:00", instructor: "CHUN WANG", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.356368 #3868]  INFO -- : #<Section id: 197, course_id: 42, name: "W", time_start: "0:00", time_end: "0:00", instructor: "TERRILL FANCOTT", day_of_week: "-------", term: "Winter">
+I, [2015-03-29T15:15:28.367444 #3868]  INFO -- : #<Section id: 198, course_id: 43, name: "GG", time_start: "17:45", time_end: "20:15", instructor: "AMR YOUSSEF", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:15:28.379520 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.379520 #3868]  INFO -- : #<Section id: 199, course_id: 44, name: "U", time_start: "16:15", time_end: "17:30", instructor: "CONSTANTINOS CONSTANTINIDES", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.389592 #3868]  INFO -- : #<Section id: 200, course_id: 45, name: "H", time_start: "10:15", time_end: "11:30", instructor: "TERRILL FANCOTT", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.390645 #3868]  INFO -- : #<Section id: 201, course_id: 45, name: "S", time_start: "8:45", time_end: "10:00", instructor: "STUART THIEL", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.390645 #3868]  INFO -- : #<Section id: 202, course_id: 46, name: "H", time_start: "11:45", time_end: "13:00", instructor: "DANIEL SINNIG", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.400715 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.400715 #3868]  INFO -- : #<Section id: 203, course_id: 47, name: "H", time_start: "13:15", time_end: "14:30", instructor: "PETER RIGBY", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.411791 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.411791 #3868]  INFO -- : #<Section id: 204, course_id: 48, name: "S", time_start: "13:15", time_end: "14:30", instructor: "CONSTANTINOS CONSTANTINIDES", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.422869 #3868]  INFO -- : #<Section id: 205, course_id: 49, name: "S", time_start: "14:45", time_end: "16:00", instructor: "DANIEL SINNIG", day_of_week: "M-WWW----", term: "Winter">
+I, [2015-03-29T15:15:28.434942 #3868]  INFO -- : #<Section id: 206, course_id: 50, name: "S", time_start: "10:15", time_end: "11:30", instructor: "RAJAGOPALAN JAYAKUMAR", day_of_week: "--W-F--", term: "Winter">
+I, [2015-03-29T15:15:28.446051 #3868]  INFO -- : #<Section id: 207, course_id: 51, name: "F", time_start: "10:15", time_end: "11:30", instructor: "OLGA ORMANDJIEVA", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.457059 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.457059 #3868]  INFO -- : #<Section id: 208, course_id: 52, name: "S", time_start: "11:45", time_end: "13:00", instructor: "TIEN BUI", day_of_week: "-T-J---", term: "Winter">
+I, [2015-03-29T15:15:28.468070 #3868]  INFO -- : #<Section id: 209, course_id: 53, name: "F", time_start: "11:45", time_end: "13:00", instructor: "STUART THIEL", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.480129 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.480129 #3868]  INFO -- : #<Section id: 210, course_id: 54, name: "S", time_start: "16:15", time_end: "17:55", instructor: "NIKOLAOS TSANTALIS", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:15:28.491236 #3868]  INFO -- : #<Section id: 211, course_id: 55, name: "MM", time_start: "17:45", time_end: "20:15", instructor: "TERRILL FANCOTT", day_of_week: "--W----", term: "Fall">
+I, [2015-03-29T15:15:28.502310 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.502310 #3868]  INFO -- : #<Section id: 212, course_id: 56, name: "H", time_start: "13:15", time_end: "14:30", instructor: "RAJAGOPALAN JAYAKUMAR", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.513378 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.513378 #3868]  INFO -- : #<Section id: 213, course_id: 59, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "SERGUEI MOKHOV", day_of_week: "--W----", term: "Winter">
+I, [2015-03-29T15:15:28.524455 #3868]  INFO -- : #<Section id: 214, course_id: 60, name: "SS", time_start: "18:25", time_end: "19:25", instructor: "PETER RIGBY", day_of_week: "----F--", term: "Summer">
+I, [2015-03-29T15:15:28.535534 #3868]  INFO -- : #<Section id: 215, course_id: 66, name: "S", time_start: "16:15", time_end: "17:30", instructor: "SAMAR ABDI", day_of_week: "M-WWW----", term: "Fall">
+I, [2015-03-29T15:15:28.544608 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.544608 #3868]  INFO -- : #<Section id: 216, course_id: 62, name: "XX", time_start: "17:45", time_end: "20:15", instructor: "YOUMIN ZHANG", day_of_week: "---J---", term: "Fall">
+I, [2015-03-29T15:15:28.555692 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.555692 #3868]  INFO -- : #<Section id: 217, course_id: 63, name: "X", time_start: "14:45", time_end: "17:45", instructor: "NARENDRA KUMAR GOLLU", day_of_week: "M-WW-----", term: "Fall">
+I, [2015-03-29T15:15:28.566782 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:15:28.566782 #3868]  INFO -- : #<Section id: 218, course_id: 67, name: "CC", time_start: "11:45", time_end: "14:15", instructor: "VENKATANARAYANA RAMACHANDRAN", day_of_week: "-T-J---", term: "Summer">
+I, [2015-03-29T15:15:28.566782 #3868]  INFO -- : #<Section id: 219, course_id: 67, name: "T", time_start: "11:45", time_end: "13:00", instructor: "VENKATANARAYANA RAMACHANDRAN", day_of_week: "--W-F--", term: "Fall">
+I, [2015-03-29T15:15:28.566782 #3868]  INFO -- : #<Section id: 220, course_id: 67, name: "V", time_start: "8:45", time_end: "10:00", instructor: "VENKATANARAYANA RAMACHANDRAN", day_of_week: "-T-J---", term: "Fall">
+I, [2015-03-29T15:15:28.566782 #3868]  INFO -- : #<Section id: 221, course_id: 67, name: "JJ", time_start: "17:45", time_end: "20:15", instructor: "VENKATANARAYANA RAMACHANDRAN", day_of_week: "-T-----", term: "Winter">
+I, [2015-03-29T15:15:28.577853 #3868]  INFO -- : #<Section id: 222, course_id: 65, name: "NN", time_start: "17:45", time_end: "20:15", instructor: "JOEY PAQUET", day_of_week: "M-WW-----", term: "Winter">
+I, [2015-03-29T15:19:47.217722 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.274301 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.281357 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.287469 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.301584 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.307684 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.331927 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.340041 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.348149 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.370391 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.384543 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.392605 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.422801 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.438813 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.456923 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.465007 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.491264 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.500353 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:19:47.510449 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.869909 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.917943 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.924948 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.931954 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.944961 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.950966 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.976335 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.983389 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:26.991438 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.012636 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.030750 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.039756 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.067883 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.082034 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.095178 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.102234 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.126250 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.133256 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:27.139310 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.522542 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.599594 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.613605 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.624612 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.650630 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.660637 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.696665 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.708673 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.720683 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.756707 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.779724 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.790729 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.836764 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.861781 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.885798 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.895804 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.928829 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.938838 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:24:28.951846 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.066064 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.127594 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.135600 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.143604 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.158683 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.166775 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.198831 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.208837 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.219887 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.251191 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.271371 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.281445 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.329592 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.349605 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.369747 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.379843 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.410087 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.420164 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:26:51.430214 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.409913 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.488534 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.499620 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.509631 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.533901 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.545968 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.580266 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.591273 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.602367 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.633723 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.653869 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.664941 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.708423 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.729751 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.751955 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.764010 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.796031 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.806071 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:48:57.836362 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.044906 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.109383 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.119475 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.129541 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.149665 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.158673 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.189810 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.199820 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.209871 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.239063 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.257172 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.267250 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.304541 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.323773 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.340958 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.348964 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.374204 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.382329 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:50:53.391395 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.527529 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.606917 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.618923 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.629966 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.650983 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.663062 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.694324 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.705400 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.716479 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.750504 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.772591 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.781631 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.826898 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.849057 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.870121 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.881174 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.914389 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.925523 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:01.936595 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.309412 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.359483 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.366488 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.372492 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.385502 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.392547 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.417564 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.424569 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.431617 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.455782 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.471903 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.478966 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.510264 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.525274 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.540285 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.549403 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.571575 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.578630 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:18.586703 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.393201 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.449534 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.457628 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.463678 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.476858 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.484916 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.509142 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.516146 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.523151 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.546286 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.560412 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.568479 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.597548 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.610635 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.623704 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.631710 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.654828 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.662834 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T15:51:51.670839 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:09.982258 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.053305 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.063313 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.072321 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.095354 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.105342 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.138365 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.148372 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.159380 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.191423 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.212419 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.224427 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.268658 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.289704 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.311847 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.322941 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.356195 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.365249 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:10.376291 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:12.859500 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:12.938537 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:12.950545 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:12.961555 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:12.985570 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:12.998585 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.033606 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.045612 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.057621 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.092646 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.116683 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.129672 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.175705 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.200722 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.222740 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.233748 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.269790 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.283786 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:13.294791 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:31.971168 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.040217 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.048222 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.055227 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.074240 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.083248 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.112268 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.121276 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.131282 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.157302 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.175313 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.183319 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.215340 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.232354 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.249365 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.257370 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.284390 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.291394 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:32.300402 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.660681 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.717721 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.724725 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.733734 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.748741 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.757751 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.783768 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.795776 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.805784 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.842810 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.863822 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.874832 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.920864 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.943881 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.959892 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:34.968900 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:35.002922 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:35.013929 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:35.025938 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.329154 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.392198 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.402207 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.413214 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.433227 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.441234 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.472254 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.481354 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.490401 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.520633 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.540688 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.550761 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.585028 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.602104 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.619270 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.628278 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.658464 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.667509 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:05:59.677518 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.081685 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.157739 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.168746 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.179754 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.206793 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.217782 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.251804 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.263814 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.275825 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.310867 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.338884 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.350941 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.397976 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.420992 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.444009 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.455019 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.490042 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.501050 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:06:03.513057 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.752864 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.822913 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.832920 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.844930 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.865944 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.875952 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.905973 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.915980 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.925986 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.957009 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.978022 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:14.988031 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:15.030061 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:15.050076 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:15.070194 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:15.081250 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:15.112428 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:15.122531 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:15.133599 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.491147 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.573205 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.583213 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.593219 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.619237 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.630245 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.663271 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.674280 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.686310 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.722312 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.745328 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.755337 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.798385 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.821400 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.845420 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.855426 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.890450 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.901459 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:18.911466 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.633879 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.705931 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.716937 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.726946 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.747959 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.758967 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.790991 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.800998 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.812007 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.843143 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.864227 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.874239 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.916344 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.937443 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.957501 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.967508 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:37.999560 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:38.010570 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:38.020576 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.427397 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.504449 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.516459 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.526463 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.549483 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.559488 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.593514 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.604520 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.615530 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.647552 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.669567 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.679575 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.726609 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.747621 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.771637 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.781644 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.816673 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.828678 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:07:41.838687 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.542413 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.610462 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.623474 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.634499 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.655495 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.666533 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.699613 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.710672 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.721680 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.754705 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.776723 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.787728 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.830759 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.852774 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.875789 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.886797 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.919825 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.928829 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:39.940838 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.827683 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.890728 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.897734 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.906739 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.926753 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.936760 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.962779 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.971789 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:41.981792 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.008811 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.025823 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.035836 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.073857 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.089870 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.112888 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.123894 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.160920 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.172927 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:09:42.182937 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.123165 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.198217 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.211227 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.223235 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.244250 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.255257 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.287279 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.299289 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.309295 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.346321 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.373342 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.382349 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.420374 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.438386 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.461403 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.470410 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.503432 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.515441 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:04.526450 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.063086 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.126132 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.134136 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.142143 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.164308 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.176382 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.208584 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.219639 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.230681 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.260912 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.282009 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.293073 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.335153 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.357241 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.378301 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.389308 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.422330 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.434340 #3868]  INFO -- : added a fall only course
+I, [2015-03-29T16:10:13.445347 #3868]  INFO -- : added a fall only course

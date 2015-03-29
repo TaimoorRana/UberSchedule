@@ -167,3 +167,15 @@ select {
     border-radius: 10px;
     margin-bottom: 5px;
 }
+
+.rich2 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:14px;
+    color: #FFFFFF;
+}
+
+#rich2 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:14px;
+    color: #FFFFFF;
+}
