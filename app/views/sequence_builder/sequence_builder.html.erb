@@ -9,12 +9,27 @@
 </head>
 
 <body>
-    <p class="rich2"> @number_of_direct_dependets type:</p>
-    <p class="rich2"> <%= @number_of_direct_dependents.class %> </p>
-    <p class="rich2"> @number_of_direct_dependents info</p>
-    <% (1..67).each do |x|%>
-        <p class="rich"> <%= Course.find(x).dept %> <%= Course.find(x).number %> <%= @number_of_direct_dependents[x] %> </p>
+    <p class="rich2">@complete_sequence TEST</p>
+    <p class="rich2"> </p>
+    <% @complete_sequence.each do |semester| %>
+        <% semester.each do |info| %>
+            <p class="rich2"> <%= info %> </p>
+        <% end %>
     <% end %>
+    <p class="rich2">@-----------------COMPLETED COURSES TEST---------------------</p>
+    <% @completed_courses.each do |course| %>
+        <p class="rich2"> <%= course.dept %> <%= course.number %> </p>
+    <% end %>
+
+    <p class="rich2">@-----------------200 LEVEL---------------------</p>
+    <% @all_200_level.each do |course| %>
+    <p class="rich2"> <%= course.dept %> <%= course.number %> </p>
+    <% end %>
+
+
+
+
+
 
 </body>
 </html>

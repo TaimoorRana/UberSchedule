@@ -6,16 +6,15 @@ class SequenceBuilderController < ApplicationController
     @log.level = Logger::DEBUG
     user_id = current_user.user_id
     @student = Student.where(user_id: user_id).first
-
+    @semester_counter = 0
     preferences = @student.preferences
-    preferences.exists?(16) ? @semester_counter = 0 : @semester_counter = 1 # 0 = Fall Entry, 1 = Winter Entry
+    preferences.exists?(15) ? @semester_counter = 0 : @semester_counter = 1 # 0 = Fall Entry, 1 = Winter Entry
     preferences.exists?(14) ? allowSummer = true : allowSummer = false #not implemented
-    preferences.exists?(15) ? coop = 1 : coop = 0 #not implemented
 
-    accumulated_credits = 0 #TODO
-    max_credits = 100
-    year = 2015
-    semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"}
+
+    max_credits = 120
+    @year = 2015
+    @semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"}
 
     @all_sections = Array.new
     sections_to_array
@@ -23,6 +22,7 @@ class SequenceBuilderController < ApplicationController
     @all_fall_sections = Array.new
     @all_summer_sections = Array.new
     @all_winter_sections = Array.new
+    @all_given_sections = {0 => @all_fall_sections, 1 => @all_winter_sections, 2 => @all_summer_sections}
     sort_sections_by_term
 
     @fall_courses_only = Array.new
@@ -31,13 +31,58 @@ class SequenceBuilderController < ApplicationController
     courses_given_in_specific_semester
 
     @all_prereqs = Array.new
+    @all_200_level = Array.new
+    @all_400_level = Array.new
+    @completed_all_200_level = false
     all_prereqs_to_array
+    generate_all_200_and_400_level
 
     @completed_courses = Array.new
     completed_courses_to_array
 
+    @accumulated_credits = 0
+    initial_accumulated_credits
+
     @number_of_direct_dependents = Array.new
     number_of_direct_dependents
+
+    @complete_sequence = Array.new
+
+    while @accumulated_credits < max_credits
+      current_semester = Array.new
+      @log.info("========== STARTING TO GENERATE A SEMESTER =============")
+      semester_string = determine_current_semester
+      @log.info("Semester:" + semester_string)
+      if @completed_all_200_level
+        @log.info("Completed_all_200: True")
+      else
+         @log.info("Completed_all_200: False")
+      end
+      current_semester.push(semester_string)
+      available_courses = generate_available_courses
+      #selected_courses = select_courses_from_available(available_courses)
+
+      i = 0
+      available_courses.each do |course|
+        if i < [5, available_courses.length].min
+        current_semester.push(course.dept + " " + course.number.to_s)
+        @completed_courses.push(course)
+        @accumulated_credits += course.credit
+        @log.info("ADDED " + course.dept + course.number.to_s)
+        i += 1
+        else
+          break
+        end
+      end
+      @complete_sequence.push(current_semester)
+      @accumulated_credits += 5
+
+      if !@completed_all_200_level
+        determine_completed_all_200_level
+      end
+      @semester_counter+=1
+      @log.info("semester_counter: " + @semester_counter.to_s)
+    end
 
   end #end of def sequence_builder
 
@@ -74,7 +119,6 @@ class SequenceBuilderController < ApplicationController
         else
           if offered_in_fall and !offered_in_winter
             @fall_courses_only.push(Course.find(current_course_id))
-            @log.info("added a fall only course")
           end
           if !offered_in_fall and offered_in_winter
             @winter_courses_only.push(Course.find(current_course_id))
@@ -119,4 +163,173 @@ class SequenceBuilderController < ApplicationController
     end
   end
 
+  def get_prereqs(course)
+    @log.info("get_prereqs begins for course: " + course.dept + course.number.to_s)
+    arr = Array.new
+    @all_prereqs.each do |prereq|
+      if (prereq.course_id == course.course_id) and (prereq.course_id != 0)
+        @log.info("p = " + prereq.course_id.to_s)
+        arr.push(prereq)
+      end
+    end
+    return arr
+  end
+
+  def initial_accumulated_credits
+    @completed_courses.each do |course|
+      @accumulated_credits+= course.credit
+    end
+  end
+
+  def determine_current_semester
+    current_semester_string = @semester[@semester_counter.modulo(2)]
+    if current_semester_string == "Winter"
+      @year+=1
+    end
+    current_year = @year.to_s
+    return current_semester_string + " " + current_year
+  end
+
+  def generate_available_courses
+    available_courses = Array.new
+    all_given_sections = @all_given_sections[@semester_counter.modulo(2)]
+    previous_course_id = 0
+    all_given_sections.each do |section|
+      if previous_course_id != section.course_id #prevents double checking Courses
+        previous_course_id = section.course_id
+        course = Course.find(section.course_id)
+        if !@completed_courses.include?(course) #check if course was taken
+          missing_prereqs = false
+          if CoursesPrereq.where(course_id: section.course_id).size > 0
+            prereqs = get_prereqs(course)
+            @log.info("Starting to use get_prereqs")
+            prereqs.each do |p|
+             if !@completed_courses.include?(Course.find(p.course_id_prereq))
+               missing_prereqs = true
+               break
+             end
+              if @all_400_level.include?(course)
+                missing_prereqs = !@completed_all_200_level
+              end
+            end #loop thru all prereqs
+          end #if has prereq
+          if !missing_prereqs
+            available_courses.push(course)
+          end
+        end
+      end #end of prevent doubles
+    end #end of loop thru all sections
+    return available_courses
+  end #end of generate_available_courses
+
+  def course_to_s(course)
+    return course.dept + " " + course.number.to_s
+  end
+
+  def generate_all_200_and_400_level
+    Course.all.each do |x|
+      if x.number > 200 and x.number < 300 and x.number != 242 and x.number != 243 and x.number != 244 and x.number != 245 and x.dept != "ENCS"
+        @all_200_level.push(x)
+      elsif x.number > 400
+        @all_400_level.push(x)
+      end
+      end
+  end
+
+  def determine_completed_all_200_level
+    @log.info("------checking all 200 level--------")
+    completed_them_all = true
+    @all_200_level.each do |course|
+      if !@completed_courses.include?(course)
+        @log.info("200 level not completed:" + course.dept + " " + course.number.to_s)
+        completed_them_all = false
+        break
+      end
+    end
+    @completed_all_200_level = completed_them_all
+  end
+
+=begin  def select_courses_from_available(available)
+   @log.info("Selection courses from the list of available courses************************************")
+    selected = Array.new
+    filter1 = Array.new
+    filter2 = Array.new
+    filter3 = Array.new
+
+    if @semester[@semester_counter.modulo(2)] == "Fall"
+       courses_given_this_term_only = @fall_courses_only
+    elsif @semester[@semester_counter.modulo(2)] == "Winter"
+        courses_given_this_term_only = @winter_courses_only
+    end
+
+    available.each do |avail|
+      @log.info("Now checking the priority of " + avail.dept + avail.number.to_s )
+       if courses_given_this_term_only.include?(available) and @number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")
+         filter1.push(avail)
+         available.delete(avail)
+         @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
+       elsif (avail.dept == "COMP" or avail.dept == "SOEN") and @number_of_direct_dependents[avail.course_id] > 0
+         filter1.push(avail)
+         available.delete(avail)
+         @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
+       end
+    end
+    if filter1.size < 5
+      available.each do |avail|
+        if @number_of_direct_dependents[avail.course_id] > 0
+          filter2.push(avail)
+          available.delete(avail)
+          @log.info("added " + avail.dept + avail.number.to_s + "to filter2")
+        end
+      end
+    end
+    if (filter1.size + filter2.size) < 5
+       if courses_given_this_term_only.include?(available)
+         filter3.push(avail)
+          available.delete(avail)
+         @log.info("added " + avail.dept + avail.number.to_s + "to filter3")
+       end
+    end
+  if filter1.size > 4
+    selected[0] = filter1[0]
+    selected[1] = filter1[1]
+    selected[2] = filter1[2]
+    selected[3] = filter1[3]
+    selected[4] = filter1[4]
+  else
+    course_counter = 0
+    max_course = [5, available.length].min
+    while course_counter < filter1.size - 1
+      selected.push(filter1[course_counter])
+      course_counter += 1
+      @log.info("SELECTED " + filter1[course_counter].dept + filter1[course_counter].number.to_s)
+    end
+    while course_counter <= max_course
+      if filter2[0] != nil
+        if !selected.include?(filter2[0])
+          selected.push(filter2[0])
+          @log.info("SELECTED " + filter2[0].dept + filter2[0].number.to_s)
+          filter2.delete(filter2[0])
+          course_counter += 1
+        end
+      elsif filter3[0] != nil
+        if !selected.include?(filter3[0])
+         selected.push(filter3[0])
+         @log.info("SELECTED " + filter3[0].dept + filter3[0].number.to_s)
+         filter3.delete(filter3[0])
+         course_counter += 1
+        end
+      elsif available[0] != nil
+        if !selected.include?(available[0])
+          selected.push(available[0])
+          @log.info("SELECTED " + available[0].dept + available[0].number.to_s)
+          filter3.delete(filter3[0])
+          course_counter += 1
+        end
+    end
+    end
+    end
+    return selected
+ end
+=end
 end #end of class
