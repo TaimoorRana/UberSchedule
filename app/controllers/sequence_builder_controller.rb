@@ -305,11 +305,11 @@ class SequenceBuilderController < ApplicationController
     end
 
     available.each do |avail|
-       if courses_given_this_term_only.include?(available) and @number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")
+       if courses_given_this_term_only.include?(available) and @number_of_direct_dependents[avail.course_id] > 0 and @mandatory_courses.include?(avail)
          filter1.push(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
          available.delete(avail)
-       elsif (avail.dept == "COMP" or avail.dept == "SOEN") and @number_of_direct_dependents[avail.course_id] > 0
+       elsif (avail.dept == "COMP" or avail.dept == "SOEN") and @number_of_direct_dependents[avail.course_id] > 0 and @mandatory_courses.include?(avail)
          filter1.push(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
          available.delete(avail)
@@ -317,7 +317,7 @@ class SequenceBuilderController < ApplicationController
     end
     if filter1.size < 5
       available.each do |avail|
-        if @number_of_direct_dependents[avail.course_id] > 0
+        if @number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")
           filter2.push(avail)
           @log.info("added " + avail.dept + avail.number.to_s + "to filter2")
           available.delete(avail)
