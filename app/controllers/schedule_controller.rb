@@ -145,7 +145,7 @@ class ScheduleController < ApplicationController
     end
 
 
-    sort_all_sections_tutorials_labs(week)
+    #sort_all_sections_tutorials_labs(week)
 
     return week
   end

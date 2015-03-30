@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 20150318012516) do
     t.string   "name",        limit: 255
     t.string   "time_start",  limit: 255
     t.string   "time_end",    limit: 255
-    t.string   "day",         limit: 255
+    t.string   "day_of_week",         limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
   end
@@ -114,7 +114,7 @@ ActiveRecord::Schema.define(version: 20150318012516) do
     t.string   "name",       limit: 255
     t.string   "time_start", limit: 255
     t.string   "time_end",   limit: 255
-    t.string   "day",        limit: 255
+    t.string   "day_of_week",        limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
