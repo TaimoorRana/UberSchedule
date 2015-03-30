@@ -19,8 +19,8 @@ class ScheduleController < ApplicationController
 
     if find_all_sections != nil
       find_all_tutorials
-      #week_tutorials = separate_sections_according_to_days(@tutorials)
-      week_tutorials = [[],[],[],[],[]]
+      week_tutorials = separate_sections_according_to_days(@tutorials)
+      #week_tutorials = [[],[],[],[],[]]
       week_sections = separate_sections_according_to_days(@sections)
       @mondaySections = if week_tutorials[0].flatten != [] then week_sections[0].append(week_tutorials[0].flatten) else week_sections[0] end
       @tuesdaySections = if week_tutorials[1].flatten != [] then week_sections[1].append(week_tutorials[1].flatten)else week_sections[1] end
@@ -145,7 +145,7 @@ class ScheduleController < ApplicationController
     end
 
 
-    #sort_all_sections_tutorials_labs(week)
+    sort_all_sections_tutorials_labs(week)
 
     return week
   end

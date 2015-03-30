@@ -16,12 +16,14 @@ class ScheduleControllerTest < ActionController::TestCase
     section3 = Section.find(30)
     week = schedule_controller.separate_sections_according_to_days([section1,section2,section3])
 
-    assert week[0][0][0] == section1,['valid']
-    assert week[1][0][0] == section2,['valid']
-    assert week[2][0][0] == section1,['valid']
-    assert week[2][1][0] == section3,['valid']
-    assert week[3][0][0] == section2,['valid']
-    assert week[4][0][0] == section3,['valid']
+    assert week[0][0][0] == section1,['section1,Monday']
+    assert week[1][0][0] == section2,['section2,Tuesday']
+    assert week[2][0][0] == section1,['section1,Wednesday']
+    assert week[2][1][0] == section3,['section3,Wednesday']
+    assert week[3][0][0] == section2,['section2,Thursday']
+    assert week[4][0][0] == section3,['section3,Friday']
   end
+
+
 
 end
