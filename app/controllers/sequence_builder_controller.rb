@@ -54,21 +54,21 @@ class SequenceBuilderController < ApplicationController
       semester_string = determine_current_semester
       @log.info("Semester:" + semester_string)
       if @completed_all_200_level
-        @log.info("Completed_all_200: True")
+       # @log.info("Completed_all_200: True")
       else
-         @log.info("Completed_all_200: False")
+       #  @log.info("Completed_all_200: False")
       end
       current_semester.push(semester_string)
       available_courses = generate_available_courses
-      #selected_courses = select_courses_from_available(available_courses)
+      selected_courses = select_courses_from_available(available_courses)
 
       i = 0
-      available_courses.each do |course|
-        if i < [5, available_courses.length].min
+      selected_courses.each do |course|
+        if i < [5, selected_courses.length].min
         current_semester.push(course.dept + " " + course.number.to_s)
         @completed_courses.push(course)
         @accumulated_credits += course.credit
-        @log.info("ADDED " + course.dept + course.number.to_s)
+       # @log.info("ADDED " + course.dept + course.number.to_s)
         i += 1
         else
           break
@@ -81,7 +81,7 @@ class SequenceBuilderController < ApplicationController
         determine_completed_all_200_level
       end
       @semester_counter+=1
-      @log.info("semester_counter: " + @semester_counter.to_s)
+     # @log.info("semester_counter: " + @semester_counter.to_s)
     end
 
   end #end of def sequence_builder
@@ -147,28 +147,29 @@ class SequenceBuilderController < ApplicationController
   end
 
   # populates @complete_courses with the Courses from @student.courses
-  # subsequently used to store Courses added to sequence
   def completed_courses_to_array #teted for array type and proper content
     @student.courses.each do |course|
       @completed_courses.push(course)
     end
   end
 
-  # Stored the number of direct dependents for a given Course.
-  # The index of the array corresponds to the course_id of the Course.
   def number_of_direct_dependents #tested for array Type and proper content
     Course.all.each do |course|
-      @number_of_direct_dependents[course.course_id] =
-          CoursesPrereq.where(course_id_prereq: course.course_id).count
+        arr = Array.new
+        @all_prereqs.each do |prereq|
+          if(prereq.course_id_prereq == course.course_id) and (prereq.course_id != 0)
+            arr.push(prereq)
+          end
+        end
+        @number_of_direct_dependents[course.course_id] = arr.size
+      @log.info("# of direct dependents of " + course.dept + course.number.to_s + " is " + arr.size.to_s)
     end
   end
 
   def get_prereqs(course)
-    @log.info("get_prereqs begins for course: " + course.dept + course.number.to_s)
     arr = Array.new
     @all_prereqs.each do |prereq|
       if (prereq.course_id == course.course_id) and (prereq.course_id != 0)
-        @log.info("p = " + prereq.course_id.to_s)
         arr.push(prereq)
       end
     end
@@ -200,9 +201,8 @@ class SequenceBuilderController < ApplicationController
         course = Course.find(section.course_id)
         if !@completed_courses.include?(course) #check if course was taken
           missing_prereqs = false
-          if CoursesPrereq.where(course_id: section.course_id).size > 0
+          if @number_of_direct_dependents[section.course_id] > 0
             prereqs = get_prereqs(course)
-            @log.info("Starting to use get_prereqs")
             prereqs.each do |p|
              if !@completed_courses.include?(Course.find(p.course_id_prereq))
                missing_prereqs = true
@@ -237,11 +237,9 @@ class SequenceBuilderController < ApplicationController
   end
 
   def determine_completed_all_200_level
-    @log.info("------checking all 200 level--------")
     completed_them_all = true
     @all_200_level.each do |course|
       if !@completed_courses.include?(course)
-        @log.info("200 level not completed:" + course.dept + " " + course.number.to_s)
         completed_them_all = false
         break
       end
@@ -249,8 +247,7 @@ class SequenceBuilderController < ApplicationController
     @completed_all_200_level = completed_them_all
   end
 
-=begin  def select_courses_from_available(available)
-   @log.info("Selection courses from the list of available courses************************************")
+  def select_courses_from_available(available)
     selected = Array.new
     filter1 = Array.new
     filter2 = Array.new
@@ -266,28 +263,29 @@ class SequenceBuilderController < ApplicationController
       @log.info("Now checking the priority of " + avail.dept + avail.number.to_s )
        if courses_given_this_term_only.include?(available) and @number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")
          filter1.push(avail)
-         available.delete(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
+         available.delete(avail)
        elsif (avail.dept == "COMP" or avail.dept == "SOEN") and @number_of_direct_dependents[avail.course_id] > 0
          filter1.push(avail)
-         available.delete(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
+         available.delete(avail)
        end
     end
+    @log.info("+++")
     if filter1.size < 5
       available.each do |avail|
         if @number_of_direct_dependents[avail.course_id] > 0
           filter2.push(avail)
-          available.delete(avail)
           @log.info("added " + avail.dept + avail.number.to_s + "to filter2")
+          available.delete(avail)
         end
       end
     end
     if (filter1.size + filter2.size) < 5
        if courses_given_this_term_only.include?(available)
          filter3.push(avail)
-          available.delete(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter3")
+         available.delete(avail)
        end
     end
   if filter1.size > 4
@@ -302,27 +300,27 @@ class SequenceBuilderController < ApplicationController
     while course_counter < filter1.size - 1
       selected.push(filter1[course_counter])
       course_counter += 1
-      @log.info("SELECTED " + filter1[course_counter].dept + filter1[course_counter].number.to_s)
+      #@log.info("SELECTED " + filter1[course_counter].dept + filter1[course_counter].number.to_s)
     end
     while course_counter <= max_course
       if filter2[0] != nil
         if !selected.include?(filter2[0])
           selected.push(filter2[0])
-          @log.info("SELECTED " + filter2[0].dept + filter2[0].number.to_s)
+         # @log.info("SELECTED " + filter2[0].dept + filter2[0].number.to_s)
           filter2.delete(filter2[0])
           course_counter += 1
         end
       elsif filter3[0] != nil
         if !selected.include?(filter3[0])
          selected.push(filter3[0])
-         @log.info("SELECTED " + filter3[0].dept + filter3[0].number.to_s)
+        # @log.info("SELECTED " + filter3[0].dept + filter3[0].number.to_s)
          filter3.delete(filter3[0])
          course_counter += 1
         end
       elsif available[0] != nil
         if !selected.include?(available[0])
           selected.push(available[0])
-          @log.info("SELECTED " + available[0].dept + available[0].number.to_s)
+        #  @log.info("SELECTED " + available[0].dept + available[0].number.to_s)
           filter3.delete(filter3[0])
           course_counter += 1
         end
@@ -330,6 +328,5 @@ class SequenceBuilderController < ApplicationController
     end
     end
     return selected
- end
-=end
+  end #END OF SELECT
 end #end of class
