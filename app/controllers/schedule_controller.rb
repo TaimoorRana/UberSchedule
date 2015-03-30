@@ -19,8 +19,8 @@ class ScheduleController < ApplicationController
 
     if find_all_sections != nil
       find_all_tutorials
-      week_tutorials = separate_sections_according_to_days(@tutorials)
-      #week_tutorials = [[],[],[],[],[]]
+      #week_tutorials = separate_sections_according_to_days(@tutorials)
+      week_tutorials = [[],[],[],[],[]]
       week_sections = separate_sections_according_to_days(@sections)
       @mondaySections = if week_tutorials[0].flatten != [] then week_sections[0].append(week_tutorials[0].flatten) else week_sections[0] end
       @tuesdaySections = if week_tutorials[1].flatten != [] then week_sections[1].append(week_tutorials[1].flatten)else week_sections[1] end
@@ -124,22 +124,22 @@ class ScheduleController < ApplicationController
         #duration is given in seconds so divide by 60 to get minutes and then divide by 15min because that time unit in schedule is every
         # 15min. This allow to calculate how many rows a sections will span
         section_row_span = (duration/60/15).ceil
-
+        schedule_section = ScheduleSection.new(section,'#F7F7F7',section_row_span)
         if day == 'M'
-          week[0].push([section,section_row_span])
+          week[0].push(schedule_section)
         end
         if day == 'T'
-          week[1].push([section,section_row_span])
+          week[1].push(schedule_section)
         end
         if day == 'W' && wednesday_added == false
-          week[2].push([section,section_row_span])
+          week[2].push(schedule_section)
           wednesday_added = true
         end
         if day == 'J'
-          week[3].push([section,section_row_span])
+          week[3].push(schedule_section)
         end
         if day == 'F'
-          week[4].push([section,section_row_span])
+          week[4].push(schedule_section)
         end
       end
     end
@@ -154,11 +154,11 @@ class ScheduleController < ApplicationController
   def sort_all_sections_tutorials_labs(week)
     week.each_with_index do |day,i|
 
-      day.each_with_index do |section1,j|
-        day.each_with_index do |section2,k|
-          if (Time.parse(section1[0].time_start) <=> Time.parse(section2[0].time_start)) == -1 && j > k
-            temp = section2
-            day[k] = section1
+      day.each_with_index do |schedule_section1,j|
+        day.each_with_index do |schedule_section2,k|
+          if (Time.parse(schedule_section1.section.time_start) <=> Time.parse(schedule_section2.section.time_start)) == -1 && j > k
+            temp = schedule_section2
+            day[k] = schedule_section1
             day[j] = temp
           end
         end
@@ -178,22 +178,22 @@ class ScheduleController < ApplicationController
     #find conflicts
     arr.each do |day|
 
-      day.each do |section|
+      day.each do |schedule_section|
         #get the first section start and end time
-        time_start = Time.parse(section[0].time_start)
-        time_end = Time.parse(section[0].time_end)
-        day.each do |another_section|
+        time_start = Time.parse(schedule_section.section.time_start)
+        time_end = Time.parse(schedule_section.section.time_end)
+        day.each do |another_schedule_section|
           #get the second section start and end time
-          other_time_start = Time.parse(another_section[0].time_start)
-          other_time_end = Time.parse(another_section[0].time_end)
+          other_time_start = Time.parse(another_schedule_section.section.time_start)
+          other_time_end = Time.parse(another_schedule_section.section.time_end)
 
           # Don't compare the same section
-          if section != another_section
+          if schedule_section.section != another_schedule_section.section
 
             if (time_start..time_end).cover? other_time_end
-              conflict_arr.push(section,another_section)
+              conflict_arr.push(schedule_section,another_schedule_section)
             elsif (time_start..time_end).cover? other_time_start
-              conflict_arr.push(section,another_section)
+              conflict_arr.push(schedule_section,another_schedule_section)
             end
 
           end
@@ -204,5 +204,14 @@ class ScheduleController < ApplicationController
     return conflict_arr.uniq
   end
 
+  class ScheduleSection
+    attr_accessor :section,:section_type,:color,:row_span
+    def initialize(section,color,row_span)
+      self.section = section
+      self.color = color
+      self.row_span = row_span
+      self.section_type = section.class
+    end
+  end
 
 end
