@@ -1,6 +1,24 @@
-<div class="greybody">
-  <p style="color: black">Your profile has been updated. The following changes have been made: </p>
-  <% @modified.each do |x| %>
-      <p style="color: black">  <%= x %> </p>
-  <% end %>
+
+<!--title of the page & subtitle div-->
+<div class="titleCont">
+  <br/><br/>
+  <span class="whiteFONT titleFONT"></span><br/>
+  <span class="whiteFONT subtitleFONT"></span>
+</div>
+</div>
+
+<!--main outer container div-->
+<div class="whiteBCKG extend">
+  <!-- inside container div-->
+  <div class="mainContent">
+
+    <div class="greybody">
+      <p style="color: black">Your profile has been updated. The following changes have been made: </p>
+      <% @modified.each do |x| %>
+          <p style="color: black">  <%= x %> </p>
+      <% end %>
+    </div>
+
+
+  </div>
 </div>

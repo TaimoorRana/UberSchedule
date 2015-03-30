@@ -1,5 +1,12 @@
-<div>
-  <p class="header"> <%= @student_first_name %> <%= @student_last_name %>'s Profile </p>
+
+<!--title of the page & subtitle div-->
+<div class="titleCont">
+  <br/><br/>
+  <span class="whiteFONT titleFONT">
+     <%= @student_first_name %> <%= @student_last_name %>'s Profile
+
+</span><br/>
+  <span class="whiteFONT subtitleFONT"></span>
 </div>
 <div class="greybody form-horizontal">
   <%= form_tag(:action => 'updateProfile') do %>
@@ -9,10 +16,10 @@
         <label for="option" class="col-sm-4">Change your minor :</label>
         <div class="col-sm-4">
           <%= select_tag(:option, options_for_select(["General", "Computer Games",
-                                                      "RealTime Embedded and Avionics Software", "Web Services and Applications"], selected: @current_opt)) %></br></br></div>
+                                                      "RealTime Embedded and Avionics Software", "Web Services and Applications"], selected: @current_opt)) %></br></div>
         <label for="option" class="col-sm-4">Select your entry semester :</label>
         <div class="col-sm-4">
-          <%= select_tag(:entry, options_for_select(["Fall Entry", "Winter Entry"], selected: @entry)) %></br></br></div>
+          <%= select_tag(:entry, options_for_select(["Fall Entry", "Winter Entry"], selected: @entry)) %></br></div>
       </div>
       <div class="col-sm-12">
         <div class="col-sm-8">
@@ -72,6 +79,13 @@
       <br><br>
       <%= submit_tag("Edit Profile", class: 'btn btn-default btn-lg') %>
   <% end %> <!-- end of the form -->
-
 </div>
+
+
+
+
+
+
+
+
 

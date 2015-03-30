@@ -1,96 +1,108 @@
-<div class="header">
-  <h2> My Updated Sequence</h2>
 
-  <h3> Select the courses from this list that you wish to take:</h3>
+<!--title of the page & subtitle div-->
+<div class="titleCont">
+  <br/><br/>
+  <span class="whiteFONT titleFONT"> <h2> My Updated Sequence</h2></span><br/>
+  <span class="whiteFONT subtitleFONT"> <h3> Select the courses from this list that you wish to take:</h3></span>
 </div>
-<div class="greybody">
-  <%= form_tag(personalized_sequence_path) do %>
+</div>
 
-      <% if @sequence[:general].nil? %>
+<!--main outer container div-->
+<div class="whiteBCKG extend">
+  <!-- inside container div-->
+  <div class="mainContent">
 
-          <h2> Must take at least one of the following <%= @option %> courses</h2>
-          <table class="table">
-            <tr></tr>
-            <thead>
-            <tr>
-              <th>Indicate Course</th>
-              <th>Course Dept</th>
-              <th>Number</th>
-              <th>Credits</th>
-              <th>Course Name</th>
-            </tr>
-            </thead>
-            <tbody>
-            <% @sequence[:one_of].courses.each do |course| %>
+    <div class="greybody">
+      <%= form_tag(personalized_sequence_path) do %>
+
+          <% if @sequence[:general].nil? %>
+
+              <h2> Must take at least one of the following <%= @option %> courses</h2>
+              <table class="table">
+                <tr></tr>
+                <thead>
                 <tr>
-                  <td><%= check_box_tag(course.id.to_s) %></td>
-                  <td><%= course.dept %></td>
-                  <td><%= course.number %></td>
-                  <td><%= course.credit %></td>
-                  <td><%= course.name %></td>
+                  <th>Indicate Course</th>
+                  <th>Course Dept</th>
+                  <th>Number</th>
+                  <th>Credits</th>
+                  <th>Course Name</th>
                 </tr>
+                </thead>
+                <tbody>
+                <% @sequence[:one_of].courses.each do |course| %>
+                    <tr>
+                      <td><%= check_box_tag(course.id.to_s) %></td>
+                      <td><%= course.dept %></td>
+                      <td><%= course.number %></td>
+                      <td><%= course.credit %></td>
+                      <td><%= course.name %></td>
+                    </tr>
 
-            <% end %>
+                <% end %>
 
-            </tbody>
+                </tbody>
 
-          </table>
-          <h2> Electives Available</h2>
-          <table class="table">
-            <tr></tr>
-            <thead>
-            <tr>
-              <th>Indicate Course</th>
-              <th>Course Dept</th>
-              <th>Number</th>
-              <th>Credits</th>
-              <th>Course Name</th>
-            </tr>
-            </thead>
-            <tbody>
-            <% @sequence[:electives].courses.each do |course| %>
+              </table>
+              <h2> Electives Available</h2>
+              <table class="table">
+                <tr></tr>
+                <thead>
                 <tr>
-                  <td> <%= check_box_tag(course.id.to_s) %></td>
-                  <td><%= course.dept %></td>
-                  <td><%= course.number %></td>
-                  <td><%= course.credit %></td>
-                  <td><%= course.name %></td>
+                  <th>Indicate Course</th>
+                  <th>Course Dept</th>
+                  <th>Number</th>
+                  <th>Credits</th>
+                  <th>Course Name</th>
                 </tr>
+                </thead>
+                <tbody>
+                <% @sequence[:electives].courses.each do |course| %>
+                    <tr>
+                      <td> <%= check_box_tag(course.id.to_s) %></td>
+                      <td><%= course.dept %></td>
+                      <td><%= course.number %></td>
+                      <td><%= course.credit %></td>
+                      <td><%= course.name %></td>
+                    </tr>
 
-            <% end %>
+                <% end %>
 
-            </tbody>
+                </tbody>
 
-          </table>
-      <% else %>
-          <h2> Select courses from the following:</h2>
-          <table class="table">
-            <tr></tr>
-            <thead>
-            <tr>
-              <th>Indicate Courses</th>
-              <th>Course Dept</th>
-              <th>Number</th>
-              <th>Credits</th>
-              <th>Course Name</th>
-            </tr>
-            </thead>
-            <tbody>
-            <% @sequence[:general].courses.each do |course| %>
+              </table>
+          <% else %>
+              <h2> Select courses from the following:</h2>
+              <table class="table">
+                <tr></tr>
+                <thead>
                 <tr>
-                  <td><%= check_box_tag(course.id.to_s) %></td>
-                  <td><%= course.dept %></td>
-                  <td><%= course.number %></td>
-                  <td><%= course.credit %></td>
-                  <td><%= course.name %></td>
+                  <th>Indicate Courses</th>
+                  <th>Course Dept</th>
+                  <th>Number</th>
+                  <th>Credits</th>
+                  <th>Course Name</th>
                 </tr>
+                </thead>
+                <tbody>
+                <% @sequence[:general].courses.each do |course| %>
+                    <tr>
+                      <td><%= check_box_tag(course.id.to_s) %></td>
+                      <td><%= course.dept %></td>
+                      <td><%= course.number %></td>
+                      <td><%= course.credit %></td>
+                      <td><%= course.name %></td>
+                    </tr>
 
-            <% end %>
+                <% end %>
 
-            </tbody>
+                </tbody>
 
-          </table>
+              </table>
+          <% end %>
+          <%= submit_tag('Save Completed Courses', {style: "background-color:black;"}) %>
       <% end %>
-      <%= submit_tag('Save Completed Courses', {style: "background-color:black;"}) %>
-  <% end %>
+    </div>
+
+  </div>
 </div>

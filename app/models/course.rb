@@ -5,5 +5,5 @@ class Course < ActiveRecord::Base
   has_many :courses_prereqs
   has_many :sections
   has_many :tutorials, through: :sections
-  has_one  :laboratory,through: :tutorials
+  has_many  :laboratories,through: :tutorials
 end
