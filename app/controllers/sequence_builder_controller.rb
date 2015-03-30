@@ -53,29 +53,19 @@ class SequenceBuilderController < ApplicationController
       @log.info("========== STARTING TO GENERATE A SEMESTER =============")
       semester_string = determine_current_semester
       @log.info("Semester:" + semester_string)
-      if @completed_all_200_level
-       # @log.info("Completed_all_200: True")
-      else
-       #  @log.info("Completed_all_200: False")
-      end
       current_semester.push(semester_string)
       available_courses = generate_available_courses
       selected_courses = select_courses_from_available(available_courses)
 
-      i = 0
       selected_courses.each do |course|
-        if i < [5, selected_courses.length].min
         current_semester.push(course.dept + " " + course.number.to_s)
         @completed_courses.push(course)
         @accumulated_credits += course.credit
-       # @log.info("ADDED " + course.dept + course.number.to_s)
-        i += 1
-        else
-          break
+        @log.info("!!!!!!!ADDED " + course.dept + course.number.to_s + " to current semester")
         end
-      end
       @complete_sequence.push(current_semester)
-      @accumulated_credits += 5
+      @log.info("-------------pushed current_semester into complete_sequence")
+      @accumulated_credits += 1
 
       if !@completed_all_200_level
         determine_completed_all_200_level
@@ -90,6 +80,7 @@ class SequenceBuilderController < ApplicationController
   def sections_to_array #tested for class type Array and correct output
     Section.all.each do |section|
       @all_sections.push(section)
+      @log.info("@all_sections <= " + section.id.to_s)
     end
   end
 
@@ -98,10 +89,13 @@ class SequenceBuilderController < ApplicationController
     @all_sections.each do |section|
       if section.term == "Fall"
         @all_fall_sections.push(section)
+        @log.info("@all_fall_sections <= " + section.id.to_s)
       elsif section.term == "Winter"
         @all_winter_sections.push(section)
+        @log.info("@all_winter_sections <= " + section.id.to_s)
       elsif section.term = "Summer"
         @all_summer_sections.push(section)
+        @log.info("@all_summer_sections <= " + section.id.to_s)
       end
     end
   end
@@ -114,14 +108,18 @@ class SequenceBuilderController < ApplicationController
     current_course_id = 1
     @all_sections.each do |section|
       if current_course_id != section.course_id
+        course = Course.find(current_course_id)
         if offered_in_summer
-          @courses_offered_in_summer.push(Course.find(current_course_id))
+          @courses_offered_in_summer.push(course)
+          @log.info("@courses_offered_in_summer <= " + course.dept + course.number.to_s)
         else
           if offered_in_fall and !offered_in_winter
-            @fall_courses_only.push(Course.find(current_course_id))
+            @fall_courses_only.push(course)
+            @log.info("@fall_courses_only <= " + course.dept + course.number.to_s)
           end
           if !offered_in_fall and offered_in_winter
-            @winter_courses_only.push(Course.find(current_course_id))
+            @winter_courses_only.push(course)
+            @log.info("@winter_courses_only <= " + course.dept + course.number.to_s)
           end
         end
         current_course_id = section.course_id
@@ -143,6 +141,7 @@ class SequenceBuilderController < ApplicationController
   def all_prereqs_to_array #tested for array type and proper content
     CoursesPrereq.all.each do |prereq|
       @all_prereqs.push(prereq)
+      @log.info("@all_prereqs <= " + prereq.course_id.to_s + " " + prereq.course_id_prereq.to_s)
     end
   end
 
@@ -150,6 +149,7 @@ class SequenceBuilderController < ApplicationController
   def completed_courses_to_array #teted for array type and proper content
     @student.courses.each do |course|
       @completed_courses.push(course)
+      @log.info("@completed_courses <= " + course.dept + course.number.to_s)
     end
   end
 
@@ -171,6 +171,7 @@ class SequenceBuilderController < ApplicationController
     @all_prereqs.each do |prereq|
       if (prereq.course_id == course.course_id) and (prereq.course_id != 0)
         arr.push(prereq)
+        @log.info("get_prereqs("+course.dept+course.number.to_s+") <= " + prereq.course_id.to_s + " " + prereq.course_id_prereq.to_s)
       end
     end
     return arr
@@ -179,6 +180,7 @@ class SequenceBuilderController < ApplicationController
   def initial_accumulated_credits
     @completed_courses.each do |course|
       @accumulated_credits+= course.credit
+      @log.info("initial accumulated credits =" + @accumulated_credits.to_s)
     end
   end
 
@@ -201,20 +203,22 @@ class SequenceBuilderController < ApplicationController
         course = Course.find(section.course_id)
         if !@completed_courses.include?(course) #check if course was taken
           missing_prereqs = false
-          if @number_of_direct_dependents[section.course_id] > 0
+          if @all_400_level.include?(course)
+            missing_prereqs = !@completed_all_200_level
+            log_string = missing_prereqs ? "true" : "false"
+            @log.info("400-400-400 check if 400 is missing 200 level: " + log_string)
+          end
+          if @number_of_direct_dependents[section.course_id] > 0 and missing_prereqs == false
             prereqs = get_prereqs(course)
             prereqs.each do |p|
              if !@completed_courses.include?(Course.find(p.course_id_prereq))
                missing_prereqs = true
-               break
              end
-              if @all_400_level.include?(course)
-                missing_prereqs = !@completed_all_200_level
-              end
-            end #loop thru all prereqs
+             end
           end #if has prereq
           if !missing_prereqs
             available_courses.push(course)
+            @log.info("available_courses <=" + course.dept + course.number.to_s)
           end
         end
       end #end of prevent doubles
@@ -230,8 +234,10 @@ class SequenceBuilderController < ApplicationController
     Course.all.each do |x|
       if x.number > 200 and x.number < 300 and x.number != 242 and x.number != 243 and x.number != 244 and x.number != 245 and x.dept != "ENCS"
         @all_200_level.push(x)
+        @log.info("all_200_level <=" + x.dept + x.number.to_s)
       elsif x.number > 400
         @all_400_level.push(x)
+        @log.info("all_400_level <=" + x.dept + x.number.to_s)
       end
       end
   end
@@ -258,9 +264,11 @@ class SequenceBuilderController < ApplicationController
     elsif @semester[@semester_counter.modulo(2)] == "Winter"
         courses_given_this_term_only = @winter_courses_only
     end
+    @log.info("Semest in selection algo:" + @semester[@semester_counter.modulo(2)])
 
     available.each do |avail|
       @log.info("Now checking the priority of " + avail.dept + avail.number.to_s )
+      @log.info("It has " + @number_of_direct_dependents[avail.course_id].to_s + " dependents.")
        if courses_given_this_term_only.include?(available) and @number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")
          filter1.push(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
@@ -271,7 +279,6 @@ class SequenceBuilderController < ApplicationController
          available.delete(avail)
        end
     end
-    @log.info("+++")
     if filter1.size < 5
       available.each do |avail|
         if @number_of_direct_dependents[avail.course_id] > 0
@@ -282,50 +289,61 @@ class SequenceBuilderController < ApplicationController
       end
     end
     if (filter1.size + filter2.size) < 5
-       if courses_given_this_term_only.include?(available)
+      available.each do |avail|
+       if courses_given_this_term_only.include?(avail) and !@courses_offered_in_summer.include?(avail)
          filter3.push(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter3")
          available.delete(avail)
        end
+      end
     end
   if filter1.size > 4
+    @log.info("Filter1.size is greater than 4")
     selected[0] = filter1[0]
     selected[1] = filter1[1]
     selected[2] = filter1[2]
     selected[3] = filter1[3]
     selected[4] = filter1[4]
   else
+    @log.info("Filter1.size is less than 4")
     course_counter = 0
     max_course = [5, available.length].min
-    while course_counter < filter1.size - 1
+    while course_counter <= filter1.size - 1
       selected.push(filter1[course_counter])
+      @log.info("SELECTED " + filter1[course_counter].dept + filter1[course_counter].number.to_s)
       course_counter += 1
-      #@log.info("SELECTED " + filter1[course_counter].dept + filter1[course_counter].number.to_s)
+      @log.info("course_counter:" + course_counter.to_s)
     end
-    while course_counter <= max_course
+    while course_counter < max_course do
       if filter2[0] != nil
         if !selected.include?(filter2[0])
           selected.push(filter2[0])
-         # @log.info("SELECTED " + filter2[0].dept + filter2[0].number.to_s)
+         @log.info("SELECTED " + filter2[0].dept + filter2[0].number.to_s)
           filter2.delete(filter2[0])
           course_counter += 1
+          @log.info("course_counter:" + course_counter.to_s)
         end
       elsif filter3[0] != nil
         if !selected.include?(filter3[0])
          selected.push(filter3[0])
-        # @log.info("SELECTED " + filter3[0].dept + filter3[0].number.to_s)
+        @log.info("SELECTED " + filter3[0].dept + filter3[0].number.to_s)
          filter3.delete(filter3[0])
          course_counter += 1
+         @log.info("course_counter:" + course_counter.to_s)
         end
       elsif available[0] != nil
         if !selected.include?(available[0])
           selected.push(available[0])
-        #  @log.info("SELECTED " + available[0].dept + available[0].number.to_s)
-          filter3.delete(filter3[0])
+        @log.info("SELECTED " + available[0].dept + available[0].number.to_s)
+          available.delete(available[0])
           course_counter += 1
+          @log.info("course_counter:" + course_counter.to_s)
         end
+      end
     end
-    end
+  end
+    selected.each do |x|
+      @log.info("*****result of selection:"  + x.dept + x.number.to_s)
     end
     return selected
   end #END OF SELECT
