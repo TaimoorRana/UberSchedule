@@ -30,6 +30,10 @@ class SequenceBuilderController < ApplicationController
     @courses_offered_in_summer = Array.new
     courses_given_in_specific_semester
 
+    @mandatory_courses = Array.new
+    @oneOf_courses = Array.new
+    generate_mandatory_courses
+
     @all_prereqs = Array.new
     @all_200_level = Array.new
     @all_400_level = Array.new
@@ -253,6 +257,41 @@ class SequenceBuilderController < ApplicationController
     @completed_all_200_level = completed_them_all
   end
 
+  def generate_mandatory_courses
+    Sequence.find(1).courses.each do |course|
+      @mandatory_courses.push(course)
+      @log.info("@mandatory_course <=" + course.dept + course.number.to_s)
+    end
+      if @student.option == "Computer Games"
+        Sequence.find(12).courses.each do |course|
+          @mandatory_courses.push(course)
+          @log.info("@mandatory_course <=" + course.dept + course.number.to_s)
+        end
+        Sequence.find(13).courses.each do |course|
+          @oneOf_courses.push(course)
+          @log.info("@oneOf_courses <=" + course.dept + course.number.to_s)
+        end
+      elsif @student.option == "Web Services and Appliactions"
+        Sequence.find(10).courses.each do |course|
+          @mandatory_courses.push(course)
+          @log.info("@mandatory_course <=" + course.dept + course.number.to_s)
+        end
+        Sequence.find(11).courses.each do |course|
+          @oneOf_courses.push(course)
+          @log.info("@oneOf_courses <=" + course.dept + course.number.to_s)
+          end
+      elsif @student.option == "RealTime Embedded and Avionics Software"
+        Sequence.find(14).courses.each do |course|
+          @mandatory_courses.push(course)
+          @log.info("@mandatory_course <=" + course.dept + course.number.to_s)
+        end
+        Sequence.find(15).courses.each do |course|
+          @oneOf_courses.push(course)
+          @log.info("@oneOf_courses <=" + course.dept + course.number.to_s)
+          end
+      end
+  end
+
   def select_courses_from_available(available)
     selected = Array.new
     filter1 = Array.new
@@ -264,11 +303,8 @@ class SequenceBuilderController < ApplicationController
     elsif @semester[@semester_counter.modulo(2)] == "Winter"
         courses_given_this_term_only = @winter_courses_only
     end
-    @log.info("Semest in selection algo:" + @semester[@semester_counter.modulo(2)])
 
     available.each do |avail|
-      @log.info("Now checking the priority of " + avail.dept + avail.number.to_s )
-      @log.info("It has " + @number_of_direct_dependents[avail.course_id].to_s + " dependents.")
        if courses_given_this_term_only.include?(available) and @number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")
          filter1.push(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
