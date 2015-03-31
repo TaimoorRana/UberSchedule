@@ -16,7 +16,6 @@ class SequenceBuilderController < ApplicationController
     @year = 2015
     @semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"}
 
-
     @all_sections = Array.new
     sections_to_array
 
@@ -56,8 +55,14 @@ class SequenceBuilderController < ApplicationController
     @basic_science_counter = 0
     @ignore_list = Array.new
     @all_options = Array.new
-    generate_basic_sicences
+    generate_basic_sciences
     generate_ignore_list
+
+    test = list_of_dependents(Course.find(16))
+    @log.info("+++CONTENTS OF list_of_dependents")
+    test.each do |x|
+      @log.info(x)
+    end
 
     @complete_sequence = Array.new
 
@@ -277,7 +282,7 @@ class SequenceBuilderController < ApplicationController
     @completed_all_200_level = completed_them_all
   end
 
-  def generate_basic_sicences #hardcoded because they aren't in the DB yet
+  def generate_basic_sciences #hardcoded because they aren't in the DB yet
     @all_basic_sciences.push(Course.find(5)) #ENGR242
     @all_basic_sciences.push(Course.find(6)) #ENGR243
   end
@@ -287,8 +292,6 @@ class SequenceBuilderController < ApplicationController
     @ignore_list.push(Course.find(8)) #ENGR245 is not a basic science
     @ignore_list.push(Course.find(39)) #COMP490
     @ignore_list.push(Course.find(40)) #COMP492
-
-
   end
 
   def generate_mandatory_courses
@@ -326,6 +329,7 @@ class SequenceBuilderController < ApplicationController
       end
   end
 
+#THE SELECTION BEAST
   def select_courses_from_available(available)
     selected = Array.new
     filter1 = Array.new
@@ -355,7 +359,7 @@ class SequenceBuilderController < ApplicationController
     end
     if filter1.size < max_courses
       available.each do |avail|
-        if @number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")
+        if (@number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")) or @all_200_level.include?(avail)
           filter2.push(avail)
           @log.info("added " + avail.dept + avail.number.to_s + "to filter2")
           available.delete(avail)
@@ -421,4 +425,25 @@ class SequenceBuilderController < ApplicationController
     end
     return selected
   end #END OF SELECT
+
+  def list_of_dependents(course)
+    @list_of_dependents = Set.new
+   populate_list(course)
+    return @list_of_dependents
+  end
+
+  def populate_list(c)
+    dependents = CoursesPrereq.where(course_id_prereq: c.course_id)
+    dependents.each do |d|
+      if d != nil
+        d_course = Course.find(d.course_id)
+        if @mandatory_courses.include?(d_course)
+          @log.info("d_course is " + d_course.dept + d_course.number.to_s)
+          @list_of_dependents.add(d_course)
+          populate_list(d_course)
+        end
+      end
+    end
+  end
+
 end #end of class
