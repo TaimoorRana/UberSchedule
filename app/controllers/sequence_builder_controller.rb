@@ -2,7 +2,7 @@ class SequenceBuilderController < ApplicationController
   layout 'general_schedule'
 
   def sequence_builder
-    @log = Logger.new("C:\\Users\\Rich\\RubymineProjects\\UberSchedule\\log.txt")
+    @log = Logger.new("log3.txt")
     @log.level = Logger::DEBUG
     user_id = current_user.user_id
     @student = Student.where(user_id: user_id).first
@@ -36,6 +36,7 @@ class SequenceBuilderController < ApplicationController
     generate_mandatory_courses
 
     @all_prereqs = Array.new
+    @all_coreqs = Array.new
     @all_200_level = Array.new
     @all_400_level = Array.new
     @completed_all_200_level = false
@@ -50,6 +51,13 @@ class SequenceBuilderController < ApplicationController
 
     @number_of_direct_dependents = Array.new
     number_of_direct_dependents
+
+    @all_basic_sciences = Array.new
+    @basic_science_counter = 0
+    @ignore_list = Array.new
+    @all_options = Array.new
+    generate_basic_sicences
+    generate_ignore_list
 
     @complete_sequence = Array.new
 
@@ -68,15 +76,15 @@ class SequenceBuilderController < ApplicationController
         @accumulated_credits += course.credit
         @log.info("!!!!!!!ADDED " + course.dept + course.number.to_s + " to current semester")
         end
+      current_semester.push(@accumulated_credits.to_s)
       @complete_sequence.push(current_semester)
       @log.info("-------------pushed current_semester into complete_sequence")
-      @accumulated_credits += 1
 
       if !@completed_all_200_level
         determine_completed_all_200_level
       end
       @semester_counter+=1
-     # @log.info("semester_counter: " + @semester_counter.to_s)
+      @log.info("semester_counter: " + @semester_counter.to_s)
     end
 
   end #end of def sequence_builder
@@ -144,9 +152,16 @@ class SequenceBuilderController < ApplicationController
 
   # populates @all_prereqs array with CoursesPrereq objects
   def all_prereqs_to_array #tested for array type and proper content
-    CoursesPrereq.all.each do |prereq|
+    CoursesPrereq.where(prereq_type_id: 1).all.each do |prereq|
       @all_prereqs.push(prereq)
       @log.info("@all_prereqs <= " + prereq.course_id.to_s + " " + prereq.course_id_prereq.to_s)
+    end
+  end
+
+  def all_coreqs_to_array
+    CoursesPrereq.where(prereq_type_id: 3).all.each do |coreq|
+      @all_coreqs.push(coreq)
+      @log.info("@all_coreqs <= " + prereq.course_id.to_s + " " + prereq.course_id_prereq.to_s)
     end
   end
 
@@ -206,14 +221,18 @@ class SequenceBuilderController < ApplicationController
       if previous_course_id != section.course_id #prevents double checking Courses
         previous_course_id = section.course_id
         course = Course.find(section.course_id)
-        if !@completed_courses.include?(course) #check if course was taken
+        if !@completed_courses.include?(course) and !@ignore_list.include?(course) #check if course was taken or is on ignore list
           missing_prereqs = false
+          basic_sciences_allowed = true
           if @all_400_level.include?(course)
             missing_prereqs = !@completed_all_200_level
             log_string = missing_prereqs ? "true" : "false"
             @log.info("400-400-400 check if 400 is missing 200 level: " + log_string)
           end
-          if @number_of_direct_dependents[section.course_id] > 0 and missing_prereqs == false
+          if @all_basic_sciences.include?(course) and (@basic_science_counter >= 2)
+            basic_sciences_allowed = false
+          end
+          if CoursesPrereq.where(course_id: course).size > 0 and missing_prereqs == false
             prereqs = get_prereqs(course)
             prereqs.each do |p|
              if !@completed_courses.include?(Course.find(p.course_id_prereq))
@@ -221,7 +240,7 @@ class SequenceBuilderController < ApplicationController
              end
              end
           end #if has prereq
-          if !missing_prereqs
+          if !missing_prereqs and basic_sciences_allowed
             available_courses.push(course)
             @log.info("available_courses <=" + course.dept + course.number.to_s)
           end
@@ -256,6 +275,20 @@ class SequenceBuilderController < ApplicationController
       end
     end
     @completed_all_200_level = completed_them_all
+  end
+
+  def generate_basic_sicences #hardcoded because they aren't in the DB yet
+    @all_basic_sciences.push(Course.find(5)) #ENGR242
+    @all_basic_sciences.push(Course.find(6)) #ENGR243
+  end
+
+  def generate_ignore_list #courses that are in the DB but should never be taken
+    @ignore_list.push(Course.find(7)) #ENGR244 is not a basic science
+    @ignore_list.push(Course.find(8)) #ENGR245 is not a basic science
+    @ignore_list.push(Course.find(39)) #COMP490
+    @ignore_list.push(Course.find(40)) #COMP492
+
+
   end
 
   def generate_mandatory_courses
@@ -315,7 +348,7 @@ class SequenceBuilderController < ApplicationController
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
          available.delete(avail)
        elsif (avail.dept == "COMP" or avail.dept == "SOEN") and @number_of_direct_dependents[avail.course_id] > 0 and @mandatory_courses.include?(avail)
-         filter1.push(avail)
+         filter1.push(avail) and !@courses_offered_in_summer.include?(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
          available.delete(avail)
        end
