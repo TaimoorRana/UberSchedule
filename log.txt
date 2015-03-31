@@ -1,0 +1,2442 @@
+I, [2015-03-31T11:10:45.730805 #6356]  INFO -- : @all_sections <= 1
+I, [2015-03-31T11:10:45.730805 #6356]  INFO -- : @all_sections <= 2
+I, [2015-03-31T11:10:45.730805 #6356]  INFO -- : @all_sections <= 3
+I, [2015-03-31T11:10:45.730805 #6356]  INFO -- : @all_sections <= 4
+I, [2015-03-31T11:10:45.730805 #6356]  INFO -- : @all_sections <= 5
+I, [2015-03-31T11:10:45.730805 #6356]  INFO -- : @all_sections <= 6
+I, [2015-03-31T11:10:45.730805 #6356]  INFO -- : @all_sections <= 7
+I, [2015-03-31T11:10:45.730805 #6356]  INFO -- : @all_sections <= 8
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 9
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 10
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 11
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 12
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 13
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 14
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 15
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 16
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 17
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 18
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 19
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 20
+I, [2015-03-31T11:10:45.731808 #6356]  INFO -- : @all_sections <= 21
+I, [2015-03-31T11:10:45.732809 #6356]  INFO -- : @all_sections <= 22
+I, [2015-03-31T11:10:45.732809 #6356]  INFO -- : @all_sections <= 23
+I, [2015-03-31T11:10:45.732809 #6356]  INFO -- : @all_sections <= 24
+I, [2015-03-31T11:10:45.732809 #6356]  INFO -- : @all_sections <= 25
+I, [2015-03-31T11:10:45.732809 #6356]  INFO -- : @all_sections <= 26
+I, [2015-03-31T11:10:45.732809 #6356]  INFO -- : @all_sections <= 27
+I, [2015-03-31T11:10:45.732809 #6356]  INFO -- : @all_sections <= 28
+I, [2015-03-31T11:10:45.733814 #6356]  INFO -- : @all_sections <= 29
+I, [2015-03-31T11:10:45.733814 #6356]  INFO -- : @all_sections <= 30
+I, [2015-03-31T11:10:45.733814 #6356]  INFO -- : @all_sections <= 31
+I, [2015-03-31T11:10:45.733814 #6356]  INFO -- : @all_sections <= 32
+I, [2015-03-31T11:10:45.733814 #6356]  INFO -- : @all_sections <= 33
+I, [2015-03-31T11:10:45.733814 #6356]  INFO -- : @all_sections <= 34
+I, [2015-03-31T11:10:45.733814 #6356]  INFO -- : @all_sections <= 35
+I, [2015-03-31T11:10:45.734821 #6356]  INFO -- : @all_sections <= 36
+I, [2015-03-31T11:10:45.734821 #6356]  INFO -- : @all_sections <= 37
+I, [2015-03-31T11:10:45.734821 #6356]  INFO -- : @all_sections <= 38
+I, [2015-03-31T11:10:45.734821 #6356]  INFO -- : @all_sections <= 39
+I, [2015-03-31T11:10:45.734821 #6356]  INFO -- : @all_sections <= 40
+I, [2015-03-31T11:10:45.734821 #6356]  INFO -- : @all_sections <= 41
+I, [2015-03-31T11:10:45.734821 #6356]  INFO -- : @all_sections <= 42
+I, [2015-03-31T11:10:45.735809 #6356]  INFO -- : @all_sections <= 43
+I, [2015-03-31T11:10:45.735809 #6356]  INFO -- : @all_sections <= 44
+I, [2015-03-31T11:10:45.735809 #6356]  INFO -- : @all_sections <= 45
+I, [2015-03-31T11:10:45.735809 #6356]  INFO -- : @all_sections <= 46
+I, [2015-03-31T11:10:45.735809 #6356]  INFO -- : @all_sections <= 47
+I, [2015-03-31T11:10:45.735809 #6356]  INFO -- : @all_sections <= 48
+I, [2015-03-31T11:10:45.735809 #6356]  INFO -- : @all_sections <= 49
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 50
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 51
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 52
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 53
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 54
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 55
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 56
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 57
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 58
+I, [2015-03-31T11:10:45.736810 #6356]  INFO -- : @all_sections <= 59
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 60
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 61
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 62
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 63
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 64
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 65
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 66
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 67
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 68
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 69
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 70
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 71
+I, [2015-03-31T11:10:45.737821 #6356]  INFO -- : @all_sections <= 72
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 73
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 74
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 75
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 76
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 77
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 78
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 79
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 80
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 81
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 82
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 83
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 84
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 85
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 86
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 87
+I, [2015-03-31T11:10:45.738812 #6356]  INFO -- : @all_sections <= 88
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 89
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 90
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 91
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 92
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 93
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 94
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 95
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 96
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 97
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 98
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 99
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 100
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 101
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 102
+I, [2015-03-31T11:10:45.739812 #6356]  INFO -- : @all_sections <= 103
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 104
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 105
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 106
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 107
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 108
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 109
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 110
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 111
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 112
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 113
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 114
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 115
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 116
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 117
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 118
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 119
+I, [2015-03-31T11:10:45.740813 #6356]  INFO -- : @all_sections <= 120
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 121
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 122
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 123
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 124
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 125
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 126
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 127
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 128
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 129
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 130
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 131
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 132
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 133
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 134
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 135
+I, [2015-03-31T11:10:45.741814 #6356]  INFO -- : @all_sections <= 136
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 137
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 138
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 139
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 140
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 141
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 142
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 143
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 144
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 145
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 146
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 147
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 148
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 149
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 150
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 151
+I, [2015-03-31T11:10:45.742814 #6356]  INFO -- : @all_sections <= 152
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 153
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 154
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 155
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 156
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 157
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 158
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 159
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 160
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 161
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 162
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 163
+I, [2015-03-31T11:10:45.743814 #6356]  INFO -- : @all_sections <= 164
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 165
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 166
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 167
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 168
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 169
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 170
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 171
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 172
+I, [2015-03-31T11:10:45.744819 #6356]  INFO -- : @all_sections <= 173
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 174
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 175
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 176
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 177
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 178
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 179
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 180
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 181
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 182
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 191
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 192
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 193
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 194
+I, [2015-03-31T11:10:45.745821 #6356]  INFO -- : @all_sections <= 195
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 196
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 197
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 198
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 199
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 200
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 201
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 202
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 203
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 204
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 205
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 206
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 207
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 208
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 209
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 210
+I, [2015-03-31T11:10:45.746819 #6356]  INFO -- : @all_sections <= 211
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 212
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 213
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 214
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 215
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 216
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 217
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 218
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 219
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 220
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 221
+I, [2015-03-31T11:10:45.747817 #6356]  INFO -- : @all_sections <= 222
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_summer_sections <= 1
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_fall_sections <= 2
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_fall_sections <= 3
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_winter_sections <= 4
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_summer_sections <= 5
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_fall_sections <= 6
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_fall_sections <= 7
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_winter_sections <= 8
+I, [2015-03-31T11:10:45.748819 #6356]  INFO -- : @all_winter_sections <= 9
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_summer_sections <= 10
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_fall_sections <= 11
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_fall_sections <= 12
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_fall_sections <= 13
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_fall_sections <= 14
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_fall_sections <= 15
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_fall_sections <= 16
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_fall_sections <= 17
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_winter_sections <= 18
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_winter_sections <= 19
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_winter_sections <= 20
+I, [2015-03-31T11:10:45.749820 #6356]  INFO -- : @all_summer_sections <= 21
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_fall_sections <= 22
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_fall_sections <= 23
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_winter_sections <= 24
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_winter_sections <= 25
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_winter_sections <= 26
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_winter_sections <= 27
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_winter_sections <= 28
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_winter_sections <= 29
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_winter_sections <= 30
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_fall_sections <= 31
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_fall_sections <= 32
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_fall_sections <= 33
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_fall_sections <= 34
+I, [2015-03-31T11:10:45.750820 #6356]  INFO -- : @all_winter_sections <= 35
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_winter_sections <= 36
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_summer_sections <= 37
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_winter_sections <= 38
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_winter_sections <= 39
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_winter_sections <= 40
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_winter_sections <= 41
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_summer_sections <= 42
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_summer_sections <= 43
+I, [2015-03-31T11:10:45.751820 #6356]  INFO -- : @all_winter_sections <= 44
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_winter_sections <= 45
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_winter_sections <= 46
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_winter_sections <= 47
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_winter_sections <= 48
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_winter_sections <= 49
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_summer_sections <= 50
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_fall_sections <= 51
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_fall_sections <= 52
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_winter_sections <= 53
+I, [2015-03-31T11:10:45.752822 #6356]  INFO -- : @all_winter_sections <= 54
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_winter_sections <= 55
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_fall_sections <= 56
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_winter_sections <= 57
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_summer_sections <= 58
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_summer_sections <= 59
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_fall_sections <= 60
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_fall_sections <= 61
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_fall_sections <= 62
+I, [2015-03-31T11:10:45.753822 #6356]  INFO -- : @all_fall_sections <= 63
+I, [2015-03-31T11:10:45.754824 #6356]  INFO -- : @all_winter_sections <= 64
+I, [2015-03-31T11:10:45.770834 #6356]  INFO -- : @all_winter_sections <= 65
+I, [2015-03-31T11:10:45.770834 #6356]  INFO -- : @all_summer_sections <= 66
+I, [2015-03-31T11:10:45.771836 #6356]  INFO -- : @all_summer_sections <= 67
+I, [2015-03-31T11:10:45.771836 #6356]  INFO -- : @all_fall_sections <= 68
+I, [2015-03-31T11:10:45.771836 #6356]  INFO -- : @all_summer_sections <= 69
+I, [2015-03-31T11:10:45.771836 #6356]  INFO -- : @all_fall_sections <= 70
+I, [2015-03-31T11:10:45.772839 #6356]  INFO -- : @all_summer_sections <= 71
+I, [2015-03-31T11:10:45.772839 #6356]  INFO -- : @all_fall_sections <= 72
+I, [2015-03-31T11:10:45.772839 #6356]  INFO -- : @all_fall_sections <= 73
+I, [2015-03-31T11:10:45.772839 #6356]  INFO -- : @all_winter_sections <= 74
+I, [2015-03-31T11:10:45.773839 #6356]  INFO -- : @all_summer_sections <= 75
+I, [2015-03-31T11:10:45.773839 #6356]  INFO -- : @all_summer_sections <= 76
+I, [2015-03-31T11:10:45.773839 #6356]  INFO -- : @all_fall_sections <= 77
+I, [2015-03-31T11:10:45.773839 #6356]  INFO -- : @all_fall_sections <= 78
+I, [2015-03-31T11:10:45.773839 #6356]  INFO -- : @all_fall_sections <= 79
+I, [2015-03-31T11:10:45.774837 #6356]  INFO -- : @all_winter_sections <= 80
+I, [2015-03-31T11:10:45.774837 #6356]  INFO -- : @all_winter_sections <= 81
+I, [2015-03-31T11:10:45.774837 #6356]  INFO -- : @all_winter_sections <= 82
+I, [2015-03-31T11:10:45.774837 #6356]  INFO -- : @all_summer_sections <= 83
+I, [2015-03-31T11:10:45.775838 #6356]  INFO -- : @all_summer_sections <= 84
+I, [2015-03-31T11:10:45.775838 #6356]  INFO -- : @all_fall_sections <= 85
+I, [2015-03-31T11:10:45.775838 #6356]  INFO -- : @all_fall_sections <= 86
+I, [2015-03-31T11:10:45.775838 #6356]  INFO -- : @all_fall_sections <= 87
+I, [2015-03-31T11:10:45.776843 #6356]  INFO -- : @all_winter_sections <= 88
+I, [2015-03-31T11:10:45.776843 #6356]  INFO -- : @all_winter_sections <= 89
+I, [2015-03-31T11:10:45.776843 #6356]  INFO -- : @all_winter_sections <= 90
+I, [2015-03-31T11:10:45.777844 #6356]  INFO -- : @all_summer_sections <= 91
+I, [2015-03-31T11:10:45.777844 #6356]  INFO -- : @all_summer_sections <= 92
+I, [2015-03-31T11:10:45.777844 #6356]  INFO -- : @all_summer_sections <= 93
+I, [2015-03-31T11:10:45.777844 #6356]  INFO -- : @all_fall_sections <= 94
+I, [2015-03-31T11:10:45.777844 #6356]  INFO -- : @all_fall_sections <= 95
+I, [2015-03-31T11:10:45.778848 #6356]  INFO -- : @all_fall_sections <= 96
+I, [2015-03-31T11:10:45.778848 #6356]  INFO -- : @all_winter_sections <= 97
+I, [2015-03-31T11:10:45.778848 #6356]  INFO -- : @all_winter_sections <= 98
+I, [2015-03-31T11:10:45.778848 #6356]  INFO -- : @all_winter_sections <= 99
+I, [2015-03-31T11:10:45.778848 #6356]  INFO -- : @all_summer_sections <= 100
+I, [2015-03-31T11:10:45.778848 #6356]  INFO -- : @all_summer_sections <= 101
+I, [2015-03-31T11:10:45.778848 #6356]  INFO -- : @all_fall_sections <= 102
+I, [2015-03-31T11:10:45.778848 #6356]  INFO -- : @all_winter_sections <= 103
+I, [2015-03-31T11:10:45.779856 #6356]  INFO -- : @all_winter_sections <= 104
+I, [2015-03-31T11:10:45.779856 #6356]  INFO -- : @all_summer_sections <= 105
+I, [2015-03-31T11:10:45.779856 #6356]  INFO -- : @all_winter_sections <= 106
+I, [2015-03-31T11:10:45.779856 #6356]  INFO -- : @all_fall_sections <= 107
+I, [2015-03-31T11:10:45.779856 #6356]  INFO -- : @all_winter_sections <= 108
+I, [2015-03-31T11:10:45.779856 #6356]  INFO -- : @all_summer_sections <= 109
+I, [2015-03-31T11:10:45.779856 #6356]  INFO -- : @all_fall_sections <= 110
+I, [2015-03-31T11:10:45.779856 #6356]  INFO -- : @all_winter_sections <= 111
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_winter_sections <= 112
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_summer_sections <= 113
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_fall_sections <= 114
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_fall_sections <= 115
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_fall_sections <= 116
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_winter_sections <= 117
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_winter_sections <= 118
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_summer_sections <= 119
+I, [2015-03-31T11:10:45.780862 #6356]  INFO -- : @all_fall_sections <= 120
+I, [2015-03-31T11:10:45.781844 #6356]  INFO -- : @all_winter_sections <= 121
+I, [2015-03-31T11:10:45.781844 #6356]  INFO -- : @all_winter_sections <= 122
+I, [2015-03-31T11:10:45.781844 #6356]  INFO -- : @all_summer_sections <= 123
+I, [2015-03-31T11:10:45.781844 #6356]  INFO -- : @all_fall_sections <= 124
+I, [2015-03-31T11:10:45.781844 #6356]  INFO -- : @all_fall_sections <= 125
+I, [2015-03-31T11:10:45.781844 #6356]  INFO -- : @all_fall_sections <= 126
+I, [2015-03-31T11:10:45.781844 #6356]  INFO -- : @all_winter_sections <= 127
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_winter_sections <= 128
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_summer_sections <= 129
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_fall_sections <= 130
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_winter_sections <= 131
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_winter_sections <= 132
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_winter_sections <= 133
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_fall_sections <= 134
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_summer_sections <= 135
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_fall_sections <= 136
+I, [2015-03-31T11:10:45.782845 #6356]  INFO -- : @all_fall_sections <= 137
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_winter_sections <= 138
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_fall_sections <= 139
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_fall_sections <= 140
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_fall_sections <= 141
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_winter_sections <= 142
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_summer_sections <= 143
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_fall_sections <= 144
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_winter_sections <= 145
+I, [2015-03-31T11:10:45.783847 #6356]  INFO -- : @all_winter_sections <= 146
+I, [2015-03-31T11:10:45.784846 #6356]  INFO -- : @all_summer_sections <= 147
+I, [2015-03-31T11:10:45.784846 #6356]  INFO -- : @all_fall_sections <= 148
+I, [2015-03-31T11:10:45.784846 #6356]  INFO -- : @all_fall_sections <= 149
+I, [2015-03-31T11:10:45.784846 #6356]  INFO -- : @all_winter_sections <= 150
+I, [2015-03-31T11:10:45.784846 #6356]  INFO -- : @all_summer_sections <= 151
+I, [2015-03-31T11:10:45.784846 #6356]  INFO -- : @all_fall_sections <= 152
+I, [2015-03-31T11:10:45.784846 #6356]  INFO -- : @all_fall_sections <= 153
+I, [2015-03-31T11:10:45.785858 #6356]  INFO -- : @all_winter_sections <= 154
+I, [2015-03-31T11:10:45.785858 #6356]  INFO -- : @all_summer_sections <= 155
+I, [2015-03-31T11:10:45.785858 #6356]  INFO -- : @all_fall_sections <= 156
+I, [2015-03-31T11:10:45.785858 #6356]  INFO -- : @all_winter_sections <= 157
+I, [2015-03-31T11:10:45.786850 #6356]  INFO -- : @all_summer_sections <= 158
+I, [2015-03-31T11:10:45.786850 #6356]  INFO -- : @all_fall_sections <= 159
+I, [2015-03-31T11:10:45.786850 #6356]  INFO -- : @all_winter_sections <= 160
+I, [2015-03-31T11:10:45.786850 #6356]  INFO -- : @all_fall_sections <= 161
+I, [2015-03-31T11:10:45.786850 #6356]  INFO -- : @all_winter_sections <= 162
+I, [2015-03-31T11:10:45.786850 #6356]  INFO -- : @all_winter_sections <= 163
+I, [2015-03-31T11:10:45.787851 #6356]  INFO -- : @all_summer_sections <= 164
+I, [2015-03-31T11:10:45.787851 #6356]  INFO -- : @all_fall_sections <= 165
+I, [2015-03-31T11:10:45.787851 #6356]  INFO -- : @all_winter_sections <= 166
+I, [2015-03-31T11:10:45.788847 #6356]  INFO -- : @all_fall_sections <= 167
+I, [2015-03-31T11:10:45.788847 #6356]  INFO -- : @all_fall_sections <= 168
+I, [2015-03-31T11:10:45.788847 #6356]  INFO -- : @all_fall_sections <= 169
+I, [2015-03-31T11:10:45.788847 #6356]  INFO -- : @all_fall_sections <= 170
+I, [2015-03-31T11:10:45.788847 #6356]  INFO -- : @all_winter_sections <= 171
+I, [2015-03-31T11:10:45.789855 #6356]  INFO -- : @all_fall_sections <= 172
+I, [2015-03-31T11:10:45.789855 #6356]  INFO -- : @all_winter_sections <= 173
+I, [2015-03-31T11:10:45.789855 #6356]  INFO -- : @all_fall_sections <= 174
+I, [2015-03-31T11:10:45.789855 #6356]  INFO -- : @all_fall_sections <= 175
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_winter_sections <= 176
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_fall_sections <= 177
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_winter_sections <= 178
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_winter_sections <= 179
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_fall_sections <= 180
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_fall_sections <= 181
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_fall_sections <= 182
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_winter_sections <= 191
+I, [2015-03-31T11:10:45.790849 #6356]  INFO -- : @all_winter_sections <= 192
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_summer_sections <= 193
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_fall_sections <= 194
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_winter_sections <= 195
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_winter_sections <= 196
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_winter_sections <= 197
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_fall_sections <= 198
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_winter_sections <= 199
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_fall_sections <= 200
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_winter_sections <= 201
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_fall_sections <= 202
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_fall_sections <= 203
+I, [2015-03-31T11:10:45.791849 #6356]  INFO -- : @all_winter_sections <= 204
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_winter_sections <= 205
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_winter_sections <= 206
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_fall_sections <= 207
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_winter_sections <= 208
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_fall_sections <= 209
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_winter_sections <= 210
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_fall_sections <= 211
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_fall_sections <= 212
+I, [2015-03-31T11:10:45.792850 #6356]  INFO -- : @all_winter_sections <= 213
+I, [2015-03-31T11:10:45.793851 #6356]  INFO -- : @all_summer_sections <= 214
+I, [2015-03-31T11:10:45.793851 #6356]  INFO -- : @all_fall_sections <= 215
+I, [2015-03-31T11:10:45.794856 #6356]  INFO -- : @all_fall_sections <= 216
+I, [2015-03-31T11:10:45.794856 #6356]  INFO -- : @all_fall_sections <= 217
+I, [2015-03-31T11:10:45.794856 #6356]  INFO -- : @all_summer_sections <= 218
+I, [2015-03-31T11:10:45.795854 #6356]  INFO -- : @all_fall_sections <= 219
+I, [2015-03-31T11:10:45.795854 #6356]  INFO -- : @all_fall_sections <= 220
+I, [2015-03-31T11:10:45.795854 #6356]  INFO -- : @all_winter_sections <= 221
+I, [2015-03-31T11:10:45.795854 #6356]  INFO -- : @all_winter_sections <= 222
+I, [2015-03-31T11:10:45.807862 #6356]  INFO -- : @courses_offered_in_summer <= ENGR201
+I, [2015-03-31T11:10:45.817876 #6356]  INFO -- : @courses_offered_in_summer <= ENGR202
+I, [2015-03-31T11:10:45.831879 #6356]  INFO -- : @courses_offered_in_summer <= ENGR213
+I, [2015-03-31T11:10:45.841885 #6356]  INFO -- : @courses_offered_in_summer <= ENGR233
+I, [2015-03-31T11:10:45.865902 #6356]  INFO -- : @courses_offered_in_summer <= ENGR243
+I, [2015-03-31T11:10:45.877912 #6356]  INFO -- : @courses_offered_in_summer <= ENGR244
+I, [2015-03-31T11:10:45.890922 #6356]  INFO -- : @courses_offered_in_summer <= ENGR245
+I, [2015-03-31T11:10:45.902930 #6356]  INFO -- : @courses_offered_in_summer <= ENGR301
+I, [2015-03-31T11:10:45.913938 #6356]  INFO -- : @courses_offered_in_summer <= ENGR371
+I, [2015-03-31T11:10:45.923944 #6356]  INFO -- : @courses_offered_in_summer <= ENGR391
+I, [2015-03-31T11:10:45.933952 #6356]  INFO -- : @courses_offered_in_summer <= ENGR392
+I, [2015-03-31T11:10:45.945962 #6356]  INFO -- : @courses_offered_in_summer <= COMP232
+I, [2015-03-31T11:10:45.957976 #6356]  INFO -- : @courses_offered_in_summer <= COMP248
+I, [2015-03-31T11:10:45.968983 #6356]  INFO -- : @courses_offered_in_summer <= COMP249
+I, [2015-03-31T11:10:45.980994 #6356]  INFO -- : @fall_courses_only <= COMP326
+I, [2015-03-31T11:10:45.992999 #6356]  INFO -- : @courses_offered_in_summer <= COMP335
+I, [2015-03-31T11:10:46.015015 #6356]  INFO -- : @courses_offered_in_summer <= COMP346
+I, [2015-03-31T11:10:46.026024 #6356]  INFO -- : @courses_offered_in_summer <= COMP348
+I, [2015-03-31T11:10:46.039033 #6356]  INFO -- : @courses_offered_in_summer <= COMP352
+I, [2015-03-31T11:10:46.050041 #6356]  INFO -- : @courses_offered_in_summer <= COMP353
+I, [2015-03-31T11:10:46.062054 #6356]  INFO -- : @courses_offered_in_summer <= COMP371
+I, [2015-03-31T11:10:46.072058 #6356]  INFO -- : @fall_courses_only <= COMP376
+I, [2015-03-31T11:10:46.083065 #6356]  INFO -- : @fall_courses_only <= COMP426
+I, [2015-03-31T11:10:46.094073 #6356]  INFO -- : @fall_courses_only <= COMP428
+I, [2015-03-31T11:10:46.105080 #6356]  INFO -- : @winter_courses_only <= COMP442
+I, [2015-03-31T11:10:46.124093 #6356]  INFO -- : @fall_courses_only <= COMP465
+I, [2015-03-31T11:10:46.147109 #6356]  INFO -- : @fall_courses_only <= COMP473
+I, [2015-03-31T11:10:46.159117 #6356]  INFO -- : @winter_courses_only <= COMP474
+I, [2015-03-31T11:10:46.170126 #6356]  INFO -- : @winter_courses_only <= COMP476
+I, [2015-03-31T11:10:46.179135 #6356]  INFO -- : @fall_courses_only <= COMP477
+I, [2015-03-31T11:10:46.190142 #6356]  INFO -- : @fall_courses_only <= COMP478
+I, [2015-03-31T11:10:46.200147 #6356]  INFO -- : @fall_courses_only <= COMP479
+I, [2015-03-31T11:10:46.209153 #6356]  INFO -- : @winter_courses_only <= SOEN228
+I, [2015-03-31T11:10:46.222165 #6356]  INFO -- : @courses_offered_in_summer <= SOEN287
+I, [2015-03-31T11:10:46.232169 #6356]  INFO -- : @fall_courses_only <= SOEN321
+I, [2015-03-31T11:10:46.246200 #6356]  INFO -- : @winter_courses_only <= SOEN331
+I, [2015-03-31T11:10:46.265195 #6356]  INFO -- : @fall_courses_only <= SOEN342
+I, [2015-03-31T11:10:46.279209 #6356]  INFO -- : @fall_courses_only <= SOEN343
+I, [2015-03-31T11:10:46.290211 #6356]  INFO -- : @winter_courses_only <= SOEN344
+I, [2015-03-31T11:10:46.299217 #6356]  INFO -- : @winter_courses_only <= SOEN345
+I, [2015-03-31T11:10:46.312231 #6356]  INFO -- : @winter_courses_only <= SOEN357
+I, [2015-03-31T11:10:46.324237 #6356]  INFO -- : @fall_courses_only <= SOEN384
+I, [2015-03-31T11:10:46.335243 #6356]  INFO -- : @winter_courses_only <= SOEN385
+I, [2015-03-31T11:10:46.346257 #6356]  INFO -- : @fall_courses_only <= SOEN387
+I, [2015-03-31T11:10:46.356259 #6356]  INFO -- : @winter_courses_only <= SOEN390
+I, [2015-03-31T11:10:46.366266 #6356]  INFO -- : @fall_courses_only <= SOEN422
+I, [2015-03-31T11:10:46.374272 #6356]  INFO -- : @fall_courses_only <= SOEN423
+I, [2015-03-31T11:10:46.385279 #6356]  INFO -- : @winter_courses_only <= SOEN487
+I, [2015-03-31T11:10:46.395286 #6356]  INFO -- : @courses_offered_in_summer <= SOEN490
+I, [2015-03-31T11:10:46.405295 #6356]  INFO -- : @fall_courses_only <= COEN320
+I, [2015-03-31T11:10:46.416301 #6356]  INFO -- : @fall_courses_only <= AERO480
+I, [2015-03-31T11:10:46.428309 #6356]  INFO -- : @fall_courses_only <= AERO482
+I, [2015-03-31T11:10:46.440319 #6356]  INFO -- : @courses_offered_in_summer <= ELEC275
+I, [2015-03-31T11:10:46.475342 #6356]  INFO -- : @mandatory_course <=SOEN228
+I, [2015-03-31T11:10:46.475342 #6356]  INFO -- : @mandatory_course <=SOEN287
+I, [2015-03-31T11:10:46.475342 #6356]  INFO -- : @mandatory_course <=SOEN321
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN331
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN341
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN342
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN343
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN344
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN345
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN357
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN384
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN385
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN390
+I, [2015-03-31T11:10:46.476359 #6356]  INFO -- : @mandatory_course <=SOEN490
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=COMP232
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=COMP248
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=COMP249
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=COMP335
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=COMP346
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=COMP348
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=COMP352
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=ELEC275
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=ENCS282
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=ENGR201
+I, [2015-03-31T11:10:46.477347 #6356]  INFO -- : @mandatory_course <=ENGR202
+I, [2015-03-31T11:10:46.478345 #6356]  INFO -- : @mandatory_course <=ENGR213
+I, [2015-03-31T11:10:46.478345 #6356]  INFO -- : @mandatory_course <=ENGR233
+I, [2015-03-31T11:10:46.478345 #6356]  INFO -- : @mandatory_course <=ENGR301
+I, [2015-03-31T11:10:46.478345 #6356]  INFO -- : @mandatory_course <=ENGR371
+I, [2015-03-31T11:10:46.478345 #6356]  INFO -- : @mandatory_course <=ENGR391
+I, [2015-03-31T11:10:46.478345 #6356]  INFO -- : @mandatory_course <=ENGR392
+I, [2015-03-31T11:10:46.510370 #6356]  INFO -- : @mandatory_course <=SOEN422
+I, [2015-03-31T11:10:46.510370 #6356]  INFO -- : @mandatory_course <=SOEN423
+I, [2015-03-31T11:10:46.539390 #6356]  INFO -- : @oneOf_courses <=AERO480
+I, [2015-03-31T11:10:46.539390 #6356]  INFO -- : @oneOf_courses <=AERO482
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 42 16
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 43 22
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 44 15
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 44 17
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 45 41
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 45 24
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 45 14
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 46 45
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 47 45
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 47 46
+I, [2015-03-31T11:10:46.551396 #6356]  INFO -- : @all_prereqs <= 48 47
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 49 45
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 49 47
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 50 46
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 52 3
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 52 4
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 53 25
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 53 45
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 53 42
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 54 48
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 54 50
+I, [2015-03-31T11:10:46.552396 #6356]  INFO -- : @all_prereqs <= 55 22
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 56 22
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 59 53
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 60 46
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 60 47
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 60 48
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 60 54
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 5 3
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 6 3
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 6 5
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 7 5
+I, [2015-03-31T11:10:46.553397 #6356]  INFO -- : @all_prereqs <= 7 8
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 7 3
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 7 4
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 10 3
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 10 4
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 11 3
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 11 4
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 11 16
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 17 16
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 18 22
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 19 15
+I, [2015-03-31T11:10:46.554398 #6356]  INFO -- : @all_prereqs <= 19 17
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 21 24
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 22 41
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 22 24
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 23 17
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 24 15
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 24 17
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 25 24
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 26 24
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 28 22
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 64 22
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 65 19
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 65 24
+I, [2015-03-31T11:10:46.555400 #6356]  INFO -- : @all_prereqs <= 29 22
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 31 19
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 31 24
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 32 24
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 33 24
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 34 24
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 35 27
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 35 11
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 36 26
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 36 11
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 37 24
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 38 10
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 40 39
+I, [2015-03-31T11:10:46.556400 #6356]  INFO -- : @all_prereqs <= 66 22
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 62 52
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 63 52
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 63 10
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 8 3
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 12 14
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 12 1
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 12 2
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 27 26
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 26 24
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 30 25
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 51 45
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 51 14
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 57 46
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 57 47
+I, [2015-03-31T11:10:46.557402 #6356]  INFO -- : @all_prereqs <= 57 48
+I, [2015-03-31T11:10:46.558403 #6356]  INFO -- : @all_prereqs <= 20 22
+I, [2015-03-31T11:10:46.558403 #6356]  INFO -- : @all_prereqs <= 58 48
+I, [2015-03-31T11:10:46.564425 #6356]  INFO -- : all_200_level <=ENGR201
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_200_level <=ENGR202
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_200_level <=ENGR213
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_200_level <=ENGR233
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_200_level <=COMP232
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_200_level <=COMP248
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_200_level <=COMP249
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_400_level <=COMP444
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_400_level <=COMP426
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_400_level <=COMP445
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_400_level <=COMP451
+I, [2015-03-31T11:10:46.565408 #6356]  INFO -- : all_400_level <=COMP465
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP472
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP473
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP474
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP476
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP477
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP478
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP479
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP490
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=COMP492
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_200_level <=SOEN228
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_200_level <=SOEN287
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=SOEN422
+I, [2015-03-31T11:10:46.566409 #6356]  INFO -- : all_400_level <=SOEN423
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=SOEN448
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=SOEN449
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=SOEN487
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=SOEN490
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=SOEN491
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=AERO480
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=AERO482
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=COMP428
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_400_level <=COMP442
+I, [2015-03-31T11:10:46.567407 #6356]  INFO -- : all_200_level <=ELEC275
+I, [2015-03-31T11:10:46.590427 #6356]  INFO -- : @completed_courses <= ENCS282
+I, [2015-03-31T11:10:46.590427 #6356]  INFO -- : initial accumulated credits =3.0
+I, [2015-03-31T11:10:46.596430 #6356]  INFO -- : # of direct dependents of ENGR201 is 1
+I, [2015-03-31T11:10:46.596430 #6356]  INFO -- : # of direct dependents of ENGR202 is 1
+I, [2015-03-31T11:10:46.596430 #6356]  INFO -- : # of direct dependents of ENGR213 is 7
+I, [2015-03-31T11:10:46.597429 #6356]  INFO -- : # of direct dependents of ENGR233 is 4
+I, [2015-03-31T11:10:46.597429 #6356]  INFO -- : # of direct dependents of ENGR242 is 2
+I, [2015-03-31T11:10:46.597429 #6356]  INFO -- : # of direct dependents of ENGR243 is 0
+I, [2015-03-31T11:10:46.597429 #6356]  INFO -- : # of direct dependents of ENGR244 is 0
+I, [2015-03-31T11:10:46.597429 #6356]  INFO -- : # of direct dependents of ENGR245 is 1
+I, [2015-03-31T11:10:46.598429 #6356]  INFO -- : # of direct dependents of ENGR301 is 0
+I, [2015-03-31T11:10:46.598429 #6356]  INFO -- : # of direct dependents of ENGR371 is 2
+I, [2015-03-31T11:10:46.598429 #6356]  INFO -- : # of direct dependents of ENGR391 is 2
+I, [2015-03-31T11:10:46.599431 #6356]  INFO -- : # of direct dependents of ENGR392 is 0
+I, [2015-03-31T11:10:46.599431 #6356]  INFO -- : # of direct dependents of ENCS272 is 0
+I, [2015-03-31T11:10:46.599431 #6356]  INFO -- : # of direct dependents of ENCS282 is 3
+I, [2015-03-31T11:10:46.600431 #6356]  INFO -- : # of direct dependents of COMP232 is 3
+I, [2015-03-31T11:10:46.600431 #6356]  INFO -- : # of direct dependents of COMP248 is 3
+I, [2015-03-31T11:10:46.600431 #6356]  INFO -- : # of direct dependents of COMP249 is 4
+I, [2015-03-31T11:10:46.601435 #6356]  INFO -- : # of direct dependents of COMP326 is 0
+I, [2015-03-31T11:10:46.601435 #6356]  INFO -- : # of direct dependents of COMP335 is 2
+I, [2015-03-31T11:10:46.601435 #6356]  INFO -- : # of direct dependents of COMP444 is 0
+I, [2015-03-31T11:10:46.602436 #6356]  INFO -- : # of direct dependents of COMP345 is 0
+I, [2015-03-31T11:10:46.602436 #6356]  INFO -- : # of direct dependents of COMP346 is 9
+I, [2015-03-31T11:10:46.602436 #6356]  INFO -- : # of direct dependents of COMP348 is 0
+I, [2015-03-31T11:10:46.602436 #6356]  INFO -- : # of direct dependents of COMP352 is 12
+I, [2015-03-31T11:10:46.603437 #6356]  INFO -- : # of direct dependents of COMP353 is 2
+I, [2015-03-31T11:10:46.603437 #6356]  INFO -- : # of direct dependents of COMP371 is 2
+I, [2015-03-31T11:10:46.604459 #6356]  INFO -- : # of direct dependents of COMP376 is 1
+I, [2015-03-31T11:10:46.604459 #6356]  INFO -- : # of direct dependents of COMP426 is 0
+I, [2015-03-31T11:10:46.604459 #6356]  INFO -- : # of direct dependents of COMP445 is 0
+I, [2015-03-31T11:10:46.605436 #6356]  INFO -- : # of direct dependents of COMP451 is 0
+I, [2015-03-31T11:10:46.605436 #6356]  INFO -- : # of direct dependents of COMP465 is 0
+I, [2015-03-31T11:10:46.606440 #6356]  INFO -- : # of direct dependents of COMP472 is 0
+I, [2015-03-31T11:10:46.606440 #6356]  INFO -- : # of direct dependents of COMP473 is 0
+I, [2015-03-31T11:10:46.606440 #6356]  INFO -- : # of direct dependents of COMP474 is 0
+I, [2015-03-31T11:10:46.606440 #6356]  INFO -- : # of direct dependents of COMP476 is 0
+I, [2015-03-31T11:10:46.607440 #6356]  INFO -- : # of direct dependents of COMP477 is 0
+I, [2015-03-31T11:10:46.607440 #6356]  INFO -- : # of direct dependents of COMP478 is 0
+I, [2015-03-31T11:10:46.607440 #6356]  INFO -- : # of direct dependents of COMP479 is 0
+I, [2015-03-31T11:10:46.608456 #6356]  INFO -- : # of direct dependents of COMP490 is 1
+I, [2015-03-31T11:10:46.608456 #6356]  INFO -- : # of direct dependents of COMP492 is 0
+I, [2015-03-31T11:10:46.608456 #6356]  INFO -- : # of direct dependents of SOEN228 is 2
+I, [2015-03-31T11:10:46.609457 #6356]  INFO -- : # of direct dependents of SOEN287 is 1
+I, [2015-03-31T11:10:46.609457 #6356]  INFO -- : # of direct dependents of SOEN321 is 0
+I, [2015-03-31T11:10:46.609457 #6356]  INFO -- : # of direct dependents of SOEN331 is 0
+I, [2015-03-31T11:10:46.609457 #6356]  INFO -- : # of direct dependents of SOEN341 is 5
+I, [2015-03-31T11:10:46.610440 #6356]  INFO -- : # of direct dependents of SOEN342 is 4
+I, [2015-03-31T11:10:46.610440 #6356]  INFO -- : # of direct dependents of SOEN343 is 4
+I, [2015-03-31T11:10:46.610440 #6356]  INFO -- : # of direct dependents of SOEN344 is 4
+I, [2015-03-31T11:10:46.611439 #6356]  INFO -- : # of direct dependents of SOEN345 is 0
+I, [2015-03-31T11:10:46.611439 #6356]  INFO -- : # of direct dependents of SOEN357 is 1
+I, [2015-03-31T11:10:46.611439 #6356]  INFO -- : # of direct dependents of SOEN384 is 0
+I, [2015-03-31T11:10:46.612464 #6356]  INFO -- : # of direct dependents of SOEN385 is 2
+I, [2015-03-31T11:10:46.612464 #6356]  INFO -- : # of direct dependents of SOEN387 is 1
+I, [2015-03-31T11:10:46.613465 #6356]  INFO -- : # of direct dependents of SOEN390 is 1
+I, [2015-03-31T11:10:46.613465 #6356]  INFO -- : # of direct dependents of SOEN422 is 0
+I, [2015-03-31T11:10:46.613465 #6356]  INFO -- : # of direct dependents of SOEN423 is 0
+I, [2015-03-31T11:10:46.614461 #6356]  INFO -- : # of direct dependents of SOEN448 is 0
+I, [2015-03-31T11:10:46.614461 #6356]  INFO -- : # of direct dependents of SOEN449 is 0
+I, [2015-03-31T11:10:46.614461 #6356]  INFO -- : # of direct dependents of SOEN487 is 0
+I, [2015-03-31T11:10:46.615457 #6356]  INFO -- : # of direct dependents of SOEN490 is 0
+I, [2015-03-31T11:10:46.615457 #6356]  INFO -- : # of direct dependents of SOEN491 is 0
+I, [2015-03-31T11:10:46.615457 #6356]  INFO -- : # of direct dependents of AERO480 is 0
+I, [2015-03-31T11:10:46.615457 #6356]  INFO -- : # of direct dependents of AERO482 is 0
+I, [2015-03-31T11:10:46.616460 #6356]  INFO -- : # of direct dependents of COMP428 is 0
+I, [2015-03-31T11:10:46.616460 #6356]  INFO -- : # of direct dependents of COMP442 is 0
+I, [2015-03-31T11:10:46.616460 #6356]  INFO -- : # of direct dependents of COEN320 is 0
+I, [2015-03-31T11:10:46.617447 #6356]  INFO -- : # of direct dependents of ELEC275 is 0
+I, [2015-03-31T11:10:46.617447 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:10:46.617447 #6356]  INFO -- : Semester:Winter 2016
+I, [2015-03-31T11:10:46.628453 #6356]  INFO -- : available_courses <=ENGR201
+I, [2015-03-31T11:10:46.640459 #6356]  INFO -- : available_courses <=ENGR202
+I, [2015-03-31T11:10:46.650467 #6356]  INFO -- : available_courses <=ENGR213
+I, [2015-03-31T11:10:46.661482 #6356]  INFO -- : available_courses <=ENGR233
+I, [2015-03-31T11:10:46.675487 #6356]  INFO -- : get_prereqs(ENGR242) <= 5 3
+I, [2015-03-31T11:10:46.675487 #6356]  INFO -- : get_prereqs(ENGR242) <= 5 3
+I, [2015-03-31T11:10:46.697500 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:10:46.697500 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:10:46.697500 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:10:46.697500 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:10:46.729524 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:10:46.729524 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:10:46.729524 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:10:46.730523 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:10:46.730523 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:10:46.730523 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:10:46.730523 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:10:46.730523 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:10:46.783564 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:10:46.784562 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:10:46.808599 #6356]  INFO -- : available_courses <=ENGR301
+I, [2015-03-31T11:10:46.820589 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:10:46.820589 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:10:46.820589 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:10:46.820589 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:10:46.853613 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:10:46.854614 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:10:46.854614 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:10:46.854614 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:10:46.854614 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:10:46.854614 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:10:46.894640 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:10:46.894640 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:10:46.894640 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:10:46.895643 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:10:46.895643 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:10:46.895643 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:10:46.941676 #6356]  INFO -- : available_courses <=COMP232
+I, [2015-03-31T11:10:46.953682 #6356]  INFO -- : available_courses <=COMP248
+I, [2015-03-31T11:10:46.963690 #6356]  INFO -- : get_prereqs(COMP249) <= 17 16
+I, [2015-03-31T11:10:46.964690 #6356]  INFO -- : get_prereqs(COMP249) <= 17 16
+I, [2015-03-31T11:10:46.987722 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:10:46.987722 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:10:46.987722 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:10:46.987722 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:10:47.020729 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:10:47.020729 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:10:47.041747 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:10:47.041747 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:10:47.041747 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:10:47.041747 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:10:47.072769 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:10:47.072769 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:10:47.093782 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:10:47.093782 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:10:47.093782 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:10:47.093782 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:10:47.126825 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:10:47.126825 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:10:47.147823 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:10:47.147823 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:10:47.147823 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:10:47.148822 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:10:47.185849 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:10:47.186851 #6356]  INFO -- : get_prereqs(COMP442) <= 65 19
+I, [2015-03-31T11:10:47.186851 #6356]  INFO -- : get_prereqs(COMP442) <= 65 24
+I, [2015-03-31T11:10:47.196859 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:10:47.197876 #6356]  INFO -- : get_prereqs(COMP445) <= 29 22
+I, [2015-03-31T11:10:47.206862 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:10:47.207865 #6356]  INFO -- : get_prereqs(COMP472) <= 32 24
+I, [2015-03-31T11:10:47.222874 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:10:47.222874 #6356]  INFO -- : get_prereqs(COMP474) <= 34 24
+I, [2015-03-31T11:10:47.231879 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:10:47.231879 #6356]  INFO -- : get_prereqs(COMP476) <= 35 27
+I, [2015-03-31T11:10:47.231879 #6356]  INFO -- : get_prereqs(COMP476) <= 35 11
+I, [2015-03-31T11:10:47.247895 #6356]  INFO -- : available_courses <=SOEN228
+I, [2015-03-31T11:10:47.261903 #6356]  INFO -- : get_prereqs(SOEN287) <= 42 16
+I, [2015-03-31T11:10:47.261903 #6356]  INFO -- : get_prereqs(SOEN287) <= 42 16
+I, [2015-03-31T11:10:47.287921 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 15
+I, [2015-03-31T11:10:47.288921 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 17
+I, [2015-03-31T11:10:47.288921 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 15
+I, [2015-03-31T11:10:47.288921 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 17
+I, [2015-03-31T11:10:47.323945 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 41
+I, [2015-03-31T11:10:47.323945 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 24
+I, [2015-03-31T11:10:47.323945 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 14
+I, [2015-03-31T11:10:47.324946 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 41
+I, [2015-03-31T11:10:47.324946 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 24
+I, [2015-03-31T11:10:47.324946 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 14
+I, [2015-03-31T11:10:47.403003 #6356]  INFO -- : get_prereqs(SOEN344) <= 48 47
+I, [2015-03-31T11:10:47.403003 #6356]  INFO -- : get_prereqs(SOEN344) <= 48 47
+I, [2015-03-31T11:10:47.437026 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 45
+I, [2015-03-31T11:10:47.437026 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 47
+I, [2015-03-31T11:10:47.437026 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 45
+I, [2015-03-31T11:10:47.437026 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 47
+I, [2015-03-31T11:10:47.470050 #6356]  INFO -- : get_prereqs(SOEN357) <= 50 46
+I, [2015-03-31T11:10:47.471050 #6356]  INFO -- : get_prereqs(SOEN357) <= 50 46
+I, [2015-03-31T11:10:47.488063 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 3
+I, [2015-03-31T11:10:47.488063 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 4
+I, [2015-03-31T11:10:47.489062 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 3
+I, [2015-03-31T11:10:47.489062 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 4
+I, [2015-03-31T11:10:47.512081 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 48
+I, [2015-03-31T11:10:47.512081 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 50
+I, [2015-03-31T11:10:47.513082 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 48
+I, [2015-03-31T11:10:47.513082 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 50
+I, [2015-03-31T11:10:47.537096 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:10:47.537096 #6356]  INFO -- : get_prereqs(SOEN487) <= 59 53
+I, [2015-03-31T11:10:47.547106 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:10:47.554109 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:10:47.555109 #6356]  INFO -- : get_prereqs(COMP442) <= 65 19
+I, [2015-03-31T11:10:47.555109 #6356]  INFO -- : get_prereqs(COMP442) <= 65 24
+I, [2015-03-31T11:10:47.555109 #6356]  INFO -- : added COMP232to filter1
+I, [2015-03-31T11:10:47.555109 #6356]  INFO -- : added SOEN228to filter1
+I, [2015-03-31T11:10:47.555109 #6356]  INFO -- : added COMP248to filter2
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : SELECTED COMP232
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : SELECTED SOEN228
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : SELECTED COMP248
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : SELECTED ENGR201
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : course_counter:4
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : SELECTED ENGR202
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : course_counter:5
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : *****result of selection:COMP232
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : *****result of selection:SOEN228
+I, [2015-03-31T11:10:47.556111 #6356]  INFO -- : *****result of selection:COMP248
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : *****result of selection:ENGR201
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : *****result of selection:ENGR202
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : !!!!!!!ADDED COMP232 to current semester
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : !!!!!!!ADDED SOEN228 to current semester
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : !!!!!!!ADDED COMP248 to current semester
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : !!!!!!!ADDED ENGR201 to current semester
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : !!!!!!!ADDED ENGR202 to current semester
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:10:47.557111 #6356]  INFO -- : Semester:Summer 2016
+I, [2015-03-31T11:10:47.579127 #6356]  INFO -- : available_courses <=ENGR213
+I, [2015-03-31T11:10:47.587132 #6356]  INFO -- : available_courses <=ENGR233
+I, [2015-03-31T11:10:47.594137 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:10:47.594137 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:10:47.595137 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:10:47.595137 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:10:47.623158 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:10:47.623158 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:10:47.623158 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:10:47.623158 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:10:47.623158 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:10:47.623158 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:10:47.623158 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:10:47.624159 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:10:47.664187 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:10:47.664187 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:10:47.678197 #6356]  INFO -- : available_courses <=ENGR301
+I, [2015-03-31T11:10:47.685201 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:10:47.685201 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:10:47.686202 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:10:47.686202 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:10:47.709218 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:10:47.709218 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:10:47.709218 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:10:47.709218 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:10:47.709218 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:10:47.710219 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:10:47.739239 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:10:47.740240 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:10:47.740240 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:10:47.740240 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:10:47.740240 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:10:47.740240 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:10:47.762256 #6356]  INFO -- : available_courses <=ENGR392
+I, [2015-03-31T11:10:47.785274 #6356]  INFO -- : get_prereqs(COMP249) <= 17 16
+I, [2015-03-31T11:10:47.786273 #6356]  INFO -- : get_prereqs(COMP249) <= 17 16
+I, [2015-03-31T11:10:47.793278 #6356]  INFO -- : available_courses <=COMP249
+I, [2015-03-31T11:10:47.800283 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:10:47.800283 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:10:47.801284 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:10:47.801284 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:10:47.823301 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:10:47.823301 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:10:47.824300 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:10:47.824300 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:10:47.856324 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:10:47.857324 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:10:47.877340 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:10:47.877340 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:10:47.877340 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:10:47.877340 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:10:47.908360 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:10:47.909362 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:10:47.930376 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:10:47.931377 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:10:47.931377 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:10:47.931377 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:10:47.965424 #6356]  INFO -- : get_prereqs(SOEN287) <= 42 16
+I, [2015-03-31T11:10:47.966406 #6356]  INFO -- : get_prereqs(SOEN287) <= 42 16
+I, [2015-03-31T11:10:47.977408 #6356]  INFO -- : available_courses <=SOEN287
+I, [2015-03-31T11:10:47.988419 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:10:47.988419 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 46
+I, [2015-03-31T11:10:47.988419 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 47
+I, [2015-03-31T11:10:47.988419 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 48
+I, [2015-03-31T11:10:47.988419 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 54
+I, [2015-03-31T11:10:47.999425 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:39.459580 #6356]  INFO -- : @all_sections <= 1
+I, [2015-03-31T11:14:39.460579 #6356]  INFO -- : @all_sections <= 2
+I, [2015-03-31T11:14:39.460579 #6356]  INFO -- : @all_sections <= 3
+I, [2015-03-31T11:14:39.460579 #6356]  INFO -- : @all_sections <= 4
+I, [2015-03-31T11:14:39.460579 #6356]  INFO -- : @all_sections <= 5
+I, [2015-03-31T11:14:39.460579 #6356]  INFO -- : @all_sections <= 6
+I, [2015-03-31T11:14:39.461600 #6356]  INFO -- : @all_sections <= 7
+I, [2015-03-31T11:14:39.461600 #6356]  INFO -- : @all_sections <= 8
+I, [2015-03-31T11:14:39.461600 #6356]  INFO -- : @all_sections <= 9
+I, [2015-03-31T11:14:39.461600 #6356]  INFO -- : @all_sections <= 10
+I, [2015-03-31T11:14:39.461600 #6356]  INFO -- : @all_sections <= 11
+I, [2015-03-31T11:14:39.461600 #6356]  INFO -- : @all_sections <= 12
+I, [2015-03-31T11:14:39.461600 #6356]  INFO -- : @all_sections <= 13
+I, [2015-03-31T11:14:39.462584 #6356]  INFO -- : @all_sections <= 14
+I, [2015-03-31T11:14:39.462584 #6356]  INFO -- : @all_sections <= 15
+I, [2015-03-31T11:14:39.462584 #6356]  INFO -- : @all_sections <= 16
+I, [2015-03-31T11:14:39.462584 #6356]  INFO -- : @all_sections <= 17
+I, [2015-03-31T11:14:39.462584 #6356]  INFO -- : @all_sections <= 18
+I, [2015-03-31T11:14:39.462584 #6356]  INFO -- : @all_sections <= 19
+I, [2015-03-31T11:14:39.463583 #6356]  INFO -- : @all_sections <= 20
+I, [2015-03-31T11:14:39.463583 #6356]  INFO -- : @all_sections <= 21
+I, [2015-03-31T11:14:39.463583 #6356]  INFO -- : @all_sections <= 22
+I, [2015-03-31T11:14:39.463583 #6356]  INFO -- : @all_sections <= 23
+I, [2015-03-31T11:14:39.463583 #6356]  INFO -- : @all_sections <= 24
+I, [2015-03-31T11:14:39.463583 #6356]  INFO -- : @all_sections <= 25
+I, [2015-03-31T11:14:39.463583 #6356]  INFO -- : @all_sections <= 26
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 27
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 28
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 29
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 30
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 31
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 32
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 33
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 34
+I, [2015-03-31T11:14:39.464595 #6356]  INFO -- : @all_sections <= 35
+I, [2015-03-31T11:14:39.465585 #6356]  INFO -- : @all_sections <= 36
+I, [2015-03-31T11:14:39.465585 #6356]  INFO -- : @all_sections <= 37
+I, [2015-03-31T11:14:39.465585 #6356]  INFO -- : @all_sections <= 38
+I, [2015-03-31T11:14:39.465585 #6356]  INFO -- : @all_sections <= 39
+I, [2015-03-31T11:14:39.465585 #6356]  INFO -- : @all_sections <= 40
+I, [2015-03-31T11:14:39.465585 #6356]  INFO -- : @all_sections <= 41
+I, [2015-03-31T11:14:39.465585 #6356]  INFO -- : @all_sections <= 42
+I, [2015-03-31T11:14:39.465585 #6356]  INFO -- : @all_sections <= 43
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 44
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 45
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 46
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 47
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 48
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 49
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 50
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 51
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 52
+I, [2015-03-31T11:14:39.466594 #6356]  INFO -- : @all_sections <= 53
+I, [2015-03-31T11:14:39.467585 #6356]  INFO -- : @all_sections <= 54
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 55
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 56
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 57
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 58
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 59
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 60
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 61
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 62
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 63
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 64
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 65
+I, [2015-03-31T11:14:39.467631 #6356]  INFO -- : @all_sections <= 66
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 67
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 68
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 69
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 70
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 71
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 72
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 73
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 74
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 75
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 76
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 77
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 78
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 79
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 80
+I, [2015-03-31T11:14:39.468633 #6356]  INFO -- : @all_sections <= 81
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 82
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 83
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 84
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 85
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 86
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 87
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 88
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 89
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 90
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 91
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 92
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 93
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 94
+I, [2015-03-31T11:14:39.469633 #6356]  INFO -- : @all_sections <= 95
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 96
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 97
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 98
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 99
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 100
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 101
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 102
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 103
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 104
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 105
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 106
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 107
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 108
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 109
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 110
+I, [2015-03-31T11:14:39.470634 #6356]  INFO -- : @all_sections <= 111
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 112
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 113
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 114
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 115
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 116
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 117
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 118
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 119
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 120
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 121
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 122
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 123
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 124
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 125
+I, [2015-03-31T11:14:39.471635 #6356]  INFO -- : @all_sections <= 126
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 127
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 128
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 129
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 130
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 131
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 132
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 133
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 134
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 135
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 136
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 137
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 138
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 139
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 140
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 141
+I, [2015-03-31T11:14:39.472679 #6356]  INFO -- : @all_sections <= 142
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 143
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 144
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 145
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 146
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 147
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 148
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 149
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 150
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 151
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 152
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 153
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 154
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 155
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 156
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 157
+I, [2015-03-31T11:14:39.473682 #6356]  INFO -- : @all_sections <= 158
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 159
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 160
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 161
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 162
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 163
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 164
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 165
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 166
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 167
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 168
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 169
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 170
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 171
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 172
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 173
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 174
+I, [2015-03-31T11:14:39.474683 #6356]  INFO -- : @all_sections <= 175
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 176
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 177
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 178
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 179
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 180
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 181
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 182
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 191
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 192
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 193
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 194
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 195
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 196
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 197
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 198
+I, [2015-03-31T11:14:39.475683 #6356]  INFO -- : @all_sections <= 199
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 200
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 201
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 202
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 203
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 204
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 205
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 206
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 207
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 208
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 209
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 210
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 211
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 212
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 213
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 214
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 215
+I, [2015-03-31T11:14:39.476684 #6356]  INFO -- : @all_sections <= 216
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_sections <= 217
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_sections <= 218
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_sections <= 219
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_sections <= 220
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_sections <= 221
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_sections <= 222
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_summer_sections <= 1
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_fall_sections <= 2
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_fall_sections <= 3
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_winter_sections <= 4
+I, [2015-03-31T11:14:39.477721 #6356]  INFO -- : @all_summer_sections <= 5
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 6
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 7
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_winter_sections <= 8
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_winter_sections <= 9
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_summer_sections <= 10
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 11
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 12
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 13
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 14
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 15
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 16
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_fall_sections <= 17
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_winter_sections <= 18
+I, [2015-03-31T11:14:39.478722 #6356]  INFO -- : @all_winter_sections <= 19
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_winter_sections <= 20
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_summer_sections <= 21
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_fall_sections <= 22
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_fall_sections <= 23
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_winter_sections <= 24
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_winter_sections <= 25
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_winter_sections <= 26
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_winter_sections <= 27
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_winter_sections <= 28
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_winter_sections <= 29
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_winter_sections <= 30
+I, [2015-03-31T11:14:39.479723 #6356]  INFO -- : @all_fall_sections <= 31
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_fall_sections <= 32
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_fall_sections <= 33
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_fall_sections <= 34
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_winter_sections <= 35
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_winter_sections <= 36
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_summer_sections <= 37
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_winter_sections <= 38
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_winter_sections <= 39
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_winter_sections <= 40
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_winter_sections <= 41
+I, [2015-03-31T11:14:39.480723 #6356]  INFO -- : @all_summer_sections <= 42
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_summer_sections <= 43
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_winter_sections <= 44
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_winter_sections <= 45
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_winter_sections <= 46
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_winter_sections <= 47
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_winter_sections <= 48
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_winter_sections <= 49
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_summer_sections <= 50
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_fall_sections <= 51
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_fall_sections <= 52
+I, [2015-03-31T11:14:39.481725 #6356]  INFO -- : @all_winter_sections <= 53
+I, [2015-03-31T11:14:39.482727 #6356]  INFO -- : @all_winter_sections <= 54
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_winter_sections <= 55
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_fall_sections <= 56
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_winter_sections <= 57
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_summer_sections <= 58
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_summer_sections <= 59
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_fall_sections <= 60
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_fall_sections <= 61
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_fall_sections <= 62
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_fall_sections <= 63
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_winter_sections <= 64
+I, [2015-03-31T11:14:39.482765 #6356]  INFO -- : @all_winter_sections <= 65
+I, [2015-03-31T11:14:39.483769 #6356]  INFO -- : @all_summer_sections <= 66
+I, [2015-03-31T11:14:39.483769 #6356]  INFO -- : @all_summer_sections <= 67
+I, [2015-03-31T11:14:39.483769 #6356]  INFO -- : @all_fall_sections <= 68
+I, [2015-03-31T11:14:39.483769 #6356]  INFO -- : @all_summer_sections <= 69
+I, [2015-03-31T11:14:39.483769 #6356]  INFO -- : @all_fall_sections <= 70
+I, [2015-03-31T11:14:39.483769 #6356]  INFO -- : @all_summer_sections <= 71
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_fall_sections <= 72
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_fall_sections <= 73
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_winter_sections <= 74
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_summer_sections <= 75
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_summer_sections <= 76
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_fall_sections <= 77
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_fall_sections <= 78
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_fall_sections <= 79
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_winter_sections <= 80
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_winter_sections <= 81
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_winter_sections <= 82
+I, [2015-03-31T11:14:39.484768 #6356]  INFO -- : @all_summer_sections <= 83
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_summer_sections <= 84
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_fall_sections <= 85
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_fall_sections <= 86
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_fall_sections <= 87
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_winter_sections <= 88
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_winter_sections <= 89
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_winter_sections <= 90
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_summer_sections <= 91
+I, [2015-03-31T11:14:39.485768 #6356]  INFO -- : @all_summer_sections <= 92
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_summer_sections <= 93
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_fall_sections <= 94
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_fall_sections <= 95
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_fall_sections <= 96
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_winter_sections <= 97
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_winter_sections <= 98
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_winter_sections <= 99
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_summer_sections <= 100
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_summer_sections <= 101
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_fall_sections <= 102
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_winter_sections <= 103
+I, [2015-03-31T11:14:39.486769 #6356]  INFO -- : @all_winter_sections <= 104
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_summer_sections <= 105
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_winter_sections <= 106
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_fall_sections <= 107
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_winter_sections <= 108
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_summer_sections <= 109
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_fall_sections <= 110
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_winter_sections <= 111
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_winter_sections <= 112
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_summer_sections <= 113
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_fall_sections <= 114
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_fall_sections <= 115
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_fall_sections <= 116
+I, [2015-03-31T11:14:39.487826 #6356]  INFO -- : @all_winter_sections <= 117
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_winter_sections <= 118
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_summer_sections <= 119
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_fall_sections <= 120
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_winter_sections <= 121
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_winter_sections <= 122
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_summer_sections <= 123
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_fall_sections <= 124
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_fall_sections <= 125
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_fall_sections <= 126
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_winter_sections <= 127
+I, [2015-03-31T11:14:39.488827 #6356]  INFO -- : @all_winter_sections <= 128
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_summer_sections <= 129
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_fall_sections <= 130
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_winter_sections <= 131
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_winter_sections <= 132
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_winter_sections <= 133
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_fall_sections <= 134
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_summer_sections <= 135
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_fall_sections <= 136
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_fall_sections <= 137
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_winter_sections <= 138
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_fall_sections <= 139
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_fall_sections <= 140
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_fall_sections <= 141
+I, [2015-03-31T11:14:39.489828 #6356]  INFO -- : @all_winter_sections <= 142
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_summer_sections <= 143
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_fall_sections <= 144
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_winter_sections <= 145
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_winter_sections <= 146
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_summer_sections <= 147
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_fall_sections <= 148
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_fall_sections <= 149
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_winter_sections <= 150
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_summer_sections <= 151
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_fall_sections <= 152
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_fall_sections <= 153
+I, [2015-03-31T11:14:39.490829 #6356]  INFO -- : @all_winter_sections <= 154
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_summer_sections <= 155
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_fall_sections <= 156
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_winter_sections <= 157
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_summer_sections <= 158
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_fall_sections <= 159
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_winter_sections <= 160
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_fall_sections <= 161
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_winter_sections <= 162
+I, [2015-03-31T11:14:39.491832 #6356]  INFO -- : @all_winter_sections <= 163
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_summer_sections <= 164
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_fall_sections <= 165
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_winter_sections <= 166
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_fall_sections <= 167
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_fall_sections <= 168
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_fall_sections <= 169
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_fall_sections <= 170
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_winter_sections <= 171
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_fall_sections <= 172
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_winter_sections <= 173
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_fall_sections <= 174
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_fall_sections <= 175
+I, [2015-03-31T11:14:39.492863 #6356]  INFO -- : @all_winter_sections <= 176
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_fall_sections <= 177
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_winter_sections <= 178
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_winter_sections <= 179
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_fall_sections <= 180
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_fall_sections <= 181
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_fall_sections <= 182
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_winter_sections <= 191
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_winter_sections <= 192
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_summer_sections <= 193
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_fall_sections <= 194
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_winter_sections <= 195
+I, [2015-03-31T11:14:39.493866 #6356]  INFO -- : @all_winter_sections <= 196
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_winter_sections <= 197
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_fall_sections <= 198
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_winter_sections <= 199
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_fall_sections <= 200
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_winter_sections <= 201
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_fall_sections <= 202
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_fall_sections <= 203
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_winter_sections <= 204
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_winter_sections <= 205
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_winter_sections <= 206
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_fall_sections <= 207
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_winter_sections <= 208
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_fall_sections <= 209
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_winter_sections <= 210
+I, [2015-03-31T11:14:39.494866 #6356]  INFO -- : @all_fall_sections <= 211
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_fall_sections <= 212
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_winter_sections <= 213
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_summer_sections <= 214
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_fall_sections <= 215
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_fall_sections <= 216
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_fall_sections <= 217
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_summer_sections <= 218
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_fall_sections <= 219
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_fall_sections <= 220
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_winter_sections <= 221
+I, [2015-03-31T11:14:39.495866 #6356]  INFO -- : @all_winter_sections <= 222
+I, [2015-03-31T11:14:39.522135 #6356]  INFO -- : @courses_offered_in_summer <= ENGR201
+I, [2015-03-31T11:14:39.539364 #6356]  INFO -- : @courses_offered_in_summer <= ENGR202
+I, [2015-03-31T11:14:39.550463 #6356]  INFO -- : @courses_offered_in_summer <= ENGR213
+I, [2015-03-31T11:14:39.561576 #6356]  INFO -- : @courses_offered_in_summer <= ENGR233
+I, [2015-03-31T11:14:39.579792 #6356]  INFO -- : @courses_offered_in_summer <= ENGR243
+I, [2015-03-31T11:14:39.599044 #6356]  INFO -- : @courses_offered_in_summer <= ENGR244
+I, [2015-03-31T11:14:39.616231 #6356]  INFO -- : @courses_offered_in_summer <= ENGR245
+I, [2015-03-31T11:14:39.631381 #6356]  INFO -- : @courses_offered_in_summer <= ENGR301
+I, [2015-03-31T11:14:39.643484 #6356]  INFO -- : @courses_offered_in_summer <= ENGR371
+I, [2015-03-31T11:14:39.657650 #6356]  INFO -- : @courses_offered_in_summer <= ENGR391
+I, [2015-03-31T11:14:39.665762 #6356]  INFO -- : @courses_offered_in_summer <= ENGR392
+I, [2015-03-31T11:14:39.674865 #6356]  INFO -- : @courses_offered_in_summer <= COMP232
+I, [2015-03-31T11:14:39.682922 #6356]  INFO -- : @courses_offered_in_summer <= COMP248
+I, [2015-03-31T11:14:39.692020 #6356]  INFO -- : @courses_offered_in_summer <= COMP249
+I, [2015-03-31T11:14:39.698070 #6356]  INFO -- : @fall_courses_only <= COMP326
+I, [2015-03-31T11:14:39.705172 #6356]  INFO -- : @courses_offered_in_summer <= COMP335
+I, [2015-03-31T11:14:39.719278 #6356]  INFO -- : @courses_offered_in_summer <= COMP346
+I, [2015-03-31T11:14:39.725377 #6356]  INFO -- : @courses_offered_in_summer <= COMP348
+I, [2015-03-31T11:14:39.732419 #6356]  INFO -- : @courses_offered_in_summer <= COMP352
+I, [2015-03-31T11:14:39.740510 #6356]  INFO -- : @courses_offered_in_summer <= COMP353
+I, [2015-03-31T11:14:39.748555 #6356]  INFO -- : @courses_offered_in_summer <= COMP371
+I, [2015-03-31T11:14:39.755639 #6356]  INFO -- : @fall_courses_only <= COMP376
+I, [2015-03-31T11:14:39.761680 #6356]  INFO -- : @fall_courses_only <= COMP426
+I, [2015-03-31T11:14:39.768720 #6356]  INFO -- : @fall_courses_only <= COMP428
+I, [2015-03-31T11:14:39.775912 #6356]  INFO -- : @winter_courses_only <= COMP442
+I, [2015-03-31T11:14:39.789982 #6356]  INFO -- : @fall_courses_only <= COMP465
+I, [2015-03-31T11:14:39.805112 #6356]  INFO -- : @fall_courses_only <= COMP473
+I, [2015-03-31T11:14:39.813201 #6356]  INFO -- : @winter_courses_only <= COMP474
+I, [2015-03-31T11:14:39.821286 #6356]  INFO -- : @winter_courses_only <= COMP476
+I, [2015-03-31T11:14:39.828325 #6356]  INFO -- : @fall_courses_only <= COMP477
+I, [2015-03-31T11:14:39.836403 #6356]  INFO -- : @fall_courses_only <= COMP478
+I, [2015-03-31T11:14:39.845456 #6356]  INFO -- : @fall_courses_only <= COMP479
+I, [2015-03-31T11:14:39.855536 #6356]  INFO -- : @winter_courses_only <= SOEN228
+I, [2015-03-31T11:14:39.864624 #6356]  INFO -- : @courses_offered_in_summer <= SOEN287
+I, [2015-03-31T11:14:39.875722 #6356]  INFO -- : @fall_courses_only <= SOEN321
+I, [2015-03-31T11:14:39.886827 #6356]  INFO -- : @winter_courses_only <= SOEN331
+I, [2015-03-31T11:14:39.907986 #6356]  INFO -- : @fall_courses_only <= SOEN342
+I, [2015-03-31T11:14:39.918053 #6356]  INFO -- : @fall_courses_only <= SOEN343
+I, [2015-03-31T11:14:39.928124 #6356]  INFO -- : @winter_courses_only <= SOEN344
+I, [2015-03-31T11:14:39.938195 #6356]  INFO -- : @winter_courses_only <= SOEN345
+I, [2015-03-31T11:14:39.948283 #6356]  INFO -- : @winter_courses_only <= SOEN357
+I, [2015-03-31T11:14:39.959349 #6356]  INFO -- : @fall_courses_only <= SOEN384
+I, [2015-03-31T11:14:39.969421 #6356]  INFO -- : @winter_courses_only <= SOEN385
+I, [2015-03-31T11:14:39.980492 #6356]  INFO -- : @fall_courses_only <= SOEN387
+I, [2015-03-31T11:14:39.990563 #6356]  INFO -- : @winter_courses_only <= SOEN390
+I, [2015-03-31T11:14:40.000635 #6356]  INFO -- : @fall_courses_only <= SOEN422
+I, [2015-03-31T11:14:40.010699 #6356]  INFO -- : @fall_courses_only <= SOEN423
+I, [2015-03-31T11:14:40.021769 #6356]  INFO -- : @winter_courses_only <= SOEN487
+I, [2015-03-31T11:14:40.031842 #6356]  INFO -- : @courses_offered_in_summer <= SOEN490
+I, [2015-03-31T11:14:40.042949 #6356]  INFO -- : @fall_courses_only <= COEN320
+I, [2015-03-31T11:14:40.053015 #6356]  INFO -- : @fall_courses_only <= AERO480
+I, [2015-03-31T11:14:40.064130 #6356]  INFO -- : @fall_courses_only <= AERO482
+I, [2015-03-31T11:14:40.074196 #6356]  INFO -- : @courses_offered_in_summer <= ELEC275
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN228
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN287
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN321
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN331
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN341
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN342
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN343
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN344
+I, [2015-03-31T11:14:40.121670 #6356]  INFO -- : @mandatory_course <=SOEN345
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=SOEN357
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=SOEN384
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=SOEN385
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=SOEN390
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=SOEN490
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=COMP232
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=COMP248
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=COMP249
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=COMP335
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=COMP346
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=COMP348
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=COMP352
+I, [2015-03-31T11:14:40.122669 #6356]  INFO -- : @mandatory_course <=ELEC275
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENCS282
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENGR201
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENGR202
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENGR213
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENGR233
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENGR301
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENGR371
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENGR391
+I, [2015-03-31T11:14:40.123709 #6356]  INFO -- : @mandatory_course <=ENGR392
+I, [2015-03-31T11:14:40.148916 #6356]  INFO -- : @mandatory_course <=SOEN422
+I, [2015-03-31T11:14:40.149918 #6356]  INFO -- : @mandatory_course <=SOEN423
+I, [2015-03-31T11:14:40.174136 #6356]  INFO -- : @oneOf_courses <=AERO480
+I, [2015-03-31T11:14:40.175139 #6356]  INFO -- : @oneOf_courses <=AERO482
+I, [2015-03-31T11:14:40.191318 #6356]  INFO -- : @all_prereqs <= 42 16
+I, [2015-03-31T11:14:40.191318 #6356]  INFO -- : @all_prereqs <= 43 22
+I, [2015-03-31T11:14:40.192319 #6356]  INFO -- : @all_prereqs <= 44 15
+I, [2015-03-31T11:14:40.192319 #6356]  INFO -- : @all_prereqs <= 44 17
+I, [2015-03-31T11:14:40.192319 #6356]  INFO -- : @all_prereqs <= 45 41
+I, [2015-03-31T11:14:40.192319 #6356]  INFO -- : @all_prereqs <= 45 24
+I, [2015-03-31T11:14:40.192319 #6356]  INFO -- : @all_prereqs <= 45 14
+I, [2015-03-31T11:14:40.192319 #6356]  INFO -- : @all_prereqs <= 46 45
+I, [2015-03-31T11:14:40.192319 #6356]  INFO -- : @all_prereqs <= 47 45
+I, [2015-03-31T11:14:40.193308 #6356]  INFO -- : @all_prereqs <= 47 46
+I, [2015-03-31T11:14:40.193308 #6356]  INFO -- : @all_prereqs <= 48 47
+I, [2015-03-31T11:14:40.193308 #6356]  INFO -- : @all_prereqs <= 49 45
+I, [2015-03-31T11:14:40.193308 #6356]  INFO -- : @all_prereqs <= 49 47
+I, [2015-03-31T11:14:40.193308 #6356]  INFO -- : @all_prereqs <= 50 46
+I, [2015-03-31T11:14:40.193308 #6356]  INFO -- : @all_prereqs <= 52 3
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 52 4
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 53 25
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 53 45
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 53 42
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 54 48
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 54 50
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 55 22
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 56 22
+I, [2015-03-31T11:14:40.194374 #6356]  INFO -- : @all_prereqs <= 59 53
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 60 46
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 60 47
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 60 48
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 60 54
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 5 3
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 6 3
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 6 5
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 7 5
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 7 8
+I, [2015-03-31T11:14:40.195382 #6356]  INFO -- : @all_prereqs <= 7 3
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 7 4
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 10 3
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 10 4
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 11 3
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 11 4
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 11 16
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 17 16
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 18 22
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 19 15
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 19 17
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 21 24
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 22 41
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 22 24
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 23 17
+I, [2015-03-31T11:14:40.196379 #6356]  INFO -- : @all_prereqs <= 24 15
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 24 17
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 25 24
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 26 24
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 28 22
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 64 22
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 65 19
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 65 24
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 29 22
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 31 19
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 31 24
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 32 24
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 33 24
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 34 24
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 35 27
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 35 11
+I, [2015-03-31T11:14:40.197380 #6356]  INFO -- : @all_prereqs <= 36 26
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 36 11
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 37 24
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 38 10
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 40 39
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 66 22
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 62 52
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 63 52
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 63 10
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 8 3
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 12 14
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 12 1
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 12 2
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 27 26
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 26 24
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 30 25
+I, [2015-03-31T11:14:40.198379 #6356]  INFO -- : @all_prereqs <= 51 45
+I, [2015-03-31T11:14:40.199409 #6356]  INFO -- : @all_prereqs <= 51 14
+I, [2015-03-31T11:14:40.199409 #6356]  INFO -- : @all_prereqs <= 57 46
+I, [2015-03-31T11:14:40.199409 #6356]  INFO -- : @all_prereqs <= 57 47
+I, [2015-03-31T11:14:40.199409 #6356]  INFO -- : @all_prereqs <= 57 48
+I, [2015-03-31T11:14:40.199409 #6356]  INFO -- : @all_prereqs <= 20 22
+I, [2015-03-31T11:14:40.199409 #6356]  INFO -- : @all_prereqs <= 58 48
+I, [2015-03-31T11:14:40.204455 #6356]  INFO -- : all_200_level <=ENGR201
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_200_level <=ENGR202
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_200_level <=ENGR213
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_200_level <=ENGR233
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_200_level <=COMP232
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_200_level <=COMP248
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_200_level <=COMP249
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_400_level <=COMP444
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_400_level <=COMP426
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_400_level <=COMP445
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_400_level <=COMP451
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_400_level <=COMP465
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_400_level <=COMP472
+I, [2015-03-31T11:14:40.205457 #6356]  INFO -- : all_400_level <=COMP473
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=COMP474
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=COMP476
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=COMP477
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=COMP478
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=COMP479
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=COMP490
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=COMP492
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_200_level <=SOEN228
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_200_level <=SOEN287
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=SOEN422
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=SOEN423
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=SOEN448
+I, [2015-03-31T11:14:40.206457 #6356]  INFO -- : all_400_level <=SOEN449
+I, [2015-03-31T11:14:40.207457 #6356]  INFO -- : all_400_level <=SOEN487
+I, [2015-03-31T11:14:40.207457 #6356]  INFO -- : all_400_level <=SOEN490
+I, [2015-03-31T11:14:40.207457 #6356]  INFO -- : all_400_level <=SOEN491
+I, [2015-03-31T11:14:40.207457 #6356]  INFO -- : all_400_level <=AERO480
+I, [2015-03-31T11:14:40.207457 #6356]  INFO -- : all_400_level <=AERO482
+I, [2015-03-31T11:14:40.207457 #6356]  INFO -- : all_400_level <=COMP428
+I, [2015-03-31T11:14:40.207457 #6356]  INFO -- : all_400_level <=COMP442
+I, [2015-03-31T11:14:40.207457 #6356]  INFO -- : all_200_level <=ELEC275
+I, [2015-03-31T11:14:40.235733 #6356]  INFO -- : @completed_courses <= ENCS282
+I, [2015-03-31T11:14:40.235733 #6356]  INFO -- : initial accumulated credits =3.0
+I, [2015-03-31T11:14:40.241766 #6356]  INFO -- : # of direct dependents of ENGR201 is 1
+I, [2015-03-31T11:14:40.241766 #6356]  INFO -- : # of direct dependents of ENGR202 is 1
+I, [2015-03-31T11:14:40.241766 #6356]  INFO -- : # of direct dependents of ENGR213 is 7
+I, [2015-03-31T11:14:40.242767 #6356]  INFO -- : # of direct dependents of ENGR233 is 4
+I, [2015-03-31T11:14:40.242767 #6356]  INFO -- : # of direct dependents of ENGR242 is 2
+I, [2015-03-31T11:14:40.242767 #6356]  INFO -- : # of direct dependents of ENGR243 is 0
+I, [2015-03-31T11:14:40.242767 #6356]  INFO -- : # of direct dependents of ENGR244 is 0
+I, [2015-03-31T11:14:40.243765 #6356]  INFO -- : # of direct dependents of ENGR245 is 1
+I, [2015-03-31T11:14:40.243765 #6356]  INFO -- : # of direct dependents of ENGR301 is 0
+I, [2015-03-31T11:14:40.243765 #6356]  INFO -- : # of direct dependents of ENGR371 is 2
+I, [2015-03-31T11:14:40.243765 #6356]  INFO -- : # of direct dependents of ENGR391 is 2
+I, [2015-03-31T11:14:40.243765 #6356]  INFO -- : # of direct dependents of ENGR392 is 0
+I, [2015-03-31T11:14:40.244797 #6356]  INFO -- : # of direct dependents of ENCS272 is 0
+I, [2015-03-31T11:14:40.244797 #6356]  INFO -- : # of direct dependents of ENCS282 is 3
+I, [2015-03-31T11:14:40.244797 #6356]  INFO -- : # of direct dependents of COMP232 is 3
+I, [2015-03-31T11:14:40.244797 #6356]  INFO -- : # of direct dependents of COMP248 is 3
+I, [2015-03-31T11:14:40.245815 #6356]  INFO -- : # of direct dependents of COMP249 is 4
+I, [2015-03-31T11:14:40.245815 #6356]  INFO -- : # of direct dependents of COMP326 is 0
+I, [2015-03-31T11:14:40.245815 #6356]  INFO -- : # of direct dependents of COMP335 is 2
+I, [2015-03-31T11:14:40.245815 #6356]  INFO -- : # of direct dependents of COMP444 is 0
+I, [2015-03-31T11:14:40.246814 #6356]  INFO -- : # of direct dependents of COMP345 is 0
+I, [2015-03-31T11:14:40.246814 #6356]  INFO -- : # of direct dependents of COMP346 is 9
+I, [2015-03-31T11:14:40.246814 #6356]  INFO -- : # of direct dependents of COMP348 is 0
+I, [2015-03-31T11:14:40.246814 #6356]  INFO -- : # of direct dependents of COMP352 is 12
+I, [2015-03-31T11:14:40.246814 #6356]  INFO -- : # of direct dependents of COMP353 is 2
+I, [2015-03-31T11:14:40.247820 #6356]  INFO -- : # of direct dependents of COMP371 is 2
+I, [2015-03-31T11:14:40.247820 #6356]  INFO -- : # of direct dependents of COMP376 is 1
+I, [2015-03-31T11:14:40.247820 #6356]  INFO -- : # of direct dependents of COMP426 is 0
+I, [2015-03-31T11:14:40.247820 #6356]  INFO -- : # of direct dependents of COMP445 is 0
+I, [2015-03-31T11:14:40.248803 #6356]  INFO -- : # of direct dependents of COMP451 is 0
+I, [2015-03-31T11:14:40.248803 #6356]  INFO -- : # of direct dependents of COMP465 is 0
+I, [2015-03-31T11:14:40.248803 #6356]  INFO -- : # of direct dependents of COMP472 is 0
+I, [2015-03-31T11:14:40.248803 #6356]  INFO -- : # of direct dependents of COMP473 is 0
+I, [2015-03-31T11:14:40.249832 #6356]  INFO -- : # of direct dependents of COMP474 is 0
+I, [2015-03-31T11:14:40.249832 #6356]  INFO -- : # of direct dependents of COMP476 is 0
+I, [2015-03-31T11:14:40.249832 #6356]  INFO -- : # of direct dependents of COMP477 is 0
+I, [2015-03-31T11:14:40.249832 #6356]  INFO -- : # of direct dependents of COMP478 is 0
+I, [2015-03-31T11:14:40.249832 #6356]  INFO -- : # of direct dependents of COMP479 is 0
+I, [2015-03-31T11:14:40.250835 #6356]  INFO -- : # of direct dependents of COMP490 is 1
+I, [2015-03-31T11:14:40.250835 #6356]  INFO -- : # of direct dependents of COMP492 is 0
+I, [2015-03-31T11:14:40.250835 #6356]  INFO -- : # of direct dependents of SOEN228 is 2
+I, [2015-03-31T11:14:40.250835 #6356]  INFO -- : # of direct dependents of SOEN287 is 1
+I, [2015-03-31T11:14:40.250835 #6356]  INFO -- : # of direct dependents of SOEN321 is 0
+I, [2015-03-31T11:14:40.251836 #6356]  INFO -- : # of direct dependents of SOEN331 is 0
+I, [2015-03-31T11:14:40.251836 #6356]  INFO -- : # of direct dependents of SOEN341 is 5
+I, [2015-03-31T11:14:40.251836 #6356]  INFO -- : # of direct dependents of SOEN342 is 4
+I, [2015-03-31T11:14:40.251836 #6356]  INFO -- : # of direct dependents of SOEN343 is 4
+I, [2015-03-31T11:14:40.252834 #6356]  INFO -- : # of direct dependents of SOEN344 is 4
+I, [2015-03-31T11:14:40.252834 #6356]  INFO -- : # of direct dependents of SOEN345 is 0
+I, [2015-03-31T11:14:40.252834 #6356]  INFO -- : # of direct dependents of SOEN357 is 1
+I, [2015-03-31T11:14:40.252834 #6356]  INFO -- : # of direct dependents of SOEN384 is 0
+I, [2015-03-31T11:14:40.253837 #6356]  INFO -- : # of direct dependents of SOEN385 is 2
+I, [2015-03-31T11:14:40.253837 #6356]  INFO -- : # of direct dependents of SOEN387 is 1
+I, [2015-03-31T11:14:40.253837 #6356]  INFO -- : # of direct dependents of SOEN390 is 1
+I, [2015-03-31T11:14:40.253837 #6356]  INFO -- : # of direct dependents of SOEN422 is 0
+I, [2015-03-31T11:14:40.254897 #6356]  INFO -- : # of direct dependents of SOEN423 is 0
+I, [2015-03-31T11:14:40.254897 #6356]  INFO -- : # of direct dependents of SOEN448 is 0
+I, [2015-03-31T11:14:40.254897 #6356]  INFO -- : # of direct dependents of SOEN449 is 0
+I, [2015-03-31T11:14:40.254897 #6356]  INFO -- : # of direct dependents of SOEN487 is 0
+I, [2015-03-31T11:14:40.255918 #6356]  INFO -- : # of direct dependents of SOEN490 is 0
+I, [2015-03-31T11:14:40.255918 #6356]  INFO -- : # of direct dependents of SOEN491 is 0
+I, [2015-03-31T11:14:40.255918 #6356]  INFO -- : # of direct dependents of AERO480 is 0
+I, [2015-03-31T11:14:40.255918 #6356]  INFO -- : # of direct dependents of AERO482 is 0
+I, [2015-03-31T11:14:40.255918 #6356]  INFO -- : # of direct dependents of COMP428 is 0
+I, [2015-03-31T11:14:40.256919 #6356]  INFO -- : # of direct dependents of COMP442 is 0
+I, [2015-03-31T11:14:40.256919 #6356]  INFO -- : # of direct dependents of COEN320 is 0
+I, [2015-03-31T11:14:40.256919 #6356]  INFO -- : # of direct dependents of ELEC275 is 0
+I, [2015-03-31T11:14:40.256919 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:40.256919 #6356]  INFO -- : Semester:Winter 2016
+I, [2015-03-31T11:14:40.266971 #6356]  INFO -- : available_courses <=ENGR201
+I, [2015-03-31T11:14:40.276044 #6356]  INFO -- : available_courses <=ENGR202
+I, [2015-03-31T11:14:40.286111 #6356]  INFO -- : available_courses <=ENGR213
+I, [2015-03-31T11:14:40.295178 #6356]  INFO -- : available_courses <=ENGR233
+I, [2015-03-31T11:14:40.305257 #6356]  INFO -- : get_prereqs(ENGR242) <= 5 3
+I, [2015-03-31T11:14:40.305257 #6356]  INFO -- : get_prereqs(ENGR242) <= 5 3
+I, [2015-03-31T11:14:40.324370 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:14:40.325426 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:14:40.325426 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:14:40.325426 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:14:40.353614 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:14:40.353614 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:14:40.353614 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:14:40.353614 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:14:40.353614 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:14:40.353614 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:14:40.353614 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:14:40.353614 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:14:40.399929 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:14:40.400963 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:14:40.420090 #6356]  INFO -- : available_courses <=ENGR301
+I, [2015-03-31T11:14:40.429164 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:14:40.429164 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:14:40.429164 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:14:40.429164 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:14:40.457376 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:40.457376 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:40.457376 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:40.457376 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:40.457376 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:40.457376 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:40.495639 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:40.495639 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:40.495639 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:40.495639 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:40.496668 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:40.496668 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:40.534947 #6356]  INFO -- : available_courses <=COMP232
+I, [2015-03-31T11:14:40.544005 #6356]  INFO -- : available_courses <=COMP248
+I, [2015-03-31T11:14:40.554065 #6356]  INFO -- : get_prereqs(COMP249) <= 17 16
+I, [2015-03-31T11:14:40.554065 #6356]  INFO -- : get_prereqs(COMP249) <= 17 16
+I, [2015-03-31T11:14:40.574220 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:14:40.574220 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:14:40.574220 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:14:40.574220 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:14:40.603476 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:40.603476 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:40.622600 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:14:40.622600 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:14:40.623621 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:14:40.623621 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:14:40.651785 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:40.651785 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:40.670924 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:14:40.671923 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:14:40.671923 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:14:40.671923 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:14:40.698125 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:14:40.698125 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:14:40.717242 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:40.717242 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:40.717242 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:40.717242 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:40.746467 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:40.746467 #6356]  INFO -- : get_prereqs(COMP442) <= 65 19
+I, [2015-03-31T11:14:40.746467 #6356]  INFO -- : get_prereqs(COMP442) <= 65 24
+I, [2015-03-31T11:14:40.755534 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:40.756553 #6356]  INFO -- : get_prereqs(COMP445) <= 29 22
+I, [2015-03-31T11:14:40.765617 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:40.765617 #6356]  INFO -- : get_prereqs(COMP472) <= 32 24
+I, [2015-03-31T11:14:40.775723 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:40.775723 #6356]  INFO -- : get_prereqs(COMP474) <= 34 24
+I, [2015-03-31T11:14:40.785796 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:40.785796 #6356]  INFO -- : get_prereqs(COMP476) <= 35 27
+I, [2015-03-31T11:14:40.785796 #6356]  INFO -- : get_prereqs(COMP476) <= 35 11
+I, [2015-03-31T11:14:40.794854 #6356]  INFO -- : available_courses <=SOEN228
+I, [2015-03-31T11:14:40.804927 #6356]  INFO -- : get_prereqs(SOEN287) <= 42 16
+I, [2015-03-31T11:14:40.804927 #6356]  INFO -- : get_prereqs(SOEN287) <= 42 16
+I, [2015-03-31T11:14:40.825069 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 15
+I, [2015-03-31T11:14:40.825069 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 17
+I, [2015-03-31T11:14:40.825069 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 15
+I, [2015-03-31T11:14:40.825069 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 17
+I, [2015-03-31T11:14:40.854307 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 41
+I, [2015-03-31T11:14:40.854307 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 24
+I, [2015-03-31T11:14:40.854307 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 14
+I, [2015-03-31T11:14:40.854307 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 41
+I, [2015-03-31T11:14:40.854307 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 24
+I, [2015-03-31T11:14:40.855312 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 14
+I, [2015-03-31T11:14:40.892596 #6356]  INFO -- : get_prereqs(SOEN344) <= 48 47
+I, [2015-03-31T11:14:40.893596 #6356]  INFO -- : get_prereqs(SOEN344) <= 48 47
+I, [2015-03-31T11:14:40.912748 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 45
+I, [2015-03-31T11:14:40.912748 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 47
+I, [2015-03-31T11:14:40.912748 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 45
+I, [2015-03-31T11:14:40.912748 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 47
+I, [2015-03-31T11:14:40.940965 #6356]  INFO -- : get_prereqs(SOEN357) <= 50 46
+I, [2015-03-31T11:14:40.941974 #6356]  INFO -- : get_prereqs(SOEN357) <= 50 46
+I, [2015-03-31T11:14:40.960135 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 3
+I, [2015-03-31T11:14:40.960135 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 4
+I, [2015-03-31T11:14:40.960135 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 3
+I, [2015-03-31T11:14:40.960135 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 4
+I, [2015-03-31T11:14:40.989823 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 48
+I, [2015-03-31T11:14:40.989823 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 50
+I, [2015-03-31T11:14:40.990888 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 48
+I, [2015-03-31T11:14:40.990888 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 50
+I, [2015-03-31T11:14:41.020070 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.020070 #6356]  INFO -- : get_prereqs(SOEN487) <= 59 53
+I, [2015-03-31T11:14:41.031216 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:41.040254 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.041311 #6356]  INFO -- : get_prereqs(COMP442) <= 65 19
+I, [2015-03-31T11:14:41.041311 #6356]  INFO -- : get_prereqs(COMP442) <= 65 24
+I, [2015-03-31T11:14:41.041311 #6356]  INFO -- : added COMP232to filter1
+I, [2015-03-31T11:14:41.041311 #6356]  INFO -- : added SOEN228to filter1
+I, [2015-03-31T11:14:41.041311 #6356]  INFO -- : added COMP248to filter2
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : SELECTED COMP232
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : SELECTED SOEN228
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : SELECTED COMP248
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : SELECTED ENGR201
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : course_counter:4
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : SELECTED ENGR202
+I, [2015-03-31T11:14:41.042333 #6356]  INFO -- : course_counter:5
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : *****result of selection:COMP232
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : *****result of selection:SOEN228
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : *****result of selection:COMP248
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : *****result of selection:ENGR201
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : *****result of selection:ENGR202
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : !!!!!!!ADDED COMP232 to current semester
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : !!!!!!!ADDED SOEN228 to current semester
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : !!!!!!!ADDED COMP248 to current semester
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : !!!!!!!ADDED ENGR201 to current semester
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : !!!!!!!ADDED ENGR202 to current semester
+I, [2015-03-31T11:14:41.043313 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:14:41.044317 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:41.044317 #6356]  INFO -- : Semester:Summer 2016
+I, [2015-03-31T11:14:41.072551 #6356]  INFO -- : available_courses <=ENGR213
+I, [2015-03-31T11:14:41.082665 #6356]  INFO -- : available_courses <=ENGR233
+I, [2015-03-31T11:14:41.092740 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:14:41.092740 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:14:41.092740 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:14:41.092740 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:14:41.121934 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:14:41.121934 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:14:41.121934 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:14:41.121934 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:14:41.121934 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:14:41.122947 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:14:41.122947 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:14:41.122947 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:14:41.168302 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:14:41.169304 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:14:41.185429 #6356]  INFO -- : available_courses <=ENGR301
+I, [2015-03-31T11:14:41.193521 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:14:41.193521 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:14:41.194523 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:14:41.194523 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:14:41.218713 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:41.218713 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:41.218713 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:41.218713 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:41.218713 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:41.218713 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:41.253031 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:41.253031 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:41.253031 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:41.253031 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:41.253031 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:41.253031 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:41.281310 #6356]  INFO -- : available_courses <=ENGR392
+I, [2015-03-31T11:14:41.305501 #6356]  INFO -- : get_prereqs(COMP249) <= 17 16
+I, [2015-03-31T11:14:41.306501 #6356]  INFO -- : get_prereqs(COMP249) <= 17 16
+I, [2015-03-31T11:14:41.312543 #6356]  INFO -- : available_courses <=COMP249
+I, [2015-03-31T11:14:41.320629 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:14:41.320629 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:14:41.320629 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:14:41.320629 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:14:41.340769 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:14:41.341769 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:14:41.341769 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:14:41.341769 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:14:41.365979 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:41.366980 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:41.383103 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:14:41.384138 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:14:41.384138 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:14:41.384138 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:14:41.410353 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:14:41.411353 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:14:41.431538 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:41.431538 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:41.432537 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:41.432537 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:41.458760 #6356]  INFO -- : get_prereqs(SOEN287) <= 42 16
+I, [2015-03-31T11:14:41.459813 #6356]  INFO -- : get_prereqs(SOEN287) <= 42 16
+I, [2015-03-31T11:14:41.469881 #6356]  INFO -- : available_courses <=SOEN287
+I, [2015-03-31T11:14:41.479952 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.479952 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 46
+I, [2015-03-31T11:14:41.479952 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 47
+I, [2015-03-31T11:14:41.479952 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 48
+I, [2015-03-31T11:14:41.479952 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 54
+I, [2015-03-31T11:14:41.488999 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:41.490050 #6356]  INFO -- : added COMP249to filter1
+I, [2015-03-31T11:14:41.490050 #6356]  INFO -- : added SOEN287to filter2
+I, [2015-03-31T11:14:41.490050 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:41.490050 #6356]  INFO -- : SELECTED COMP249
+I, [2015-03-31T11:14:41.490050 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:41.490050 #6356]  INFO -- : SELECTED SOEN287
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : SELECTED ENGR213
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : SELECTED ENGR233
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : course_counter:4
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : SELECTED ENGR301
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : course_counter:5
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : *****result of selection:COMP249
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : *****result of selection:SOEN287
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : *****result of selection:ENGR213
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : *****result of selection:ENGR233
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : *****result of selection:ENGR301
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : !!!!!!!ADDED COMP249 to current semester
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : !!!!!!!ADDED SOEN287 to current semester
+I, [2015-03-31T11:14:41.491054 #6356]  INFO -- : !!!!!!!ADDED ENGR213 to current semester
+I, [2015-03-31T11:14:41.492054 #6356]  INFO -- : !!!!!!!ADDED ENGR233 to current semester
+I, [2015-03-31T11:14:41.492054 #6356]  INFO -- : !!!!!!!ADDED ENGR301 to current semester
+I, [2015-03-31T11:14:41.492054 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:14:41.492054 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:41.492054 #6356]  INFO -- : Semester:Fall 2016
+I, [2015-03-31T11:14:41.538439 #6356]  INFO -- : get_prereqs(ENGR242) <= 5 3
+I, [2015-03-31T11:14:41.538439 #6356]  INFO -- : get_prereqs(ENGR242) <= 5 3
+I, [2015-03-31T11:14:41.547490 #6356]  INFO -- : available_courses <=ENGR242
+I, [2015-03-31T11:14:41.557567 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:14:41.557567 #6356]  INFO -- : get_prereqs(ENGR245) <= 8 3
+I, [2015-03-31T11:14:41.567637 #6356]  INFO -- : available_courses <=ENGR245
+I, [2015-03-31T11:14:41.583803 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:14:41.583803 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:14:41.583803 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 3
+I, [2015-03-31T11:14:41.583803 #6356]  INFO -- : get_prereqs(ENGR371) <= 10 4
+I, [2015-03-31T11:14:41.604998 #6356]  INFO -- : available_courses <=ENGR371
+I, [2015-03-31T11:14:41.612072 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:41.612072 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:41.612072 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:41.612072 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:41.613073 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:41.613073 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:41.642318 #6356]  INFO -- : available_courses <=ENGR391
+I, [2015-03-31T11:14:41.652418 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:41.653437 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:41.653437 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:41.653437 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:41.653437 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:41.653437 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:41.680673 #6356]  INFO -- : available_courses <=ENGR392
+I, [2015-03-31T11:14:41.718994 #6356]  INFO -- : get_prereqs(COMP326) <= 18 22
+I, [2015-03-31T11:14:41.718994 #6356]  INFO -- : get_prereqs(COMP326) <= 18 22
+I, [2015-03-31T11:14:41.737112 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:14:41.737112 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:14:41.737112 #6356]  INFO -- : get_prereqs(COMP335) <= 19 15
+I, [2015-03-31T11:14:41.738114 #6356]  INFO -- : get_prereqs(COMP335) <= 19 17
+I, [2015-03-31T11:14:41.757338 #6356]  INFO -- : available_courses <=COMP335
+I, [2015-03-31T11:14:41.767407 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:41.767407 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:41.786603 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:14:41.786603 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:14:41.787657 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:14:41.787657 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:14:41.815976 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:41.815976 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:41.824058 #6356]  INFO -- : available_courses <=COMP348
+I, [2015-03-31T11:14:41.836066 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:14:41.836066 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:14:41.837087 #6356]  INFO -- : get_prereqs(COMP352) <= 24 15
+I, [2015-03-31T11:14:41.837087 #6356]  INFO -- : get_prereqs(COMP352) <= 24 17
+I, [2015-03-31T11:14:41.856081 #6356]  INFO -- : available_courses <=COMP352
+I, [2015-03-31T11:14:41.867087 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:14:41.867087 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:14:41.886101 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:41.886101 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:41.887117 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:41.887117 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:41.916124 #6356]  INFO -- : get_prereqs(COMP376) <= 27 26
+I, [2015-03-31T11:14:41.917124 #6356]  INFO -- : get_prereqs(COMP376) <= 27 26
+I, [2015-03-31T11:14:41.936138 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.936138 #6356]  INFO -- : get_prereqs(COMP426) <= 28 22
+I, [2015-03-31T11:14:41.945170 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.946174 #6356]  INFO -- : get_prereqs(COMP428) <= 64 22
+I, [2015-03-31T11:14:41.955239 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.955239 #6356]  INFO -- : get_prereqs(COMP445) <= 29 22
+I, [2015-03-31T11:14:41.965317 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.965744 #6356]  INFO -- : get_prereqs(COMP465) <= 31 19
+I, [2015-03-31T11:14:41.965744 #6356]  INFO -- : get_prereqs(COMP465) <= 31 24
+I, [2015-03-31T11:14:41.974783 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.975836 #6356]  INFO -- : get_prereqs(COMP472) <= 32 24
+I, [2015-03-31T11:14:41.984876 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.985945 #6356]  INFO -- : get_prereqs(COMP473) <= 33 24
+I, [2015-03-31T11:14:41.994985 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:41.996018 #6356]  INFO -- : get_prereqs(COMP477) <= 36 26
+I, [2015-03-31T11:14:41.996018 #6356]  INFO -- : get_prereqs(COMP477) <= 36 11
+I, [2015-03-31T11:14:42.006125 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.006125 #6356]  INFO -- : get_prereqs(COMP478) <= 37 24
+I, [2015-03-31T11:14:42.015162 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.016192 #6356]  INFO -- : get_prereqs(COMP479) <= 38 10
+I, [2015-03-31T11:14:42.037337 #6356]  INFO -- : get_prereqs(SOEN321) <= 43 22
+I, [2015-03-31T11:14:42.037337 #6356]  INFO -- : get_prereqs(SOEN321) <= 43 22
+I, [2015-03-31T11:14:42.057470 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 41
+I, [2015-03-31T11:14:42.057470 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 24
+I, [2015-03-31T11:14:42.057470 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 14
+I, [2015-03-31T11:14:42.057470 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 41
+I, [2015-03-31T11:14:42.057470 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 24
+I, [2015-03-31T11:14:42.058472 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 14
+I, [2015-03-31T11:14:42.096785 #6356]  INFO -- : get_prereqs(SOEN342) <= 46 45
+I, [2015-03-31T11:14:42.097786 #6356]  INFO -- : get_prereqs(SOEN342) <= 46 45
+I, [2015-03-31T11:14:42.115915 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 45
+I, [2015-03-31T11:14:42.115915 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 46
+I, [2015-03-31T11:14:42.115915 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 45
+I, [2015-03-31T11:14:42.115915 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 46
+I, [2015-03-31T11:14:42.146161 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 45
+I, [2015-03-31T11:14:42.146161 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 14
+I, [2015-03-31T11:14:42.146161 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 45
+I, [2015-03-31T11:14:42.146161 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 14
+I, [2015-03-31T11:14:42.175396 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 25
+I, [2015-03-31T11:14:42.175396 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 45
+I, [2015-03-31T11:14:42.175396 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 42
+I, [2015-03-31T11:14:42.175396 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 25
+I, [2015-03-31T11:14:42.176396 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 45
+I, [2015-03-31T11:14:42.176396 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 42
+I, [2015-03-31T11:14:42.214677 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.215699 #6356]  INFO -- : get_prereqs(SOEN422) <= 55 22
+I, [2015-03-31T11:14:42.226757 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.226757 #6356]  INFO -- : get_prereqs(SOEN423) <= 56 22
+I, [2015-03-31T11:14:42.236822 #6356]  INFO -- : get_prereqs(COEN320) <= 66 22
+I, [2015-03-31T11:14:42.236822 #6356]  INFO -- : get_prereqs(COEN320) <= 66 22
+I, [2015-03-31T11:14:42.254964 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.255981 #6356]  INFO -- : get_prereqs(AERO480) <= 62 52
+I, [2015-03-31T11:14:42.265043 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.265043 #6356]  INFO -- : get_prereqs(AERO482) <= 63 52
+I, [2015-03-31T11:14:42.265043 #6356]  INFO -- : get_prereqs(AERO482) <= 63 10
+I, [2015-03-31T11:14:42.276143 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:42.276143 #6356]  INFO -- : added COMP335to filter1
+I, [2015-03-31T11:14:42.276143 #6356]  INFO -- : added COMP352to filter1
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : SELECTED COMP335
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : SELECTED COMP352
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : SELECTED ENGR242
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : SELECTED ENGR245
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : course_counter:4
+I, [2015-03-31T11:14:42.277140 #6356]  INFO -- : SELECTED ENGR371
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : course_counter:5
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : *****result of selection:COMP335
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : *****result of selection:COMP352
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : *****result of selection:ENGR242
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : *****result of selection:ENGR245
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : *****result of selection:ENGR371
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : !!!!!!!ADDED COMP335 to current semester
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : !!!!!!!ADDED COMP352 to current semester
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : !!!!!!!ADDED ENGR242 to current semester
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : !!!!!!!ADDED ENGR245 to current semester
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : !!!!!!!ADDED ENGR371 to current semester
+I, [2015-03-31T11:14:42.278159 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:14:42.279164 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:42.279164 #6356]  INFO -- : Semester:Winter 2017
+I, [2015-03-31T11:14:42.336599 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:14:42.336599 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:14:42.336599 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:14:42.336599 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:14:42.354736 #6356]  INFO -- : available_courses <=ENGR243
+I, [2015-03-31T11:14:42.363801 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:14:42.363801 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:14:42.363801 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:14:42.363801 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:14:42.364822 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:14:42.364822 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:14:42.364822 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:14:42.364822 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:14:42.403057 #6356]  INFO -- : available_courses <=ENGR244
+I, [2015-03-31T11:14:42.442345 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:42.442345 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:42.442345 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:42.443346 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:42.443346 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:42.443346 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:42.471566 #6356]  INFO -- : available_courses <=ENGR391
+I, [2015-03-31T11:14:42.481655 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:42.481655 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:42.481655 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:42.481655 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:42.481655 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:42.482637 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:42.510851 #6356]  INFO -- : available_courses <=ENGR392
+I, [2015-03-31T11:14:42.558181 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:42.559182 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:42.568263 #6356]  INFO -- : available_courses <=COMP345
+I, [2015-03-31T11:14:42.578348 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:14:42.578348 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:14:42.578348 #6356]  INFO -- : get_prereqs(COMP346) <= 22 41
+I, [2015-03-31T11:14:42.578348 #6356]  INFO -- : get_prereqs(COMP346) <= 22 24
+I, [2015-03-31T11:14:42.598493 #6356]  INFO -- : available_courses <=COMP346
+I, [2015-03-31T11:14:42.608566 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:42.609567 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:42.617663 #6356]  INFO -- : available_courses <=COMP348
+I, [2015-03-31T11:14:42.635899 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:14:42.635899 #6356]  INFO -- : get_prereqs(COMP353) <= 25 24
+I, [2015-03-31T11:14:42.642949 #6356]  INFO -- : available_courses <=COMP353
+I, [2015-03-31T11:14:42.649983 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:42.649983 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:42.651014 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:42.651014 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:42.669145 #6356]  INFO -- : available_courses <=COMP371
+I, [2015-03-31T11:14:42.678227 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.678227 #6356]  INFO -- : get_prereqs(COMP442) <= 65 19
+I, [2015-03-31T11:14:42.678227 #6356]  INFO -- : get_prereqs(COMP442) <= 65 24
+I, [2015-03-31T11:14:42.687310 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.688313 #6356]  INFO -- : get_prereqs(COMP445) <= 29 22
+I, [2015-03-31T11:14:42.696410 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.697412 #6356]  INFO -- : get_prereqs(COMP472) <= 32 24
+I, [2015-03-31T11:14:42.706502 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.706502 #6356]  INFO -- : get_prereqs(COMP474) <= 34 24
+I, [2015-03-31T11:14:42.713546 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.713546 #6356]  INFO -- : get_prereqs(COMP476) <= 35 27
+I, [2015-03-31T11:14:42.713546 #6356]  INFO -- : get_prereqs(COMP476) <= 35 11
+I, [2015-03-31T11:14:42.738754 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 15
+I, [2015-03-31T11:14:42.738754 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 17
+I, [2015-03-31T11:14:42.738754 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 15
+I, [2015-03-31T11:14:42.739755 #6356]  INFO -- : get_prereqs(SOEN331) <= 44 17
+I, [2015-03-31T11:14:42.755896 #6356]  INFO -- : available_courses <=SOEN331
+I, [2015-03-31T11:14:42.764979 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 41
+I, [2015-03-31T11:14:42.764979 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 24
+I, [2015-03-31T11:14:42.764979 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 14
+I, [2015-03-31T11:14:42.764979 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 41
+I, [2015-03-31T11:14:42.764979 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 24
+I, [2015-03-31T11:14:42.765980 #6356]  INFO -- : get_prereqs(SOEN341) <= 45 14
+I, [2015-03-31T11:14:42.792232 #6356]  INFO -- : available_courses <=SOEN341
+I, [2015-03-31T11:14:42.802348 #6356]  INFO -- : get_prereqs(SOEN344) <= 48 47
+I, [2015-03-31T11:14:42.802348 #6356]  INFO -- : get_prereqs(SOEN344) <= 48 47
+I, [2015-03-31T11:14:42.820493 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 45
+I, [2015-03-31T11:14:42.820493 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 47
+I, [2015-03-31T11:14:42.820493 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 45
+I, [2015-03-31T11:14:42.820493 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 47
+I, [2015-03-31T11:14:42.847757 #6356]  INFO -- : get_prereqs(SOEN357) <= 50 46
+I, [2015-03-31T11:14:42.848759 #6356]  INFO -- : get_prereqs(SOEN357) <= 50 46
+I, [2015-03-31T11:14:42.866883 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 3
+I, [2015-03-31T11:14:42.867916 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 4
+I, [2015-03-31T11:14:42.867916 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 3
+I, [2015-03-31T11:14:42.867916 #6356]  INFO -- : get_prereqs(SOEN385) <= 52 4
+I, [2015-03-31T11:14:42.887029 #6356]  INFO -- : available_courses <=SOEN385
+I, [2015-03-31T11:14:42.897104 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 48
+I, [2015-03-31T11:14:42.897104 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 50
+I, [2015-03-31T11:14:42.897104 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 48
+I, [2015-03-31T11:14:42.897104 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 50
+I, [2015-03-31T11:14:42.924382 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.924382 #6356]  INFO -- : get_prereqs(SOEN487) <= 59 53
+I, [2015-03-31T11:14:42.934468 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:42.941502 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:42.941502 #6356]  INFO -- : get_prereqs(COMP442) <= 65 19
+I, [2015-03-31T11:14:42.942501 #6356]  INFO -- : get_prereqs(COMP442) <= 65 24
+I, [2015-03-31T11:14:42.942501 #6356]  INFO -- : added COMP346to filter1
+I, [2015-03-31T11:14:42.942501 #6356]  INFO -- : added SOEN341to filter1
+I, [2015-03-31T11:14:42.942501 #6356]  INFO -- : added COMP353to filter2
+I, [2015-03-31T11:14:42.942501 #6356]  INFO -- : added SOEN385to filter2
+I, [2015-03-31T11:14:42.943606 #6356]  INFO -- : added SOEN331to filter3
+I, [2015-03-31T11:14:42.943606 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:42.943606 #6356]  INFO -- : SELECTED COMP346
+I, [2015-03-31T11:14:42.943606 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:42.944628 #6356]  INFO -- : SELECTED SOEN341
+I, [2015-03-31T11:14:42.944628 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:14:42.944628 #6356]  INFO -- : SELECTED COMP353
+I, [2015-03-31T11:14:42.944628 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:14:42.944628 #6356]  INFO -- : SELECTED SOEN385
+I, [2015-03-31T11:14:42.944628 #6356]  INFO -- : course_counter:4
+I, [2015-03-31T11:14:42.944628 #6356]  INFO -- : SELECTED SOEN331
+I, [2015-03-31T11:14:42.945625 #6356]  INFO -- : course_counter:5
+I, [2015-03-31T11:14:42.945625 #6356]  INFO -- : *****result of selection:COMP346
+I, [2015-03-31T11:14:42.945625 #6356]  INFO -- : *****result of selection:SOEN341
+I, [2015-03-31T11:14:42.945625 #6356]  INFO -- : *****result of selection:COMP353
+I, [2015-03-31T11:14:42.945625 #6356]  INFO -- : *****result of selection:SOEN385
+I, [2015-03-31T11:14:42.946621 #6356]  INFO -- : *****result of selection:SOEN331
+I, [2015-03-31T11:14:42.946621 #6356]  INFO -- : !!!!!!!ADDED COMP346 to current semester
+I, [2015-03-31T11:14:42.946621 #6356]  INFO -- : !!!!!!!ADDED SOEN341 to current semester
+I, [2015-03-31T11:14:42.946621 #6356]  INFO -- : !!!!!!!ADDED COMP353 to current semester
+I, [2015-03-31T11:14:42.946621 #6356]  INFO -- : !!!!!!!ADDED SOEN385 to current semester
+I, [2015-03-31T11:14:42.946621 #6356]  INFO -- : !!!!!!!ADDED SOEN331 to current semester
+I, [2015-03-31T11:14:42.946621 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:14:42.947620 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:42.947620 #6356]  INFO -- : Semester:Summer 2017
+I, [2015-03-31T11:14:42.994014 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:14:42.994014 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:14:42.995033 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 3
+I, [2015-03-31T11:14:42.995033 #6356]  INFO -- : get_prereqs(ENGR243) <= 6 5
+I, [2015-03-31T11:14:43.015167 #6356]  INFO -- : available_courses <=ENGR243
+I, [2015-03-31T11:14:43.024237 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:14:43.024237 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:14:43.024237 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:14:43.024237 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:14:43.025240 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 5
+I, [2015-03-31T11:14:43.025240 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 8
+I, [2015-03-31T11:14:43.025240 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 3
+I, [2015-03-31T11:14:43.025240 #6356]  INFO -- : get_prereqs(ENGR244) <= 7 4
+I, [2015-03-31T11:14:43.074685 #6356]  INFO -- : available_courses <=ENGR244
+I, [2015-03-31T11:14:43.115042 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:43.115042 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:43.115042 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:43.115042 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 3
+I, [2015-03-31T11:14:43.115042 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 4
+I, [2015-03-31T11:14:43.115042 #6356]  INFO -- : get_prereqs(ENGR391) <= 11 16
+I, [2015-03-31T11:14:43.143214 #6356]  INFO -- : available_courses <=ENGR391
+I, [2015-03-31T11:14:43.151284 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:43.151284 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:43.151284 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:43.151284 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 14
+I, [2015-03-31T11:14:43.151284 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 1
+I, [2015-03-31T11:14:43.151284 #6356]  INFO -- : get_prereqs(ENGR392) <= 12 2
+I, [2015-03-31T11:14:43.174430 #6356]  INFO -- : available_courses <=ENGR392
+I, [2015-03-31T11:14:43.224772 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:43.224772 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:43.234845 #6356]  INFO -- : available_courses <=COMP348
+I, [2015-03-31T11:14:43.263119 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:43.263119 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:43.263119 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:43.264122 #6356]  INFO -- : get_prereqs(COMP371) <= 26 24
+I, [2015-03-31T11:14:43.283171 #6356]  INFO -- : available_courses <=COMP371
+I, [2015-03-31T11:14:43.302187 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.302187 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 46
+I, [2015-03-31T11:14:43.302187 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 47
+I, [2015-03-31T11:14:43.303187 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 48
+I, [2015-03-31T11:14:43.303187 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 54
+I, [2015-03-31T11:14:43.313195 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:43.313195 #6356]  INFO -- : added COMP371to filter2
+I, [2015-03-31T11:14:43.313195 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : SELECTED COMP371
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : SELECTED ENGR243
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : SELECTED ENGR244
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : SELECTED ENGR391
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : course_counter:4
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : SELECTED ENGR392
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : course_counter:5
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : *****result of selection:COMP371
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : *****result of selection:ENGR243
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : *****result of selection:ENGR244
+I, [2015-03-31T11:14:43.314195 #6356]  INFO -- : *****result of selection:ENGR391
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : *****result of selection:ENGR392
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : !!!!!!!ADDED COMP371 to current semester
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : !!!!!!!ADDED ENGR243 to current semester
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : !!!!!!!ADDED ENGR244 to current semester
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : !!!!!!!ADDED ENGR391 to current semester
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : !!!!!!!ADDED ENGR392 to current semester
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:43.315197 #6356]  INFO -- : Semester:Fall 2017
+I, [2015-03-31T11:14:43.441905 #6356]  INFO -- : get_prereqs(COMP326) <= 18 22
+I, [2015-03-31T11:14:43.441905 #6356]  INFO -- : get_prereqs(COMP326) <= 18 22
+I, [2015-03-31T11:14:43.452997 #6356]  INFO -- : available_courses <=COMP326
+I, [2015-03-31T11:14:43.468104 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:43.468104 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:43.477206 #6356]  INFO -- : available_courses <=COMP345
+I, [2015-03-31T11:14:43.495332 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:43.495332 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:43.503407 #6356]  INFO -- : available_courses <=COMP348
+I, [2015-03-31T11:14:43.540709 #6356]  INFO -- : get_prereqs(COMP376) <= 27 26
+I, [2015-03-31T11:14:43.541730 #6356]  INFO -- : get_prereqs(COMP376) <= 27 26
+I, [2015-03-31T11:14:43.551805 #6356]  INFO -- : available_courses <=COMP376
+I, [2015-03-31T11:14:43.560860 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.560860 #6356]  INFO -- : get_prereqs(COMP426) <= 28 22
+I, [2015-03-31T11:14:43.570928 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.570928 #6356]  INFO -- : get_prereqs(COMP428) <= 64 22
+I, [2015-03-31T11:14:43.579011 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.579011 #6356]  INFO -- : get_prereqs(COMP445) <= 29 22
+I, [2015-03-31T11:14:43.590143 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.590143 #6356]  INFO -- : get_prereqs(COMP465) <= 31 19
+I, [2015-03-31T11:14:43.590143 #6356]  INFO -- : get_prereqs(COMP465) <= 31 24
+I, [2015-03-31T11:14:43.600230 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.600230 #6356]  INFO -- : get_prereqs(COMP472) <= 32 24
+I, [2015-03-31T11:14:43.609294 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.609294 #6356]  INFO -- : get_prereqs(COMP473) <= 33 24
+I, [2015-03-31T11:14:43.617346 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.618396 #6356]  INFO -- : get_prereqs(COMP477) <= 36 26
+I, [2015-03-31T11:14:43.618396 #6356]  INFO -- : get_prereqs(COMP477) <= 36 11
+I, [2015-03-31T11:14:43.628483 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.629505 #6356]  INFO -- : get_prereqs(COMP478) <= 37 24
+I, [2015-03-31T11:14:43.638554 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.638554 #6356]  INFO -- : get_prereqs(COMP479) <= 38 10
+I, [2015-03-31T11:14:43.657674 #6356]  INFO -- : get_prereqs(SOEN321) <= 43 22
+I, [2015-03-31T11:14:43.658689 #6356]  INFO -- : get_prereqs(SOEN321) <= 43 22
+I, [2015-03-31T11:14:43.667771 #6356]  INFO -- : available_courses <=SOEN321
+I, [2015-03-31T11:14:43.687946 #6356]  INFO -- : get_prereqs(SOEN342) <= 46 45
+I, [2015-03-31T11:14:43.687946 #6356]  INFO -- : get_prereqs(SOEN342) <= 46 45
+I, [2015-03-31T11:14:43.695013 #6356]  INFO -- : available_courses <=SOEN342
+I, [2015-03-31T11:14:43.706101 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 45
+I, [2015-03-31T11:14:43.707102 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 46
+I, [2015-03-31T11:14:43.707102 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 45
+I, [2015-03-31T11:14:43.707102 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 46
+I, [2015-03-31T11:14:43.737347 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 45
+I, [2015-03-31T11:14:43.737347 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 14
+I, [2015-03-31T11:14:43.737347 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 45
+I, [2015-03-31T11:14:43.737347 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 14
+I, [2015-03-31T11:14:43.756488 #6356]  INFO -- : available_courses <=SOEN384
+I, [2015-03-31T11:14:43.766564 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 25
+I, [2015-03-31T11:14:43.766564 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 45
+I, [2015-03-31T11:14:43.766564 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 42
+I, [2015-03-31T11:14:43.767564 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 25
+I, [2015-03-31T11:14:43.767564 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 45
+I, [2015-03-31T11:14:43.767564 #6356]  INFO -- : get_prereqs(SOEN387) <= 53 42
+I, [2015-03-31T11:14:43.794796 #6356]  INFO -- : available_courses <=SOEN387
+I, [2015-03-31T11:14:43.801857 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.802859 #6356]  INFO -- : get_prereqs(SOEN422) <= 55 22
+I, [2015-03-31T11:14:43.815042 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.815042 #6356]  INFO -- : get_prereqs(SOEN423) <= 56 22
+I, [2015-03-31T11:14:43.824086 #6356]  INFO -- : get_prereqs(COEN320) <= 66 22
+I, [2015-03-31T11:14:43.824086 #6356]  INFO -- : get_prereqs(COEN320) <= 66 22
+I, [2015-03-31T11:14:43.833168 #6356]  INFO -- : available_courses <=COEN320
+I, [2015-03-31T11:14:43.843264 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.843264 #6356]  INFO -- : get_prereqs(AERO480) <= 62 52
+I, [2015-03-31T11:14:43.853318 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:43.853318 #6356]  INFO -- : get_prereqs(AERO482) <= 63 52
+I, [2015-03-31T11:14:43.853318 #6356]  INFO -- : get_prereqs(AERO482) <= 63 10
+I, [2015-03-31T11:14:43.861385 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:43.861385 #6356]  INFO -- : added SOEN342to filter1
+I, [2015-03-31T11:14:43.861385 #6356]  INFO -- : added COMP376to filter2
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : added SOEN387to filter2
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : added COMP326to filter3
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : added SOEN321to filter3
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : added COEN320to filter3
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : SELECTED SOEN342
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : SELECTED COMP376
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:14:43.862385 #6356]  INFO -- : SELECTED SOEN387
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : SELECTED COMP326
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : course_counter:4
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : *****result of selection:SOEN342
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : *****result of selection:COMP376
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : *****result of selection:SOEN387
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : *****result of selection:COMP326
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : !!!!!!!ADDED SOEN342 to current semester
+I, [2015-03-31T11:14:43.863386 #6356]  INFO -- : !!!!!!!ADDED COMP376 to current semester
+I, [2015-03-31T11:14:43.864386 #6356]  INFO -- : !!!!!!!ADDED SOEN387 to current semester
+I, [2015-03-31T11:14:43.864386 #6356]  INFO -- : !!!!!!!ADDED COMP326 to current semester
+I, [2015-03-31T11:14:43.864386 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:14:43.864386 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:43.864386 #6356]  INFO -- : Semester:Winter 2018
+I, [2015-03-31T11:14:44.020099 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:44.021120 #6356]  INFO -- : get_prereqs(COMP345) <= 21 24
+I, [2015-03-31T11:14:44.028171 #6356]  INFO -- : available_courses <=COMP345
+I, [2015-03-31T11:14:44.049333 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:44.049333 #6356]  INFO -- : get_prereqs(COMP348) <= 23 17
+I, [2015-03-31T11:14:44.059401 #6356]  INFO -- : available_courses <=COMP348
+I, [2015-03-31T11:14:44.096710 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:44.096710 #6356]  INFO -- : get_prereqs(COMP442) <= 65 19
+I, [2015-03-31T11:14:44.096710 #6356]  INFO -- : get_prereqs(COMP442) <= 65 24
+I, [2015-03-31T11:14:44.104779 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:44.104779 #6356]  INFO -- : get_prereqs(COMP445) <= 29 22
+I, [2015-03-31T11:14:44.111822 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:44.112863 #6356]  INFO -- : get_prereqs(COMP472) <= 32 24
+I, [2015-03-31T11:14:44.123945 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:44.123945 #6356]  INFO -- : get_prereqs(COMP474) <= 34 24
+I, [2015-03-31T11:14:44.133989 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:44.135009 #6356]  INFO -- : get_prereqs(COMP476) <= 35 27
+I, [2015-03-31T11:14:44.135009 #6356]  INFO -- : get_prereqs(COMP476) <= 35 11
+I, [2015-03-31T11:14:44.176020 #6356]  INFO -- : get_prereqs(SOEN344) <= 48 47
+I, [2015-03-31T11:14:44.177019 #6356]  INFO -- : get_prereqs(SOEN344) <= 48 47
+I, [2015-03-31T11:14:44.192030 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 45
+I, [2015-03-31T11:14:44.192030 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 47
+I, [2015-03-31T11:14:44.192030 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 45
+I, [2015-03-31T11:14:44.192030 #6356]  INFO -- : get_prereqs(SOEN345) <= 49 47
+I, [2015-03-31T11:14:44.215049 #6356]  INFO -- : get_prereqs(SOEN357) <= 50 46
+I, [2015-03-31T11:14:44.215049 #6356]  INFO -- : get_prereqs(SOEN357) <= 50 46
+I, [2015-03-31T11:14:44.222052 #6356]  INFO -- : available_courses <=SOEN357
+I, [2015-03-31T11:14:44.237062 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 48
+I, [2015-03-31T11:14:44.237062 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 50
+I, [2015-03-31T11:14:44.238065 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 48
+I, [2015-03-31T11:14:44.238065 #6356]  INFO -- : get_prereqs(SOEN390) <= 54 50
+I, [2015-03-31T11:14:44.269282 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:44.270284 #6356]  INFO -- : get_prereqs(SOEN487) <= 59 53
+I, [2015-03-31T11:14:44.278364 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:44.290440 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:44.290440 #6356]  INFO -- : get_prereqs(COMP442) <= 65 19
+I, [2015-03-31T11:14:44.290440 #6356]  INFO -- : get_prereqs(COMP442) <= 65 24
+I, [2015-03-31T11:14:44.290440 #6356]  INFO -- : added SOEN357to filter1
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : SELECTED SOEN357
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : SELECTED COMP345
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : SELECTED COMP348
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : *****result of selection:SOEN357
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : *****result of selection:COMP345
+I, [2015-03-31T11:14:44.291439 #6356]  INFO -- : *****result of selection:COMP348
+I, [2015-03-31T11:14:44.292440 #6356]  INFO -- : !!!!!!!ADDED SOEN357 to current semester
+I, [2015-03-31T11:14:44.292440 #6356]  INFO -- : !!!!!!!ADDED COMP345 to current semester
+I, [2015-03-31T11:14:44.292440 #6356]  INFO -- : !!!!!!!ADDED COMP348 to current semester
+I, [2015-03-31T11:14:44.292440 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:14:44.292440 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:44.292440 #6356]  INFO -- : Semester:Summer 2018
+I, [2015-03-31T11:14:44.496941 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: true
+I, [2015-03-31T11:14:44.497943 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 46
+I, [2015-03-31T11:14:44.497943 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 47
+I, [2015-03-31T11:14:44.497943 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 48
+I, [2015-03-31T11:14:44.497943 #6356]  INFO -- : get_prereqs(SOEN490) <= 60 54
+I, [2015-03-31T11:14:44.507014 #6356]  INFO -- : available_courses <=ELEC275
+I, [2015-03-31T11:14:44.508015 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:44.508015 #6356]  INFO -- : SELECTED ELEC275
+I, [2015-03-31T11:14:44.508015 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:44.508015 #6356]  INFO -- : *****result of selection:ELEC275
+I, [2015-03-31T11:14:44.508015 #6356]  INFO -- : !!!!!!!ADDED ELEC275 to current semester
+I, [2015-03-31T11:14:44.508015 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
+I, [2015-03-31T11:14:44.508015 #6356]  INFO -- : ========== STARTING TO GENERATE A SEMESTER =============
+I, [2015-03-31T11:14:44.508015 #6356]  INFO -- : Semester:Fall 2018
+I, [2015-03-31T11:14:44.737972 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.738973 #6356]  INFO -- : get_prereqs(COMP426) <= 28 22
+I, [2015-03-31T11:14:44.739974 #6356]  INFO -- : get_prereqs(COMP426) <= 28 22
+I, [2015-03-31T11:14:44.754131 #6356]  INFO -- : available_courses <=COMP426
+I, [2015-03-31T11:14:44.769330 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.770328 #6356]  INFO -- : get_prereqs(COMP428) <= 64 22
+I, [2015-03-31T11:14:44.770328 #6356]  INFO -- : get_prereqs(COMP428) <= 64 22
+I, [2015-03-31T11:14:44.784511 #6356]  INFO -- : available_courses <=COMP428
+I, [2015-03-31T11:14:44.800640 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.800640 #6356]  INFO -- : get_prereqs(COMP445) <= 29 22
+I, [2015-03-31T11:14:44.801641 #6356]  INFO -- : get_prereqs(COMP445) <= 29 22
+I, [2015-03-31T11:14:44.815698 #6356]  INFO -- : available_courses <=COMP445
+I, [2015-03-31T11:14:44.827707 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.828707 #6356]  INFO -- : get_prereqs(COMP465) <= 31 19
+I, [2015-03-31T11:14:44.828707 #6356]  INFO -- : get_prereqs(COMP465) <= 31 24
+I, [2015-03-31T11:14:44.828707 #6356]  INFO -- : get_prereqs(COMP465) <= 31 19
+I, [2015-03-31T11:14:44.828707 #6356]  INFO -- : get_prereqs(COMP465) <= 31 24
+I, [2015-03-31T11:14:44.843719 #6356]  INFO -- : available_courses <=COMP465
+I, [2015-03-31T11:14:44.850723 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.850723 #6356]  INFO -- : get_prereqs(COMP472) <= 32 24
+I, [2015-03-31T11:14:44.851724 #6356]  INFO -- : get_prereqs(COMP472) <= 32 24
+I, [2015-03-31T11:14:44.857728 #6356]  INFO -- : available_courses <=COMP472
+I, [2015-03-31T11:14:44.863731 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.863731 #6356]  INFO -- : get_prereqs(COMP473) <= 33 24
+I, [2015-03-31T11:14:44.864734 #6356]  INFO -- : get_prereqs(COMP473) <= 33 24
+I, [2015-03-31T11:14:44.871738 #6356]  INFO -- : available_courses <=COMP473
+I, [2015-03-31T11:14:44.879744 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.880746 #6356]  INFO -- : get_prereqs(COMP477) <= 36 26
+I, [2015-03-31T11:14:44.880746 #6356]  INFO -- : get_prereqs(COMP477) <= 36 11
+I, [2015-03-31T11:14:44.880746 #6356]  INFO -- : get_prereqs(COMP477) <= 36 26
+I, [2015-03-31T11:14:44.880746 #6356]  INFO -- : get_prereqs(COMP477) <= 36 11
+I, [2015-03-31T11:14:44.896755 #6356]  INFO -- : available_courses <=COMP477
+I, [2015-03-31T11:14:44.904761 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.904761 #6356]  INFO -- : get_prereqs(COMP478) <= 37 24
+I, [2015-03-31T11:14:44.905762 #6356]  INFO -- : get_prereqs(COMP478) <= 37 24
+I, [2015-03-31T11:14:44.912768 #6356]  INFO -- : available_courses <=COMP478
+I, [2015-03-31T11:14:44.920772 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:44.920772 #6356]  INFO -- : get_prereqs(COMP479) <= 38 10
+I, [2015-03-31T11:14:44.921773 #6356]  INFO -- : get_prereqs(COMP479) <= 38 10
+I, [2015-03-31T11:14:44.928778 #6356]  INFO -- : available_courses <=COMP479
+I, [2015-03-31T11:14:44.944792 #6356]  INFO -- : get_prereqs(SOEN321) <= 43 22
+I, [2015-03-31T11:14:44.944792 #6356]  INFO -- : get_prereqs(SOEN321) <= 43 22
+I, [2015-03-31T11:14:44.953796 #6356]  INFO -- : available_courses <=SOEN321
+I, [2015-03-31T11:14:44.976814 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 45
+I, [2015-03-31T11:14:44.976814 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 46
+I, [2015-03-31T11:14:44.976814 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 45
+I, [2015-03-31T11:14:44.976814 #6356]  INFO -- : get_prereqs(SOEN343) <= 47 46
+I, [2015-03-31T11:14:44.992823 #6356]  INFO -- : available_courses <=SOEN343
+I, [2015-03-31T11:14:45.001830 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 45
+I, [2015-03-31T11:14:45.001830 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 14
+I, [2015-03-31T11:14:45.002831 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 45
+I, [2015-03-31T11:14:45.002831 #6356]  INFO -- : get_prereqs(SOEN384) <= 51 14
+I, [2015-03-31T11:14:45.015841 #6356]  INFO -- : available_courses <=SOEN384
+I, [2015-03-31T11:14:45.031851 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:45.031851 #6356]  INFO -- : get_prereqs(SOEN422) <= 55 22
+I, [2015-03-31T11:14:45.031851 #6356]  INFO -- : get_prereqs(SOEN422) <= 55 22
+I, [2015-03-31T11:14:45.037855 #6356]  INFO -- : available_courses <=SOEN422
+I, [2015-03-31T11:14:45.045862 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:45.045862 #6356]  INFO -- : get_prereqs(SOEN423) <= 56 22
+I, [2015-03-31T11:14:45.046862 #6356]  INFO -- : get_prereqs(SOEN423) <= 56 22
+I, [2015-03-31T11:14:45.052866 #6356]  INFO -- : available_courses <=SOEN423
+I, [2015-03-31T11:14:45.060905 #6356]  INFO -- : get_prereqs(COEN320) <= 66 22
+I, [2015-03-31T11:14:45.060905 #6356]  INFO -- : get_prereqs(COEN320) <= 66 22
+I, [2015-03-31T11:14:45.067987 #6356]  INFO -- : available_courses <=COEN320
+I, [2015-03-31T11:14:45.076026 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:45.076026 #6356]  INFO -- : get_prereqs(AERO480) <= 62 52
+I, [2015-03-31T11:14:45.077027 #6356]  INFO -- : get_prereqs(AERO480) <= 62 52
+I, [2015-03-31T11:14:45.083097 #6356]  INFO -- : available_courses <=AERO480
+I, [2015-03-31T11:14:45.090133 #6356]  INFO -- : 400-400-400 check if 400 is missing 200 level: false
+I, [2015-03-31T11:14:45.090133 #6356]  INFO -- : get_prereqs(AERO482) <= 63 52
+I, [2015-03-31T11:14:45.090133 #6356]  INFO -- : get_prereqs(AERO482) <= 63 10
+I, [2015-03-31T11:14:45.090133 #6356]  INFO -- : get_prereqs(AERO482) <= 63 52
+I, [2015-03-31T11:14:45.090133 #6356]  INFO -- : get_prereqs(AERO482) <= 63 10
+I, [2015-03-31T11:14:45.104245 #6356]  INFO -- : available_courses <=AERO482
+I, [2015-03-31T11:14:45.110282 #6356]  INFO -- : added SOEN343to filter1
+I, [2015-03-31T11:14:45.111283 #6356]  INFO -- : added COMP426to filter3
+I, [2015-03-31T11:14:45.111283 #6356]  INFO -- : added COMP465to filter3
+I, [2015-03-31T11:14:45.111283 #6356]  INFO -- : added COMP473to filter3
+I, [2015-03-31T11:14:45.111283 #6356]  INFO -- : added COMP478to filter3
+I, [2015-03-31T11:14:45.111283 #6356]  INFO -- : added SOEN321to filter3
+I, [2015-03-31T11:14:45.111283 #6356]  INFO -- : added SOEN422to filter3
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : added COEN320to filter3
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : added AERO482to filter3
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : Filter1.size is less than 4
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : SELECTED SOEN343
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : course_counter:1
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : SELECTED COMP426
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : course_counter:2
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : SELECTED COMP465
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : course_counter:3
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : SELECTED COMP473
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : course_counter:4
+I, [2015-03-31T11:14:45.112284 #6356]  INFO -- : SELECTED COMP478
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : course_counter:5
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : *****result of selection:SOEN343
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : *****result of selection:COMP426
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : *****result of selection:COMP465
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : *****result of selection:COMP473
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : *****result of selection:COMP478
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : !!!!!!!ADDED SOEN343 to current semester
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : !!!!!!!ADDED COMP426 to current semester
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : !!!!!!!ADDED COMP465 to current semester
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : !!!!!!!ADDED COMP473 to current semester
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : !!!!!!!ADDED COMP478 to current semester
+I, [2015-03-31T11:14:45.113321 #6356]  INFO -- : -------------pushed current_semester into complete_sequence
