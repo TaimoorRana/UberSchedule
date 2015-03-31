@@ -76,6 +76,13 @@
           <%= select_tag(:noSplitClasses, options_for_select(['Yes', 'No'], selected: @noSplitClasses)) %>
         </div>
       </div>
+      <div class="form-group">
+        <label for="allowSummerSemester" class="col-sm-4">Allow summer classes? :</label>
+
+        <div class="col-sm-4">
+          <%= select_tag(:allowSummerSemester, options_for_select(['Yes', 'No'], selected: @allowSummerSemester)) %>
+        </div>
+      </div>
       <br><br>
       <%= submit_tag("Edit Profile", class: 'btn btn-default btn-lg') %>
   <% end %> <!-- end of the form -->

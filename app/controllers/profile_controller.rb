@@ -9,8 +9,7 @@ class ProfileController < ApplicationController
     @previous_preferences = student.preferences
     @previous_preferences.exists?(11) ? @noSplitClasses = 'No' : @noSplitClasses = 'Yes'
     @previous_preferences.exists?(12) ? @noLoyolaCampus = 'No' : @noLoyolaCampus = 'Yes'
-    @previous_preferences.exists?(16) ? @entry = 'Fall Entry' : @entry = 'Winter Entry'
-    @previous_preferences.exists?(15) ? @coop = 'Yes' : @noLoyolaCampus = 'No'
+    @previous_preferences.exists?(15) ? @entry = 'Fall Entry' : @entry = 'Winter Entry'
     @previous_preferences.exists?(14) ? @allowSummerSemester = 'Yes' : @allowSummerSemester = 'No'
 
     @opt_none = Sequence.find(9).sequence_name

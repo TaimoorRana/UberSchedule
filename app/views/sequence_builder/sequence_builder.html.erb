@@ -10,18 +10,16 @@
     <p class="rich2">@complete_sequence TEST</p>
     <p class="rich2"> </p>
     <% @complete_sequence.each do |semester| %>
-        <% semester.each do |info| %>
-            <p class="rich2"> <%= info %> </p>
+        <table class="rich2" style="width:20%" border="1">
+          <tr>
+            <th><%= semester[0] %></th>
+          </tr>
+        <% (1..semester.size - 1).each do |i| %>
+          <tr>
+            <td><%= semester[i] %></td>
+          </tr>
         <% end %>
-    <% end %>
-    <p class="rich2">@-----------------COMPLETED COURSES TEST---------------------</p>
-    <% @completed_courses.each do |course| %>
-        <p class="rich2"> <%= course.dept %> <%= course.number %> </p>
-    <% end %>
-
-    <p class="rich2">@-----------------200 LEVEL---------------------</p>
-    <% @all_200_level.each do |course| %>
-    <p class="rich2"> <%= course.dept %> <%= course.number %> </p>
+            </table></br>
     <% end %>
 
 

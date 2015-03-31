@@ -9,12 +9,13 @@ class SequenceBuilderController < ApplicationController
     @semester_counter = 0
     preferences = @student.preferences
     preferences.exists?(15) ? @semester_counter = 0 : @semester_counter = 1 # 0 = Fall Entry, 1 = Winter Entry
-    preferences.exists?(14) ? allowSummer = true : allowSummer = false #not implemented
-
+    preferences.exists?(14) ? @allowSummer = true : @allowSummer = false #not implemented
+    @semester_modulo = @allowSummer ? 3 : 2 #3 for summer, #2 for no summers
 
     max_credits = 120
     @year = 2015
     @semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"}
+
 
     @all_sections = Array.new
     sections_to_array
@@ -189,7 +190,7 @@ class SequenceBuilderController < ApplicationController
   end
 
   def determine_current_semester
-    current_semester_string = @semester[@semester_counter.modulo(2)]
+    current_semester_string = @semester[@semester_counter.modulo(@semester_modulo)]
     if current_semester_string == "Winter"
       @year+=1
     end
@@ -199,7 +200,7 @@ class SequenceBuilderController < ApplicationController
 
   def generate_available_courses
     available_courses = Array.new
-    all_given_sections = @all_given_sections[@semester_counter.modulo(2)]
+    all_given_sections = @all_given_sections[@semester_counter.modulo(@semester_modulo)]
     previous_course_id = 0
     all_given_sections.each do |section|
       if previous_course_id != section.course_id #prevents double checking Courses
@@ -298,11 +299,15 @@ class SequenceBuilderController < ApplicationController
     filter2 = Array.new
     filter3 = Array.new
 
-    if @semester[@semester_counter.modulo(2)] == "Fall"
+    if @semester[@semester_counter.modulo(@semester_modulo)] == "Fall"
        courses_given_this_term_only = @fall_courses_only
-    elsif @semester[@semester_counter.modulo(2)] == "Winter"
+    elsif @semester[@semester_counter.modulo(@semester_modulo)] == "Winter"
         courses_given_this_term_only = @winter_courses_only
+    elsif @semester[@semester_counter.modulo(@semester_modulo)] == "Summer"
+      courses_given_this_term_only = @courses_offered_in_summer
     end
+
+    max_courses = (@semester[@semester_counter.modulo(@semester_modulo)] == "Summer") ? 4 : 5
 
     available.each do |avail|
        if courses_given_this_term_only.include?(available) and @number_of_direct_dependents[avail.course_id] > 0 and @mandatory_courses.include?(avail)
@@ -315,7 +320,7 @@ class SequenceBuilderController < ApplicationController
          available.delete(avail)
        end
     end
-    if filter1.size < 5
+    if filter1.size < max_courses
       available.each do |avail|
         if @number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")
           filter2.push(avail)
@@ -324,7 +329,7 @@ class SequenceBuilderController < ApplicationController
         end
       end
     end
-    if (filter1.size + filter2.size) < 5
+    if (filter1.size + filter2.size) < max_courses
       available.each do |avail|
        if courses_given_this_term_only.include?(avail) and !@courses_offered_in_summer.include?(avail)
          filter3.push(avail)
@@ -333,7 +338,7 @@ class SequenceBuilderController < ApplicationController
        end
       end
     end
-  if filter1.size > 4
+  if filter1.size > (max_courses - 1)
     @log.info("Filter1.size is greater than 4")
     selected[0] = filter1[0]
     selected[1] = filter1[1]
@@ -343,14 +348,14 @@ class SequenceBuilderController < ApplicationController
   else
     @log.info("Filter1.size is less than 4")
     course_counter = 0
-    max_course = [5, available.length].min
+    max_courses = [max_courses, available.length].min
     while course_counter <= filter1.size - 1
       selected.push(filter1[course_counter])
       @log.info("SELECTED " + filter1[course_counter].dept + filter1[course_counter].number.to_s)
       course_counter += 1
       @log.info("course_counter:" + course_counter.to_s)
     end
-    while course_counter < max_course do
+    while course_counter < max_courses do
       if filter2[0] != nil
         if !selected.include?(filter2[0])
           selected.push(filter2[0])
