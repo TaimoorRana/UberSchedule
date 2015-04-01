@@ -5,7 +5,6 @@ class ScheduleController < ApplicationController
 
   def schedule
     @sections = []
-    @tutorials = []
     @courses = [Course.find(1), Course.find(15), Course.find(16),Course.find(3)]
     @mondaySections = []
     @tuesdaySections = []
@@ -85,27 +84,54 @@ class ScheduleController < ApplicationController
     i = 0
 
     begin
-      @tutorials = possible_tutorials[i]
-      @week_tutorials = separate_sections_according_to_days(@tutorials)
-      merged_sections = merge_sections(@week_sections,@week_tutorials)
+      tutorials = possible_tutorials[i]
+      week_tutorials = separate_sections_according_to_days(tutorials)
+      merged_sections = merge_sections(@week_sections,week_tutorials)
       @conflicts_tutorials = find_conflicts(merged_sections)
       if @conflicts_tutorials = []
         @week_sections = sort_all_sections_tutorials_labs(merged_sections)
         break
-      else
-        @week_sections = [[],[],[],[],[]]
       end
       i += 1
     end while @conflicts_tutorials != [] && i < (possible_tutorials.size - 1)
 
     if @conflicts_tutorials == []
-      #find_all_tutorials
       return 1
     else
       return nil
     end
   end
 
+
+
+  def find_all_labs(tutorials)
+    all_courses_labs = []
+
+    tutorials.each do |tutorial|
+      all_courses_labs.push(tutorial.laboratory)
+    end
+
+    possible_labs = all_courses_labs.inject(&:product).map(&:flatten)
+    i = 0
+
+    begin
+      labs = possible_labs[i]
+      week_labs = separate_sections_according_to_days(labs)
+      merged_sections = merge_sections(@week_sections,week_labs)
+      @conflicts_tutorials = find_conflicts(merged_sections)
+      if @conflicts_labs = []
+        @week_sections = sort_all_sections_tutorials_labs(merged_sections)
+        break
+      end
+      i += 1
+    end while @conflicts_labs != [] && i < (possible_labs.size - 1)
+
+    if @conflicts_labs == []
+      return 1
+    else
+      return nil
+    end
+  end
 
 
   def merge_sections(arr1,arr2)
