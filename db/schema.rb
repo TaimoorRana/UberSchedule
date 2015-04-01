@@ -73,9 +73,9 @@ ActiveRecord::Schema.define(version: 20150318012516) do
   end
 
   create_table "prereq_types", force: :cascade do |t|
-    t.string   "prereq_type", limit: 255
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.string   "prereq_type",  limit: 255
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "sections", force: :cascade do |t|

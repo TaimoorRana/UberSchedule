@@ -108,6 +108,17 @@ p{
     margin-top: 5px;
 }
 
+.rich2 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:14px;
+    color: #000000;
+}
+
+#rich2 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size:14px;
+    color: #000000;
+}
 .menuFONT{
     font-family:helvetica;
     font-size:12px;
@@ -133,3 +144,4 @@ a.menuLG:link {color:#FFFFFF; text-decoration:none; background-color:#FF8C00;}
 a.menuLG:visited {color:#FFFFFF; text-decoration:none;}
 a.menuLG:hover {text-decoration: none; background-color:#000000; color:#ffffff;}
 a.menuLG:active {color:#20B2AA;}
+

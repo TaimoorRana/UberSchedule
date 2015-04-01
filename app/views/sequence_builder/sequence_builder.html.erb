@@ -6,19 +6,30 @@
     </div>
     </div>
 
-    <!--main outer container div-->
-    <div class="whiteBCKG extend">
-      <!-- inside container div-->
-      <div class="mainContent">
+<body>
+    <p class="rich2">@complete_sequence TEST</p>
+    <p class="rich2"> </p>
+    <% @complete_sequence.each do |semester| %>
+        <table class="rich2" style="width:30%" border="1">
+          <tr>
+            <th><%= semester[0] %></th>
+          </tr>
+        <% (1..semester.size - 2).each do |i| %>
+          <tr>
+            <td><%= semester[i] %></td>
+          <tr>
 
-        <% @complete_sequence.each do |semester|  %>
-            <p class="rich"> Semester--------</p>
-            <% semester.each do |course| %>
-                <p class="rich"><%= course.dept %> <%= course.number %></p>
-            <% end %>
         <% end %>
+          <tr>
+            <td> Accumulated credits: <%= semester.last %> </td>
+          </tr>
+            </table></br>
+    <% end %>
 
 
 
-      </div>
-    </div>
+
+
+
+</body>
+</html>
