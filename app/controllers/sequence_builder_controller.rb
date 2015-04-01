@@ -2,19 +2,31 @@ class SequenceBuilderController < ApplicationController
   layout 'general_schedule'
 
   def sequence_builder
-    @log = Logger.new("log3.txt")
-    @log.level = Logger::DEBUG
+    @log = Logger.new("log3.txt")  #Logger Class instance used to debug
+    @log.level = Logger::DEBUG     #all lines starting with @log.info are just there to log shit.
+
     user_id = current_user.user_id
     @student = Student.where(user_id: user_id).first
-    @semester_counter = 0
+    preferences = @student.preferences
+    preferences.exists?(15) ? @semester_counter = 0 : @semester_counter = 1 # 0 = Fall Entry, 1 = Winter Entry
+    preferences.exists?(14) ? @allowSummer = true : @allowSummer = false
+
+    @semester_counter = 0 #We will take the mod 2 or 3 of this value to obtain the current semester.
+    @semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"} #Hash to convert semester counter to semester string
     preferences = @student.preferences
     preferences.exists?(15) ? @semester_counter = 0 : @semester_counter = 1 # 0 = Fall Entry, 1 = Winter Entry
     preferences.exists?(14) ? @allowSummer = true : @allowSummer = false #not implemented
     @semester_modulo = @allowSummer ? 3 : 2 #3 for summer, #2 for no summers
 
-    max_credits = 120
-    @year = 2015
-    @semester = {0 => "Fall", 1 => "Winter", 2 => "Summer"}
+    max_credits = 120 #change accordingly. Could be made flexible.
+    @year = 2015 #same
+
+    # ----------------------------------------------------------------------------------------------------------
+    # The purpose of the following block of code is to grab as much relevant information from the db
+    # as possible and to shove in arrays of Objects. The names should be descriptive enough. For more information
+    # see the individual method calls.
+    # Using instance variables because they are easier to work with.
+    # Protip: click a method and press Ctrl+B to jump to method declaration
 
     @all_sections = Array.new
     sections_to_array
@@ -35,10 +47,10 @@ class SequenceBuilderController < ApplicationController
     generate_mandatory_courses
 
     @all_prereqs = Array.new
-    @all_coreqs = Array.new
+    @all_coreqs = Array.new #TODO not yet used! Creates problems mainly for COMP390
     @all_200_level = Array.new
     @all_400_level = Array.new
-    @completed_all_200_level = false
+    @completed_all_200_level = false #later checked via determine_completed_all_200_level method
     all_prereqs_to_array
     generate_all_200_and_400_level
 
@@ -58,52 +70,62 @@ class SequenceBuilderController < ApplicationController
     generate_basic_sciences
     generate_ignore_list
 
-    test = list_of_dependents(Course.find(16))
+    test = list_of_dependents(Course.find(15)) #Testing the list_of_dependents method. Only for logging purposes.
     @log.info("+++CONTENTS OF list_of_dependents")
     test.each do |x|
       @log.info(x)
     end
 
-    @complete_sequence = Array.new
+    @complete_sequence = Array.new # Will be populated by current_semester Arrays detailed in the upcoming while loop.
 
+    # This while loop will control the creation of the entire sequence. The end result is a fully generated sequence
+    # stored in @complete_sequence.
     while @accumulated_credits < max_credits
-      current_semester = Array.new
+      current_semester = Array.new #will contain STRINGS following the order: [semester detail] [Courses dept + Number] [accumulated credits]
+
       @log.info("========== STARTING TO GENERATE A SEMESTER =============")
       semester_string = determine_current_semester
       @log.info("Semester:" + semester_string)
-      current_semester.push(semester_string)
-      available_courses = generate_available_courses
-      selected_courses = select_courses_from_available(available_courses)
 
-      selected_courses.each do |course|
+      current_semester.push(semester_string) #  push semester detail for display purposes
+      available_courses = generate_available_courses #  available course = {course not yet taken} - {course that don't meet prereqs}
+      selected_courses = select_courses_from_available(available_courses) # from available courses, select the ones with highest priority
+
+      selected_courses.each do |course| # pushes string form of selected courses to the current_semester array.
         current_semester.push(course.dept + " " + course.number.to_s)
         @completed_courses.push(course)
         @accumulated_credits += course.credit
-        @log.info("!!!!!!!ADDED " + course.dept + course.number.to_s + " to current semester")
+        @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
         end
-      current_semester.push(@accumulated_credits.to_s)
+      current_semester.push(@accumulated_credits.to_s) # push accumulated credits to current_semester
       @complete_sequence.push(current_semester)
-      @log.info("-------------pushed current_semester into complete_sequence")
 
-      if !@completed_all_200_level
+      if !@completed_all_200_level #check if the boolean for completed 200 level courses is true or false.
         determine_completed_all_200_level
       end
-      @semester_counter+=1
+      @semester_counter+=1 #increment semester counter to correctly select the following semester
       @log.info("semester_counter: " + @semester_counter.to_s)
-    end
+    end #end of while loop
 
-  end #end of def sequence_builder
+  end #END OF def sequence_builder
 
-  # populates the @all_sections array with Section objects
-  def sections_to_array #tested for class type Array and correct output
+  # ---------------------------------------------------------------------------------------------------------------
+  # Here ends the main method of the sequence_builder. The following methods either populate an instance variable
+  # or manipulate the data in some (hopefully) useful way. Don't expect detailed comments for methods that simply
+  # convert DB associations and relations to arrays!
+  #---------------------------------------------------------------------------------------------------------------
+
+  def sections_to_array
     Section.all.each do |section|
       @all_sections.push(section)
       @log.info("@all_sections <= " + section.id.to_s)
     end
   end
 
-  # Filters the Section objects from @all_sections array into small array, according to term
-  def sort_sections_by_term #tested for class type Array and proper sort
+  # Separates by term the @all_sections array into smaller arrays.
+  # Used to limit the operations in the generate_available_course method and to ensure that a course not given in a
+  # semester doesn't appear to be available for that semester.
+  def sort_sections_by_term
     @all_sections.each do |section|
       if section.term == "Fall"
         @all_fall_sections.push(section)
@@ -118,24 +140,27 @@ class SequenceBuilderController < ApplicationController
     end
   end
 
-  #populates the @fall_courses_only, @winter_courses_only and @courses_offered_in_summer arrays with Course objects
-  def courses_given_in_specific_semester #tested for array types and proper content
+  # populates the @fall_courses_only, @winter_courses_only and @courses_offered_in_summer arrays with Course objects
+  # Checks in which semester all the Courses are given. Uses the information to determine whether a course is given
+  # exclusively in the fall or the winter, or whether a Summer section for a course exists.
+  # The information will be used to evaluate the priority of the available courses for a given semester.
+  def courses_given_in_specific_semester
     offered_in_fall = false
     offered_in_winter = false
     offered_in_summer = false
     current_course_id = 1
     @all_sections.each do |section|
-      if current_course_id != section.course_id
+      if current_course_id != section.course_id # used to prevent multiple checks of the same Course.
         course = Course.find(current_course_id)
-        if offered_in_summer
+        if offered_in_summer #  the offered_ booleans correspond to the previous course! See **REF** to see where they are declared
           @courses_offered_in_summer.push(course)
           @log.info("@courses_offered_in_summer <= " + course.dept + course.number.to_s)
         else
-          if offered_in_fall and !offered_in_winter
+          if offered_in_fall and !offered_in_winter # Courses offered in Fall only
             @fall_courses_only.push(course)
             @log.info("@fall_courses_only <= " + course.dept + course.number.to_s)
           end
-          if !offered_in_fall and offered_in_winter
+          if !offered_in_fall and offered_in_winter # Courses offered in Winter only
             @winter_courses_only.push(course)
             @log.info("@winter_courses_only <= " + course.dept + course.number.to_s)
           end
@@ -145,6 +170,7 @@ class SequenceBuilderController < ApplicationController
         offered_in_winter = false
         offered_in_summer = false
       end #end if current_course_id != section.course_id
+      # **REF**
         if section.term == "Fall"
           offered_in_fall = true
         elsif section.term == "Winter"
@@ -153,16 +179,18 @@ class SequenceBuilderController < ApplicationController
           offered_in_summer = true
         end
     end #end do loop
-  end #end of courses_given_only_in_fall_or_winter_plus_summer
+  end #end of courses_given_in specific_semester
 
-  # populates @all_prereqs array with CoursesPrereq objects
-  def all_prereqs_to_array #tested for array type and proper content
+  # Prereq_type_id: 1 = normal prereqs. ie: no concurrent.
+  def all_prereqs_to_array
     CoursesPrereq.where(prereq_type_id: 1).all.each do |prereq|
       @all_prereqs.push(prereq)
       @log.info("@all_prereqs <= " + prereq.course_id.to_s + " " + prereq.course_id_prereq.to_s)
     end
   end
 
+  # Prereq_type_id: 3 = Prereq can be taken previously or concurrently.
+  # TODO implement this in the course selection.
   def all_coreqs_to_array
     CoursesPrereq.where(prereq_type_id: 3).all.each do |coreq|
       @all_coreqs.push(coreq)
@@ -170,15 +198,20 @@ class SequenceBuilderController < ApplicationController
     end
   end
 
-  # populates @complete_courses with the Courses from @student.courses
-  def completed_courses_to_array #teted for array type and proper content
+  # initially populated by courses which the student has already taken.
+  # courses which are selected into a semester are also added to this list.
+  # completed_courses are filtered out of available_courses, and they serve to check if prereqs have been met.
+  def completed_courses_to_array
     @student.courses.each do |course|
       @completed_courses.push(course)
       @log.info("@completed_courses <= " + course.dept + course.number.to_s)
     end
   end
 
-  def number_of_direct_dependents #tested for array Type and proper content
+  # OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE OBSOLETE
+  # Replaced by methods which return the entire list of dependents for a course!
+  # Will delete once the new better method is fully implemented
+  def number_of_direct_dependents
     Course.all.each do |course|
         arr = Array.new
         @all_prereqs.each do |prereq|
@@ -191,10 +224,11 @@ class SequenceBuilderController < ApplicationController
     end
   end
 
+  # for a course, return the list of all prereqs of type 1 (normal prereqs, corequisites are excluded!)
   def get_prereqs(course)
     arr = Array.new
     @all_prereqs.each do |prereq|
-      if (prereq.course_id == course.course_id) and (prereq.course_id != 0)
+      if (prereq.course_id == course.course_id) and (prereq.course_id != 0) # added this last part because the db has a random prereq entry for id 0...
         arr.push(prereq)
         @log.info("get_prereqs("+course.dept+course.number.to_s+") <= " + prereq.course_id.to_s + " " + prereq.course_id_prereq.to_s)
       end
@@ -209,6 +243,8 @@ class SequenceBuilderController < ApplicationController
     end
   end
 
+  # @semester_modulo depends on the students preference for summer courses. 3 = summers, 2 = no summers
+  # When a semester is Winter, increment the year count.
   def determine_current_semester
     current_semester_string = @semester[@semester_counter.modulo(@semester_modulo)]
     if current_semester_string == "Winter"
@@ -218,34 +254,43 @@ class SequenceBuilderController < ApplicationController
     return current_semester_string + " " + current_year
   end
 
+  # --- MAJOR METHOD ---
+  # This method is at the core of the sequence_builder. It's purpose is to produce the set of available courses for the
+  # current semester. An available course is a course which has not yet been completed and whose prereqs of type 1 have
+  # been completed. Level 400 courses have the additional requirement that all mandatory 200 level courses must completed
+  # before they can be taken.
+  # The list of available courses will then be used by the selector method which will pick the 4-5 courses with the highes
+  # priority to be taken for the current semester.
+  # Returns Array of Course objects.
   def generate_available_courses
     available_courses = Array.new
-    all_given_sections = @all_given_sections[@semester_counter.modulo(@semester_modulo)]
+    all_given_sections = @all_given_sections[@semester_counter.modulo(@semester_modulo)]  # find all sections given in a term
     previous_course_id = 0
     all_given_sections.each do |section|
       if previous_course_id != section.course_id #prevents double checking Courses
         previous_course_id = section.course_id
         course = Course.find(section.course_id)
-        if !@completed_courses.include?(course) and !@ignore_list.include?(course) #check if course was taken or is on ignore list
-          missing_prereqs = false
-          basic_sciences_allowed = true
-          if @all_400_level.include?(course)
+        if !@completed_courses.include?(course) and !@ignore_list.include?(course) #check if course was taken or is on ignore list.
+          missing_prereqs = false # assume no missing prereqs. Following lines try to find missing prereqs.
+          if @all_400_level.include?(course) #if course is a 400 level, check if all 200 level are completed.
             missing_prereqs = !@completed_all_200_level
             log_string = missing_prereqs ? "true" : "false"
             @log.info("400-400-400 check if 400 is missing 200 level: " + log_string)
           end
-          if @all_basic_sciences.include?(course) and (@basic_science_counter >= 2)
-            basic_sciences_allowed = false
+          basic_sciences_allowed = true # assume basic sciences allowed.
+          if @all_basic_sciences.include?(course) and (@basic_science_counter >= 2) #if course is basic science and 2 basic already chosen, don't allow.
+            basic_sciences_allowed = false #TODO It is possible that more than 2 sciences are available. Must make sure that the selection logic
+            #TODO doesn't allow for the selection of >2 sciences in a given semester. Use @basic_science_counter.
           end
-          if CoursesPrereq.where(course_id: course).size > 0 and missing_prereqs == false
+          if CoursesPrereq.where(course_id: course).size > 0 and missing_prereqs == false #if course has prereqs and hasn't failed yet.
             prereqs = get_prereqs(course)
             prereqs.each do |p|
-             if !@completed_courses.include?(Course.find(p.course_id_prereq))
+             if !@completed_courses.include?(Course.find(p.course_id_prereq)) #too lazy to prevent this DB call
                missing_prereqs = true
              end
-             end
+            end
           end #if has prereq
-          if !missing_prereqs and basic_sciences_allowed
+          if !missing_prereqs and basic_sciences_allowed # if no missing prereqs and not an invalid basic science, push to available.
             available_courses.push(course)
             @log.info("available_courses <=" + course.dept + course.number.to_s)
           end
@@ -260,7 +305,7 @@ class SequenceBuilderController < ApplicationController
   end
 
   def generate_all_200_and_400_level
-    Course.all.each do |x|
+    Course.all.each do |x| #  lazy way to exclude electives. Was made before implementation of @mandatory_courses
       if x.number > 200 and x.number < 300 and x.number != 242 and x.number != 243 and x.number != 244 and x.number != 245 and x.dept != "ENCS"
         @all_200_level.push(x)
         @log.info("all_200_level <=" + x.dept + x.number.to_s)
@@ -271,6 +316,7 @@ class SequenceBuilderController < ApplicationController
       end
   end
 
+  # check if all the courses in the all_200_level array are also in the completed_courses array
   def determine_completed_all_200_level
     completed_them_all = true
     @all_200_level.each do |course|
@@ -329,7 +375,25 @@ class SequenceBuilderController < ApplicationController
       end
   end
 
-#THE SELECTION BEAST
+  # ---MAJOR METHOD---
+  # The brains of our application! Note, this is currently a placeholder, so I won't comment the code too much.
+  # The current code is pretty much a half-assed attempt to get something working. It works by arbitrarily dividing
+  # the available courses into 4 categories and picking the highest 4/5 for a given semester. It has many flaws which
+  # must be fixed in the next version. See the TODO
+  # This is what the priority should ideally look like (assume current semester is not Summer):
+  # 1 -  Courses given only in current term + highest relative number of dependents + is not an elective (ex: SOEN 228)
+  # 2 -  Courses with highest relative number of dependents + is not elective (basically only COMP 352)
+  # 3 -  Courses given only in the current term + medium dependents + is not an elective (ex: SOEN 343)
+  # 4 -  Courses with high relative number of dependents + is not elective + not offered in the summer (ex: SOEN 341?)
+  # 5 -  Courses with medium relative number of dependents + is not elective
+  # 6 -  Courses with high relative number of dependents
+  # 7 -  Whatever is left.
+  # TODO 1: Replace @number_of_direct_dependents by the information for the complete set of dependents. This alone will generate awesome schedules.
+  # TODO 2: Deal with prereq_type_id 3 (coreqs), most notably SOEN390.
+  # TODO 3: When basic science is selected, increment @basic_science_counter. Prevent that counter to reach 3.
+  # TODO 4: Just generally find a less ugly way to do this part :)
+  # TODO 5: Stop adding courses once the @accumulated_credits reach 120.
+  # TODO 6: ALLOW SOEN490. It requires special logic due to its unique nature and unique DB entry.
   def select_courses_from_available(available)
     selected = Array.new
     filter1 = Array.new
@@ -346,7 +410,7 @@ class SequenceBuilderController < ApplicationController
 
     max_courses = (@semester[@semester_counter.modulo(@semester_modulo)] == "Summer") ? 4 : 5
 
-    available.each do |avail|
+    available.each do |avail| #generate top priority courses
        if courses_given_this_term_only.include?(available) and @number_of_direct_dependents[avail.course_id] > 0 and @mandatory_courses.include?(avail)
          filter1.push(avail)
          @log.info("added " + avail.dept + avail.number.to_s + "to filter1")
@@ -357,7 +421,7 @@ class SequenceBuilderController < ApplicationController
          available.delete(avail)
        end
     end
-    if filter1.size < max_courses
+    if filter1.size < max_courses #generate 2nd priority courses
       available.each do |avail|
         if (@number_of_direct_dependents[avail.course_id] > 0 and (avail.dept == "COMP" or avail.dept == "SOEN")) or @all_200_level.include?(avail)
           filter2.push(avail)
@@ -366,7 +430,7 @@ class SequenceBuilderController < ApplicationController
         end
       end
     end
-    if (filter1.size + filter2.size) < max_courses
+    if (filter1.size + filter2.size) < max_courses #generate 3rd priority courses
       available.each do |avail|
        if courses_given_this_term_only.include?(avail) and !@courses_offered_in_summer.include?(avail)
          filter3.push(avail)
@@ -375,7 +439,7 @@ class SequenceBuilderController < ApplicationController
        end
       end
     end
-  if filter1.size > (max_courses - 1)
+  if filter1.size > (max_courses - 1) #if many top priority, just pick 5!
     @log.info("Filter1.size is greater than 4")
     selected[0] = filter1[0]
     selected[1] = filter1[1]
@@ -386,13 +450,13 @@ class SequenceBuilderController < ApplicationController
     @log.info("Filter1.size is less than 4")
     course_counter = 0
     max_courses = [max_courses, available.length].min
-    while course_counter <= filter1.size - 1
+    while course_counter <= filter1.size - 1 #add all top priorities, then move on.
       selected.push(filter1[course_counter])
       @log.info("SELECTED " + filter1[course_counter].dept + filter1[course_counter].number.to_s)
       course_counter += 1
       @log.info("course_counter:" + course_counter.to_s)
     end
-    while course_counter < max_courses do
+    while course_counter < max_courses do #add all 2nd, then move on.
       if filter2[0] != nil
         if !selected.include?(filter2[0])
           selected.push(filter2[0])
@@ -401,7 +465,7 @@ class SequenceBuilderController < ApplicationController
           course_counter += 1
           @log.info("course_counter:" + course_counter.to_s)
         end
-      elsif filter3[0] != nil
+      elsif filter3[0] != nil # add all 3rd, then move on.
         if !selected.include?(filter3[0])
          selected.push(filter3[0])
         @log.info("SELECTED " + filter3[0].dept + filter3[0].number.to_s)
@@ -409,7 +473,7 @@ class SequenceBuilderController < ApplicationController
          course_counter += 1
          @log.info("course_counter:" + course_counter.to_s)
         end
-      elsif available[0] != nil
+      elsif available[0] != nil #add the rest, then return.
         if !selected.include?(available[0])
           selected.push(available[0])
         @log.info("SELECTED " + available[0].dept + available[0].number.to_s)
@@ -420,15 +484,17 @@ class SequenceBuilderController < ApplicationController
       end
     end
   end
-    selected.each do |x|
+    selected.each do |x| #only for logging purposes
       @log.info("*****result of selection:"  + x.dept + x.number.to_s)
     end
     return selected
   end #END OF SELECT
 
+  # The following two methods work in pairs. populate_list is only ever called from within list_of_dependents
+  # These functions work recursively to generate the entire list of dependents for any given course.
   def list_of_dependents(course)
     @list_of_dependents = Set.new
-   populate_list(course)
+    populate_list(course)
     return @list_of_dependents
   end
 
