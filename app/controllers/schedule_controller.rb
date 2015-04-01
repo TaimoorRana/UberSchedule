@@ -86,6 +86,9 @@ class ScheduleController < ApplicationController
       @conflicts_tutorials = find_conflicts(merged_sections)
       if @conflicts_tutorials = []
         @week_sections = sort_all_sections_tutorials_labs(merged_sections)
+        break
+      else
+        @week_sections = [[],[],[],[],[]]
       end
       i += 1
     end while @conflicts_tutorials != [] && i < (@possible_tutorials.size - 1)
@@ -128,7 +131,7 @@ class ScheduleController < ApplicationController
 
           #duration is given in seconds so divide by 60 to get minutes and then divide by 15min because that time unit in schedule is every
           # 15min. This allow to calculate how many rows a sections will span
-          section_row_span = (duration/60/15).ceil
+          section_row_span = (duration/60/5).ceil
           schedule_section = ScheduleSection.new(section,'#F7F7F7',section_row_span)
           if day == 'M'
             week[0].push(schedule_section)

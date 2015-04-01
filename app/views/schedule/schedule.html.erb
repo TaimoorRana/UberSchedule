@@ -39,10 +39,10 @@
         <% @thursday_section_duration = 0 %>
         <% @friday_section_duration = 0 %>
 
-        <% (0..64).each do |i|%>
+        <% (0..192).each do |i|%>
             <% if (x.min == 0) then minutes = '00' else minutes = "#{x.min}" end %>
             <% time= "#{x.hour}:#{minutes}" %>
-            <% x += 900 %>
+            <% x += 300 %>
             <tr>
               <td> <%= time %> </td>
               <!-- this will try to match the courses on the given day to the current time on the schedule,-->
@@ -93,7 +93,7 @@
                       <td rowspan="<%=@wednesdaySections.first.row_span%>" style="background-color: #19aeff; border-bottom: none" ><%= @wednesdaySections.first.section.course.dept %> <%= @wednesdaySections.first.section.course.number %> <br/> <%= @wednesdaySections.first.section.name %> <br/> Sec id: <%=@wednesdaySections.first.section.id %> <br/> <%= @wednesdaySections.first.section.time_start %>
                         <br/> <%= @wednesdaySections.first.section.time_end %></td>
                   <% else %>
-                      <td rowspan="<%=@wednesdaySections.first.row_span%>" style="background-color: #19aeff; border-bottom: none" ><%= @wednesdaySections.first[0].course.dept %> <%= @wednesdaySections.first.section.course.number %> <br/> <%= @wednesdaySections.first.section.name %> <br/> Tut Id:<%= @wednesdaySections.first.section.id %>  <br/> Section id: <%= @wednesdaySections.first.section.section_id %> <br/> <%= @wednesdaySections.first.section.time_start %>
+                      <td rowspan="<%=@wednesdaySections.first.row_span%>" style="background-color: #19aeff; border-bottom: none" ><%= @wednesdaySections.first.section.course.dept %> <%= @wednesdaySections.first.section.course.number %> <br/> <%= @wednesdaySections.first.section.name %> <br/> Tut Id:<%= @wednesdaySections.first.section.id %>  <br/> Section id: <%= @wednesdaySections.first.section.section_id %> <br/> <%= @wednesdaySections.first.section.time_start %>
                         <br/> <%= @wednesdaySections.first.section.time_end %></td>
                   <% end %>
 
