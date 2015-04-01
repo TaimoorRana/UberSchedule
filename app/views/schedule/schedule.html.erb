@@ -49,13 +49,18 @@
               <% if @mondaySections.any? && @mondaySections.first.section.time_start == time  %>
                   <% @monday_section_duration = @mondaySections.first.row_span %>
 
-                  <% if @mondaySections.first.section.is_a?(Section) %>
-                      <td rowspan="<%=@mondaySections.first.row_span%>" style="background-color: #ff9900; border-bottom: none" ><%= @mondaySections.first.section.course.dept %> <%= @mondaySections.first.section.course.number %> <br/> <%= @mondaySections.first.section.name %> <br/> Sec id: <%=@mondaySections.first.section.id %> <br/> <%= @mondaySections.first.section.time_start %>
-                        <br/> <%= @mondaySections.first.section.time_end %></td>
-                  <% else %>
-                      <td rowspan="<%=@mondaySections.first.row_span%>" style="background-color: #ff9900; border-bottom: none" ><%= @mondaySections.first.section.course.dept %> <%= @mondaySections.first.section.course.number %> <br/> <%= @mondaySections.first.section.name %> <br/> Tut Id:<%= @mondaySections.first.section.id %>  <br/> Section id: <%= @mondaySections.first.section.section_id %> <br/> <%= @mondaySections.first.section.time_start %>
-                        <br/> <%= @mondaySections.first.section.time_end %></td>
-                  <% end %>
+                  <td rowspan="<%=@mondaySections.first.row_span%>" style="background-color:<%=@mondaySections.first.color%>; border-bottom: none" >
+                    <%= @mondaySections.first.section.course.dept %> <%= @mondaySections.first.section.course.number %> <br/>
+                    <%= @mondaySections.first.section.name %> <br/>
+                    <% if @mondaySections.first.section.is_a?(Section) %>
+                        Sec id: <%=@mondaySections.first.section.id %> <br/>
+
+                    <% else %>
+                        Tut Id:<%= @mondaySections.first.section.id %>  <br/>
+                        Section id: <%= @mondaySections.first.section.section_id %> <br/>
+                    <% end %>
+                    <%= @mondaySections.first.section.time_start %><br/>
+                    <%= @mondaySections.first.section.time_end %></td>
 
                   <% @mondaySections.shift(1)%>
               <% elsif @monday_section_duration > 1 %>
@@ -69,13 +74,18 @@
               <% if @tuesdaySections.any? &&  @tuesdaySections.first.section.time_start == time  %>
                   <% @tuesday_section_duration = @tuesdaySections.first.row_span %>
 
-                  <% if @tuesdaySections.first.section.is_a?(Section) %>
-                      <td rowspan="<%=@tuesdaySections.first.row_span%>" style="background-color: #9ade00; border-bottom: none" ><%= @tuesdaySections.first.section.course.dept %> <%= @tuesdaySections.first.section.course.number %> <br/> <%= @tuesdaySections.first.section.name %> <br/> Sec id: <%=@tuesdaySections.first.section.id %> <br/> <%= @tuesdaySections.first.section.time_start %>
-                        <br/> <%= @tuesdaySections.first.section.time_end %></td>
-                  <% else %>
-                      <td rowspan="<%=@tuesdaySections.first.row_span%>" style="background-color: #9ade00; border-bottom: none" ><%= @tuesdaySections.first.section.course.dept %> <%= @tuesdaySections.first.section.course.number %> <br/> <%= @tuesdaySections.first.section.name %> <br/> Tut Id:<%= @tuesdaySections.first.section.id %>  <br/> Section id: <%= @tuesdaySections.first.section.section_id %> <br/> <%= @tuesdaySections.first.section.time_start %>
-                        <br/> <%= @tuesdaySections.first.section.time_end %></td>
-                  <% end %>
+                  <td rowspan="<%=@tuesdaySections.first.row_span%>" style="background-color:<%=@tuesdaySections.first.color%>; border-bottom: none" >
+                    <%= @tuesdaySections.first.section.course.dept %> <%= @tuesdaySections.first.section.course.number %> <br/>
+                    <%= @tuesdaySections.first.section.name %> <br/>
+                    <% if @tuesdaySections.first.section.is_a?(Section) %>
+                        Sec id: <%=@tuesdaySections.first.section.id %> <br/>
+
+                    <% else %>
+                        Tut Id:<%= @tuesdaySections.first.section.id %>  <br/>
+                        Section id: <%= @tuesdaySections.first.section.section_id %> <br/>
+                    <% end %>
+                    <%= @tuesdaySections.first.section.time_start %><br/>
+                    <%= @tuesdaySections.first.section.time_end %></td>
 
                     <% @tuesdaySections.shift(1) %>
               <% elsif @tuesday_section_duration > 1 %>
@@ -89,13 +99,18 @@
               <% if @wednesdaySections.any? && @wednesdaySections.first.section.time_start == time  %>
                   <% @wednesday_section_duration = @wednesdaySections.first.row_span %>
 
-                  <% if @wednesdaySections.first.section.is_a?(Section) %>
-                      <td rowspan="<%=@wednesdaySections.first.row_span%>" style="background-color: #19aeff; border-bottom: none" ><%= @wednesdaySections.first.section.course.dept %> <%= @wednesdaySections.first.section.course.number %> <br/> <%= @wednesdaySections.first.section.name %> <br/> Sec id: <%=@wednesdaySections.first.section.id %> <br/> <%= @wednesdaySections.first.section.time_start %>
-                        <br/> <%= @wednesdaySections.first.section.time_end %></td>
-                  <% else %>
-                      <td rowspan="<%=@wednesdaySections.first.row_span%>" style="background-color: #19aeff; border-bottom: none" ><%= @wednesdaySections.first.section.course.dept %> <%= @wednesdaySections.first.section.course.number %> <br/> <%= @wednesdaySections.first.section.name %> <br/> Tut Id:<%= @wednesdaySections.first.section.id %>  <br/> Section id: <%= @wednesdaySections.first.section.section_id %> <br/> <%= @wednesdaySections.first.section.time_start %>
-                        <br/> <%= @wednesdaySections.first.section.time_end %></td>
-                  <% end %>
+                  <td rowspan="<%=@wednesdaySections.first.row_span%>" style="background-color:<%=@wednesdaySections.first.color%>; border-bottom: none" >
+                    <%= @wednesdaySections.first.section.course.dept %> <%= @wednesdaySections.first.section.course.number %> <br/>
+                    <%= @wednesdaySections.first.section.name %> <br/>
+                    <% if @wednesdaySections.first.section.is_a?(Section) %>
+                        Sec id: <%=@wednesdaySections.first.section.id %> <br/>
+
+                    <% else %>
+                        Tut Id:<%= @wednesdaySections.first.section.id %>  <br/>
+                        Section id: <%= @wednesdaySections.first.section.section_id %> <br/>
+                    <% end %>
+                    <%= @wednesdaySections.first.section.time_start %><br/>
+                    <%= @wednesdaySections.first.section.time_end %></td>
 
                   <% @wednesdaySections.shift(1) %>
               <% elsif @wednesday_section_duration > 1 %>
@@ -108,14 +123,18 @@
 
               <% if @thursdaySections.any? && @thursdaySections.first.section.time_start == time  %>
                   <% @thursday_section_duration = @thursdaySections.first.row_span %>
+                  <td rowspan="<%=@thursdaySections.first.row_span%>" style="background-color:<%=@thursdaySections.first.color%>; border-bottom: none" >
+                    <%= @thursdaySections.first.section.course.dept %> <%= @thursdaySections.first.section.course.number %> <br/>
+                    <%= @thursdaySections.first.section.name %> <br/>
+                    <% if @thursdaySections.first.section.is_a?(Section) %>
+                        Sec id: <%=@thursdaySections.first.section.id %> <br/>
 
-                  <% if @thursdaySections.first.section.is_a?(Section) %>
-                      <td rowspan="<%=@thursdaySections.first.row_span%>" style="background-color: #ff4141; border-bottom: none" ><%= @thursdaySections.first.section.course.dept %> <%= @thursdaySections.first.section.course.number %> <br/> <%= @thursdaySections.first.section.name %> <br/> Sec id: <%=@thursdaySections.first.section.id %> <br/> <%= @thursdaySections.first.section.time_start %>
-                        <br/> <%= @thursdaySections.first.section.time_end %></td>
-                  <% else %>
-                      <td rowspan="<%=@thursdaySections.first.row_span%>" style="background-color: #ff4141; border-bottom: none" ><%= @thursdaySections.first.section.course.dept %> <%= @thursdaySections.first.section.course.number %> <br/> <%= @thursdaySections.first.section.name %> <br/> Tut Id:<%= @thursdaySections.first.section.id %>  <br/> Section id: <%= @thursdaySections.first.section.section_id %> <br/> <%= @thursdaySections.first.section.time_start %>
-                        <br/> <%= @thursdaySections.first.section.time_end %></td>
-                  <% end %>
+                    <% else %>
+                        Tut Id:<%= @thursdaySections.first.section.id %>  <br/>
+                        Section id: <%= @thursdaySections.first.section.section_id %> <br/>
+                    <% end %>
+                    <%= @thursdaySections.first.section.time_start %><br/>
+                    <%= @thursdaySections.first.section.time_end %></td>
 
                   <% @thursdaySections.shift(1) %>
               <% elsif @thursday_section_duration > 1 %>
@@ -127,15 +146,20 @@
 
 
               <% if @fridaySections.any? && @fridaySections.first.section.time_start == time  %>
-                  <% @friday_section_duration = @fridaySections.first.row_span %>
 
-                  <% if @fridaySections.first.section.is_a?(Section) %>
-                  <td rowspan="<%=@fridaySections.first.row_span%>" style="background-color: #ffff3e; border-bottom: none" ><%= @fridaySections.first.section.course.dept %> <%= @fridaySections.first.section.course.number %> <br/> <%= @fridaySections.first.section.name %> <br/> Sec id: <%=@fridaySections.first.section.id %> <br/> <%= @fridaySections.first.section.time_start %>
-                    <br/> <%= @fridaySections.first.section.time_end %></td>
+                  <% @friday_section_duration = @fridaySections.first.row_span %>
+                    <td rowspan="<%=@fridaySections.first.row_span%>" style="background-color:<%=@fridaySections.first.color%>; border-bottom: none" >
+                      <%= @fridaySections.first.section.course.dept %> <%= @fridaySections.first.section.course.number %> <br/>
+                      <%= @fridaySections.first.section.name %> <br/>
+                    <% if @fridaySections.first.section.is_a?(Section) %>
+                          Sec id: <%=@fridaySections.first.section.id %> <br/>
+
                   <% else %>
-                      <td rowspan="<%=@fridaySections.first.row_span%>" style="background-color: #ffff3e; border-bottom: none" ><%= @fridaySections.first.section.course.dept %> <%= @fridaySections.first.section.course.number %> <br/> <%= @fridaySections.first.section.name %> <br/> Tut Id:<%= @fridaySections.first.section.id %>  <br/> Section id: <%= @fridaySections.first.section.section_id %> <br/> <%= @fridaySections.first.section.time_start %>
-                        <br/> <%= @fridaySections.first.section.time_end %></td>
+                          Tut Id:<%= @fridaySections.first.section.id %>  <br/>
+                          Section id: <%= @fridaySections.first.section.section_id %> <br/>
                   <% end %>
+                          <%= @fridaySections.first.section.time_start %><br/>
+                          <%= @fridaySections.first.section.time_end %></td>
 
                   <% @fridaySections.shift(1) %>
               <% elsif @friday_section_duration > 1 %>

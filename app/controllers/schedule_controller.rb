@@ -14,17 +14,37 @@ class ScheduleController < ApplicationController
     @fridaySections = []
 
     if find_all_sections != nil
+      add_colors
       @mondaySections = @week_sections[0]
       @tuesdaySections = @week_sections[1]
       @wednesdaySections = @week_sections[2]
       @thursdaySections = @week_sections[3]
       @fridaySections = @week_sections[4]
     end
+  end
 
+  def add_colors
+    colors = ['#ff9900','#9ade00','#19aeff','#ff4141','#ffff3e','#d76cff']
+    colors_to_courses = {}
+    @courses.each_index do |i|
+      colors_to_courses[@courses[i].id] = colors[i]
+    end
 
+    @week_sections.each do |day|
+      day.each do |schedule_section|
+        color = colors_to_courses[schedule_section.section.course.course_id]
+        schedule_section.color = color
+      end
+    end
 
-
-
+    return colors_to_courses
+    # week.each do |day|
+    #   day.each do |section|
+    #     if courses_id.include?(section.section.course.course_id) == false
+    #       courses_id.append(section.section.course.course_id)
+    #     end
+    #   end
+    # end
   end
 
   def find_all_sections
@@ -86,6 +106,8 @@ class ScheduleController < ApplicationController
     end
   end
 
+
+
   def merge_sections(arr1,arr2)
     arr_merged = [[],[],[],[],[]]
     arr1.each_with_index do |useless,i|
@@ -113,8 +135,8 @@ class ScheduleController < ApplicationController
           #duration of a section
           duration = (Time.parse(section.time_end) - Time.parse(section.time_start))
 
-          #duration is given in seconds so divide by 60 to get minutes and then divide by 15min because that time unit in schedule is every
-          # 15min. This allow to calculate how many rows a sections will span
+          #duration is given in seconds so divide by 60 to get minutes and then divide by 5min because that time unit in schedule is every
+          # 5min. This allow to calculate how many rows a sections will span
           section_row_span = (duration/60/5).ceil
           schedule_section = ScheduleSection.new(section,'#F7F7F7',section_row_span)
           if day == 'M'
@@ -126,6 +148,7 @@ class ScheduleController < ApplicationController
           elsif day == 'W' && wednesday_added == false
             week[2].push(schedule_section)
             wednesday_added = true
+
           elsif day == 'J'
             week[3].push(schedule_section)
 
@@ -137,11 +160,9 @@ class ScheduleController < ApplicationController
       end
     end
 
-
-    #sort_all_sections_tutorials_labs(week)
-
     return week
   end
+
 
   #this loop will sort section - section that start the earliest are put in front of the array
   def sort_all_sections_tutorials_labs(week)
