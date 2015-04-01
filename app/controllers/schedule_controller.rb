@@ -4,8 +4,6 @@ class ScheduleController < ApplicationController
 
 
   def schedule
-
-    #@sections = [Course.find(2).sections.first,Course.find(45).sections.first,Course.find(31).sections.first,Course.find(42).sections.find(194)]
     @sections = []
     @tutorials = []
     @courses = [Course.find(1), Course.find(15), Course.find(16),Course.find(3)]
@@ -16,19 +14,6 @@ class ScheduleController < ApplicationController
     @fridaySections = []
 
     if find_all_sections != nil
-      #find_all_tutorials
-      week_tutorials = separate_sections_according_to_days(@tutorials)
-      #week_tutorials = [[],[],[],[],[]]
-      #@week_sections = sort_all_sections_tutorials_labs(@week_sections)
-      #mixed_sections = week_tutorials.append(week_sections)
-      #mixed_sections = separate_sections_according_to_days(mixed_sections)
-      #week = sort_all_sections_tutorials_labs(mixed_sections)
-      # @mondaySections = if week_tutorials[0].flatten != [] then @week_sections[0].append(week_tutorials[0]).flatten else @week_sections[0] end
-      # @tuesdaySections = if week_tutorials[1].flatten != [] then @week_sections[1].append(week_tutorials[1]).flatten else @week_sections[1] end
-      # @wednesdaySections = if week_tutorials[2].flatten != [] then @week_sections[2].append(week_tutorials[2]).flatten else @week_sections[2] end
-      # @thursdaySections = if week_tutorials[3].flatten != [] then @week_sections[3].append(week_tutorials[3]).flatten else @week_sections[3] end
-      # @fridaySections = if week_tutorials[4].flatten != [] then @week_sections[4].append(week_tutorials[4]).flatten else @week_sections[4] end
-      #week = sort_all_sections_tutorials_labs([@mondaySections,@thursdaySections,@wednesdaySections,@thursdaySections,@fridaySections])
       @mondaySections = @week_sections[0]
       @tuesdaySections = @week_sections[1]
       @wednesdaySections = @week_sections[2]
@@ -43,21 +28,21 @@ class ScheduleController < ApplicationController
   end
 
   def find_all_sections
-    @all_courses_sections = []
+    all_courses_sections = []
 
     @courses.each do |course|
-      @all_courses_sections.push(course.sections)
+      all_courses_sections.push(course.sections)
     end
 
-    @possible_sections = @all_courses_sections.inject(&:product).map(&:flatten)
+    possible_sections = all_courses_sections.inject(&:product).map(&:flatten)
     i = 0
 
     begin
-      @sections = @possible_sections[i]
+      @sections = possible_sections[i]
       @week_sections = separate_sections_according_to_days(@sections)
       @conflicts_sections = find_conflicts(@week_sections)
       i += 1
-    end while @conflicts_sections != [] && i < (@possible_sections.size - 1)
+    end while @conflicts_sections != [] && i < (possible_sections.size - 1)
 
     if @conflicts_sections == []
        find_all_tutorials
@@ -70,17 +55,17 @@ class ScheduleController < ApplicationController
 
 
   def find_all_tutorials
-    @all_courses_tutorials = []
+    all_courses_tutorials = []
 
     @sections.each do |section|
-      @all_courses_tutorials.push(section.tutorials)
+      all_courses_tutorials.push(section.tutorials)
     end
 
-    @possible_tutorials = @all_courses_tutorials.inject(&:product).map(&:flatten)
+    possible_tutorials = all_courses_tutorials.inject(&:product).map(&:flatten)
     i = 0
 
     begin
-      @tutorials = @possible_tutorials[i]
+      @tutorials = possible_tutorials[i]
       @week_tutorials = separate_sections_according_to_days(@tutorials)
       merged_sections = merge_sections(@week_sections,@week_tutorials)
       @conflicts_tutorials = find_conflicts(merged_sections)
@@ -91,7 +76,7 @@ class ScheduleController < ApplicationController
         @week_sections = [[],[],[],[],[]]
       end
       i += 1
-    end while @conflicts_tutorials != [] && i < (@possible_tutorials.size - 1)
+    end while @conflicts_tutorials != [] && i < (possible_tutorials.size - 1)
 
     if @conflicts_tutorials == []
       #find_all_tutorials
@@ -104,7 +89,6 @@ class ScheduleController < ApplicationController
   def merge_sections(arr1,arr2)
     arr_merged = [[],[],[],[],[]]
     arr1.each_with_index do |useless,i|
-      #arr_merged[i] = arr1[i].append(arr2[i]).flatten
       arr_merged[i] = arr1[i] + arr2[i]
     end
     return arr_merged
