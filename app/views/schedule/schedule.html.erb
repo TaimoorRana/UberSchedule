@@ -44,12 +44,13 @@
             <% time= "#{x.hour}:#{minutes}" %>
             <% x += 300 %>
             <tr>
+
               <td> <%= time %> </td>
               <!-- this will try to match the courses on the given day to the current time on the schedule,-->
               <% if @mondaySections.any? && @mondaySections.first.section.time_start == time  %>
                   <% @monday_section_duration = @mondaySections.first.row_span %>
 
-                  <td rowspan="<%=@mondaySections.first.row_span%>" style="background-color:<%=@mondaySections.first.color%>; border-bottom: none" >
+                  <td rowspan="<%= @mondaySections.first.row_span%>" style="background-color:<%=@mondaySections.first.color%>; border-bottom: none" >
                     <%= @mondaySections.first.section.course.dept %> <%= @mondaySections.first.section.course.number %> <br/>
                     <%= @mondaySections.first.section.name %> <br/>
                     <% if @mondaySections.first.section.is_a?(Section) %>
@@ -154,23 +155,19 @@
                     <% if @fridaySections.first.section.is_a?(Section) %>
                           Sec id: <%=@fridaySections.first.section.id %> <br/>
 
-                  <% else %>
+                    <% else %>
                           Tut Id:<%= @fridaySections.first.section.id %>  <br/>
                           Section id: <%= @fridaySections.first.section.section_id %> <br/>
-                  <% end %>
+                    <% end %>
                           <%= @fridaySections.first.section.time_start %><br/>
                           <%= @fridaySections.first.section.time_end %></td>
 
-                  <% @fridaySections.shift(1) %>
+                    <% @fridaySections.shift(1) %>
               <% elsif @friday_section_duration > 1 %>
                   <% @friday_section_duration = @friday_section_duration - 1 %>
               <% else %>
                   <td> </td>
-
               <% end %>
-
-
-
             </tr>
         <% end %>
       </table>
