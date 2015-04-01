@@ -4,7 +4,6 @@ class ScheduleController < ApplicationController
 
 
   def schedule
-    @sections = []
     @courses = [Course.find(1), Course.find(15), Course.find(16),Course.find(3)]
     @mondaySections = []
     @tuesdaySections = []
@@ -12,7 +11,7 @@ class ScheduleController < ApplicationController
     @thursdaySections = []
     @fridaySections = []
 
-    if find_all_sections != nil
+    if find_all_sections != false
       add_colors
       @mondaySections = @week_sections[0]
       @tuesdaySections = @week_sections[1]
@@ -21,6 +20,8 @@ class ScheduleController < ApplicationController
       @fridaySections = @week_sections[4]
     end
   end
+
+
 
   def add_colors
     colors = ['#ff9900','#9ade00','#19aeff','#ff4141','#ffff3e','#d76cff']
@@ -46,6 +47,9 @@ class ScheduleController < ApplicationController
     # end
   end
 
+
+
+
   def find_all_sections
     all_courses_sections = []
 
@@ -57,26 +61,30 @@ class ScheduleController < ApplicationController
     i = 0
 
     begin
-      @sections = possible_sections[i]
-      @week_sections = separate_sections_according_to_days(@sections)
+      sections = possible_sections[i]
+      @week_sections = separate_sections_according_to_days(sections)
       @conflicts_sections = find_conflicts(@week_sections)
+      if @conflicts_sections == []
+        tutorials_found = find_all_tutorials(sections)
+      end
       i += 1
     end while @conflicts_sections != [] && i < (possible_sections.size - 1)
 
     if @conflicts_sections == []
-       find_all_tutorials
-      return 1
+      return true
     else
-      return nil
+      return false
     end
 
   end
 
 
-  def find_all_tutorials
+
+
+  def find_all_tutorials(sections)
     all_courses_tutorials = []
 
-    @sections.each do |section|
+    sections.each do |section|
       all_courses_tutorials.push(section.tutorials)
     end
 
@@ -88,17 +96,17 @@ class ScheduleController < ApplicationController
       week_tutorials = separate_sections_according_to_days(tutorials)
       merged_sections = merge_sections(@week_sections,week_tutorials)
       @conflicts_tutorials = find_conflicts(merged_sections)
+      #find_all_labs(tutorials)
       if @conflicts_tutorials = []
         @week_sections = sort_all_sections_tutorials_labs(merged_sections)
-        break
       end
       i += 1
     end while @conflicts_tutorials != [] && i < (possible_tutorials.size - 1)
 
     if @conflicts_tutorials == []
-      return 1
+      return true
     else
-      return nil
+      return false
     end
   end
 
@@ -127,11 +135,13 @@ class ScheduleController < ApplicationController
     end while @conflicts_labs != [] && i < (possible_labs.size - 1)
 
     if @conflicts_labs == []
-      return 1
+      return true
     else
-      return nil
+      return false
     end
   end
+
+
 
 
   def merge_sections(arr1,arr2)
@@ -141,7 +151,6 @@ class ScheduleController < ApplicationController
     end
     return arr_merged
   end
-
 
 
 
@@ -188,6 +197,7 @@ class ScheduleController < ApplicationController
 
     return week
   end
+
 
 
   #this loop will sort section - section that start the earliest are put in front of the array
@@ -244,6 +254,8 @@ class ScheduleController < ApplicationController
     return conflict_arr.uniq
   end
 
+
+
   def registered_courses
 
     @courses = current_user.student.courses
@@ -255,9 +267,13 @@ class ScheduleController < ApplicationController
 
   end
 
+
+
   def add_sections(section)
     @sections.push(section)
   end
+
+
 
   class ScheduleSection
     attr_accessor :section,:color,:row_span
