@@ -4,19 +4,20 @@ class ScheduleController < ApplicationController
 
 
   def schedule
-    @courses = [Course.find(1), Course.find(15), Course.find(16),Course.find(3)]
+    @courses = [Course.find(1), Course.find(15), Course.find(19),Course.find(3)]
     @mondaySections = []
     @tuesdaySections = []
     @wednesdaySections = []
     @thursdaySections = []
     @fridaySections = []
 
+    @possible_schedules = []
     @week_sections =[]
     all_lectures = find_all_lectures(@courses)
+    schedule_possibility_limit = 4
     if all_lectures != []
-
       #for every lectures combination found
-      all_lectures.first(5).each do |lectures|
+      all_lectures.each do |lectures|
         #separate them into days
         lectures_separated_according_to_days = separate_sections_according_to_days(lectures)
         #if there is no conflicts between sections
@@ -47,17 +48,19 @@ class ScheduleController < ApplicationController
                       if find_conflicts(all_sections_merged) == []
 
                         @week_sections = sort_all_sections_tutorials_labs(all_sections_merged)
+                        @possible_schedules.append(@week_sections)
                         break
                       end
 
                     end
 
                   end
-
+                #if no lab exists
                 else
                    merge_sections_tutorials = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
                    if find_conflicts(merge_sections_tutorials) == []
                      @week_sections = sort_all_sections_tutorials_labs(merge_sections_tutorials)
+                     @possible_schedules.append(@week_sections)
                      break
                    end
                 end
@@ -71,6 +74,10 @@ class ScheduleController < ApplicationController
             @week_sections = lectures_separated_according_to_days
           end
 
+        end
+
+        if @possible_schedules.size >= schedule_possibility_limit
+          break
         end
 
       end
