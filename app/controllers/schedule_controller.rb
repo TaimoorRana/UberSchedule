@@ -75,8 +75,6 @@ class ScheduleController < ApplicationController
 
         end
 
-
-
       end
 
     end
@@ -213,7 +211,7 @@ class ScheduleController < ApplicationController
 
           #duration is given in seconds so divide by 60 to get minutes and then divide by 5min because that time unit in schedule is every
           # 5min. This allow to calculate how many rows a sections will span
-          section_row_span = (duration/60/5).ceil
+          section_row_span = (duration/60/15).ceil
           schedule_section = ScheduleSection.new(section,'#F7F7F7',section_row_span)
           if day == 'M'
             week[0].push(schedule_section)

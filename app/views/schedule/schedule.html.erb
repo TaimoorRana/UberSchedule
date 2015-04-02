@@ -14,7 +14,7 @@
   <div class="mainContent" style="margin: 0 auto" >
 
     <div class="greybody">
-      <% @possible_schedules.each do |schedule| %>
+      <% @possible_schedules.first(3).each do |schedule| %>
       <table border="2px">
         <tr>
           <th>Time</th>
@@ -40,10 +40,10 @@
         <% @thursday_section_duration = 0 %>
         <% @friday_section_duration = 0 %>
 
-        <% (0..192).each do |i|%>
+        <% (0..64).each do |i|%>
             <% if (x.min == 0) then minutes = '00' else minutes = "#{x.min}" end %>
             <% time= "#{x.hour}:#{minutes}" %>
-            <% x += 300 %>
+            <% x += 900 %>
             <tr>
 
               <td> <%= time %> </td>
