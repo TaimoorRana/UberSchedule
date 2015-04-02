@@ -46,7 +46,7 @@ class ScheduleController < ApplicationController
                       all_sections_merged = merge_sections(lectures_tutorials_merged,labs_separated_according_to_days)
 
                       if find_conflicts(all_sections_merged) == []
-
+                        add_colors
                         @week_sections = sort_all_sections_tutorials_labs(all_sections_merged)
                         @possible_schedules.append(@week_sections)
                         break
@@ -59,6 +59,7 @@ class ScheduleController < ApplicationController
                 else
                    merge_sections_tutorials = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
                    if find_conflicts(merge_sections_tutorials) == []
+                     add_colors
                      @week_sections = sort_all_sections_tutorials_labs(merge_sections_tutorials)
                      @possible_schedules.append(@week_sections)
                      break
@@ -76,21 +77,17 @@ class ScheduleController < ApplicationController
 
         end
 
-        if @possible_schedules.size >= schedule_possibility_limit
-          break
-        end
+
 
       end
 
     end
-
-
     add_colors
-    @mondaySections = @week_sections[0]
-    @tuesdaySections = @week_sections[1]
-    @wednesdaySections = @week_sections[2]
-    @thursdaySections = @week_sections[3]
-    @fridaySections = @week_sections[4]
+    # @mondaySections = @week_sections[0]
+    # @tuesdaySections = @week_sections[1]
+    # @wednesdaySections = @week_sections[2]
+    # @thursdaySections = @week_sections[3]
+    # @fridaySections = @week_sections[4]
 
   end
 
