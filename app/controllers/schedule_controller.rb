@@ -123,7 +123,7 @@ class ScheduleController < ApplicationController
     courses.each do |course|
       #for every course, attempt to find a or many sections
       if course.sections != nil
-      all_courses_sections.push(course.sections)
+      all_courses_sections.push(course.sections.where(term:'Winter'))
       end
     end
 
