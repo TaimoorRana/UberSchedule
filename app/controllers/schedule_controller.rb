@@ -49,7 +49,6 @@ class ScheduleController < ApplicationController
                         add_colors
                         @week_sections = sort_all_sections_tutorials_labs(all_sections_merged)
                         @possible_schedules.append(@week_sections)
-                        break
                       end
 
                     end
@@ -62,7 +61,6 @@ class ScheduleController < ApplicationController
                      add_colors
                      @week_sections = sort_all_sections_tutorials_labs(merge_sections_tutorials)
                      @possible_schedules.append(@week_sections)
-                     break
                    end
                 end
 
@@ -167,13 +165,13 @@ class ScheduleController < ApplicationController
     #for every tutorial, attempt to find a lab
     tutorials.each do |tutorial|
       #if tutorial have a lab, add to all_courses_labs
-      if tutorial.laboratory != nil
-        all_courses_labs.push(tutorial.laboratory)
+      if tutorial.laboratories != []
+        all_courses_labs.push(tutorial.laboratories)
       end
     end
 
     #if there are 2 or more tutorials that have labs, find and return all combinations
-    if all_courses_labs.size >= 3
+    if all_courses_labs.size >= 2
       return all_courses_labs.inject(&:product).map(&:flatten)
     # else return 2 ,1 or no lab
     else
