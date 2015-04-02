@@ -11,14 +11,80 @@ class ScheduleController < ApplicationController
     @thursdaySections = []
     @fridaySections = []
 
-    if find_all_sections != false
-      add_colors
-      @mondaySections = @week_sections[0]
-      @tuesdaySections = @week_sections[1]
-      @wednesdaySections = @week_sections[2]
-      @thursdaySections = @week_sections[3]
-      @fridaySections = @week_sections[4]
+    @week_sections =[]
+    all_lectures = find_all_lectures(@courses)
+    if all_lectures != []
+
+      #for every lectures combination found
+      all_lectures.first(5).each do |lectures|
+        #separate them into days
+        lectures_separated_according_to_days = separate_sections_according_to_days(lectures)
+        #if there is no conflicts between sections
+        if (@conflicts_sections = find_conflicts(lectures_separated_according_to_days)) == []
+          #find all tutorials for these lectures, if they exists
+          all_tutorials = find_all_tutorials(lectures)
+          #if tutorials do exists
+          if all_tutorials != []
+            #for every tutorials combination
+            all_tutorials.each do |tutorials|
+              #separate them into days
+              tutorials_separated_according_to_days = separate_sections_according_to_days(tutorials)
+              #if there is no conflicts between tutorials
+              if (@conflicts_tutorials = find_conflicts(tutorials_separated_according_to_days)) == []
+                #find all labs for these tutorials, if they exists
+                all_labs = find_all_labs(tutorials)
+                #if labs do exists
+                if all_labs != []
+                  #for every labs combination
+                  all_labs.each do |labs|
+                    #separate them into days
+                    labs_separated_according_to_days = separate_sections_according_to_days(labs)
+                    #if there is no conflicts between labs
+                    if (@conflicts_labs = find_conflicts(labs_separated_according_to_days)) == []
+                      lectures_tutorials_merged = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
+                      all_sections_merged = merge_sections(lectures_tutorials_merged,labs_separated_according_to_days)
+
+                      if find_conflicts(all_sections_merged) == []
+
+                        @week_sections = sort_all_sections_tutorials_labs(all_sections_merged)
+                        break
+                      end
+
+                    end
+
+                  end
+
+                else
+                   merge_sections_tutorials = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
+                   if find_conflicts(merge_sections_tutorials) == []
+                     @week_sections = sort_all_sections_tutorials_labs(merge_sections_tutorials)
+                     break
+                   end
+                end
+
+              end
+
+            end
+
+          # no tutorials exists
+          else
+            @week_sections = lectures_separated_according_to_days
+          end
+
+        end
+
+      end
+
     end
+
+
+    add_colors
+    @mondaySections = @week_sections[0]
+    @tuesdaySections = @week_sections[1]
+    @wednesdaySections = @week_sections[2]
+    @thursdaySections = @week_sections[3]
+    @fridaySections = @week_sections[4]
+
   end
 
 
@@ -38,107 +104,78 @@ class ScheduleController < ApplicationController
     end
 
     return colors_to_courses
-    # week.each do |day|
-    #   day.each do |section|
-    #     if courses_id.include?(section.section.course.course_id) == false
-    #       courses_id.append(section.section.course.course_id)
-    #     end
-    #   end
-    # end
   end
 
 
 
 
-  def find_all_sections
+  def find_all_lectures(courses)
+    #sections starts as empty
     all_courses_sections = []
-
-    @courses.each do |course|
+    #for every course, attempt to find a or many lectures
+    courses.each do |course|
+      #for every course, attempt to find a or many sections
+      if course.sections != nil
       all_courses_sections.push(course.sections)
-    end
-
-    possible_sections = all_courses_sections.inject(&:product).map(&:flatten)
-    i = 0
-
-    begin
-      sections = possible_sections[i]
-      @week_sections = separate_sections_according_to_days(sections)
-      @conflicts_sections = find_conflicts(@week_sections)
-      if @conflicts_sections == []
-        tutorials_found = find_all_tutorials(sections)
       end
-      i += 1
-    end while @conflicts_sections != [] && i < (possible_sections.size - 1)
-
-    if @conflicts_sections == []
-      return true
-    else
-      return false
     end
 
+    #if there are 2 or more courses that have sections, find and return all combinations
+    if  all_courses_sections.size >= 2
+      return  all_courses_sections.inject(&:product).map(&:flatten)
+      # else return 1 or no sections
+    else all_courses_sections.size == 1
+    return  all_courses_sections
+    end
   end
 
 
 
 
   def find_all_tutorials(sections)
+    #tutorials starts as empty
     all_courses_tutorials = []
 
+    #for every section, attempt to find a or many tutorials
     sections.each do |section|
-      all_courses_tutorials.push(section.tutorials)
-    end
-
-    possible_tutorials = all_courses_tutorials.inject(&:product).map(&:flatten)
-    i = 0
-
-    begin
-      tutorials = possible_tutorials[i]
-      week_tutorials = separate_sections_according_to_days(tutorials)
-      merged_sections = merge_sections(@week_sections,week_tutorials)
-      @conflicts_tutorials = find_conflicts(merged_sections)
-      #find_all_labs(tutorials)
-      if @conflicts_tutorials = []
-        @week_sections = sort_all_sections_tutorials_labs(merged_sections)
+      #if sections have tutorials, add to all_courses_tutorial
+      if section.tutorials != nil
+        all_courses_tutorials.push(section.tutorials)
       end
-      i += 1
-    end while @conflicts_tutorials != [] && i < (possible_tutorials.size - 1)
-
-    if @conflicts_tutorials == []
-      return true
-    else
-      return false
     end
+
+    #if there are 2 or more sections that have tutorials, find and return all combinations
+    if  all_courses_tutorials.size >= 2
+      return  all_courses_tutorials.inject(&:product).map(&:flatten)
+      # else return 1 or no tutorials
+    else
+      return  all_courses_tutorials
+    end
+
   end
 
 
 
   def find_all_labs(tutorials)
+    #labs starts as empty
     all_courses_labs = []
 
+    #for every tutorial, attempt to find a lab
     tutorials.each do |tutorial|
-      all_courses_labs.push(tutorial.laboratory)
-    end
-
-    possible_labs = all_courses_labs.inject(&:product).map(&:flatten)
-    i = 0
-
-    begin
-      labs = possible_labs[i]
-      week_labs = separate_sections_according_to_days(labs)
-      merged_sections = merge_sections(@week_sections,week_labs)
-      @conflicts_tutorials = find_conflicts(merged_sections)
-      if @conflicts_labs = []
-        @week_sections = sort_all_sections_tutorials_labs(merged_sections)
-        break
+      #if tutorial have a lab, add to all_courses_labs
+      if tutorial.laboratory != nil
+        all_courses_labs.push(tutorial.laboratory)
       end
-      i += 1
-    end while @conflicts_labs != [] && i < (possible_labs.size - 1)
-
-    if @conflicts_labs == []
-      return true
-    else
-      return false
     end
+
+    #if there are 2 or more tutorials that have labs, find and return all combinations
+    if all_courses_labs.size >= 2
+      return all_courses_labs.inject(&:product).map(&:flatten)
+    # else return 1 or no lab
+    else
+      return all_courses_labs
+    end
+
   end
 
 
@@ -198,6 +235,42 @@ class ScheduleController < ApplicationController
     return week
   end
 
+  def separate_sections_according_to_days2(schedule_sections)
+    #contains sections for every day
+    week = [[],[],[],[],[]]
+
+    #Sort sections by the day they are given
+    schedule_sections.each do |schedule_section|
+
+      #this boolean is used to ignore multiple 'W' in day_of_each week - issue with seed.rb
+      wednesday_added = false
+
+      schedule_section.section.day_of_week.to_s.each_char do |day|
+
+        if day != '-'
+          if day == 'M'
+            week[0].push(schedule_section)
+
+          elsif day == 'T'
+            week[1].push(schedule_section)
+
+          elsif day == 'W' && wednesday_added == false
+            week[2].push(schedule_section)
+            wednesday_added = true
+
+          elsif day == 'J'
+            week[3].push(schedule_section)
+
+          elsif day == 'F'
+            week[4].push(schedule_section)
+          else
+          end
+        end
+      end
+    end
+
+    return week
+  end
 
 
   #this loop will sort section - section that start the earliest are put in front of the array
@@ -266,7 +339,6 @@ class ScheduleController < ApplicationController
     end
 
   end
-
 
 
   def add_sections(section)
