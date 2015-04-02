@@ -14,6 +14,7 @@
   <div class="mainContent" style="margin: 0 auto" >
 
     <div class="greybody">
+      <% @possible_schedules.each do %>
       <table border="2px">
         <tr>
           <th>Time</th>
@@ -56,9 +57,13 @@
                     <% if @mondaySections.first.section.is_a?(Section) %>
                         Sec id: <%=@mondaySections.first.section.id %> <br/>
 
-                    <% else %>
+                    <% elsif @mondaySections.first.section.is_a?(Tutorial) %>
                         Tut Id:<%= @mondaySections.first.section.id %>  <br/>
-                        Section id: <%= @mondaySections.first.section.section_id %> <br/>
+                        Section id: <%= @mondaySections.first.section.section.id %> <br/>
+                    <% else %>
+                        Lab Id:<%= @mondaySections.first.section.id %><br/>
+                        Tut Id:<%= @mondaySections.first.section.tutorial.id %>  <br/>
+                        Section id: <%= @mondaySections.first.section.section.id %> <br/>
                     <% end %>
                     <%= @mondaySections.first.section.time_start %><br/>
                     <%= @mondaySections.first.section.time_end %></td>
@@ -81,9 +86,13 @@
                     <% if @tuesdaySections.first.section.is_a?(Section) %>
                         Sec id: <%=@tuesdaySections.first.section.id %> <br/>
 
-                    <% else %>
+                    <% elsif @tuesdaySections.first.section.is_a?(Tutorial) %>
                         Tut Id:<%= @tuesdaySections.first.section.id %>  <br/>
                         Section id: <%= @tuesdaySections.first.section.section_id %> <br/>
+                    <% else %>
+                        Lab Id:<%= @tuesdaySections.first.section.id %><br/>
+                        Tut Id:<%= @tuesdaySections.first.section.tutorial.id %>  <br/>
+                        Section id: <%= @tuesdaySections.first.section.section.id %> <br/>
                     <% end %>
                     <%= @tuesdaySections.first.section.time_start %><br/>
                     <%= @tuesdaySections.first.section.time_end %></td>
@@ -106,9 +115,13 @@
                     <% if @wednesdaySections.first.section.is_a?(Section) %>
                         Sec id: <%=@wednesdaySections.first.section.id %> <br/>
 
-                    <% else %>
+                    <% elsif @wednesdaySections.first.section.is_a?(Tutorial) %>
                         Tut Id:<%= @wednesdaySections.first.section.id %>  <br/>
                         Section id: <%= @wednesdaySections.first.section.section_id %> <br/>
+                    <% else %>
+                        Lab Id:<%= @wednesdaySections.first.section.id %><br/>
+                        Tut Id:<%= @wednesdaySections.first.section.tutorial.id %>  <br/>
+                        Section id: <%= @wednesdaySections.first.section.section.id %> <br/>
                     <% end %>
                     <%= @wednesdaySections.first.section.time_start %><br/>
                     <%= @wednesdaySections.first.section.time_end %></td>
@@ -128,11 +141,15 @@
                     <%= @thursdaySections.first.section.course.dept %> <%= @thursdaySections.first.section.course.number %> <br/>
                     <%= @thursdaySections.first.section.name %> <br/>
                     <% if @thursdaySections.first.section.is_a?(Section) %>
-                        Sec id: <%=@thursdaySections.first.section.id %> <br/>
+                        Sec id:<%=@thursdaySections.first.section.id %> <br/>
 
-                    <% else %>
+                    <% elsif @thursdaySections.first.section.is_a?(Tutorial) %>
                         Tut Id:<%= @thursdaySections.first.section.id %>  <br/>
                         Section id: <%= @thursdaySections.first.section.section_id %> <br/>
+                    <% else %>
+                        Lab Id:<%= @thursdaySections.first.section.id %><br/>
+                        Tut Id:<%= @thursdaySections.first.section.tutorial.id %>  <br/>
+                        Section id:<%= @thursdaySections.first.section.section.id %> <br/>
                     <% end %>
                     <%= @thursdaySections.first.section.time_start %><br/>
                     <%= @thursdaySections.first.section.time_end %></td>
@@ -152,12 +169,17 @@
                     <td rowspan="<%=@fridaySections.first.row_span%>" style="background-color:<%=@fridaySections.first.color%>; border-bottom: none" >
                       <%= @fridaySections.first.section.course.dept %> <%= @fridaySections.first.section.course.number %> <br/>
                       <%= @fridaySections.first.section.name %> <br/>
-                    <% if @fridaySections.first.section.is_a?(Section) %>
+                       <% if @fridaySections.first.section.is_a?(Section) %>
                           Sec id: <%=@fridaySections.first.section.id %> <br/>
 
-                    <% else %>
+                      <% elsif @fridaySections.first.section.is_a?(Tutorial) %>
                           Tut Id:<%= @fridaySections.first.section.id %>  <br/>
                           Section id: <%= @fridaySections.first.section.section_id %> <br/>
+                      <% else %>
+                          Lab Id:<%= @fridaySections.first.section.id %><br/>
+                          Tut Id:<%= @fridaySections.first.section.tutorial.id %>  <br/>
+                          Section id:<%= @fridaySections.first.section.section.id %> <br/>
+
                     <% end %>
                           <%= @fridaySections.first.section.time_start %><br/>
                           <%= @fridaySections.first.section.time_end %></td>
@@ -171,6 +193,7 @@
             </tr>
         <% end %>
       </table>
+          <% end %>
       <button class="btn btn-default btn-lg"> <%= link_to('Registered Courses', {action: 'registered_courses'}) %></button>
     </div>
   </div>

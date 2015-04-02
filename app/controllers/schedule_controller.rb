@@ -4,7 +4,7 @@ class ScheduleController < ApplicationController
 
 
   def schedule
-    @courses = [Course.find(1), Course.find(15), Course.find(19),Course.find(3)]
+    @courses = [Course.find(7), Course.find(15), Course.find(19),Course.find(3)]
     @mondaySections = []
     @tuesdaySections = []
     @wednesdaySections = []
@@ -201,7 +201,9 @@ class ScheduleController < ApplicationController
   def separate_sections_according_to_days(classType)
     #contains sections for every day
     week = [[],[],[],[],[]]
-
+    if classType.is_a?(Array) == false
+      classType = [classType]
+    end
     #Sort sections by the day they are given
     classType.each do |section|
 
@@ -218,43 +220,6 @@ class ScheduleController < ApplicationController
           # 5min. This allow to calculate how many rows a sections will span
           section_row_span = (duration/60/5).ceil
           schedule_section = ScheduleSection.new(section,'#F7F7F7',section_row_span)
-          if day == 'M'
-            week[0].push(schedule_section)
-
-          elsif day == 'T'
-            week[1].push(schedule_section)
-
-          elsif day == 'W' && wednesday_added == false
-            week[2].push(schedule_section)
-            wednesday_added = true
-
-          elsif day == 'J'
-            week[3].push(schedule_section)
-
-          elsif day == 'F'
-            week[4].push(schedule_section)
-          else
-          end
-        end
-      end
-    end
-
-    return week
-  end
-
-  def separate_sections_according_to_days2(schedule_sections)
-    #contains sections for every day
-    week = [[],[],[],[],[]]
-
-    #Sort sections by the day they are given
-    schedule_sections.each do |schedule_section|
-
-      #this boolean is used to ignore multiple 'W' in day_of_each week - issue with seed.rb
-      wednesday_added = false
-
-      schedule_section.section.day_of_week.to_s.each_char do |day|
-
-        if day != '-'
           if day == 'M'
             week[0].push(schedule_section)
 
