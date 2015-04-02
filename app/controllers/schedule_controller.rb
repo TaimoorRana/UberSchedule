@@ -10,7 +10,8 @@ class ScheduleController < ApplicationController
     @wednesdaySections = []
     @thursdaySections = []
     @fridaySections = []
-
+    tutorials_exists = false
+    labs_exits = false
     @possible_schedules = []
     @week_sections =[]
     all_lectures = find_all_lectures(@courses)
@@ -26,6 +27,7 @@ class ScheduleController < ApplicationController
           all_tutorials = find_all_tutorials(lectures)
           #if tutorials do exists
           if all_tutorials != []
+            tutorials_exists = true
             #for every tutorials combination
             all_tutorials.each do |tutorials|
               #separate them into days
@@ -36,6 +38,7 @@ class ScheduleController < ApplicationController
                 all_labs = find_all_labs(tutorials)
                 #if labs do exists
                 if all_labs != []
+                  labs_exits = true
                   #for every labs combination
                   all_labs.each do |labs|
                     #separate them into days
@@ -55,7 +58,7 @@ class ScheduleController < ApplicationController
 
                   end
                 #if no lab exists
-                else
+                elsif labs_exits == false
                    merge_sections_tutorials = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
                    if find_conflicts(merge_sections_tutorials) == []
                      add_colors
@@ -67,10 +70,12 @@ class ScheduleController < ApplicationController
               end
 
             end
+            #if no tutorial exists
+          elsif tutorials_exists == false && labs_exits == false
+              add_colors
+              @week_sections = sort_all_sections_tutorials_labs(lectures_separated_according_to_days)
+              @possible_schedules.append(@week_sections)
 
-          # no tutorials exists
-          else
-            @week_sections = lectures_separated_according_to_days
           end
 
         end
