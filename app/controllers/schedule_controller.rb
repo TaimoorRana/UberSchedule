@@ -4,7 +4,7 @@ class ScheduleController < ApplicationController
 
 
   def schedule
-    @courses = [Course.find(7), Course.find(15), Course.find(19),Course.find(3)]
+    @courses = [Course.find(67), Course.find(44), Course.find(45),Course.find(22)]
     @mondaySections = []
     @tuesdaySections = []
     @wednesdaySections = []
@@ -128,9 +128,9 @@ class ScheduleController < ApplicationController
     end
 
     #if there are 2 or more courses that have sections, find and return all combinations
-    if  all_courses_sections.size >= 2
+    if  all_courses_sections.size >= 3
       return  all_courses_sections.inject(&:product).map(&:flatten)
-      # else return 1 or no sections
+      # else return 2 ,1 or no sections
     else all_courses_sections.size == 1
     return  all_courses_sections
     end
@@ -152,9 +152,9 @@ class ScheduleController < ApplicationController
     end
 
     #if there are 2 or more sections that have tutorials, find and return all combinations
-    if  all_courses_tutorials.size >= 2
+    if  all_courses_tutorials.size >= 3
       return  all_courses_tutorials.inject(&:product).map(&:flatten)
-      # else return 1 or no tutorials
+      # else return 2 ,1 or no tutorials
     else
       return  all_courses_tutorials
     end
@@ -176,9 +176,9 @@ class ScheduleController < ApplicationController
     end
 
     #if there are 2 or more tutorials that have labs, find and return all combinations
-    if all_courses_labs.size >= 2
+    if all_courses_labs.size >= 3
       return all_courses_labs.inject(&:product).map(&:flatten)
-    # else return 1 or no lab
+    # else return 2 ,1 or no lab
     else
       return all_courses_labs
     end
