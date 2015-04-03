@@ -19,6 +19,30 @@ CSV.foreach("#{Rails.root}/lib/assets/tbl_preferences.csv") do |row|
   Preference.create!(:preference => row[1])
 end
 
+#Creating Course
+CSV.foreach("#{Rails.root}/lib/assets/tbl_courses.csv") do |row|
+  Course.create(:course_id => row[0],:dept => row[1], :number => row[2], :credit => row[3], :name => row[4], :description => row[5], :sequence_id => row[6] )
+end
+
+
+#Creating Sections
+CSV.foreach("#{Rails.root}/lib/assets/tbl_sections.csv") do |row|
+  Section.create!(:id => row[0],:course_id => row[1],:name => row[2], :time_start => row[3], :time_end => row[4], :instructor => row[5], :day_of_week => row[6], :term => row[7])
+end
+
+#Creating Tutorials
+CSV.foreach("#{Rails.root}/lib/assets/tbl_tutorials.csv") do |row|
+  Tutorial.create!(:id => row[0],:section_id => row[1],:name => row[2], :time_start => row[3], :time_end => row[4],:day_of_week => row[5], :created_at => row[6], :updated_at => row[7])
+end
+
+#Creating Laboratories
+CSV.foreach("#{Rails.root}/lib/assets/tbl_laboratories.csv") do |row|
+  Laboratory.create!(:id => row[0],:tutorial_id => row[1],:name => row[2], :time_start => row[3], :time_end => row[4],:day_of_week => row[5], :created_at => row[6], :updated_at => row[7])
+end
+
+
+
+=begin
 Course.create(:course_id =>62,:dept=>'AERO', :number => 480, :credit => 3.5, :name => 'Flight Control Systems', :description => 'Basic flight control and flight dynamics principles. Aircraft dynamic equations and performance data. Implementation of aircraft control: control surfaces and their operations, development of thrust and its control; autopilot systems, their algorithms, dynamics and interaction problems. Flight instruments, principles of operation and dynamics. Cockpit layouts basic configuration, ergonomic design, control field forces; advanced concepts in instruments, avionics and displays; HUD; flight management systems, and communication equipment. Introduction to flight simulation: overview of visual, audio and motion simulator systems; advanced concepts in flight simulators.')
 Course.create(:course_id =>63,:dept=>'AERO', :number => 482, :credit => 3, :name => 'Avionic Navigation Systems', :description => 'Basics of modern electronic navigation systems, history of air navigation, earth coordinate and mapping systems; basic theory and analysis of modern electronic navigation instrumentation, communication and radar systems, approach aids, airborne systems, transmitters and antenna coverage; noise and losses, target detection, digital processing, display systems and technology; demonstration of avionic systems using flight simulator.')
 Course.create(:course_id =>66,:dept=>'COEN', :number => 320, :credit => 3, :name => 'Introduction to Real-Time Systems', :description => 'Fundamentals of real-time systems: definitions, requirements, design issues and applications. Real-time operating systems (RTOS) feature: multi-tasking, process management, scheduling, interprocess communication and synchronization, real-time memory management, clocks and timers, interrupt and exception handling, message queues, asynchronous input/output. Concurrent programming languages: design issues and examples, POSIX threads and semaphores. Introduction to real-time uniprocessor scheduling policies: static vs. dynamic, pre-emptive vs. non-pre-emptive, specific techniques â€” rate-monotonic algorithm, earliest-deadline-first, deadline monotonic, least-laxity-time-first; clock-driven scheduling. Design and specification techniques - Finite state machine based State-chart, Dataflow diagram, Petri nets. Reliability and fault-tolerance. Case studies of RTOS - QNX, VxWorks, and research prototypes.')
@@ -48,10 +72,10 @@ Course.create(:course_id =>35,:dept=>'COMP', :number => 476, :credit => 4, :name
 Course.create(:course_id =>36,:dept=>'COMP', :number => 477, :credit => 4, :name => 'Animation for Computer Games', :description => 'Introduction to advanced aspects of computer games. Game engine design. Artificial Intelligence (AI): non-player character movement, coordinated movement, pathfinding, world representations; decision making; tactical AI, strategic AI, learning in games. Physics-based techniques: collision detection and response. Networked gaming: multi-player games, networking and distributed game design, mobile gaming. Improving realism: cut scenes, 3D sound. Project.')
 Course.create(:course_id =>37,:dept=>'COMP', :number => 478, :credit => 4, :name => 'Image Processing', :description => 'Introduction to the algorithms, data structures, and techniques used in modelling and rendering dynamic scenes. Topics include principles of traditional animation, production pipeline, animation hardware and software, orientation representation and interpolation, modelling physical and articulated objects, forward and inverse kinematics, motion control and capture, key-frame, procedural, and behavioural animation, camera animation, scripting system, and free-form deformation. Project.')
 Course.create(:course_id =>38,:dept=>'COMP', :number => 479, :credit => 4, :name => 'Information Retrieval and Web Search', :description => 'Digital image fundamentals, image transforms (Fourier, Walsh, Haar, Hotelling, wavelet), image enhancement (histogram processing, spatial filtering, high- and low-pass filtering), image restoration, image compression (elements of information theory, image compression models, error-free compression, lossy compression, image compression standards), image segmentation (line detection, Hough transform, edge detection and linking, thresholding, region splitting and merging), representation and description (chain codes, signatures, skeletons, shape descriptors, moments, texture). Project.')
-Course.create(:course_id =>39,:dept=>'COMP', :number => 490, :credit => 4, :name => 'Computer Science Project I', :description => 'Basics of information retrieval (IR): boolean, vector space and probabilistic models. Tokenization and creation of inverted files. Weighting schemes. Evaluation of IR systems: precision, recall, F-measure. Relevance feedback and query expansion. Application of IR to web search engines: XML, link analysis, PageRank algorithm. Text categorization and clustering techniques as used in spam filtering. Project.')
-Course.create(:course_id =>40,:dept=>'COMP', :number => 492, :credit => 3, :name => 'Computer Science Project II', :description => 'Students work on a computer science project under the supervision of a faculty member and submit a suitable written report on the work carried out.')
+#Course.create(:course_id =>39,:dept=>'COMP', :number => 490, :credit => 4, :name => 'Computer Science Project I', :description => 'Basics of information retrieval (IR): boolean, vector space and probabilistic models. Tokenization and creation of inverted files. Weighting schemes. Evaluation of IR systems: precision, recall, F-measure. Relevance feedback and query expansion. Application of IR to web search engines: XML, link analysis, PageRank algorithm. Text categorization and clustering techniques as used in spam filtering. Project.')
+#Course.create(:course_id =>40,:dept=>'COMP', :number => 492, :credit => 3, :name => 'Computer Science Project II', :description => 'Students work on a computer science project under the supervision of a faculty member and submit a suitable written report on the work carried out.')
 Course.create(:course_id =>67,:dept=>'ELEC', :number => 275, :credit => 3.5, :name => 'Principles of Electrical Engineering', :description => 'Students work on a computer science project under the supervision of a faculty member and submit a suitable written report on the work carried out.')
-Course.create(:course_id =>13,:dept=>'ENCS', :number => 272, :credit => 3, :name => 'Composition and Argumentation for Engineers', :description => 'Fundamentals of electric circuits: Kirchoffâ€™s laws, voltage and current sources, Ohmâ€™s law, series and parallel circuits. Nodal and mesh analysis of DC circuits. Superposition theorem, Thevenin and Norton Equivalents. Use of operational amplifiers. Transient analysis of simple RC, RL and RLC circuits. Steady state analysis: Phasors and impedances, power and power factor. Single and three phase circuits. Magnetic circuits and transformers. Power generation and distribution.')
+#Course.create(:course_id =>13,:dept=>'ENCS', :number => 272, :credit => 3, :name => 'Composition and Argumentation for Engineers', :description => 'Fundamentals of electric circuits: Kirchoffâ€™s laws, voltage and current sources, Ohmâ€™s law, series and parallel circuits. Nodal and mesh analysis of DC circuits. Superposition theorem, Thevenin and Norton Equivalents. Use of operational amplifiers. Transient analysis of simple RC, RL and RLC circuits. Steady state analysis: Phasors and impedances, power and power factor. Single and three phase circuits. Magnetic circuits and transformers. Power generation and distribution.')
 Course.create(:course_id =>14,:dept=>'ENCS', :number => 282, :credit => 3, :name => 'Technical Writing and Communication', :description => 'Fundamentals of English composition and argumentation: grammar; reasoning and persuasion; persuasive proofs; argumentation; structuring and outlining; the problem statement; the body; and the conclusions. Language and persuasion for effective communication in professional engineering. Cultivation of a writing style firmly based on clear and critical thinking skills.')
 Course.create(:course_id =>1,:dept=>'ENGR', :number => 201, :credit => 1.5, :name => 'Professional Practice and Responsibility', :description => 'Technical writing form and style. Technical and scientific papers, abstracts, reports. Library research and referencing methods for engineers and computer scientists. Technical communication using information technology: document processing software, computer-assisted presentation, analysis and design of web presentation, choice and use of appropriate tools. Students will prepare an individual major report and make an oral presentation.')
 Course.create(:course_id =>2,:dept=>'ENGR', :number => 202, :credit => 1.5, :name => 'Sustainable Development and Environmental Stewardship', :description => 'Health and safety issues for engineering projects: Quebec and Canadian legislation; safe work practices; general laboratory safety common to all engineering disciplines, and specific laboratory safety pertaining to particular engineering disciplines. Review of the legal framework in Quebec, particularly the Professional Code and the Engineers Act, as well as professional ethics.')
@@ -85,10 +109,13 @@ Course.create(:course_id =>57,:dept=>'SOEN', :number => 448, :credit => 3, :name
 Course.create(:course_id =>58,:dept=>'SOEN', :number => 449, :credit => 3, :name => 'Component Engineering', :description => 'Software maintenance: corrective; perfective; and adaptive. Software reuse; construction of reusable software. Techniques for reverse engineering and re-engineering software. Software development as "growing" software. Long-term evolution of software systems. Legacy systems.')
 Course.create(:course_id =>59,:dept=>'SOEN', :number => 487, :credit => 4, :name => 'Web Services and Applications', :description => 'Review of high-level language concepts and abstraction mechanisms. Programming with functional and logical languages. Typed vs. untyped languages. The use of scripting languages and other language-based techniques to assemble systems from high-level components.')
 Course.create(:course_id =>60,:dept=>'SOEN', :number => 490, :credit => 4, :name => 'Capstone Software Engineering Design Project ', :description => 'Analysis and design of web services and applications. Advanced architectures for the design, deployment, and testing of large multi-server web services and applications. Service Oriented Architecture (SOA). Electronic Commerce. Security. Load balancing. Stress testing.')
-Course.create(:course_id =>61,:dept=>'SOEN', :number => 491, :credit => 1, :name => 'Software Engineering Project', :description => 'Students work in teams of between six and nine members to construct a significant software application. The class meets at regular intervals. Team members will give a presentation of their contribution to the project.')
+#Course.create(:course_id =>61,:dept=>'SOEN', :number => 491, :credit => 1, :name => 'Software Engineering Project', :description => 'Students work in teams of between six and nine members to construct a significant software application. The class meets at regular intervals. Team members will give a presentation of their contribution to the project.')
 #
+=end
+
 #
 # # Creating Course Sections
+=begin
 #
 Section.create(id:1,course_id:1,name:'AA', time_start: '18:30',time_end:'21:00', instructor:'BASSEL ATALLAH',day_of_week:'M-WW-----',term:'Summer')
 Section.create(id:2,course_id:1,name:'G', time_start: '16:15',time_end:'17:30', instructor:'REMI ALAURENT',day_of_week:'-T-----',term:'Fall')
@@ -305,7 +332,9 @@ Section.create(id:220,course_id:67,name:'V', time_start: '8:45',time_end:'10:00'
 Section.create(id:221,course_id:67,name:'JJ', time_start: '17:45',time_end:'20:15', instructor:'VENKATANARAYANA RAMACHANDRAN',day_of_week:'-T-----',term:'Winter')
 Section.create(id:222,course_id:65,name:'NN', time_start: '17:45',time_end:'20:15', instructor:'JOEY PAQUET',day_of_week:'M-WW-----',term:'Winter')
 #
+=end
 # #Creating Tutorials
+=begin
 #
 Tutorial.create(id:1, section_id:1		,name:'AB',	time_start:'9:20', time_end:'10:10', day_of_week:'---J---')
 Tutorial.create(id:2, section_id:1		,name:'AC',	time_start:'11:00', time_end:'11:50', day_of_week:'---J---')
@@ -693,6 +722,8 @@ Tutorial.create(id:383, section_id:221	,name:'JA',	time_start:'9:45', time_end:'
 Tutorial.create(id:384, section_id:221	,name:'JB',	time_start:'10:15', time_end:'11:55', day_of_week:'--W----')
 Tutorial.create(id:385, section_id:215	,name:'SA',	time_start:'14:45', time_end:'15:35', day_of_week:'--W----')
 #
+=end
+=begin
 # #Creating Laboratories
 Laboratory.create(id:1,tutorial_id:105,name:'AI',time_start:'10:30',time_end:'13:15', day_of_week:'-T-----')
 Laboratory.create(id:2,tutorial_id:105,name:'AJ',time_start:'10:30',time_end:'13:15', day_of_week:'---J---')
@@ -790,6 +821,7 @@ Laboratory.create(id:93,tutorial_id:383,name:'JM',time_start:'17:45',time_end:'2
 Laboratory.create(id:94,tutorial_id:384,name:'JJ',time_start:'8:45',time_end:'11:30', day_of_week:'M------')
 Laboratory.create(id:95,tutorial_id:384,name:'JK',time_start:'17:45',time_end:'20:30', day_of_week:'---J---')
 Laboratory.create(id:96,tutorial_id:384,name:'JN',time_start:'17:45',time_end:'20:30', day_of_week:'---J---')
+=end
 
 
 
@@ -1041,9 +1073,11 @@ puts a.dept + a.number.to_s
 a = Course.find_by dept: 'SOEN', number: 487
 s.courses.append(a)
 puts a.dept + a.number.to_s
-a = Course.find_by dept: 'SOEN', number: 491
-s.courses.append(a)
-puts a.dept + a.number.to_s
+
+#a = Course.find_by dept: 'SOEN', number: 491
+#s.courses.append(a)
+#puts a.dept + a.number.to_s
+
 s.save
 #
 # # Required Web Services
