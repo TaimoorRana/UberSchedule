@@ -33,14 +33,13 @@
 
         <!--This is used to calculate the time that will appear on the
         the left side of the schedule-->
-        <% x = Time.local(2015,'jan',15,8,0,0) %>
+        <% x = Time.parse(schedule.time_start) %>
         <% @monday_section_duration = 0 %>
         <% @tuesday_section_duration = 0 %>
         <% @wednesday_section_duration = 0 %>
         <% @thursday_section_duration = 0 %>
         <% @friday_section_duration = 0 %>
-
-        <% (0..64).each do |i|%>
+        <% (0..schedule.total_rows).each do |i|%>
             <% if (x.min == 0) then minutes = '00' else minutes = "#{x.min}" end %>
             <% time= "#{x.hour}:#{minutes}" %>
             <% x += 900 %>
@@ -48,27 +47,27 @@
 
               <td> <%= time %> </td>
               <!-- this will try to match the courses on the given day to the current time on the schedule,-->
-              <% if schedule[0].any? && (schedule[0].first.section.time_start == time or (((Time.parse(schedule[0].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule[0].first.section.time_start) <=> (Time.parse(time)+900)) == -1)))  %>
-                  <% @monday_section_duration = schedule[0].first.row_span %>
+              <% if schedule.possible_schedule[0].any? && (schedule.possible_schedule[0].first.section.time_start == time or (((Time.parse(schedule.possible_schedule[0].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule.possible_schedule[0].first.section.time_start) <=> (Time.parse(time)+900)) == -1)))  %>
+                  <% @monday_section_duration = schedule.possible_schedule[0].first.row_span %>
 
-                  <td rowspan="<%= schedule[0].first.row_span%>" style="background-color:<%=schedule[0].first.color%>; border-bottom: none" >
-                    <%= schedule[0].first.section.course.dept %> <%= schedule[0].first.section.course.number %> <br/>
-                    <%= schedule[0].first.section.name %> <br/>
-                    <% if schedule[0].first.section.is_a?(Section) %>
-                        Sec id: <%=schedule[0].first.section.id %> <br/>
+                  <td rowspan="<%= schedule.possible_schedule[0].first.row_span%>" style="background-color:<%=schedule.possible_schedule[0].first.color%>; border-bottom: none" >
+                    <%= schedule.possible_schedule[0].first.section.course.dept %> <%= schedule.possible_schedule[0].first.section.course.number %> <br/>
+                    <%= schedule.possible_schedule[0].first.section.name %> <br/>
+                    <% if schedule.possible_schedule[0].first.section.is_a?(Section) %>
+                        Sec id: <%=schedule.possible_schedule[0].first.section.id %> <br/>
 
-                    <% elsif schedule[0].first.section.is_a?(Tutorial) %>
-                        Tut Id:<%= schedule[0].first.section.id %>  <br/>
-                        Section id: <%= schedule[0].first.section.section.id %> <br/>
+                    <% elsif schedule.possible_schedule[0].first.section.is_a?(Tutorial) %>
+                        Tut Id:<%= schedule.possible_schedule[0].first.section.id %>  <br/>
+                        Section id: <%= schedule.possible_schedule[0].first.section.section.id %> <br/>
                     <% else %>
-                        Lab Id:<%= schedule[0].first.section.id %><br/>
-                        Tut Id:<%= schedule[0].first.section.tutorial.id %>  <br/>
-                        Section id: <%= schedule[0].first.section.section.id %> <br/>
+                        Lab Id:<%= schedule.possible_schedule[0].first.section.id %><br/>
+                        Tut Id:<%= schedule.possible_schedule[0].first.section.tutorial.id %>  <br/>
+                        Section id: <%= schedule.possible_schedule[0].first.section.section.id %> <br/>
                     <% end %>
-                    <%= schedule[0].first.section.time_start %><br/>
-                    <%= schedule[0].first.section.time_end %></td>
+                    <%= schedule.possible_schedule[0].first.section.time_start %><br/>
+                    <%= schedule.possible_schedule[0].first.section.time_end %></td>
 
-                  <% schedule[0].shift(1)%>
+                  <% schedule.possible_schedule[0].shift(1)%>
               <% elsif @monday_section_duration > 1 %>
                   <% @monday_section_duration = @monday_section_duration - 1 %>
               <% else %>
@@ -77,27 +76,27 @@
               <% end %>
 
 
-              <% if schedule[1].any? &&  (schedule[1].first.section.time_start == time or (((Time.parse(schedule[1].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule[1].first.section.time_start) <=> (Time.parse(time)+900)) == -1)))  %>
-                  <% @tuesday_section_duration = schedule[1].first.row_span %>
+              <% if schedule.possible_schedule[1].any? &&  (schedule.possible_schedule[1].first.section.time_start == time or (((Time.parse(schedule.possible_schedule[1].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule.possible_schedule[1].first.section.time_start) <=> (Time.parse(time)+900)) == -1)))  %>
+                  <% @tuesday_section_duration = schedule.possible_schedule[1].first.row_span %>
 
-                  <td rowspan="<%=schedule[1].first.row_span%>" style="background-color:<%=schedule[1].first.color%>; border-bottom: none" >
-                    <%= schedule[1].first.section.course.dept %> <%= schedule[1].first.section.course.number %> <br/>
-                    <%= schedule[1].first.section.name %> <br/>
-                    <% if schedule[1].first.section.is_a?(Section) %>
-                        Sec id: <%=schedule[1].first.section.id %> <br/>
+                  <td rowspan="<%=schedule.possible_schedule[1].first.row_span%>" style="background-color:<%=schedule.possible_schedule[1].first.color%>; border-bottom: none" >
+                    <%= schedule.possible_schedule[1].first.section.course.dept %> <%= schedule.possible_schedule[1].first.section.course.number %> <br/>
+                    <%= schedule.possible_schedule[1].first.section.name %> <br/>
+                    <% if schedule.possible_schedule[1].first.section.is_a?(Section) %>
+                        Sec id: <%=schedule.possible_schedule[1].first.section.id %> <br/>
 
-                    <% elsif schedule[1].first.section.is_a?(Tutorial) %>
-                        Tut Id:<%= schedule[1].first.section.id %>  <br/>
-                        Section id: <%= schedule[1].first.section.section_id %> <br/>
+                    <% elsif schedule.possible_schedule[1].first.section.is_a?(Tutorial) %>
+                        Tut Id:<%= schedule.possible_schedule[1].first.section.id %>  <br/>
+                        Section id: <%= schedule.possible_schedule[1].first.section.section_id %> <br/>
                     <% else %>
-                        Lab Id:<%= schedule[1].first.section.id %><br/>
-                        Tut Id:<%= schedule[1].first.section.tutorial.id %>  <br/>
-                        Section id: <%= schedule[1].first.section.section.id %> <br/>
+                        Lab Id:<%= schedule.possible_schedule[1].first.section.id %><br/>
+                        Tut Id:<%= schedule.possible_schedule[1].first.section.tutorial.id %>  <br/>
+                        Section id: <%= schedule.possible_schedule[1].first.section.section.id %> <br/>
                     <% end %>
-                    <%= schedule[1].first.section.time_start %><br/>
-                    <%= schedule[1].first.section.time_end %></td>
+                    <%= schedule.possible_schedule[1].first.section.time_start %><br/>
+                    <%= schedule.possible_schedule[1].first.section.time_end %></td>
 
-                    <% schedule[1].shift(1) %>
+                    <% schedule.possible_schedule[1].shift(1) %>
               <% elsif @tuesday_section_duration > 1 %>
                   <% @tuesday_section_duration = @tuesday_section_duration - 1 %>
               <% else %>
@@ -106,27 +105,27 @@
               <% end %>
 
 
-              <% if schedule[2].any? && (schedule[2].first.section.time_start == time or (((Time.parse(schedule[2].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule[2].first.section.time_start) <=> (Time.parse(time)+900)) == -1))) %>
-                  <% @wednesday_section_duration = schedule[2].first.row_span %>
+              <% if schedule.possible_schedule[2].any? && (schedule.possible_schedule[2].first.section.time_start == time or (((Time.parse(schedule.possible_schedule[2].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule.possible_schedule[2].first.section.time_start) <=> (Time.parse(time)+900)) == -1))) %>
+                  <% @wednesday_section_duration = schedule.possible_schedule[2].first.row_span %>
 
-                  <td rowspan="<%=schedule[2].first.row_span%>" style="background-color:<%=schedule[2].first.color%>; border-bottom: none" >
-                    <%= schedule[2].first.section.course.dept %> <%= schedule[2].first.section.course.number %> <br/>
-                    <%= schedule[2].first.section.name %> <br/>
-                    <% if schedule[2].first.section.is_a?(Section) %>
-                        Sec id: <%=schedule[2].first.section.id %> <br/>
+                  <td rowspan="<%=schedule.possible_schedule[2].first.row_span%>" style="background-color:<%=schedule.possible_schedule[2].first.color%>; border-bottom: none" >
+                    <%= schedule.possible_schedule[2].first.section.course.dept %> <%= schedule.possible_schedule[2].first.section.course.number %> <br/>
+                    <%= schedule.possible_schedule[2].first.section.name %> <br/>
+                    <% if schedule.possible_schedule[2].first.section.is_a?(Section) %>
+                        Sec id: <%=schedule.possible_schedule[2].first.section.id %> <br/>
 
-                    <% elsif schedule[2].first.section.is_a?(Tutorial) %>
-                        Tut Id:<%= schedule[2].first.section.id %>  <br/>
-                        Section id: <%= schedule[2].first.section.section_id %> <br/>
+                    <% elsif schedule.possible_schedule[2].first.section.is_a?(Tutorial) %>
+                        Tut Id:<%= schedule.possible_schedule[2].first.section.id %>  <br/>
+                        Section id: <%= schedule.possible_schedule[2].first.section.section_id %> <br/>
                     <% else %>
-                        Lab Id:<%= schedule[2].first.section.id %><br/>
-                        Tut Id:<%= schedule[2].first.section.tutorial.id %>  <br/>
-                        Section id: <%= schedule[2].first.section.section.id %> <br/>
+                        Lab Id:<%= schedule.possible_schedule[2].first.section.id %><br/>
+                        Tut Id:<%= schedule.possible_schedule[2].first.section.tutorial.id %>  <br/>
+                        Section id: <%= schedule.possible_schedule[2].first.section.section.id %> <br/>
                     <% end %>
-                    <%= schedule[2].first.section.time_start %><br/>
-                    <%= schedule[2].first.section.time_end %></td>
+                    <%= schedule.possible_schedule[2].first.section.time_start %><br/>
+                    <%= schedule.possible_schedule[2].first.section.time_end %></td>
 
-                  <% schedule[2].shift(1) %>
+                  <% schedule.possible_schedule[2].shift(1) %>
               <% elsif @wednesday_section_duration > 1 %>
                   <% @wednesday_section_duration = @wednesday_section_duration - 1 %>
               <% else %>
@@ -135,26 +134,26 @@
               <% end %>
 
 
-              <% if schedule[3].any? && (schedule[3].first.section.time_start == time or (((Time.parse(schedule[3].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule[3].first.section.time_start) <=> (Time.parse(time)+900)) == -1)))  %>
-                  <% @thursday_section_duration = schedule[3].first.row_span %>
-                  <td rowspan="<%=schedule[3].first.row_span%>" style="background-color:<%=schedule[3].first.color%>; border-bottom: none" >
-                    <%= schedule[3].first.section.course.dept %> <%= schedule[3].first.section.course.number %> <br/>
-                    <%= schedule[3].first.section.name %> <br/>
-                    <% if schedule[3].first.section.is_a?(Section) %>
-                        Sec id:<%=schedule[3].first.section.id %> <br/>
+              <% if schedule.possible_schedule[3].any? && (schedule.possible_schedule[3].first.section.time_start == time or (((Time.parse(schedule.possible_schedule[3].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule.possible_schedule[3].first.section.time_start) <=> (Time.parse(time)+900)) == -1)))  %>
+                  <% @thursday_section_duration = schedule.possible_schedule[3].first.row_span %>
+                  <td rowspan="<%=schedule.possible_schedule[3].first.row_span%>" style="background-color:<%=schedule.possible_schedule[3].first.color%>; border-bottom: none" >
+                    <%= schedule.possible_schedule[3].first.section.course.dept %> <%= schedule.possible_schedule[3].first.section.course.number %> <br/>
+                    <%= schedule.possible_schedule[3].first.section.name %> <br/>
+                    <% if schedule.possible_schedule[3].first.section.is_a?(Section) %>
+                        Sec id:<%=schedule.possible_schedule[3].first.section.id %> <br/>
 
-                    <% elsif schedule[3].first.section.is_a?(Tutorial) %>
-                        Tut Id:<%= schedule[3].first.section.id %>  <br/>
-                        Section id: <%= schedule[3].first.section.section_id %> <br/>
+                    <% elsif schedule.possible_schedule[3].first.section.is_a?(Tutorial) %>
+                        Tut Id:<%= schedule.possible_schedule[3].first.section.id %>  <br/>
+                        Section id: <%= schedule.possible_schedule[3].first.section.section_id %> <br/>
                     <% else %>
-                        Lab Id:<%= schedule[3].first.section.id %><br/>
-                        Tut Id:<%= schedule[3].first.section.tutorial.id %>  <br/>
-                        Section id:<%= schedule[3].first.section.section.id %> <br/>
+                        Lab Id:<%= schedule.possible_schedule[3].first.section.id %><br/>
+                        Tut Id:<%= schedule.possible_schedule[3].first.section.tutorial.id %>  <br/>
+                        Section id:<%= schedule.possible_schedule[3].first.section.section.id %> <br/>
                     <% end %>
-                    <%= schedule[3].first.section.time_start %><br/>
-                    <%= schedule[3].first.section.time_end %></td>
+                    <%= schedule.possible_schedule[3].first.section.time_start %><br/>
+                    <%= schedule.possible_schedule[3].first.section.time_end %></td>
 
-                  <% schedule[3].shift(1) %>
+                  <% schedule.possible_schedule[3].shift(1) %>
               <% elsif @thursday_section_duration > 1 %>
                   <% @thursday_section_duration = @thursday_section_duration - 1 %>
               <% else %>
@@ -163,28 +162,28 @@
               <% end %>
 
 
-              <% if schedule[4].any? && (schedule[4].first.section.time_start == time or (((Time.parse(schedule[4].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule[4].first.section.time_start) <=> (Time.parse(time)+900)) == -1)))  %>
+              <% if schedule.possible_schedule[4].any? && (schedule.possible_schedule[4].first.section.time_start == time or (((Time.parse(schedule.possible_schedule[4].first.section.time_start) <=> Time.parse(time)) == 1) && ((Time.parse(schedule.possible_schedule[4].first.section.time_start) <=> (Time.parse(time)+900)) == -1)))  %>
 
-                  <% @friday_section_duration = schedule[4].first.row_span %>
-                    <td rowspan="<%=schedule[4].first.row_span%>" style="background-color:<%=schedule[4].first.color%>; border-bottom: none" >
-                      <%= schedule[4].first.section.course.dept %> <%= schedule[4].first.section.course.number %> <br/>
-                      <%= schedule[4].first.section.name %> <br/>
-                       <% if schedule[4].first.section.is_a?(Section) %>
-                          Sec id: <%=schedule[4].first.section.id %> <br/>
+                  <% @friday_section_duration = schedule.possible_schedule[4].first.row_span %>
+                    <td rowspan="<%=schedule.possible_schedule[4].first.row_span%>" style="background-color:<%=schedule.possible_schedule[4].first.color%>; border-bottom: none" >
+                      <%= schedule.possible_schedule[4].first.section.course.dept %> <%= schedule.possible_schedule[4].first.section.course.number %> <br/>
+                      <%= schedule.possible_schedule[4].first.section.name %> <br/>
+                       <% if schedule.possible_schedule[4].first.section.is_a?(Section) %>
+                          Sec id: <%=schedule.possible_schedule[4].first.section.id %> <br/>
 
-                      <% elsif schedule[4].first.section.is_a?(Tutorial) %>
-                          Tut Id:<%= schedule[4].first.section.id %>  <br/>
-                          Section id: <%= schedule[4].first.section.section_id %> <br/>
+                      <% elsif schedule.possible_schedule[4].first.section.is_a?(Tutorial) %>
+                          Tut Id:<%= schedule.possible_schedule[4].first.section.id %>  <br/>
+                          Section id: <%= schedule.possible_schedule[4].first.section.section_id %> <br/>
                       <% else %>
-                          Lab Id:<%= schedule[4].first.section.id %><br/>
-                          Tut Id:<%= schedule[4].first.section.tutorial.id %>  <br/>
-                          Section id:<%= schedule[4].first.section.section.id %> <br/>
+                          Lab Id:<%= schedule.possible_schedule[4].first.section.id %><br/>
+                          Tut Id:<%= schedule.possible_schedule[4].first.section.tutorial.id %>  <br/>
+                          Section id:<%= schedule.possible_schedule[4].first.section.section.id %> <br/>
 
                     <% end %>
-                          <%= schedule[4].first.section.time_start %><br/>
-                          <%= schedule[4].first.section.time_end %></td>
+                          <%= schedule.possible_schedule[4].first.section.time_start %><br/>
+                          <%= schedule.possible_schedule[4].first.section.time_end %></td>
 
-                    <% schedule[4].shift(1) %>
+                    <% schedule.possible_schedule[4].shift(1) %>
               <% elsif @friday_section_duration > 1 %>
                   <% @friday_section_duration = @friday_section_duration - 1 %>
               <% else %>

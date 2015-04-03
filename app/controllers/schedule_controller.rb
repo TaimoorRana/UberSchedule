@@ -1,8 +1,7 @@
 class ScheduleController < ApplicationController
   layout 'general_schedule'
   before_action :authenticate_user!
-
-
+  attr_accessor :a_possible_schedule
   def schedule
     @courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
     @mondaySections = []
@@ -10,12 +9,10 @@ class ScheduleController < ApplicationController
     @wednesdaySections = []
     @thursdaySections = []
     @fridaySections = []
-    tutorials_exists = false
-    labs_exits = false
     @possible_schedules = []
+
     @week_sections =[]
     all_lectures = find_all_lectures(@courses)
-    schedule_possibility_limit = 4
     if all_lectures != []
       #for every lectures combination found
       all_lectures.each do |lectures|
@@ -27,7 +24,6 @@ class ScheduleController < ApplicationController
           all_tutorials = find_all_tutorials(lectures)
           #if tutorials do exists
           if all_tutorials != []
-            tutorials_exists = true
             #for every tutorials combination
             all_tutorials.each do |tutorials|
               #separate them into days
@@ -51,7 +47,7 @@ class ScheduleController < ApplicationController
                       if find_conflicts(all_sections_merged) == []
                         add_colors
                         @week_sections = sort_all_sections_tutorials_labs(all_sections_merged)
-                        @possible_schedules.append(@week_sections)
+                        @possible_schedules.append(PossibleSchedule.new(@week_sections))
                       end
 
                     end
@@ -63,7 +59,7 @@ class ScheduleController < ApplicationController
                    if find_conflicts(merge_sections_tutorials) == []
                      add_colors
                      @week_sections = sort_all_sections_tutorials_labs(merge_sections_tutorials)
-                     @possible_schedules.append(@week_sections)
+                     @possible_schedules.append(PossibleSchedule.new(@week_sections))
                    end
                 end
 
@@ -74,7 +70,7 @@ class ScheduleController < ApplicationController
           else
               add_colors
               @week_sections = sort_all_sections_tutorials_labs(lectures_separated_according_to_days)
-              @possible_schedules.append(@week_sections)
+              @possible_schedules.append(PossibleSchedule.new(@week_sections))
 
           end
 
@@ -91,7 +87,6 @@ class ScheduleController < ApplicationController
     # @fridaySections = @week_sections[4]
 
   end
-
 
 
   def add_colors
@@ -310,12 +305,59 @@ class ScheduleController < ApplicationController
 
   end
 
-
   def add_sections(section)
     @sections.push(section)
   end
 
+  class PossibleSchedule
+    attr_accessor :possible_schedule,:time_start,:time_end,:total_rows
+    def initialize(possible_schedule)
+      self.possible_schedule = possible_schedule
+      self.time_start = get_start_time
+      self.time_end = get_end_time
+      self.total_rows = cal_total_rows(Time.parse(time_start),Time.parse(time_end))
+    end
 
+    def get_start_time
+      time_start = Time.parse('23:59')
+      possible_schedule.each do |day|
+        if day != [] && (Time.parse(day.first.section.time_start) <=> time_start) == -1
+          time_start = day.first.section.time_start
+        end
+      end
+      return time_start
+    end
+
+
+    def get_end_time
+      time_end = Time.parse('00:01')
+      possible_schedule.each do |day|
+        if day != [] && (Time.parse(day.last.section.time_end) <=> time_end) == 1
+          time_end = day.last.section.time_end
+        end
+      end
+      return time_end
+    end
+
+    def cal_total_rows(time_start, time_end)
+      total_rows = 0
+      seconds_diff = (time_start - time_end).to_i.abs
+
+      hours = seconds_diff / 3600
+      seconds_diff -= hours * 3600
+
+      minutes = seconds_diff / 60
+      seconds_diff -= minutes * 60
+
+      seconds = seconds_diff
+
+      total_rows += hours * 4
+      total_rows += minutes%15
+
+      return total_rows
+      #"#{hours.to_s.rjust(2, '0')}:#{minutes.to_s.rjust(2, '0')}:#{seconds.to_s.rjust(2, '0')}"
+    end
+  end
 
   class ScheduleSection
     attr_accessor :section,:color,:row_span
