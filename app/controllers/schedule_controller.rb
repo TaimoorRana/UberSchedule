@@ -4,7 +4,7 @@ class ScheduleController < ApplicationController
 
 
   def schedule
-    @courses = [Course.find(67), Course.find(44), Course.find(45),Course.find(22)]
+    @courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
     @mondaySections = []
     @tuesdaySections = []
     @wednesdaySections = []
@@ -58,7 +58,7 @@ class ScheduleController < ApplicationController
 
                   end
                 #if no lab exists
-                elsif labs_exits == false
+                else
                    merge_sections_tutorials = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
                    if find_conflicts(merge_sections_tutorials) == []
                      add_colors
@@ -71,7 +71,7 @@ class ScheduleController < ApplicationController
 
             end
             #if no tutorial exists
-          elsif tutorials_exists == false && labs_exits == false
+          else
               add_colors
               @week_sections = sort_all_sections_tutorials_labs(lectures_separated_according_to_days)
               @possible_schedules.append(@week_sections)
@@ -120,13 +120,13 @@ class ScheduleController < ApplicationController
     #for every course, attempt to find a or many lectures
     courses.each do |course|
       #for every course, attempt to find a or many sections
-      if course.sections != nil
-      all_courses_sections.push(course.sections.where(term:'Winter'))
+      if course.sections != []
+      all_courses_sections.push(course.sections.where(term:'Fall'))
       end
     end
 
     #if there are 2 or more courses that have sections, find and return all combinations
-    if  all_courses_sections.size >= 3
+    if  all_courses_sections.size >= 2
       return  all_courses_sections.inject(&:product).map(&:flatten)
       # else return 2 ,1 or no sections
     else all_courses_sections.size == 1
@@ -144,13 +144,13 @@ class ScheduleController < ApplicationController
     #for every section, attempt to find a or many tutorials
     sections.each do |section|
       #if sections have tutorials, add to all_courses_tutorial
-      if section.tutorials != nil
+      if section.tutorials != []
         all_courses_tutorials.push(section.tutorials)
       end
     end
 
     #if there are 2 or more sections that have tutorials, find and return all combinations
-    if  all_courses_tutorials.size >= 3
+    if  all_courses_tutorials.size >= 2
       return  all_courses_tutorials.inject(&:product).map(&:flatten)
       # else return 2 ,1 or no tutorials
     else
