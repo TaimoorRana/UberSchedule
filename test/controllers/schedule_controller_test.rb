@@ -65,8 +65,9 @@ class ScheduleControllerTest < ActionController::TestCase
 
   test "merge_weeks" do
     schedule_controller = ScheduleController.new
-    week1 = [[1,2],[5,6],[9,10],[13,14],[17,18]]
-    week2 = [[3,4],[7,8],[11,12],[15,16],[19,20]]
+    test_section = Section.find(1)
+    week1 = [[test_section,test_section],[test_section,test_section],[test_section,test_section],[test_section,test_section],[test_section,test_section]]
+    week2 = [[test_section,test_section],[test_section,test_section],[test_section,test_section],[test_section,test_section],[test_section,test_section]]
 
     week_merged = schedule_controller.merge_weeks(week1,week2)
     assert week_merged.size == 5
@@ -74,9 +75,4 @@ class ScheduleControllerTest < ActionController::TestCase
       assert day.size == 4, ['pass']
     end
   end
-
-
-
-
-
 end

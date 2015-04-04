@@ -45,7 +45,6 @@ class ScheduleController < ApplicationController
                 all_labs = find_all_labs(tutorials)
                 #if labs do exists
                 if all_labs != []
-                  labs_exits = true
                   #for every labs combination
                   all_labs.each do |labs|
                     #separate them into days
