@@ -3,14 +3,15 @@ class ScheduleController < ApplicationController
   before_action :authenticate_user!
   attr_accessor :a_possible_schedule
   def schedule
-    @courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
+    @courses = [Course.find(1), Course.find(3), Course.find(15),Course.find(16)]
+    #@courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
     @mondaySections = []
     @tuesdaySections = []
     @wednesdaySections = []
     @thursdaySections = []
     @fridaySections = []
     @possible_schedules = []
-
+    schedule_limit = 10
     @week_sections =[]
     all_lectures = find_all_lectures(@courses)
     if all_lectures != []
@@ -45,6 +46,9 @@ class ScheduleController < ApplicationController
                       all_sections_merged = merge_sections(lectures_tutorials_merged,labs_separated_according_to_days)
 
                       if find_conflicts(all_sections_merged) == []
+                        if @possible_schedules.size > schedule_limit
+                          break
+                        end
                         add_colors
                         @week_sections = sort_all_sections_tutorials_labs(all_sections_merged)
                         @possible_schedules.append(PossibleSchedule.new(@week_sections))
@@ -57,6 +61,9 @@ class ScheduleController < ApplicationController
                 else
                    merge_sections_tutorials = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
                    if find_conflicts(merge_sections_tutorials) == []
+                     if @possible_schedules.size > schedule_limit
+                       break
+                     end
                      add_colors
                      @week_sections = sort_all_sections_tutorials_labs(merge_sections_tutorials)
                      @possible_schedules.append(PossibleSchedule.new(@week_sections))
@@ -68,6 +75,9 @@ class ScheduleController < ApplicationController
             end
             #if no tutorial exists
           else
+            if @possible_schedules.size > schedule_limit
+              break
+            end
               add_colors
               @week_sections = sort_all_sections_tutorials_labs(lectures_separated_according_to_days)
               @possible_schedules.append(PossibleSchedule.new(@week_sections))
