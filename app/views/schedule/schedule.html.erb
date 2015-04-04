@@ -33,13 +33,15 @@
 
         <!--This is used to calculate the time that will appear on the
         the left side of the schedule-->
-        <% x = Time.parse(schedule.time_start) %>
+        <% #x = Time.parse(schedule.time_start) %>
+        <% x = Time.parse('8:00') %>
         <% @monday_section_duration = 0 %>
         <% @tuesday_section_duration = 0 %>
         <% @wednesday_section_duration = 0 %>
         <% @thursday_section_duration = 0 %>
         <% @friday_section_duration = 0 %>
-        <% (0..schedule.total_rows).each do |i|%>
+        <% #(0..schedule.total_rows).each do |i|%>
+        <% (0..64).each do |i| %>
             <% if (x.min == 0) then minutes = '00' else minutes = "#{x.min}" end %>
             <% time= "#{x.hour}:#{minutes}" %>
             <% x += 900 %>

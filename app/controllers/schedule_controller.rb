@@ -2,9 +2,19 @@ class ScheduleController < ApplicationController
   layout 'general_schedule'
   before_action :authenticate_user!
   attr_accessor :a_possible_schedule
+
+
+  def index
+
+  end
+
+  def search
+
+  end
+
   def schedule
-    @courses = [Course.find(1), Course.find(3), Course.find(15),Course.find(16)]
-    #@courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
+    #@courses = [Course.find(1), Course.find(3), Course.find(15),Course.find(16)]
+    @courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
     @mondaySections = []
     @tuesdaySections = []
     @wednesdaySections = []
@@ -42,8 +52,8 @@ class ScheduleController < ApplicationController
                     labs_separated_according_to_days = separate_sections_according_to_days(labs)
                     #if there is no conflicts between labs
                     if (@conflicts_labs = find_conflicts(labs_separated_according_to_days)) == []
-                      lectures_tutorials_merged = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
-                      all_sections_merged = merge_sections(lectures_tutorials_merged,labs_separated_according_to_days)
+                      lectures_tutorials_merged = merge_weeks(lectures_separated_according_to_days,tutorials_separated_according_to_days)
+                      all_sections_merged = merge_weeks(lectures_tutorials_merged,labs_separated_according_to_days)
 
                       if find_conflicts(all_sections_merged) == []
                         if @possible_schedules.size > schedule_limit
@@ -59,7 +69,7 @@ class ScheduleController < ApplicationController
                   end
                 #if no lab exists
                 else
-                   merge_sections_tutorials = merge_sections(lectures_separated_according_to_days,tutorials_separated_according_to_days)
+                   merge_sections_tutorials = merge_weeks(lectures_separated_according_to_days,tutorials_separated_according_to_days)
                    if find_conflicts(merge_sections_tutorials) == []
                      if @possible_schedules.size > schedule_limit
                        break
@@ -191,10 +201,10 @@ class ScheduleController < ApplicationController
 
 
 
-  def merge_sections(arr1,arr2)
+  def merge_weeks(week1,week2)
     arr_merged = [[],[],[],[],[]]
-    arr1.each_with_index do |useless,i|
-      arr_merged[i] = arr1[i] + arr2[i]
+    week1.each_index do |i|
+      arr_merged[i] = week1[i] + week2[i]
     end
     return arr_merged
   end
@@ -268,13 +278,13 @@ class ScheduleController < ApplicationController
 
 
   #find conflit between sections, if conflict is found
-  def find_conflicts (arr)
+  def find_conflicts (week)
 
     # get sections
     conflict_arr = []
 
     #find conflicts
-    arr.each do |day|
+    week.each do |day|
 
       day.each do |schedule_section|
         #get the first section start and end time
@@ -365,7 +375,6 @@ class ScheduleController < ApplicationController
       total_rows += minutes%15
 
       return total_rows
-      #"#{hours.to_s.rjust(2, '0')}:#{minutes.to_s.rjust(2, '0')}:#{seconds.to_s.rjust(2, '0')}"
     end
   end
 

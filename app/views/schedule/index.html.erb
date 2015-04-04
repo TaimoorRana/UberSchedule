@@ -1,0 +1,8 @@
+<h1>Schedule#index</h1>
+<p>Find me in app/views/schedule/index.html.erb</p>
+<% link_to 'Generate Schedule',action: 'schedule'%>
+<%= form_tag action:'search', method: 'get' do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+<% end %>
