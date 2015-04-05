@@ -65,11 +65,10 @@ class SequenceGeneratorController < ApplicationController
       if course_id[1] == "1"
         course = Course.find(course_id[0].to_i)
         @listOfCourses.append(course)
-
       end
     end
     @listOfCourses.sort
-
+    redirect_to controller: 'sequence_builder',action: 'sequence_builder', electives: @listOfCourses
   end
 
   private
