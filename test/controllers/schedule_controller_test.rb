@@ -6,7 +6,7 @@ class ScheduleControllerTest < ActionController::TestCase
   test "should get schedule" do
     uberStudent = User.create(username: 'UberTeam',first_name:'Uber',last_name: 'Team', email: 'uberteam@gmail.com', password: 12345678,password_confirmation: 12345678)
     sign_in (uberStudent)
-    get :schedule
+    get :schedule, q:'SOEN 342,SOEN 343,COMP 345,SOEN 287,SOEN 384'
     assert_response :success
   end
 
@@ -75,4 +75,5 @@ class ScheduleControllerTest < ActionController::TestCase
       assert day.size == 4, ['pass']
     end
   end
+
 end
