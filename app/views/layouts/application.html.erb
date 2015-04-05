@@ -6,17 +6,45 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag('application') %>
+  <%= javascript_include_tag :defaults %>
 
 </head>
 <body>
-<div class="topbar">
-  <p class="whitexpand">&nbsp; &nbsp; &nbsp;UBER</p><img class="center" src="/assets/logo.png" alt="logo">
+<div class="topPara extend">
+  <!--logo div-->
+  <div>
+    <span class="whitexpand">&nbsp; &nbsp; &nbsp;UBER</span><%= image_tag("logo.png") %><span class="whitexpand">PLANNER</span>
+  </div>
+  <!-- Links div-->
+  <div class="whiteBCKG extend">
+    <hr class="blackline extend">
+<span class="menuFONT">
+&nbsp;<%= link_to 'View Sequence', sequence_path, class:"menuLK" %>&nbsp;&nbsp;&#183;
+  &nbsp;<%= link_to('Edit Profile', {:controller => 'profile', :action => 'profile'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+  &nbsp;<%= link_to('View Schedule', {:controller => 'schedule', :action => 'index'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+ &nbsp; <%= link_to('Courses', {:controller => 'course', :action => 'index'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+  &nbsp;<%= link_to('Generate Schedule', {:controller => 'schedule_generator', :action => 'schedule_generator'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+   &nbsp;<%= link_to('Sequence Test', {:controller => 'sequence_builder', :action => 'sequence_builder'}, class:"menuLK") %>&nbsp;&nbsp;&#183;
+  <% if user_signed_in? %>
+             &nbsp; <%= link_to('Logout', destroy_user_session_path, method: 'delete',class:"menuLG") %>
+          <% end %>
+</span>
+    <hr class="blackline extend">
+  </div>
 
-  <p class="whitexpand">PLANNER</p>
-  <br><span style="font-family: Trebuchet, Helvetica, sans-serif; font-size:12px; color:#ffffff; font-weight:bold;">BY UBERTEAM</span>
-
-  <p class="notice"><%= notice %></p>
+  <!-- Response/result/confirmation div-->
+  <% unless flash[:notice].blank?%>
+      <div class="responseBox">
+        <%= flash[:notice] %>
+      </div>
+  <% end %>
   <%= yield %>
+
+
+  <!-- footer-->
+  <div class="footerPara">
+    Copyright (C) 2015 UBERTEAM
+  </div>
 </div>
 </body>
 </html>
