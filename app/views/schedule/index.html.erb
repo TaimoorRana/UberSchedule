@@ -1,5 +1,6 @@
 <h1>Schedule#index</h1>
-<p>Find me in app/views/schedule/index.html.erb</p>
+<p>Sample input :ENGR 201,ENGR 213,COMP 232,COMP 249</p>
+<p>Currently you can choose which day you want off. Example,In Edit Profile, Select Monday Am to have Monday off</p>
 <% link_to 'Generate Schedule',action: 'schedule'%>
 <%= form_tag action:'schedule', method: 'get' do %>
     <%= label_tag(:q, "Search for:") %>

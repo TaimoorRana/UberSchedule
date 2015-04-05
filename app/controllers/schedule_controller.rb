@@ -138,13 +138,25 @@ class ScheduleController < ApplicationController
   def find_all_lectures(courses)
     #sections starts as empty
     all_courses_sections = []
-
-    preferences = Preference.find(current_user.student.id)
+    preferences = current_user.student.preferences
+    preference = ''
+    if preferences.where(preference:'noMondayAm').first.nil? == false
+      preference = '%M%'
+    elsif preferences.where(preference:'noTuesdayAm').first.nil? == false
+      preference = '%T%'
+    elsif preferences.where(preference:'noWednesdayAm').first.nil? == false
+      preference = '%W%'
+    elsif preferences.where(preference:'noThursdayAm').first.nil? == false
+      preference = '%J%'
+    elsif preferences.where(preference:'noFridayAm').first.nil? == false
+      preference = '%F%'
+    end
     #for every course, attempt to find a or many lectures
     courses.each do |course|
       #for every course, attempt to find a or many sections
       if course.sections != []
-      all_courses_sections.push(course.sections.where(term:'Fall'))
+      #all_courses_sections.push(course.sections.where(term:'Fall'))
+        all_courses_sections.push(course.sections.where(term:'Winter').where.not('day_of_week LIKE ?', preference))
       end
     end
 
@@ -163,12 +175,24 @@ class ScheduleController < ApplicationController
   def find_all_tutorials(sections)
     #tutorials starts as empty
     all_courses_tutorials = []
-
+    preferences = preferences = current_user.student.preferences
+    preference = ''
+    if preferences.where(preference:'noMondayAm').first.nil? == false
+      preference = '%M%'
+    elsif preferences.where(preference:'noTuesdayAm').first.nil? == false
+      preference = '%T%'
+    elsif preferences.where(preference:'noWednesdayAm').first.nil? == false
+      preference = '%W%'
+    elsif preferences.where(preference:'noThursdayAm').first.nil? == false
+      preference = '%J%'
+    elsif preferences.where(preference:'noFridayAm').first.nil? == false
+      preference = '%F%'
+    end
     #for every section, attempt to find a or many tutorials
     sections.each do |section|
       #if sections have tutorials, add to all_courses_tutorial
       if section.tutorials != []
-        all_courses_tutorials.push(section.tutorials)
+        all_courses_tutorials.push(section.tutorials.where.not('day_of_week LIKE ?', preference))
       end
     end
 
