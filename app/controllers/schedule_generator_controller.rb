@@ -1,5 +1,6 @@
 class ScheduleGeneratorController < ApplicationController
   layout 'application'
+  before_action :authenticate_user!
 
   def schedule_generator
     user_id = current_user.user_id

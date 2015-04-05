@@ -1,5 +1,5 @@
 class CourseController < ApplicationController
-  layout 'general_schedule'
+  layout 'application'
  before_action :authenticate_user!
   
   def index

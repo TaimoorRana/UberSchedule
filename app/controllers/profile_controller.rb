@@ -5,7 +5,7 @@ class ProfileController < ApplicationController
     user_id = current_user.user_id
     student = Student.where(user_id: user_id).first
     @student_first_name = student.first_name
-    @student_last_name = student.last_name
+    @stgeneral_scheduleudent_last_name = student.last_name
     @previous_preferences = student.preferences
     @previous_preferences.exists?(11) ? @noSplitClasses = 'No' : @noSplitClasses = 'Yes'
     @previous_preferences.exists?(12) ? @noLoyolaCampus = 'No' : @noLoyolaCampus = 'Yes'
