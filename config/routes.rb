@@ -2,7 +2,6 @@ Rails.application.routes.draw do
   get 'schedule/search'
 
   get 'schedule/index'
-
   get 'sequence_maker/index'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
@@ -20,6 +19,9 @@ Rails.application.routes.draw do
   get 'sequence/:option' => 'sequence_generator#Sequence'
   post 'mysequence' => 'sequence_generator#personalizedSequence', :as => 'personalized_sequence'
 
+  get 'schedule_generator' => 'schedule_generator#schedule_generator', :as => 'schedule_generator'
+
+  get 'sequence_build' => 'sequence_builder#sequence_builder', as: 'sequence_builder'
   root 'login#index'
   match ':controller(/:action(/:id))', :via => [:get, :post]
 

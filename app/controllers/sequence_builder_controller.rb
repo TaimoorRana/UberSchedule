@@ -1,5 +1,6 @@
 class SequenceBuilderController < ApplicationController
   layout 'application'
+  before_action :authenticate_user!
 
 def sequence_builder
   @log = Logger.new("log3.txt") #Logger Class instance used to debug
