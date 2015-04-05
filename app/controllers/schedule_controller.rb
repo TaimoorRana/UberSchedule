@@ -10,11 +10,18 @@ class ScheduleController < ApplicationController
 
   def search
 
+
   end
 
   def schedule
+    @courses = []
+    query = params[:q]
+    course_list = query.split(',')
+    course_list.each do |course_string|
+      @courses.append(Course.where(dept:course_string.split(' ').first, number:course_string.split(' ').last).first)
+    end
     #@courses = [Course.find(1), Course.find(3), Course.find(15),Course.find(16)]
-    @courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
+    #@courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
     @mondaySections = []
     @tuesdaySections = []
     @wednesdaySections = []
@@ -131,6 +138,8 @@ class ScheduleController < ApplicationController
   def find_all_lectures(courses)
     #sections starts as empty
     all_courses_sections = []
+
+    preferences = Preference.find(current_user.student.id)
     #for every course, attempt to find a or many lectures
     courses.each do |course|
       #for every course, attempt to find a or many sections
@@ -143,8 +152,8 @@ class ScheduleController < ApplicationController
     if  all_courses_sections.size >= 2
       return  all_courses_sections.inject(&:product).map(&:flatten)
       # else return 2 ,1 or no sections
-    else all_courses_sections.size == 1
-    return  all_courses_sections
+    else
+    return  all_courses_sections = [all_courses_sections]
     end
   end
 
@@ -168,7 +177,7 @@ class ScheduleController < ApplicationController
       return  all_courses_tutorials.inject(&:product).map(&:flatten)
       # else return 2 ,1 or no tutorials
     else
-      return  all_courses_tutorials
+      return  all_courses_tutorials = [all_courses_tutorials]
     end
 
   end
@@ -192,7 +201,7 @@ class ScheduleController < ApplicationController
       return all_courses_labs.inject(&:product).map(&:flatten)
     # else return 2 ,1 or no lab
     else
-      return all_courses_labs
+      return all_courses_labs = [all_courses_labs]
     end
 
   end

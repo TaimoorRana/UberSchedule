@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'schedule/search'
+
   get 'schedule/index'
 
   get 'sequence_maker/index'
