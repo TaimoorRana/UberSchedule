@@ -20,6 +20,7 @@ class ScheduleController < ApplicationController
     course_list.each do |course_string|
       @courses.append(Course.where(dept:course_string.split(' ').first, number:course_string.split(' ').last).first)
     end
+    @preferences = current_user.student.preferences
     #@courses = [Course.find(1), Course.find(3), Course.find(15),Course.find(16)]
     #@courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
     @mondaySections = []
@@ -91,12 +92,7 @@ class ScheduleController < ApplicationController
             end
             #if no tutorial exists
           else
-            if @possible_schedules.size > schedule_limit
-              break
-            end
-              add_colors
-              @week_sections = sort_all_sections_tutorials_labs(lectures_separated_according_to_days)
-              @possible_schedules.append(PossibleSchedule.new(@week_sections))
+
 
           end
 
@@ -138,25 +134,21 @@ class ScheduleController < ApplicationController
   def find_all_lectures(courses)
     #sections starts as empty
     all_courses_sections = []
-    preferences = current_user.student.preferences
-    preference = ''
-    if preferences.where(preference:'noMondayAm').first.nil? == false
-      preference = '%M%'
-    elsif preferences.where(preference:'noTuesdayAm').first.nil? == false
-      preference = '%T%'
-    elsif preferences.where(preference:'noWednesdayAm').first.nil? == false
-      preference = '%W%'
-    elsif preferences.where(preference:'noThursdayAm').first.nil? == false
-      preference = '%J%'
-    elsif preferences.where(preference:'noFridayAm').first.nil? == false
-      preference = '%F%'
-    end
+    preferences = filters
     #for every course, attempt to find a or many lectures
     courses.each do |course|
       #for every course, attempt to find a or many sections
       if course.sections != []
-      #all_courses_sections.push(course.sections.where(term:'Fall'))
-        all_courses_sections.push(course.sections.where(term:'Winter').where.not('day_of_week LIKE ?', preference))
+        temp_lectures = course.sections.where(term:'Winter')
+        preferences.each do |preference|
+          #all_courses_sections.push(course.sections.where(term:'Fall'))
+          temp_lectures = temp_lectures.where.not('day_of_week LIKE ?', preference)
+        end
+        if temp_lectures.size > 0
+          all_courses_sections.push(temp_lectures)
+        else
+          return []
+        end
       end
     end
 
@@ -175,24 +167,22 @@ class ScheduleController < ApplicationController
   def find_all_tutorials(sections)
     #tutorials starts as empty
     all_courses_tutorials = []
-    preferences = preferences = current_user.student.preferences
-    preference = ''
-    if preferences.where(preference:'noMondayAm').first.nil? == false
-      preference = '%M%'
-    elsif preferences.where(preference:'noTuesdayAm').first.nil? == false
-      preference = '%T%'
-    elsif preferences.where(preference:'noWednesdayAm').first.nil? == false
-      preference = '%W%'
-    elsif preferences.where(preference:'noThursdayAm').first.nil? == false
-      preference = '%J%'
-    elsif preferences.where(preference:'noFridayAm').first.nil? == false
-      preference = '%F%'
-    end
+    preferences = filters
+
     #for every section, attempt to find a or many tutorials
     sections.each do |section|
       #if sections have tutorials, add to all_courses_tutorial
       if section.tutorials != []
-        all_courses_tutorials.push(section.tutorials.where.not('day_of_week LIKE ?', preference))
+        temp_tutorials = section.tutorials
+        preferences.each do |preference|
+          #all_courses_sections.push(course.sections.where(term:'Fall'))
+          temp_tutorials= temp_tutorials.where.not('day_of_week LIKE ?', preference)
+        end
+        if temp_tutorials.size > 0
+          all_courses_tutorials.push(temp_tutorials)
+        else
+          return []
+        end
       end
     end
 
@@ -206,20 +196,24 @@ class ScheduleController < ApplicationController
 
   end
 
-
-
   def find_all_labs(tutorials)
     #labs starts as empty
     all_courses_labs = []
+
+    preferences = filters
 
     #for every tutorial, attempt to find a lab
     tutorials.each do |tutorial|
       #if tutorial have a lab, add to all_courses_labs
       if tutorial.laboratories != []
-        all_courses_labs.push(tutorial.laboratories)
+        temp_labs = tutorial.laboratories
+        preferences.each do |preference|
+          #all_courses_sections.push(course.sections.where(term:'Fall'))
+          temp_labs= temp_labs.where.not('day_of_week LIKE ?', preference)
+        end
+        all_courses_labs.push(temp_labs)
       end
     end
-
     #if there are 2 or more tutorials that have labs, find and return all combinations
     if all_courses_labs.size >= 2
       return all_courses_labs.inject(&:product).map(&:flatten)
@@ -230,7 +224,26 @@ class ScheduleController < ApplicationController
 
   end
 
+  def filters
+    preference = []
+    if @preferences.where(preference:'noMondayAm').first.nil? == false
+      preference.append('%M%')
+    end
+    if @preferences.where(preference:'noTuesdayAm').first.nil? == false
+      preference.append('%T%')
+    end
+    if @preferences.where(preference:'noWednesdayAm').first.nil? == false
+      preference.append('%W%')
+    end
+    if @preferences.where(preference:'noThursdayAm').first.nil? == false
+      preference.append('%J%')
+    end
+    if @preferences.where(preference:'noFridayAm').first.nil? == false
+      preference.append('%F%')
+    end
 
+    return preference
+  end
 
 
   def merge_weeks(week1,week2)
