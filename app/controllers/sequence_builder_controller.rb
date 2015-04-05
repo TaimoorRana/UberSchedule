@@ -45,6 +45,7 @@ def sequence_builder
 
   @mandatory_courses = Array.new
   @oneOf_courses = Array.new
+  @listOfCourses = params[:electives]
   generate_mandatory_courses
 
   @all_prereqs = Array.new
@@ -97,7 +98,12 @@ def sequence_builder
       end
       current_semester.push(course.dept + " " + course.number.to_s)
       @completed_courses.push(course)
-      @accumulated_credits += course.credit
+      if course.number != 490
+        @accumulated_credits += course.credit
+      elsif semester_string.include?("Winter")
+        @accumulated_credits += course.credit
+      end
+
       @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
     end
     current_semester.push(@accumulated_credits.to_s) # push accumulated credits to current_semester
@@ -374,6 +380,11 @@ def generate_mandatory_courses
       @log.info("@oneOf_courses <=" + course.dept + course.number.to_s)
     end
   end
+  @listOfCourses.each do |c|
+    course = Course.find(c.to_i)
+    @mandatory_courses.push(course)
+    @log.info("@mandatory_course from Arek's thing <=" + course.dept + course.number.to_s)
+  end
 end
 
 def sequence_generator(available)
@@ -448,7 +459,7 @@ def sequence_generator(available)
     elsif mandatory and priority < 7 and !basic_science
       priority_4.push(course)
       @log.info("Priority 4 <= " + course.dept + course.number.to_s)
-    elsif priority < 8 and !basic_science
+    elsif mandatory
       priority_5.push(course)
       @log.info("Priority 5 <= " + course.dept + course.number.to_s)
     else
