@@ -1,5 +1,5 @@
 class ProfileController < ApplicationController
-  layout 'general_schedule'
+  layout 'application'
   before_action :authenticate_user!
   def profile
     user_id = current_user.user_id

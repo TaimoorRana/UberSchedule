@@ -1,5 +1,5 @@
 class SequenceMakerController < ApplicationController
-  layout 'general_schedule'
+  layout 'application'
 
 
   def index

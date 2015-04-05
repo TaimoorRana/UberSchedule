@@ -1,5 +1,5 @@
 class ScheduleGeneratorController < ApplicationController
-  layout 'general_schedule'
+  layout 'application'
 
   def schedule_generator
     user_id = current_user.user_id
