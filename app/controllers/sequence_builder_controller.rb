@@ -1,5 +1,5 @@
 class SequenceBuilderController < ApplicationController
-  layout 'general_schedule'
+  layout 'application'
 
   def sequence_builder
     @log = Logger.new("log3.txt")  #Logger Class instance used to debug

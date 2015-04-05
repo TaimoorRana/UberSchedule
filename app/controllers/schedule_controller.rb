@@ -1,5 +1,5 @@
 class ScheduleController < ApplicationController
-  layout 'general_schedule'
+  layout 'application'
   before_action :authenticate_user!
   attr_accessor :a_possible_schedule
 
