@@ -18,7 +18,12 @@ class ScheduleController < ApplicationController
     @log.level = Logger::DEBUG #all lines starting with @log.info are just there to log shit.
     @courses = []
     query = params[:q]
-    course_from_sequence = params[:course_string]
+    course_from_sequence = params[:course_string] #from sequence_builder.html
+    semester_from_sequence = params[:semester] #from sequence_builder.html
+
+    if semester_from_sequence != nil
+      current_semester = semester_from_sequence.match('[a-zA-Z]*')
+    end
 
     if course_from_sequence == nil
       course_list = query.split(',')
