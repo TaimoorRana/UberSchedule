@@ -29,7 +29,7 @@ class ScheduleController < ApplicationController
     @possible_schedules = []
     schedule_limit = 5
     @week_sections =[]
-    all_lectures = find_all_lectures(@courses)
+    all_lectures = find_all_lectures(@courses,params[:term])
     if all_lectures != []
       #for every lectures combination found
       all_lectures.each do |lectures|
@@ -129,14 +129,14 @@ class ScheduleController < ApplicationController
 
 
 
-  def find_all_lectures(courses)
+  def find_all_lectures(courses,term)
     #sections starts as empty
     all_courses_sections = []
     #for every course, attempt to find a or many lectures
     courses.each do |course|
       #for every course, attempt to find a or many sections
       if course.sections != []
-        temp_lectures = course.sections.where(term:'Winter')
+        temp_lectures = course.sections.where(term:term)
         @preferences_converted_to_strings.each do |preference|
           #all_courses_sections.push(course.sections.where(term:'Fall'))
           temp_lectures = temp_lectures.where.not('day_of_week LIKE ?', preference)
