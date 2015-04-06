@@ -81,7 +81,7 @@ def sequence_builder
   # stored in @complete_sequence.
   while @accumulated_credits < max_credits
     current_semester = Array.new #will contain STRINGS following the order: [semester detail] [Courses dept + Number] [accumulated credits]
-
+    courses_to_schedule = ""
     @log.info("========== STARTING TO GENERATE A SEMESTER =============")
     semester_string = determine_current_semester
     @log.info("Semester:" + semester_string)
@@ -107,6 +107,15 @@ def sequence_builder
 
       @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
     end
+    i = 1
+    (i..current_semester.size - 1).each do |i|
+      courses_to_schedule.concat(current_semester[i])
+      if i < (current_semester.size - 1)
+        courses_to_schedule.concat(",")
+      end
+    end
+    @log.info("Taimoor string:" + courses_to_schedule)
+    current_semester.push(courses_to_schedule)
     current_semester.push(@accumulated_credits.to_s) # push accumulated credits to current_semester
     @complete_sequence.push(current_semester)
 
