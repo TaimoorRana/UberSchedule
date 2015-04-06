@@ -30,6 +30,8 @@ def sequence_builder
   # Protip: click a method and press Ctrl+B to jump to method declaration
 
   @all_sections = Array.new
+  @skills = Hash.new
+  hardcoded_hash_of_skill
   sections_to_array
 
   @all_fall_sections = Array.new
@@ -72,7 +74,6 @@ def sequence_builder
   generate_basic_sciences
   generate_general_electives
   generate_ignore_list
-  hardcoded_hash_of_skill
 
   @complete_sequence = Array.new # Will be populated by current_semester Arrays detailed in the upcoming while loop.
 
@@ -273,6 +274,7 @@ def generate_available_courses
     if previous_course_id != section.course_id #prevents double checking Courses
       previous_course_id = section.course_id
       course = Course.find(section.course_id)
+      @log.info("is this course available?: " + course.dept + course.number.to_s)
       if !@completed_courses.include?(course) and !@ignore_list.include?(course) #check if course was taken or is on ignore list.
         missing_prereqs = false # assume no missing prereqs. Following lines try to find missing prereqs.
         if @all_400_level.include?(course) #if course is a 400 level, check if all 200 level are completed.
@@ -296,7 +298,7 @@ def generate_available_courses
               missing_prereqs = true
             end
           end
-        end #if has prereq
+        end #if has prereqs
         if !missing_prereqs and basic_sciences_allowed and general_elective_allowed # if no missing prereqs and not an invalid basic science, push to available.
           available_courses.push(course)
           @log.info("available_courses <=" + course.dept + course.number.to_s)
@@ -364,6 +366,7 @@ def generate_mandatory_courses
   if @student.option == "Computer Games"
     Sequence.find(12).courses.each do |course|
       @mandatory_courses.push(course)
+      @skills[course] = 3
       @log.info("@mandatory_course <=" + course.dept + course.number.to_s)
     end
     Sequence.find(13).courses.each do |course|
@@ -373,6 +376,7 @@ def generate_mandatory_courses
   elsif @student.option == "Web Services and Appliactions"
     Sequence.find(10).courses.each do |course|
       @mandatory_courses.push(course)
+      @skills[course] = 3
       @log.info("@mandatory_course <=" + course.dept + course.number.to_s)
     end
     Sequence.find(11).courses.each do |course|
@@ -382,6 +386,7 @@ def generate_mandatory_courses
   elsif @student.option == "RealTime Embedded and Avionics Software"
     Sequence.find(14).courses.each do |course|
       @mandatory_courses.push(course)
+      @skills[course] = 3
       @log.info("@mandatory_course <=" + course.dept + course.number.to_s)
     end
     Sequence.find(15).courses.each do |course|
@@ -392,6 +397,7 @@ def generate_mandatory_courses
   @listOfCourses.each do |c|
     course = Course.find(c.to_i)
     @mandatory_courses.push(course)
+    @skills[course] = 2
     @log.info("@mandatory_course from Arek's thing <=" + course.dept + course.number.to_s)
   end
 end
@@ -405,6 +411,7 @@ def sequence_generator(available)
   priority_4 = Array.new
   priority_5 = Array.new
   priority_6 = Array.new
+  priority_7 = Array.new
   course_counter = 0
 
   if @semester[@semester_counter.modulo(@semester_modulo)] == "Fall"
@@ -459,7 +466,7 @@ def sequence_generator(available)
     if given_this_semester_only and mandatory and priority < 3 and !basic_science
       priority_1.push(course)
       @log.info("Priority 1 <= " + course.dept + course.number.to_s)
-    elsif mandatory and priority < 2 and !basic_science
+    elsif mandatory and priority < 4 and !basic_science
       priority_2.push(course)
       @log.info("Priority 2 <= " + course.dept + course.number.to_s)
     elsif given_this_semester_only and priority < 5 and !basic_science
@@ -471,13 +478,11 @@ def sequence_generator(available)
     elsif mandatory
       priority_5.push(course)
       @log.info("Priority 5 <= " + course.dept + course.number.to_s)
-    else
+    elsif priority < 9
       priority_6.push(course)
       @log.info("Priority 6 <= " + course.dept + course.number.to_s)
-    end
-    @log.info("The following courses are available for the next semester: ")
-    available.each do |avail|
-      @log.info(avail.dept + avail.number.to_s)
+    else priority_7.push(course)
+    @log.info("Priority 7 <= " + course.dept + course.number.to_s)
     end
   end
 
@@ -506,6 +511,10 @@ def sequence_generator(available)
       selected_courses.push(priority_6[0])
       @log.info("SELECTED COURSE: " + priority_6[0].dept + priority_6[0].number.to_s)
       priority_6.delete(priority_6[0])
+    elsif priority_7[0] != nil
+      selected_courses.push(priority_7[0])
+      @log.info("SELECTED COURSE: " + priority_7[0].dept + priority_7[0].number.to_s)
+      priority_7.delete(priority_7[0])
     end
     course_counter +=1
   end
@@ -528,7 +537,6 @@ end
 
 # 1 is highest, 10 is lowest
 def hardcoded_hash_of_skill
-  @skills = Hash.new
   @skills[Course.find(1)] = 6
   @skills[Course.find(2)] = 6
   @skills[Course.find(3)] = 3
