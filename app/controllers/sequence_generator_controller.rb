@@ -6,7 +6,7 @@ class SequenceGeneratorController < ApplicationController
     modifiedsequence = createDeepCopyOfSequence(@sequence)
     @student.courses.each do |course| #Removes already completed courses from viewable sequence
       modifiedsequence.each do |sequence|
-        if sequence[1].courses.include?(coaurse)
+        if sequence[1].courses.include?(course)
           sequence[1].courses.delete(course)
         end
       end
