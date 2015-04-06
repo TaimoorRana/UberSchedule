@@ -226,6 +226,12 @@ class ScheduleController < ApplicationController
     if all_courses_labs.size >= 2
       return all_courses_labs.inject(&:product).map(&:flatten)
     # else return 2 ,1 or no lab
+    elsif all_courses_labs.size == 1
+      temp = []
+      all_courses_labs.first.each do |lab|
+        temp.push([lab])
+      end
+      return temp
     else
       return all_courses_labs
     end
