@@ -14,7 +14,7 @@
           <tr>
             <th><%= semester[0] %></th>
           </tr>
-        <% (1..semester.size - 2).each do |i| %>
+        <% (1..semester.size - 3).each do |i| %>
           <tr>
             <td><%= semester[i] %></td>
           <tr>
@@ -24,6 +24,9 @@
             <td> Accumulated credits: <%= semester.last %> </td>
           </tr>
             </table></br>
+    <%= form_tag(:controller => 'schedule', :action => 'schedule', :course_string => semester[semester.size - 2]) do %>
+        <%= submit_tag("View Schedule", class: 'btn btn-default btn-lg') %>
+    <% end %>
     <% end %>
 
 
