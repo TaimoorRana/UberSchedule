@@ -154,7 +154,7 @@ class ScheduleController < ApplicationController
       return  all_courses_sections.inject(&:product).map(&:flatten)
       # else return 2 ,1 or no sections
     else
-    return  all_courses_sections = [all_courses_sections]
+    return  all_courses_sections
     end
   end
 
@@ -187,7 +187,7 @@ class ScheduleController < ApplicationController
       return  all_courses_tutorials.inject(&:product).map(&:flatten)
       # else return 2 ,1 or no tutorials
     else
-      return  all_courses_tutorials = [all_courses_tutorials]
+      return  all_courses_tutorials
     end
 
   end
@@ -205,7 +205,9 @@ class ScheduleController < ApplicationController
           #all_courses_sections.push(course.sections.where(term:'Fall'))
           temp_labs= temp_labs.where.not('day_of_week LIKE ?', preference)
         end
-        all_courses_labs.push(temp_labs)
+        if temp_labs.size > 0
+          all_courses_labs.push(temp_labs)
+        end
       end
     end
     #if there are 2 or more tutorials that have labs, find and return all combinations
@@ -213,7 +215,7 @@ class ScheduleController < ApplicationController
       return all_courses_labs.inject(&:product).map(&:flatten)
     # else return 2 ,1 or no lab
     else
-      return all_courses_labs = [all_courses_labs]
+      return all_courses_labs
     end
 
   end
@@ -254,9 +256,6 @@ class ScheduleController < ApplicationController
   def separate_sections_according_to_days(classType)
     #contains sections for every day
     week = [[],[],[],[],[]]
-    if classType.is_a?(Array) == false
-      classType = [classType]
-    end
     #Sort sections by the day they are given
     classType.each do |section|
 
