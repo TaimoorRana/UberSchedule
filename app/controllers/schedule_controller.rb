@@ -20,7 +20,10 @@ class ScheduleController < ApplicationController
     semester_from_sequence = params[:semester] #from sequence_builder.html
 
     if semester_from_sequence != nil
-      current_semester = semester_from_sequence.match('[a-zA-Z]*')
+     arr = semester_from_sequence.match('[a-zA-Z]*')
+      current_semester = arr[0]
+    else
+      current_semester = params[:term]
     end
 
     if course_from_sequence == nil
@@ -46,7 +49,7 @@ class ScheduleController < ApplicationController
     @possible_schedules = []
     schedule_limit = 5
     @week_sections =[]
-    all_lectures = find_all_lectures(@courses,params[:term])
+    all_lectures = find_all_lectures(@courses,current_semester)
     if all_lectures != []
       #for every lectures combination found
       all_lectures.each do |lectures|
