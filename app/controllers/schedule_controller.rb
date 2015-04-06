@@ -12,9 +12,21 @@ class ScheduleController < ApplicationController
   end
 
   def schedule
+    @log = Logger.new("schedule.txt") #Logger Class instance used to debug
+    @log.level = Logger::DEBUG #all lines starting with @log.info are just there to log shit.
     @courses = []
     query = params[:q]
-    course_list = query.split(',')
+    course_from_sequence = params[:course_string]
+
+    if course_from_sequence == nil
+      course_list = query.split(',')
+    else
+      course_list = course_from_sequence.split(',')
+      course_list.each do |c|
+        @log.info("Added to course_list " + c )
+      end
+    end
+
     course_list.each do |course_string|
       @courses.append(Course.where(dept:course_string.split(' ').first, number:course_string.split(' ').last).first)
     end
