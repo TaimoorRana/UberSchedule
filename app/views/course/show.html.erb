@@ -9,7 +9,7 @@
 <!--main content div : result of schedule-->
 <div class="greybody">
   <table class="table">
-    <tr class="">
+    <tr>
       <th>Course Code</th>
       <th>Course Name</th>
       <th>Course Credit</th>
@@ -18,6 +18,16 @@
       <td><%= "#{@course.dept} #{@course.number}" %></td>
       <td><%= @course.name %></td>
       <td><%= @course.credit %></td>
+    </tr>
+    <% if @course.courses_prereqs.nil? == false %>
+    <tr><td colspan="3">
+      Prereqs:
+        <% @course.courses_prereqs.each do |prereq|%>
+          <% course = Course.find(prereq.course_id_prereq) %>
+          <%= "#{course.dept} #{course.number}, " %>
+        <% end %>
+          </td>
+    <% end %>
     </tr>
     <tr>
       <td colspan="3"><%= @course.description%></td>
