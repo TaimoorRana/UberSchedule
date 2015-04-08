@@ -51,17 +51,6 @@
                   <td rowspan="<%= schedule.possible_schedule[0].first.row_span%>" style="background-color:<%=schedule.possible_schedule[0].first.color%>; border-bottom: none" >
                     <%= schedule.possible_schedule[0].first.section.course.dept %> <%= schedule.possible_schedule[0].first.section.course.number %> <br/>
                     <%= schedule.possible_schedule[0].first.section.name %> <br/>
-                    <% if schedule.possible_schedule[0].first.section.is_a?(Section) %>
-                        Sec id: <%=schedule.possible_schedule[0].first.section.id %> <br/>
-
-                    <% elsif schedule.possible_schedule[0].first.section.is_a?(Tutorial) %>
-                        Tut Id:<%= schedule.possible_schedule[0].first.section.id %>  <br/>
-                        Section id: <%= schedule.possible_schedule[0].first.section.section.id %> <br/>
-                    <% else %>
-                        Lab Id:<%= schedule.possible_schedule[0].first.section.id %><br/>
-                        Tut Id:<%= schedule.possible_schedule[0].first.section.tutorial.id %>  <br/>
-                        Section id: <%= schedule.possible_schedule[0].first.section.section.id %> <br/>
-                    <% end %>
                     <%= schedule.possible_schedule[0].first.section.time_start %><br/>
                     <%= schedule.possible_schedule[0].first.section.time_end %></td>
 
@@ -80,17 +69,6 @@
                   <td rowspan="<%=schedule.possible_schedule[1].first.row_span%>" style="background-color:<%=schedule.possible_schedule[1].first.color%>; border-bottom: none" >
                     <%= schedule.possible_schedule[1].first.section.course.dept %> <%= schedule.possible_schedule[1].first.section.course.number %> <br/>
                     <%= schedule.possible_schedule[1].first.section.name %> <br/>
-                    <% if schedule.possible_schedule[1].first.section.is_a?(Section) %>
-                        Sec id: <%=schedule.possible_schedule[1].first.section.id %> <br/>
-
-                    <% elsif schedule.possible_schedule[1].first.section.is_a?(Tutorial) %>
-                        Tut Id:<%= schedule.possible_schedule[1].first.section.id %>  <br/>
-                        Section id: <%= schedule.possible_schedule[1].first.section.section_id %> <br/>
-                    <% else %>
-                        Lab Id:<%= schedule.possible_schedule[1].first.section.id %><br/>
-                        Tut Id:<%= schedule.possible_schedule[1].first.section.tutorial.id %>  <br/>
-                        Section id: <%= schedule.possible_schedule[1].first.section.section.id %> <br/>
-                    <% end %>
                     <%= schedule.possible_schedule[1].first.section.time_start %><br/>
                     <%= schedule.possible_schedule[1].first.section.time_end %></td>
 
@@ -109,17 +87,6 @@
                   <td rowspan="<%=schedule.possible_schedule[2].first.row_span%>" style="background-color:<%=schedule.possible_schedule[2].first.color%>; border-bottom: none" >
                     <%= schedule.possible_schedule[2].first.section.course.dept %> <%= schedule.possible_schedule[2].first.section.course.number %> <br/>
                     <%= schedule.possible_schedule[2].first.section.name %> <br/>
-                    <% if schedule.possible_schedule[2].first.section.is_a?(Section) %>
-                        Sec id: <%=schedule.possible_schedule[2].first.section.id %> <br/>
-
-                    <% elsif schedule.possible_schedule[2].first.section.is_a?(Tutorial) %>
-                        Tut Id:<%= schedule.possible_schedule[2].first.section.id %>  <br/>
-                        Section id: <%= schedule.possible_schedule[2].first.section.section_id %> <br/>
-                    <% else %>
-                        Lab Id:<%= schedule.possible_schedule[2].first.section.id %><br/>
-                        Tut Id:<%= schedule.possible_schedule[2].first.section.tutorial.id %>  <br/>
-                        Section id: <%= schedule.possible_schedule[2].first.section.section.id %> <br/>
-                    <% end %>
                     <%= schedule.possible_schedule[2].first.section.time_start %><br/>
                     <%= schedule.possible_schedule[2].first.section.time_end %></td>
 
@@ -137,17 +104,6 @@
                   <td rowspan="<%=schedule.possible_schedule[3].first.row_span%>" style="background-color:<%=schedule.possible_schedule[3].first.color%>; border-bottom: none" >
                     <%= schedule.possible_schedule[3].first.section.course.dept %> <%= schedule.possible_schedule[3].first.section.course.number %> <br/>
                     <%= schedule.possible_schedule[3].first.section.name %> <br/>
-                    <% if schedule.possible_schedule[3].first.section.is_a?(Section) %>
-                        Sec id:<%=schedule.possible_schedule[3].first.section.id %> <br/>
-
-                    <% elsif schedule.possible_schedule[3].first.section.is_a?(Tutorial) %>
-                        Tut Id:<%= schedule.possible_schedule[3].first.section.id %>  <br/>
-                        Section id: <%= schedule.possible_schedule[3].first.section.section_id %> <br/>
-                    <% else %>
-                        Lab Id:<%= schedule.possible_schedule[3].first.section.id %><br/>
-                        Tut Id:<%= schedule.possible_schedule[3].first.section.tutorial.id %>  <br/>
-                        Section id:<%= schedule.possible_schedule[3].first.section.section.id %> <br/>
-                    <% end %>
                     <%= schedule.possible_schedule[3].first.section.time_start %><br/>
                     <%= schedule.possible_schedule[3].first.section.time_end %></td>
 
@@ -166,20 +122,8 @@
                     <td rowspan="<%=schedule.possible_schedule[4].first.row_span%>" style="background-color:<%=schedule.possible_schedule[4].first.color%>; border-bottom: none" >
                       <%= schedule.possible_schedule[4].first.section.course.dept %> <%= schedule.possible_schedule[4].first.section.course.number %> <br/>
                       <%= schedule.possible_schedule[4].first.section.name %> <br/>
-                       <% if schedule.possible_schedule[4].first.section.is_a?(Section) %>
-                          Sec id: <%=schedule.possible_schedule[4].first.section.id %> <br/>
-
-                      <% elsif schedule.possible_schedule[4].first.section.is_a?(Tutorial) %>
-                          Tut Id:<%= schedule.possible_schedule[4].first.section.id %>  <br/>
-                          Section id: <%= schedule.possible_schedule[4].first.section.section_id %> <br/>
-                      <% else %>
-                          Lab Id:<%= schedule.possible_schedule[4].first.section.id %><br/>
-                          Tut Id:<%= schedule.possible_schedule[4].first.section.tutorial.id %>  <br/>
-                          Section id:<%= schedule.possible_schedule[4].first.section.section.id %> <br/>
-
-                    <% end %>
-                          <%= schedule.possible_schedule[4].first.section.time_start %><br/>
-                          <%= schedule.possible_schedule[4].first.section.time_end %></td>
+                      <%= schedule.possible_schedule[4].first.section.time_start %><br/>
+                      <%= schedule.possible_schedule[4].first.section.time_end %></td>
 
                     <% schedule.possible_schedule[4].shift(1) %>
               <% elsif @friday_section_duration > 1 %>
