@@ -4,7 +4,11 @@ class ScheduleController < ApplicationController
 
 
   def index
-
+    if params[:search]
+      @courses = Course.search(params[:search])
+    else
+      @courses = Course.all
+    end
   end
 
   def search

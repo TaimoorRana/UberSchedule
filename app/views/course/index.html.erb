@@ -9,6 +9,10 @@
 
 <!--main outer container div-->
 <div class="whiteBCKG extend">
+  <%= form_tag(action:'index', :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Course" %>
+      <%= submit_tag "Search" %>
+  <% end %>
   <!-- inside container div-->
   <div class="mainContent">
 
@@ -26,7 +30,6 @@
               <td><%= course.dept %></td>
               <td><%= course.number %></td>
               <td><%= course.name %></td>
-              <td><%= link_to('Add', {:controller => 'student', :action => 'add_course', :id => course.id}) %></td>
               <td><%= link_to('Details', {:controller => 'Course', :action => 'show', :id => course.id}) %></td>
             </tr>
         <% end %>

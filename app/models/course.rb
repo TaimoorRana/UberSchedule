@@ -6,4 +6,11 @@ class Course < ActiveRecord::Base
   has_many :sections
   has_many :tutorials, through: :sections
   has_many  :laboratories,through: :tutorials
+
+  def self.search(search)
+    search_array = search.split(' ')
+    dept = search_array.first
+    number = search_array.last
+    where("dept LIKE ?", "%#{dept}%").where("number LIKE ?", "%#{number}%")
+  end
 end

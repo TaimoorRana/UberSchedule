@@ -2,10 +2,35 @@
 <p>Sample input :ENGR 201,ENGR 213,COMP 232,COMP 249</p>
 <p>Currently you can choose which day you want off. Example,In Edit Profile, Select Monday Am to have Monday off</p>
 <% link_to 'Generate Schedule',action: 'schedule'%>
-<%= form_tag action:'schedule', method: 'get' do %>
-    <%= label_tag(:q, "Search for:") %>
-    <%= text_field_tag(:q) %>
-    <%= label_tag(:term, "Term:") %>
-    <%= text_field_tag(:term) %>
-    <%= submit_tag("Search") %>
+<%= form_tag(action:'index', :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Course" %>
+    <%= submit_tag "Search" %>
 <% end %>
+
+<div class="whiteBCKG extend">
+  <!-- inside container div-->
+  <div class="mainContent">
+
+    <div class="greybody">
+      <table class="table">
+        <tr class="">
+          <th>Course Department</th>
+          <th>Course Code</th>
+          <th>Course Name</th>
+          <th></th>
+        </tr>
+        <% @courses.each do |course| %>
+            <tr class="">
+              <td><%= course.dept %></td>
+              <td><%= course.number %></td>
+              <td><%= course.name %></td>
+              <td><%= link_to('Add', {:controller => 'student', :action => 'add_course', :id => course.id}) %></td>
+              <td><%= link_to('Details', {:controller => 'Course', :action => 'show', :id => course.id}) %></td>
+            </tr>
+        <% end %>
+      </table>
+    </div>
+
+
+  </div>
+</div>

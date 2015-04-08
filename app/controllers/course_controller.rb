@@ -8,6 +8,9 @@ class CourseController < ApplicationController
       number = params[:page].to_i
       @courses = Course.page(number)
     end
+    if params[:search]
+      @courses = Course.search(params[:search]).page
+    end
   end
 
   def show

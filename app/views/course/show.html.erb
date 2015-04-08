@@ -1,6 +1,10 @@
-<!--header div : Schedule-->
-<div class="header">
-  Course Information
+<!--title of the page & subtitle div-->
+<div class="titleCont">
+  <br/><br/>
+  <span class="whiteFONT titleFONT">
+    Course Description</span><br/>
+  <span class="whiteFONT subtitleFONT"></span>
+</div>
 </div>
 <!--main content div : result of schedule-->
 <div class="greybody">
@@ -8,19 +12,16 @@
     <tr class="">
       <th>Course Code</th>
       <th>Course Name</th>
-      <th>Teacher</th>
+      <th>Course Credit</th>
     </tr>
     <tr>
-      <td><%= "#{@course.dept}#{@course.number}" %></td>
+      <td><%= "#{@course.dept} #{@course.number}" %></td>
       <td><%= @course.name %></td>
-      <td>Aiman Hanna</td>
+      <td><%= @course.credit %></td>
+    </tr>
+    <tr>
+      <td colspan="3"><%= @course.description%></td>
     </tr>
   </table>
-  <p>This course has two components: a theory component to teach you the concepts and principles that underlie modern
-    operating systems, and a practice component to relate theoretical principles with operating system implementation.
-    In the theory component, you will learn about processes and processor management, concurrency and synchronization,
-    memory management schemes, file system and secondary storage management, security and protection, etc. The practice
-    component will complement the theory component through programming assignments illustrating the use and
-    implementation of these concepts.</p>
-  <%= link_to('Add This Course', {:controller => 'student', :action => 'add_course', :id => @course.id}) %>
+  <%= link_to('Return', {:controller => 'Course', :action => 'index', :id => @course.id}) %>
 </div>
