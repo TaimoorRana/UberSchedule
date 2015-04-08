@@ -3,7 +3,7 @@
 <div class="titleCont">
   <br/><br/>
   <span class="whiteFONT titleFONT">
-    Fall 2015
+    <%= @current_semester%>
   </span><br/>
   <span class="whiteFONT subtitleFONT"></span>
 </div>
@@ -13,8 +13,9 @@
   <!-- inside container div-->
   <div class="mainContent" style="margin: 0 auto" >
 
-    <div class="greybody">
-      <% @possible_schedules.each do |schedule| %>
+    <div class="greybody"> 
+      <% @possible_schedules.each_with_index do |schedule,i| %>
+          <h1 align="left">Schedule <%= i+1 %></h1>
       <table border="2px">
         <tr>
           <th>Time</th>
@@ -24,11 +25,6 @@
           <th>&nbsp;Thursday&nbsp;</th>
           <th>&nbsp;&nbsp;&nbsp;Friday&nbsp;&nbsp;&nbsp;</th>
         </tr>
-
-        <% @conflicts_sections.each do |section| %>
-            <%= section %>
-        <% end %>
-        <br/>
 
 
         <!--This is used to calculate the time that will appear on the
