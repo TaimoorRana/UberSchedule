@@ -76,10 +76,10 @@ def sequence_builder
   generate_ignore_list
 
   @complete_sequence = Array.new # Will be populated by current_semester Arrays detailed in the upcoming while loop.
-
+  capstone = Course.find(60)
   # This while loop will control the creation of the entire sequence. The end result is a fully generated sequence
   # stored in @complete_sequence.
-  while @accumulated_credits < max_credits
+  while (@accumulated_credits < max_credits) or !@completed_courses.include?(capstone)
     current_semester = Array.new #will contain STRINGS following the order: [semester detail] [Courses dept + Number] [accumulated credits]
     courses_to_schedule = ""
     @log.info("========== STARTING TO GENERATE A SEMESTER =============")
@@ -94,18 +94,22 @@ def sequence_builder
       if @all_basic_sciences.include?(course)
         @basic_science_counter +=1
       end
-      if @all_general_electives.include?(course)
-        @general_elective_counter += 1
-      end
-      current_semester.push(course.dept + " " + course.number.to_s)
-      @completed_courses.push(course)
-      if course.number != 490
-        @accumulated_credits += course.credit
-      elsif semester_string.include?("Winter")
-        @accumulated_credits += course.credit
+
+      if course == capstone and semester_string.include?("Fall")
+          current_semester.push(course.dept + " " + course.number.to_s) #add to semester, but don't add credit or completed
+          @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
+      elsif course == capstone and semester_string.include?("Winter")
+          current_semester.push(course.dept + " " + course.number.to_s)
+          @accumulated_credits += course.credit
+          @completed_courses.push(course)
+          @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
+      elsif @accumulated_credits < 116
+          current_semester.push(course.dept + " " + course.number.to_s)
+          @accumulated_credits += course.credit
+          @completed_courses.push(course)
+          @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
       end
 
-      @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
     end
     i = 1
     (i..current_semester.size - 1).each do |i|
@@ -488,33 +492,84 @@ def sequence_generator(available)
 
   while course_counter < max_courses
     if priority_1[0] != nil
-      selected_courses.push(priority_1[0])
-      @log.info("SELECTED COURSE: " + priority_1[0].dept + priority_1[0].number.to_s)
-      priority_1.delete(priority_1[0])
+
+      if @all_general_electives.include?(priority_1[0]) and @general_elective_counter < 1
+        selected_courses.push(priority_1[0])
+        @log.info("SELECTED COURSE: " + priority_1[0].dept + priority_1[0].number.to_s)
+        priority_1.delete(priority_1[0])
+        @general_elective_counter +=1
+      elsif !@all_general_electives.include?(priority_1[0])
+        selected_courses.push(priority_1[0])
+        @log.info("SELECTED COURSE: " + priority_1[0].dept + priority_1[0].number.to_s)
+        priority_1.delete(priority_1[0])
+      end
+
     elsif priority_2[0] != nil
-      selected_courses.push(priority_2[0])
-      @log.info("SELECTED COURSE: " + priority_2[0].dept + priority_2[0].number.to_s)
-      priority_2.delete(priority_2[0])
+      if @all_general_electives.include?(priority_2[0]) and @general_elective_counter < 1
+        selected_courses.push(priority_2[0])
+        @log.info("SELECTED COURSE: " + priority_2[0].dept + priority_2[0].number.to_s)
+        priority_2.delete(priority_2[0])
+        @general_elective_counter +=1
+      elsif !@all_general_electives.include?(priority_2[0])
+        selected_courses.push(priority_2[0])
+        @log.info("SELECTED COURSE: " + priority_2[0].dept + priority_2[0].number.to_s)
+        priority_2.delete(priority_2[0])
+      end
     elsif priority_3[0] != nil
-      selected_courses.push(priority_3[0])
-      @log.info("SELECTED COURSE: " + priority_3[0].dept + priority_3[0].number.to_s)
-      priority_3.delete(priority_3[0])
+      if @all_general_electives.include?(priority_3[0]) and @general_elective_counter < 1
+        selected_courses.push(priority_3[0])
+        @log.info("SELECTED COURSE: " + priority_3[0].dept + priority_3[0].number.to_s)
+        priority_3.delete(priority_3[0])
+        @general_elective_counter +=1
+      elsif !@all_general_electives.include?(priority_3[0])
+        selected_courses.push(priority_3[0])
+        @log.info("SELECTED COURSE: " + priority_3[0].dept + priority_3[0].number.to_s)
+        priority_3.delete(priority_3[0])
+      end
     elsif priority_4[0] != nil
-      selected_courses.push(priority_4[0])
-      @log.info("SELECTED COURSE: " + priority_4[0].dept + priority_4[0].number.to_s)
-      priority_4.delete(priority_4[0])
+      if @all_general_electives.include?(priority_4[0]) and @general_elective_counter < 1
+        selected_courses.push(priority_4[0])
+        @log.info("SELECTED COURSE: " + priority_4[0].dept + priority_4[0].number.to_s)
+        priority_4.delete(priority_4[0])
+        @general_elective_counter +=1
+      elsif !@all_general_electives.include?(priority_4[0])
+        selected_courses.push(priority_4[0])
+        @log.info("SELECTED COURSE: " + priority_4[0].dept + priority_4[0].number.to_s)
+        priority_4.delete(priority_4[0])
+      end
     elsif priority_5[0] != nil
-      selected_courses.push(priority_5[0])
-      @log.info("SELECTED COURSE: " + priority_5[0].dept + priority_5[0].number.to_s)
-      priority_5.delete(priority_5[0])
+      if @all_general_electives.include?(priority_5[0]) and @general_elective_counter < 1
+        selected_courses.push(priority_5[0])
+        @log.info("SELECTED COURSE: " + priority_5[0].dept + priority_5[0].number.to_s)
+        priority_5.delete(priority_5[0])
+        @general_elective_counter +=1
+      elsif !@all_general_electives.include?(priority_5[0])
+        selected_courses.push(priority_5[0])
+        @log.info("SELECTED COURSE: " + priority_5[0].dept + priority_5[0].number.to_s)
+        priority_5.delete(priority_5[0])
+      end
     elsif priority_6[0] != nil
-      selected_courses.push(priority_6[0])
-      @log.info("SELECTED COURSE: " + priority_6[0].dept + priority_6[0].number.to_s)
-      priority_6.delete(priority_6[0])
+      if @all_general_electives.include?(priority_6[0]) and @general_elective_counter < 1
+        selected_courses.push(priority_6[0])
+        @log.info("SELECTED COURSE: " + priority_6[0].dept + priority_6[0].number.to_s)
+        priority_6.delete(priority_6[0])
+        @general_elective_counter +=1
+      elsif !@all_general_electives.include?(priority_6[0])
+        selected_courses.push(priority_6[0])
+        @log.info("SELECTED COURSE: " + priority_6[0].dept + priority_6[0].number.to_s)
+        priority_6.delete(priority_6[0])
+      end
     elsif priority_7[0] != nil
-      selected_courses.push(priority_7[0])
-      @log.info("SELECTED COURSE: " + priority_7[0].dept + priority_7[0].number.to_s)
-      priority_7.delete(priority_7[0])
+      if @all_general_electives.include?(priority_7[0]) and @general_elective_counter < 1
+        selected_courses.push(priority_7[0])
+        @log.info("SELECTED COURSE: " + priority_7[0].dept + priority_7[0].number.to_s)
+        priority_7.delete(priority_7[0])
+        @general_elective_counter +=1
+      elsif !@all_general_electives.include?(priority_7[0])
+        selected_courses.push(priority_7[0])
+        @log.info("SELECTED COURSE: " + priority_7[0].dept + priority_7[0].number.to_s)
+        priority_7.delete(priority_7[0])
+      end
     end
     course_counter +=1
   end
