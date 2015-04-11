@@ -103,11 +103,13 @@ def sequence_builder
           @accumulated_credits += course.credit
           @completed_courses.push(course)
           @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
-      elsif @accumulated_credits < 116
+          @log.info("------CREDITS :" + @accumulated_credits.to_s)
+      elsif @accumulated_credits < 120
           current_semester.push(course.dept + " " + course.number.to_s)
           @accumulated_credits += course.credit
           @completed_courses.push(course)
           @log.info("!!! ADDED " + course.dept + course.number.to_s + " to current semester")
+          @log.info("------CREDITS :" + @accumulated_credits.to_s)
       end
 
     end
