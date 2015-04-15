@@ -19,12 +19,10 @@
   <div class="whiteBCKG extend">
     <hr class="blackline extend">
 <span class="menuFONT">
-&nbsp;<%= link_to 'View Sequence', sequence_path, class:"menuLK" %>&nbsp;&nbsp;&#183;
   &nbsp;<%= link_to('Edit Profile', profile_path, class:"menuLK") %>&nbsp;&nbsp;&#183;
-  &nbsp;<%= link_to('View Schedule', schedule_index_path, class:"menuLK") %>&nbsp;&nbsp;&#183;
+  &nbsp;<%= link_to 'View Sequence', sequence_path, class:"menuLK" %>&nbsp;&nbsp;&#183;
  &nbsp; <%= link_to('Courses', course_index_path, class:"menuLK") %>&nbsp;&nbsp;&#183;
   &nbsp;<%= link_to('Generate Schedule', schedule_generator_path, class:"menuLK") %>&nbsp;&nbsp;&#183;
-   &nbsp;<%= link_to('Sequence Test', sequence_builder_path, class:"menuLK") %>&nbsp;&nbsp;&#183;
   <% if user_signed_in? %>
              &nbsp; <%= link_to('Logout', destroy_user_session_path, method: 'delete',class:"menuLG") %>
           <% end %>
