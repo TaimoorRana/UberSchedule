@@ -15,33 +15,21 @@ class ScheduleController < ApplicationController
 
   end
 
-  def schedule
-    @log = Logger.new("schedule.txt") #Logger Class instance used to debug
-    @log.level = Logger::DEBUG #all lines starting with @log.info are just there to log shit.
+  def generate_from_sequence
     @courses = []
-    query = params[:q]
     course_from_sequence = params[:course_string] #from sequence_builder.html
     semester_from_sequence = params[:semester] #from sequence_builder.html
-
-    if semester_from_sequence != nil
-     arr = semester_from_sequence.match('[a-zA-Z]*')
-      @current_semester = arr[0]
-    else
-      @current_semester = params[:term]
-    end
-
-    if course_from_sequence == nil
-      course_list = query.split(',')
-    else
-      course_list = course_from_sequence.split(',')
-      course_list.each do |c|
-        @log.info("Added to course_list " + c )
-      end
-    end
+    arr = semester_from_sequence.match('[a-zA-Z]*')
+    @current_semester = arr[0]
+    course_list = course_from_sequence.split(',')
 
     course_list.each do |course_string|
       @courses.append(Course.where(dept:course_string.split(' ').first, number:course_string.split(' ').last).first)
     end
+  end
+
+  def schedule
+    generate_from_sequence
     @preferences_converted_to_strings = filters
     #@courses = [Course.find(1), Course.find(3), Course.find(15),Course.find(16)]
     #@courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
