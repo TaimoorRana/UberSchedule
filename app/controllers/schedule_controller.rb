@@ -193,11 +193,17 @@ class ScheduleController < ApplicationController
     end
 
     #if there are 2 or more courses that have sections, find and return all combinations
-    if  all_courses_sections.size >= 2
-      return  all_courses_sections.inject(&:product).map(&:flatten)
-      # else return 2 ,1 or no sections
+    if all_courses_sections.size >= 2
+      return all_courses_sections.inject(&:product).map(&:flatten)
+      # else return 2 ,1 or no lab
+    elsif all_courses_sections.size == 1
+      temp = []
+      all_courses_sections.first.each do |section|
+        temp.push([section])
+      end
+      return temp
     else
-    return  all_courses_sections
+      return all_courses_sections
     end
   end
 
@@ -226,11 +232,17 @@ class ScheduleController < ApplicationController
     end
 
     #if there are 2 or more sections that have tutorials, find and return all combinations
-    if  all_courses_tutorials.size >= 2
-      return  all_courses_tutorials.inject(&:product).map(&:flatten)
-      # else return 2 ,1 or no tutorials
+    if all_courses_tutorials.size >= 2
+      return all_courses_tutorials.inject(&:product).map(&:flatten)
+      # else return 2 ,1 or no lab
+    elsif all_courses_tutorials.size == 1
+      temp = []
+      all_courses_tutorials.first.each do |tutorial|
+        temp.push([tutorial])
+      end
+      return temp
     else
-      return  all_courses_tutorials
+      return all_courses_tutorials
     end
 
   end
