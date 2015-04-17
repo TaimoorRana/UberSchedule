@@ -28,8 +28,39 @@ class ScheduleController < ApplicationController
     end
   end
 
+  def generate_from_schedule
+    course1 = params[:course1]
+    course2 = params[:course2]
+    course3 = params[:course3]
+    course4 = params[:course4]
+    course5 = params[:course5]
+    @current_semester = params[:semester]
+    @courses = []
+    if course1 != '0'
+      @courses.append(Course.find(course1))
+    end
+    if course2 != '0'
+      @courses.append(Course.find(course2))
+    end
+    if course3 != '0'
+      @courses.append(Course.find(course3))
+    end
+    if course4 != '0'
+      @courses.append(Course.find(course4))
+    end
+    if course5 != '0'
+      @courses.append(Course.find(course5))
+    end
+
+  end
+
   def schedule
-    generate_from_sequence
+    if params[:course_string] != nil
+      generate_from_sequence
+    else
+      generate_from_schedule
+    end
+
     @preferences_converted_to_strings = filters
     #@courses = [Course.find(1), Course.find(3), Course.find(15),Course.find(16)]
     #@courses = [Course.find(42), Course.find(21), Course.find(46),Course.find(47),Course.find(51)]
