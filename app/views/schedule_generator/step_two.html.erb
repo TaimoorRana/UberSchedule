@@ -24,7 +24,7 @@
               <%= select_tag "course#{x}", options_for_select(Array[*@courses.collect { |v, i| [v, @courses.index(v)] }]) %>
           <% end %><br><br>
 
-          <%= submit_tag("Proceed to Step 4", class: 'submitButton') %>
+          <%= submit_tag("Generate Schedule", class: 'submitButton') %>
 
       <% end %> <!-- end of the form -->
     </div>
